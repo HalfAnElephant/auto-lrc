@@ -1,0 +1,4135 @@
+{
+  "row_index": 1,
+  "segment_id": "Chinese/ZH-Alto-1/Breathy/不再见/Control_Group/0000",
+  "song_id": "chinese/不再见",
+  "derived_from_segment_id": "Chinese/ZH-Alto-1/Breathy/不再见/Control_Group/0000",
+  "split": "unassigned",
+  "snr_db": 6.0,
+  "mixture_gain": 1.0,
+  "accompaniment_gain": 0.2727948792880404,
+  "source_timeline": {
+    "source_to_mixture_offset_samples": 0,
+    "sample_rate": 48000,
+    "num_samples": 384000,
+    "resampled": false,
+    "filtered": false,
+    "padded": false,
+    "cropped": false
+  },
+  "status": "completed",
+  "inputs": {
+    "source_audio": {
+      "path": "/home/xcy/auto-lrc/data/local/gtsinger-representative/Chinese/ZH-Alto-1/Breathy/不再见/Control_Group/0000.wav",
+      "bytes": 1152044,
+      "sha256": "7449f2142d5403d414caaf82cdb11b2898a64c857cfff464e559d4dfdc289093",
+      "audio": {
+        "sample_rate": 48000,
+        "num_samples": 384000,
+        "channels": 1,
+        "subtype": "PCM_24"
+      }
+    },
+    "mixture_audio": {
+      "path": "/home/xcy/auto-lrc/data/local/mixtures/representative-v1-20261010/73c4a3fae69aa08786e29488a7af88fb476f728f5a4beb677ad0a1d62a717cc8-mixture.wav",
+      "bytes": 1152044,
+      "sha256": "bdcbab3f054e9ddd558c8f76c0981ab1971d33e2bb978a7894baaf5e9743cf80",
+      "audio": {
+        "sample_rate": 48000,
+        "num_samples": 384000,
+        "channels": 1,
+        "subtype": "PCM_24"
+      }
+    },
+    "accompaniment_audio": {
+      "path": "/home/xcy/auto-lrc/data/local/mixtures/representative-v1-20261010/73c4a3fae69aa08786e29488a7af88fb476f728f5a4beb677ad0a1d62a717cc8-backing.wav",
+      "bytes": 1152044,
+      "sha256": "e12389ba31acc1398c8f2c3ae1ec653cfed1e058ed590917584f39397bb28920",
+      "audio": {
+        "sample_rate": 48000,
+        "num_samples": 384000,
+        "channels": 1,
+        "subtype": "PCM_24"
+      }
+    },
+    "lyrics": {
+      "path": "/home/xcy/auto-lrc/data/local/mixtures/representative-v1-20261010/73c4a3fae69aa08786e29488a7af88fb476f728f5a4beb677ad0a1d62a717cc8-lyrics.txt",
+      "bytes": 34,
+      "sha256": "6b50a38dd74fd97b5dc8d94c758c47a4b421877d62a063d02805978fd876b55f"
+    }
+  },
+  "predictions": {
+    "clean": {
+      "MTL": {
+        "audio": {
+          "path": "/home/xcy/auto-lrc/data/local/gtsinger-representative/Chinese/ZH-Alto-1/Breathy/不再见/Control_Group/0000.wav",
+          "bytes": 1152044,
+          "sha256": "7449f2142d5403d414caaf82cdb11b2898a64c857cfff464e559d4dfdc289093"
+        },
+        "observed_forwards": [
+          {
+            "model": "acoustic",
+            "input_shapes": [
+              [
+                1,
+                1,
+                128,
+                690
+              ]
+            ],
+            "input_devices": [
+              "cuda:0"
+            ],
+            "output_shapes": [
+              [
+                1,
+                230,
+                41,
+                47
+              ]
+            ],
+            "output_devices": [
+              "cuda:0"
+            ],
+            "output_finite": true
+          }
+        ],
+        "vocalize": false,
+        "status": "completed",
+        "seed": 7,
+        "runtime_seconds": 3.9390601609999862,
+        "peak_memory": {
+          "allocated_bytes": 1446211584,
+          "reserved_bytes": 1551892480
+        },
+        "result": {
+          "lrc": "[00:00.069]<00:00.069>离<00:00.592>别<00:01.114>没<00:01.741>说<00:02.263>再<00:03.413>见<00:04.527>你<00:05.050>是<00:05.572>否<00:05.990>心<00:06.548>酸",
+          "units": [
+            {
+              "text": "离",
+              "line_index": 0,
+              "word_index": 0,
+              "phonemes": [
+                "L",
+                "IY"
+              ],
+              "start_frame": 2,
+              "end_frame": 15,
+              "start_seconds": 0.06965986394557823,
+              "end_seconds": 0.5224489795918367
+            },
+            {
+              "text": "别",
+              "line_index": 0,
+              "word_index": 1,
+              "phonemes": [
+                "B",
+                "IY"
+              ],
+              "start_frame": 17,
+              "end_frame": 31,
+              "start_seconds": 0.592108843537415,
+              "end_seconds": 1.0797278911564625
+            },
+            {
+              "text": "没",
+              "line_index": 0,
+              "word_index": 2,
+              "phonemes": [
+                "M",
+                "AY"
+              ],
+              "start_frame": 32,
+              "end_frame": 47,
+              "start_seconds": 1.1145578231292517,
+              "end_seconds": 1.6370068027210884
+            },
+            {
+              "text": "说",
+              "line_index": 0,
+              "word_index": 3,
+              "phonemes": [
+                "SH",
+                "UW",
+                "OW"
+              ],
+              "start_frame": 50,
+              "end_frame": 63,
+              "start_seconds": 1.7414965986394557,
+              "end_seconds": 2.1942857142857144
+            },
+            {
+              "text": "再",
+              "line_index": 0,
+              "word_index": 4,
+              "phonemes": [
+                "Z",
+                "AA",
+                "IY"
+              ],
+              "start_frame": 65,
+              "end_frame": 96,
+              "start_seconds": 2.2639455782312923,
+              "end_seconds": 3.3436734693877552
+            },
+            {
+              "text": "见",
+              "line_index": 0,
+              "word_index": 5,
+              "phonemes": [
+                "JH",
+                "IY",
+                "AH",
+                "N"
+              ],
+              "start_frame": 98,
+              "end_frame": 128,
+              "start_seconds": 3.413333333333333,
+              "end_seconds": 4.458231292517007
+            },
+            {
+              "text": "你",
+              "line_index": 0,
+              "word_index": 6,
+              "phonemes": [
+                "N",
+                "IY"
+              ],
+              "start_frame": 130,
+              "end_frame": 143,
+              "start_seconds": 4.5278911564625846,
+              "end_seconds": 4.9806802721088435
+            },
+            {
+              "text": "是",
+              "line_index": 0,
+              "word_index": 7,
+              "phonemes": [
+                "SH",
+                "IY"
+              ],
+              "start_frame": 145,
+              "end_frame": 158,
+              "start_seconds": 5.050340136054421,
+              "end_seconds": 5.50312925170068
+            },
+            {
+              "text": "否",
+              "line_index": 0,
+              "word_index": 8,
+              "phonemes": [
+                "F",
+                "UW"
+              ],
+              "start_frame": 160,
+              "end_frame": 169,
+              "start_seconds": 5.572789115646258,
+              "end_seconds": 5.88625850340136
+            },
+            {
+              "text": "心",
+              "line_index": 0,
+              "word_index": 9,
+              "phonemes": [
+                "Z",
+                "IH",
+                "N"
+              ],
+              "start_frame": 172,
+              "end_frame": 181,
+              "start_seconds": 5.990748299319728,
+              "end_seconds": 6.304217687074829
+            },
+            {
+              "text": "酸",
+              "line_index": 0,
+              "word_index": 10,
+              "phonemes": [
+                "S",
+                "W",
+                "AA",
+                "N"
+              ],
+              "start_frame": 188,
+              "end_frame": 229,
+              "start_seconds": 6.548027210884354,
+              "end_seconds": 7.9760544217687075
+            }
+          ],
+          "alignment": {
+            "sample_rate": 22050,
+            "hop_length": 256,
+            "frame_stride": 3,
+            "frame_resolution_seconds": 0.034829931972789115,
+            "mel_frames": 690,
+            "output_frames": 230,
+            "input_samples": 176400,
+            "method": "MTL",
+            "model_type": "MTL",
+            "bdr": false,
+            "device": "cuda",
+            "score": -159.03512573242188,
+            "score_kind": "whole_path_log_score_uncalibrated",
+            "legacy_frame_origin_seconds": 0.0,
+            "physical_origin_seconds": null,
+            "physical_origin_calibrated": false,
+            "word_frames": [
+              [
+                2,
+                15
+              ],
+              [
+                17,
+                31
+              ],
+              [
+                32,
+                47
+              ],
+              [
+                50,
+                63
+              ],
+              [
+                65,
+                96
+              ],
+              [
+                98,
+                128
+              ],
+              [
+                130,
+                143
+              ],
+              [
+                145,
+                158
+              ],
+              [
+                160,
+                169
+              ],
+              [
+                172,
+                181
+              ],
+              [
+                188,
+                229
+              ]
+            ],
+            "phonemes": [
+              "L",
+              "IY",
+              " ",
+              "B",
+              "IY",
+              " ",
+              "M",
+              "AY",
+              " ",
+              "SH",
+              "UW",
+              "OW",
+              " ",
+              "Z",
+              "AA",
+              "IY",
+              " ",
+              "JH",
+              "IY",
+              "AH",
+              "N",
+              " ",
+              "N",
+              "IY",
+              " ",
+              "SH",
+              "IY",
+              " ",
+              "F",
+              "UW",
+              " ",
+              "Z",
+              "IH",
+              "N",
+              " ",
+              "S",
+              "W",
+              "AA",
+              "N"
+            ],
+            "word_phoneme_indices": [
+              [
+                0,
+                2
+              ],
+              [
+                3,
+                5
+              ],
+              [
+                6,
+                8
+              ],
+              [
+                9,
+                12
+              ],
+              [
+                13,
+                16
+              ],
+              [
+                17,
+                21
+              ],
+              [
+                22,
+                24
+              ],
+              [
+                25,
+                27
+              ],
+              [
+                28,
+                30
+              ],
+              [
+                31,
+                34
+              ],
+              [
+                35,
+                39
+              ]
+            ],
+            "line_phoneme_indices": [
+              [
+                0,
+                39
+              ]
+            ]
+          }
+        }
+      },
+      "MTL_BDR": {
+        "audio": {
+          "path": "/home/xcy/auto-lrc/data/local/gtsinger-representative/Chinese/ZH-Alto-1/Breathy/不再见/Control_Group/0000.wav",
+          "bytes": 1152044,
+          "sha256": "7449f2142d5403d414caaf82cdb11b2898a64c857cfff464e559d4dfdc289093"
+        },
+        "observed_forwards": [
+          {
+            "model": "acoustic",
+            "input_shapes": [
+              [
+                1,
+                1,
+                128,
+                690
+              ]
+            ],
+            "input_devices": [
+              "cuda:0"
+            ],
+            "output_shapes": [
+              [
+                1,
+                230,
+                41,
+                47
+              ]
+            ],
+            "output_devices": [
+              "cuda:0"
+            ],
+            "output_finite": true
+          },
+          {
+            "model": "boundary",
+            "input_shapes": [
+              [
+                1,
+                1,
+                128,
+                690
+              ]
+            ],
+            "input_devices": [
+              "cuda:0"
+            ],
+            "output_shapes": [
+              [
+                1,
+                230,
+                1
+              ]
+            ],
+            "output_devices": [
+              "cuda:0"
+            ],
+            "output_finite": true
+          }
+        ],
+        "vocalize": false,
+        "status": "completed",
+        "seed": 7,
+        "runtime_seconds": 0.19340649299999768,
+        "peak_memory": {
+          "allocated_bytes": 1446325248,
+          "reserved_bytes": 1551892480
+        },
+        "result": {
+          "lrc": "[00:00.069]<00:00.069>离<00:00.592>别<00:01.114>没<00:01.741>说<00:02.263>再<00:03.413>见<00:04.527>你<00:05.050>是<00:05.572>否<00:05.990>心<00:06.548>酸",
+          "units": [
+            {
+              "text": "离",
+              "line_index": 0,
+              "word_index": 0,
+              "phonemes": [
+                "L",
+                "IY"
+              ],
+              "start_frame": 2,
+              "end_frame": 15,
+              "start_seconds": 0.06965986394557823,
+              "end_seconds": 0.5224489795918367
+            },
+            {
+              "text": "别",
+              "line_index": 0,
+              "word_index": 1,
+              "phonemes": [
+                "B",
+                "IY"
+              ],
+              "start_frame": 17,
+              "end_frame": 31,
+              "start_seconds": 0.592108843537415,
+              "end_seconds": 1.0797278911564625
+            },
+            {
+              "text": "没",
+              "line_index": 0,
+              "word_index": 2,
+              "phonemes": [
+                "M",
+                "AY"
+              ],
+              "start_frame": 32,
+              "end_frame": 47,
+              "start_seconds": 1.1145578231292517,
+              "end_seconds": 1.6370068027210884
+            },
+            {
+              "text": "说",
+              "line_index": 0,
+              "word_index": 3,
+              "phonemes": [
+                "SH",
+                "UW",
+                "OW"
+              ],
+              "start_frame": 50,
+              "end_frame": 63,
+              "start_seconds": 1.7414965986394557,
+              "end_seconds": 2.1942857142857144
+            },
+            {
+              "text": "再",
+              "line_index": 0,
+              "word_index": 4,
+              "phonemes": [
+                "Z",
+                "AA",
+                "IY"
+              ],
+              "start_frame": 65,
+              "end_frame": 96,
+              "start_seconds": 2.2639455782312923,
+              "end_seconds": 3.3436734693877552
+            },
+            {
+              "text": "见",
+              "line_index": 0,
+              "word_index": 5,
+              "phonemes": [
+                "JH",
+                "IY",
+                "AH",
+                "N"
+              ],
+              "start_frame": 98,
+              "end_frame": 128,
+              "start_seconds": 3.413333333333333,
+              "end_seconds": 4.458231292517007
+            },
+            {
+              "text": "你",
+              "line_index": 0,
+              "word_index": 6,
+              "phonemes": [
+                "N",
+                "IY"
+              ],
+              "start_frame": 130,
+              "end_frame": 143,
+              "start_seconds": 4.5278911564625846,
+              "end_seconds": 4.9806802721088435
+            },
+            {
+              "text": "是",
+              "line_index": 0,
+              "word_index": 7,
+              "phonemes": [
+                "SH",
+                "IY"
+              ],
+              "start_frame": 145,
+              "end_frame": 158,
+              "start_seconds": 5.050340136054421,
+              "end_seconds": 5.50312925170068
+            },
+            {
+              "text": "否",
+              "line_index": 0,
+              "word_index": 8,
+              "phonemes": [
+                "F",
+                "UW"
+              ],
+              "start_frame": 160,
+              "end_frame": 169,
+              "start_seconds": 5.572789115646258,
+              "end_seconds": 5.88625850340136
+            },
+            {
+              "text": "心",
+              "line_index": 0,
+              "word_index": 9,
+              "phonemes": [
+                "Z",
+                "IH",
+                "N"
+              ],
+              "start_frame": 172,
+              "end_frame": 181,
+              "start_seconds": 5.990748299319728,
+              "end_seconds": 6.304217687074829
+            },
+            {
+              "text": "酸",
+              "line_index": 0,
+              "word_index": 10,
+              "phonemes": [
+                "S",
+                "W",
+                "AA",
+                "N"
+              ],
+              "start_frame": 188,
+              "end_frame": 229,
+              "start_seconds": 6.548027210884354,
+              "end_seconds": 7.9760544217687075
+            }
+          ],
+          "alignment": {
+            "sample_rate": 22050,
+            "hop_length": 256,
+            "frame_stride": 3,
+            "frame_resolution_seconds": 0.034829931972789115,
+            "mel_frames": 690,
+            "output_frames": 230,
+            "input_samples": 176400,
+            "method": "MTL_BDR",
+            "model_type": "MTL",
+            "bdr": true,
+            "device": "cuda",
+            "score": -159.49882003079983,
+            "score_kind": "whole_path_log_score_with_bdr_uncalibrated",
+            "legacy_frame_origin_seconds": 0.0,
+            "physical_origin_seconds": null,
+            "physical_origin_calibrated": false,
+            "word_frames": [
+              [
+                2,
+                15
+              ],
+              [
+                17,
+                31
+              ],
+              [
+                32,
+                47
+              ],
+              [
+                50,
+                63
+              ],
+              [
+                65,
+                96
+              ],
+              [
+                98,
+                128
+              ],
+              [
+                130,
+                143
+              ],
+              [
+                145,
+                158
+              ],
+              [
+                160,
+                169
+              ],
+              [
+                172,
+                181
+              ],
+              [
+                188,
+                229
+              ]
+            ],
+            "phonemes": [
+              "L",
+              "IY",
+              " ",
+              "B",
+              "IY",
+              " ",
+              "M",
+              "AY",
+              " ",
+              "SH",
+              "UW",
+              "OW",
+              " ",
+              "Z",
+              "AA",
+              "IY",
+              " ",
+              "JH",
+              "IY",
+              "AH",
+              "N",
+              " ",
+              "N",
+              "IY",
+              " ",
+              "SH",
+              "IY",
+              " ",
+              "F",
+              "UW",
+              " ",
+              "Z",
+              "IH",
+              "N",
+              " ",
+              "S",
+              "W",
+              "AA",
+              "N"
+            ],
+            "word_phoneme_indices": [
+              [
+                0,
+                2
+              ],
+              [
+                3,
+                5
+              ],
+              [
+                6,
+                8
+              ],
+              [
+                9,
+                12
+              ],
+              [
+                13,
+                16
+              ],
+              [
+                17,
+                21
+              ],
+              [
+                22,
+                24
+              ],
+              [
+                25,
+                27
+              ],
+              [
+                28,
+                30
+              ],
+              [
+                31,
+                34
+              ],
+              [
+                35,
+                39
+              ]
+            ],
+            "line_phoneme_indices": [
+              [
+                0,
+                39
+              ]
+            ]
+          }
+        }
+      }
+    },
+    "mixture": {
+      "MTL": {
+        "audio": {
+          "path": "/home/xcy/auto-lrc/data/local/mixtures/representative-v1-20261010/73c4a3fae69aa08786e29488a7af88fb476f728f5a4beb677ad0a1d62a717cc8-mixture.wav",
+          "bytes": 1152044,
+          "sha256": "bdcbab3f054e9ddd558c8f76c0981ab1971d33e2bb978a7894baaf5e9743cf80"
+        },
+        "observed_forwards": [
+          {
+            "model": "acoustic",
+            "input_shapes": [
+              [
+                1,
+                1,
+                128,
+                690
+              ]
+            ],
+            "input_devices": [
+              "cuda:0"
+            ],
+            "output_shapes": [
+              [
+                1,
+                230,
+                41,
+                47
+              ]
+            ],
+            "output_devices": [
+              "cuda:0"
+            ],
+            "output_finite": true
+          }
+        ],
+        "vocalize": false,
+        "status": "completed",
+        "seed": 7,
+        "runtime_seconds": 0.15608515200000284,
+        "peak_memory": {
+          "allocated_bytes": 1446211584,
+          "reserved_bytes": 1551892480
+        },
+        "result": {
+          "lrc": "[00:00.069]<00:00.069>离<00:00.592>别<00:01.114>没<00:01.706>说<00:02.263>再<00:03.413>见<00:04.527>你<00:05.015>是<00:05.607>否<00:05.955>心<00:06.130>酸",
+          "units": [
+            {
+              "text": "离",
+              "line_index": 0,
+              "word_index": 0,
+              "phonemes": [
+                "L",
+                "IY"
+              ],
+              "start_frame": 2,
+              "end_frame": 15,
+              "start_seconds": 0.06965986394557823,
+              "end_seconds": 0.5224489795918367
+            },
+            {
+              "text": "别",
+              "line_index": 0,
+              "word_index": 1,
+              "phonemes": [
+                "B",
+                "IY"
+              ],
+              "start_frame": 17,
+              "end_frame": 31,
+              "start_seconds": 0.592108843537415,
+              "end_seconds": 1.0797278911564625
+            },
+            {
+              "text": "没",
+              "line_index": 0,
+              "word_index": 2,
+              "phonemes": [
+                "M",
+                "AY"
+              ],
+              "start_frame": 32,
+              "end_frame": 48,
+              "start_seconds": 1.1145578231292517,
+              "end_seconds": 1.6718367346938776
+            },
+            {
+              "text": "说",
+              "line_index": 0,
+              "word_index": 3,
+              "phonemes": [
+                "SH",
+                "UW",
+                "OW"
+              ],
+              "start_frame": 49,
+              "end_frame": 63,
+              "start_seconds": 1.7066666666666666,
+              "end_seconds": 2.1942857142857144
+            },
+            {
+              "text": "再",
+              "line_index": 0,
+              "word_index": 4,
+              "phonemes": [
+                "Z",
+                "AA",
+                "IY"
+              ],
+              "start_frame": 65,
+              "end_frame": 96,
+              "start_seconds": 2.2639455782312923,
+              "end_seconds": 3.3436734693877552
+            },
+            {
+              "text": "见",
+              "line_index": 0,
+              "word_index": 5,
+              "phonemes": [
+                "JH",
+                "IY",
+                "AH",
+                "N"
+              ],
+              "start_frame": 98,
+              "end_frame": 128,
+              "start_seconds": 3.413333333333333,
+              "end_seconds": 4.458231292517007
+            },
+            {
+              "text": "你",
+              "line_index": 0,
+              "word_index": 6,
+              "phonemes": [
+                "N",
+                "IY"
+              ],
+              "start_frame": 130,
+              "end_frame": 142,
+              "start_seconds": 4.5278911564625846,
+              "end_seconds": 4.9458503401360545
+            },
+            {
+              "text": "是",
+              "line_index": 0,
+              "word_index": 7,
+              "phonemes": [
+                "SH",
+                "IY"
+              ],
+              "start_frame": 144,
+              "end_frame": 159,
+              "start_seconds": 5.015510204081632,
+              "end_seconds": 5.537959183673469
+            },
+            {
+              "text": "否",
+              "line_index": 0,
+              "word_index": 8,
+              "phonemes": [
+                "F",
+                "UW"
+              ],
+              "start_frame": 161,
+              "end_frame": 166,
+              "start_seconds": 5.607619047619047,
+              "end_seconds": 5.781768707482993
+            },
+            {
+              "text": "心",
+              "line_index": 0,
+              "word_index": 9,
+              "phonemes": [
+                "Z",
+                "IH",
+                "N"
+              ],
+              "start_frame": 171,
+              "end_frame": 175,
+              "start_seconds": 5.955918367346938,
+              "end_seconds": 6.095238095238095
+            },
+            {
+              "text": "酸",
+              "line_index": 0,
+              "word_index": 10,
+              "phonemes": [
+                "S",
+                "W",
+                "AA",
+                "N"
+              ],
+              "start_frame": 176,
+              "end_frame": 229,
+              "start_seconds": 6.130068027210884,
+              "end_seconds": 7.9760544217687075
+            }
+          ],
+          "alignment": {
+            "sample_rate": 22050,
+            "hop_length": 256,
+            "frame_stride": 3,
+            "frame_resolution_seconds": 0.034829931972789115,
+            "mel_frames": 690,
+            "output_frames": 230,
+            "input_samples": 176400,
+            "method": "MTL",
+            "model_type": "MTL",
+            "bdr": false,
+            "device": "cuda",
+            "score": -153.28941345214844,
+            "score_kind": "whole_path_log_score_uncalibrated",
+            "legacy_frame_origin_seconds": 0.0,
+            "physical_origin_seconds": null,
+            "physical_origin_calibrated": false,
+            "word_frames": [
+              [
+                2,
+                15
+              ],
+              [
+                17,
+                31
+              ],
+              [
+                32,
+                48
+              ],
+              [
+                49,
+                63
+              ],
+              [
+                65,
+                96
+              ],
+              [
+                98,
+                128
+              ],
+              [
+                130,
+                142
+              ],
+              [
+                144,
+                159
+              ],
+              [
+                161,
+                166
+              ],
+              [
+                171,
+                175
+              ],
+              [
+                176,
+                229
+              ]
+            ],
+            "phonemes": [
+              "L",
+              "IY",
+              " ",
+              "B",
+              "IY",
+              " ",
+              "M",
+              "AY",
+              " ",
+              "SH",
+              "UW",
+              "OW",
+              " ",
+              "Z",
+              "AA",
+              "IY",
+              " ",
+              "JH",
+              "IY",
+              "AH",
+              "N",
+              " ",
+              "N",
+              "IY",
+              " ",
+              "SH",
+              "IY",
+              " ",
+              "F",
+              "UW",
+              " ",
+              "Z",
+              "IH",
+              "N",
+              " ",
+              "S",
+              "W",
+              "AA",
+              "N"
+            ],
+            "word_phoneme_indices": [
+              [
+                0,
+                2
+              ],
+              [
+                3,
+                5
+              ],
+              [
+                6,
+                8
+              ],
+              [
+                9,
+                12
+              ],
+              [
+                13,
+                16
+              ],
+              [
+                17,
+                21
+              ],
+              [
+                22,
+                24
+              ],
+              [
+                25,
+                27
+              ],
+              [
+                28,
+                30
+              ],
+              [
+                31,
+                34
+              ],
+              [
+                35,
+                39
+              ]
+            ],
+            "line_phoneme_indices": [
+              [
+                0,
+                39
+              ]
+            ]
+          }
+        },
+        "change_from_clean_prediction": {
+          "status": "comparable",
+          "accuracy_available": false,
+          "time_shift_applied": false,
+          "comparison_kind": "prediction change relative to clean, not boundary error",
+          "positive_delta": "comparison prediction is later than clean prediction",
+          "units": [
+            {
+              "unit_index": 0,
+              "text": "离",
+              "clean": {
+                "text": "离",
+                "line_index": 0,
+                "word_index": 0,
+                "phonemes": [
+                  "L",
+                  "IY"
+                ],
+                "start_frame": 2,
+                "end_frame": 15,
+                "start_seconds": 0.06965986394557823,
+                "end_seconds": 0.5224489795918367
+              },
+              "comparison": {
+                "text": "离",
+                "line_index": 0,
+                "word_index": 0,
+                "phonemes": [
+                  "L",
+                  "IY"
+                ],
+                "start_frame": 2,
+                "end_frame": 15,
+                "start_seconds": 0.06965986394557823,
+                "end_seconds": 0.5224489795918367
+              },
+              "start_frame_delta": 0,
+              "end_frame_delta": 0,
+              "start_seconds_delta": 0.0,
+              "end_seconds_delta": 0.0
+            },
+            {
+              "unit_index": 1,
+              "text": "别",
+              "clean": {
+                "text": "别",
+                "line_index": 0,
+                "word_index": 1,
+                "phonemes": [
+                  "B",
+                  "IY"
+                ],
+                "start_frame": 17,
+                "end_frame": 31,
+                "start_seconds": 0.592108843537415,
+                "end_seconds": 1.0797278911564625
+              },
+              "comparison": {
+                "text": "别",
+                "line_index": 0,
+                "word_index": 1,
+                "phonemes": [
+                  "B",
+                  "IY"
+                ],
+                "start_frame": 17,
+                "end_frame": 31,
+                "start_seconds": 0.592108843537415,
+                "end_seconds": 1.0797278911564625
+              },
+              "start_frame_delta": 0,
+              "end_frame_delta": 0,
+              "start_seconds_delta": 0.0,
+              "end_seconds_delta": 0.0
+            },
+            {
+              "unit_index": 2,
+              "text": "没",
+              "clean": {
+                "text": "没",
+                "line_index": 0,
+                "word_index": 2,
+                "phonemes": [
+                  "M",
+                  "AY"
+                ],
+                "start_frame": 32,
+                "end_frame": 47,
+                "start_seconds": 1.1145578231292517,
+                "end_seconds": 1.6370068027210884
+              },
+              "comparison": {
+                "text": "没",
+                "line_index": 0,
+                "word_index": 2,
+                "phonemes": [
+                  "M",
+                  "AY"
+                ],
+                "start_frame": 32,
+                "end_frame": 48,
+                "start_seconds": 1.1145578231292517,
+                "end_seconds": 1.6718367346938776
+              },
+              "start_frame_delta": 0,
+              "end_frame_delta": 1,
+              "start_seconds_delta": 0.0,
+              "end_seconds_delta": 0.03482993197278916
+            },
+            {
+              "unit_index": 3,
+              "text": "说",
+              "clean": {
+                "text": "说",
+                "line_index": 0,
+                "word_index": 3,
+                "phonemes": [
+                  "SH",
+                  "UW",
+                  "OW"
+                ],
+                "start_frame": 50,
+                "end_frame": 63,
+                "start_seconds": 1.7414965986394557,
+                "end_seconds": 2.1942857142857144
+              },
+              "comparison": {
+                "text": "说",
+                "line_index": 0,
+                "word_index": 3,
+                "phonemes": [
+                  "SH",
+                  "UW",
+                  "OW"
+                ],
+                "start_frame": 49,
+                "end_frame": 63,
+                "start_seconds": 1.7066666666666666,
+                "end_seconds": 2.1942857142857144
+              },
+              "start_frame_delta": -1,
+              "end_frame_delta": 0,
+              "start_seconds_delta": -0.03482993197278916,
+              "end_seconds_delta": 0.0
+            },
+            {
+              "unit_index": 4,
+              "text": "再",
+              "clean": {
+                "text": "再",
+                "line_index": 0,
+                "word_index": 4,
+                "phonemes": [
+                  "Z",
+                  "AA",
+                  "IY"
+                ],
+                "start_frame": 65,
+                "end_frame": 96,
+                "start_seconds": 2.2639455782312923,
+                "end_seconds": 3.3436734693877552
+              },
+              "comparison": {
+                "text": "再",
+                "line_index": 0,
+                "word_index": 4,
+                "phonemes": [
+                  "Z",
+                  "AA",
+                  "IY"
+                ],
+                "start_frame": 65,
+                "end_frame": 96,
+                "start_seconds": 2.2639455782312923,
+                "end_seconds": 3.3436734693877552
+              },
+              "start_frame_delta": 0,
+              "end_frame_delta": 0,
+              "start_seconds_delta": 0.0,
+              "end_seconds_delta": 0.0
+            },
+            {
+              "unit_index": 5,
+              "text": "见",
+              "clean": {
+                "text": "见",
+                "line_index": 0,
+                "word_index": 5,
+                "phonemes": [
+                  "JH",
+                  "IY",
+                  "AH",
+                  "N"
+                ],
+                "start_frame": 98,
+                "end_frame": 128,
+                "start_seconds": 3.413333333333333,
+                "end_seconds": 4.458231292517007
+              },
+              "comparison": {
+                "text": "见",
+                "line_index": 0,
+                "word_index": 5,
+                "phonemes": [
+                  "JH",
+                  "IY",
+                  "AH",
+                  "N"
+                ],
+                "start_frame": 98,
+                "end_frame": 128,
+                "start_seconds": 3.413333333333333,
+                "end_seconds": 4.458231292517007
+              },
+              "start_frame_delta": 0,
+              "end_frame_delta": 0,
+              "start_seconds_delta": 0.0,
+              "end_seconds_delta": 0.0
+            },
+            {
+              "unit_index": 6,
+              "text": "你",
+              "clean": {
+                "text": "你",
+                "line_index": 0,
+                "word_index": 6,
+                "phonemes": [
+                  "N",
+                  "IY"
+                ],
+                "start_frame": 130,
+                "end_frame": 143,
+                "start_seconds": 4.5278911564625846,
+                "end_seconds": 4.9806802721088435
+              },
+              "comparison": {
+                "text": "你",
+                "line_index": 0,
+                "word_index": 6,
+                "phonemes": [
+                  "N",
+                  "IY"
+                ],
+                "start_frame": 130,
+                "end_frame": 142,
+                "start_seconds": 4.5278911564625846,
+                "end_seconds": 4.9458503401360545
+              },
+              "start_frame_delta": 0,
+              "end_frame_delta": -1,
+              "start_seconds_delta": 0.0,
+              "end_seconds_delta": -0.03482993197278894
+            },
+            {
+              "unit_index": 7,
+              "text": "是",
+              "clean": {
+                "text": "是",
+                "line_index": 0,
+                "word_index": 7,
+                "phonemes": [
+                  "SH",
+                  "IY"
+                ],
+                "start_frame": 145,
+                "end_frame": 158,
+                "start_seconds": 5.050340136054421,
+                "end_seconds": 5.50312925170068
+              },
+              "comparison": {
+                "text": "是",
+                "line_index": 0,
+                "word_index": 7,
+                "phonemes": [
+                  "SH",
+                  "IY"
+                ],
+                "start_frame": 144,
+                "end_frame": 159,
+                "start_seconds": 5.015510204081632,
+                "end_seconds": 5.537959183673469
+              },
+              "start_frame_delta": -1,
+              "end_frame_delta": 1,
+              "start_seconds_delta": -0.03482993197278894,
+              "end_seconds_delta": 0.03482993197278894
+            },
+            {
+              "unit_index": 8,
+              "text": "否",
+              "clean": {
+                "text": "否",
+                "line_index": 0,
+                "word_index": 8,
+                "phonemes": [
+                  "F",
+                  "UW"
+                ],
+                "start_frame": 160,
+                "end_frame": 169,
+                "start_seconds": 5.572789115646258,
+                "end_seconds": 5.88625850340136
+              },
+              "comparison": {
+                "text": "否",
+                "line_index": 0,
+                "word_index": 8,
+                "phonemes": [
+                  "F",
+                  "UW"
+                ],
+                "start_frame": 161,
+                "end_frame": 166,
+                "start_seconds": 5.607619047619047,
+                "end_seconds": 5.781768707482993
+              },
+              "start_frame_delta": 1,
+              "end_frame_delta": -3,
+              "start_seconds_delta": 0.03482993197278894,
+              "end_seconds_delta": -0.10448979591836771
+            },
+            {
+              "unit_index": 9,
+              "text": "心",
+              "clean": {
+                "text": "心",
+                "line_index": 0,
+                "word_index": 9,
+                "phonemes": [
+                  "Z",
+                  "IH",
+                  "N"
+                ],
+                "start_frame": 172,
+                "end_frame": 181,
+                "start_seconds": 5.990748299319728,
+                "end_seconds": 6.304217687074829
+              },
+              "comparison": {
+                "text": "心",
+                "line_index": 0,
+                "word_index": 9,
+                "phonemes": [
+                  "Z",
+                  "IH",
+                  "N"
+                ],
+                "start_frame": 171,
+                "end_frame": 175,
+                "start_seconds": 5.955918367346938,
+                "end_seconds": 6.095238095238095
+              },
+              "start_frame_delta": -1,
+              "end_frame_delta": -6,
+              "start_seconds_delta": -0.03482993197278983,
+              "end_seconds_delta": -0.20897959183673454
+            },
+            {
+              "unit_index": 10,
+              "text": "酸",
+              "clean": {
+                "text": "酸",
+                "line_index": 0,
+                "word_index": 10,
+                "phonemes": [
+                  "S",
+                  "W",
+                  "AA",
+                  "N"
+                ],
+                "start_frame": 188,
+                "end_frame": 229,
+                "start_seconds": 6.548027210884354,
+                "end_seconds": 7.9760544217687075
+              },
+              "comparison": {
+                "text": "酸",
+                "line_index": 0,
+                "word_index": 10,
+                "phonemes": [
+                  "S",
+                  "W",
+                  "AA",
+                  "N"
+                ],
+                "start_frame": 176,
+                "end_frame": 229,
+                "start_seconds": 6.130068027210884,
+                "end_seconds": 7.9760544217687075
+              },
+              "start_frame_delta": -12,
+              "end_frame_delta": 0,
+              "start_seconds_delta": -0.41795918367346996,
+              "end_seconds_delta": 0.0
+            }
+          ],
+          "summary": {
+            "mean_absolute_start_change_seconds": 0.05066171923314789,
+            "max_absolute_start_change_seconds": 0.41795918367346996,
+            "mean_absolute_end_change_seconds": 0.037996289424860843,
+            "max_absolute_end_change_seconds": 0.20897959183673454
+          }
+        }
+      },
+      "MTL_BDR": {
+        "audio": {
+          "path": "/home/xcy/auto-lrc/data/local/mixtures/representative-v1-20261010/73c4a3fae69aa08786e29488a7af88fb476f728f5a4beb677ad0a1d62a717cc8-mixture.wav",
+          "bytes": 1152044,
+          "sha256": "bdcbab3f054e9ddd558c8f76c0981ab1971d33e2bb978a7894baaf5e9743cf80"
+        },
+        "observed_forwards": [
+          {
+            "model": "acoustic",
+            "input_shapes": [
+              [
+                1,
+                1,
+                128,
+                690
+              ]
+            ],
+            "input_devices": [
+              "cuda:0"
+            ],
+            "output_shapes": [
+              [
+                1,
+                230,
+                41,
+                47
+              ]
+            ],
+            "output_devices": [
+              "cuda:0"
+            ],
+            "output_finite": true
+          },
+          {
+            "model": "boundary",
+            "input_shapes": [
+              [
+                1,
+                1,
+                128,
+                690
+              ]
+            ],
+            "input_devices": [
+              "cuda:0"
+            ],
+            "output_shapes": [
+              [
+                1,
+                230,
+                1
+              ]
+            ],
+            "output_devices": [
+              "cuda:0"
+            ],
+            "output_finite": true
+          }
+        ],
+        "vocalize": false,
+        "status": "completed",
+        "seed": 7,
+        "runtime_seconds": 0.11846514799998431,
+        "peak_memory": {
+          "allocated_bytes": 1446325248,
+          "reserved_bytes": 1551892480
+        },
+        "result": {
+          "lrc": "[00:00.069]<00:00.069>离<00:00.592>别<00:01.114>没<00:01.706>说<00:02.263>再<00:03.413>见<00:04.527>你<00:05.015>是<00:05.607>否<00:05.955>心<00:06.130>酸",
+          "units": [
+            {
+              "text": "离",
+              "line_index": 0,
+              "word_index": 0,
+              "phonemes": [
+                "L",
+                "IY"
+              ],
+              "start_frame": 2,
+              "end_frame": 15,
+              "start_seconds": 0.06965986394557823,
+              "end_seconds": 0.5224489795918367
+            },
+            {
+              "text": "别",
+              "line_index": 0,
+              "word_index": 1,
+              "phonemes": [
+                "B",
+                "IY"
+              ],
+              "start_frame": 17,
+              "end_frame": 31,
+              "start_seconds": 0.592108843537415,
+              "end_seconds": 1.0797278911564625
+            },
+            {
+              "text": "没",
+              "line_index": 0,
+              "word_index": 2,
+              "phonemes": [
+                "M",
+                "AY"
+              ],
+              "start_frame": 32,
+              "end_frame": 48,
+              "start_seconds": 1.1145578231292517,
+              "end_seconds": 1.6718367346938776
+            },
+            {
+              "text": "说",
+              "line_index": 0,
+              "word_index": 3,
+              "phonemes": [
+                "SH",
+                "UW",
+                "OW"
+              ],
+              "start_frame": 49,
+              "end_frame": 63,
+              "start_seconds": 1.7066666666666666,
+              "end_seconds": 2.1942857142857144
+            },
+            {
+              "text": "再",
+              "line_index": 0,
+              "word_index": 4,
+              "phonemes": [
+                "Z",
+                "AA",
+                "IY"
+              ],
+              "start_frame": 65,
+              "end_frame": 96,
+              "start_seconds": 2.2639455782312923,
+              "end_seconds": 3.3436734693877552
+            },
+            {
+              "text": "见",
+              "line_index": 0,
+              "word_index": 5,
+              "phonemes": [
+                "JH",
+                "IY",
+                "AH",
+                "N"
+              ],
+              "start_frame": 98,
+              "end_frame": 128,
+              "start_seconds": 3.413333333333333,
+              "end_seconds": 4.458231292517007
+            },
+            {
+              "text": "你",
+              "line_index": 0,
+              "word_index": 6,
+              "phonemes": [
+                "N",
+                "IY"
+              ],
+              "start_frame": 130,
+              "end_frame": 142,
+              "start_seconds": 4.5278911564625846,
+              "end_seconds": 4.9458503401360545
+            },
+            {
+              "text": "是",
+              "line_index": 0,
+              "word_index": 7,
+              "phonemes": [
+                "SH",
+                "IY"
+              ],
+              "start_frame": 144,
+              "end_frame": 159,
+              "start_seconds": 5.015510204081632,
+              "end_seconds": 5.537959183673469
+            },
+            {
+              "text": "否",
+              "line_index": 0,
+              "word_index": 8,
+              "phonemes": [
+                "F",
+                "UW"
+              ],
+              "start_frame": 161,
+              "end_frame": 166,
+              "start_seconds": 5.607619047619047,
+              "end_seconds": 5.781768707482993
+            },
+            {
+              "text": "心",
+              "line_index": 0,
+              "word_index": 9,
+              "phonemes": [
+                "Z",
+                "IH",
+                "N"
+              ],
+              "start_frame": 171,
+              "end_frame": 175,
+              "start_seconds": 5.955918367346938,
+              "end_seconds": 6.095238095238095
+            },
+            {
+              "text": "酸",
+              "line_index": 0,
+              "word_index": 10,
+              "phonemes": [
+                "S",
+                "W",
+                "AA",
+                "N"
+              ],
+              "start_frame": 176,
+              "end_frame": 229,
+              "start_seconds": 6.130068027210884,
+              "end_seconds": 7.9760544217687075
+            }
+          ],
+          "alignment": {
+            "sample_rate": 22050,
+            "hop_length": 256,
+            "frame_stride": 3,
+            "frame_resolution_seconds": 0.034829931972789115,
+            "mel_frames": 690,
+            "output_frames": 230,
+            "input_samples": 176400,
+            "method": "MTL_BDR",
+            "model_type": "MTL",
+            "bdr": true,
+            "device": "cuda",
+            "score": -154.8369084440492,
+            "score_kind": "whole_path_log_score_with_bdr_uncalibrated",
+            "legacy_frame_origin_seconds": 0.0,
+            "physical_origin_seconds": null,
+            "physical_origin_calibrated": false,
+            "word_frames": [
+              [
+                2,
+                15
+              ],
+              [
+                17,
+                31
+              ],
+              [
+                32,
+                48
+              ],
+              [
+                49,
+                63
+              ],
+              [
+                65,
+                96
+              ],
+              [
+                98,
+                128
+              ],
+              [
+                130,
+                142
+              ],
+              [
+                144,
+                159
+              ],
+              [
+                161,
+                166
+              ],
+              [
+                171,
+                175
+              ],
+              [
+                176,
+                229
+              ]
+            ],
+            "phonemes": [
+              "L",
+              "IY",
+              " ",
+              "B",
+              "IY",
+              " ",
+              "M",
+              "AY",
+              " ",
+              "SH",
+              "UW",
+              "OW",
+              " ",
+              "Z",
+              "AA",
+              "IY",
+              " ",
+              "JH",
+              "IY",
+              "AH",
+              "N",
+              " ",
+              "N",
+              "IY",
+              " ",
+              "SH",
+              "IY",
+              " ",
+              "F",
+              "UW",
+              " ",
+              "Z",
+              "IH",
+              "N",
+              " ",
+              "S",
+              "W",
+              "AA",
+              "N"
+            ],
+            "word_phoneme_indices": [
+              [
+                0,
+                2
+              ],
+              [
+                3,
+                5
+              ],
+              [
+                6,
+                8
+              ],
+              [
+                9,
+                12
+              ],
+              [
+                13,
+                16
+              ],
+              [
+                17,
+                21
+              ],
+              [
+                22,
+                24
+              ],
+              [
+                25,
+                27
+              ],
+              [
+                28,
+                30
+              ],
+              [
+                31,
+                34
+              ],
+              [
+                35,
+                39
+              ]
+            ],
+            "line_phoneme_indices": [
+              [
+                0,
+                39
+              ]
+            ]
+          }
+        },
+        "change_from_clean_prediction": {
+          "status": "comparable",
+          "accuracy_available": false,
+          "time_shift_applied": false,
+          "comparison_kind": "prediction change relative to clean, not boundary error",
+          "positive_delta": "comparison prediction is later than clean prediction",
+          "units": [
+            {
+              "unit_index": 0,
+              "text": "离",
+              "clean": {
+                "text": "离",
+                "line_index": 0,
+                "word_index": 0,
+                "phonemes": [
+                  "L",
+                  "IY"
+                ],
+                "start_frame": 2,
+                "end_frame": 15,
+                "start_seconds": 0.06965986394557823,
+                "end_seconds": 0.5224489795918367
+              },
+              "comparison": {
+                "text": "离",
+                "line_index": 0,
+                "word_index": 0,
+                "phonemes": [
+                  "L",
+                  "IY"
+                ],
+                "start_frame": 2,
+                "end_frame": 15,
+                "start_seconds": 0.06965986394557823,
+                "end_seconds": 0.5224489795918367
+              },
+              "start_frame_delta": 0,
+              "end_frame_delta": 0,
+              "start_seconds_delta": 0.0,
+              "end_seconds_delta": 0.0
+            },
+            {
+              "unit_index": 1,
+              "text": "别",
+              "clean": {
+                "text": "别",
+                "line_index": 0,
+                "word_index": 1,
+                "phonemes": [
+                  "B",
+                  "IY"
+                ],
+                "start_frame": 17,
+                "end_frame": 31,
+                "start_seconds": 0.592108843537415,
+                "end_seconds": 1.0797278911564625
+              },
+              "comparison": {
+                "text": "别",
+                "line_index": 0,
+                "word_index": 1,
+                "phonemes": [
+                  "B",
+                  "IY"
+                ],
+                "start_frame": 17,
+                "end_frame": 31,
+                "start_seconds": 0.592108843537415,
+                "end_seconds": 1.0797278911564625
+              },
+              "start_frame_delta": 0,
+              "end_frame_delta": 0,
+              "start_seconds_delta": 0.0,
+              "end_seconds_delta": 0.0
+            },
+            {
+              "unit_index": 2,
+              "text": "没",
+              "clean": {
+                "text": "没",
+                "line_index": 0,
+                "word_index": 2,
+                "phonemes": [
+                  "M",
+                  "AY"
+                ],
+                "start_frame": 32,
+                "end_frame": 47,
+                "start_seconds": 1.1145578231292517,
+                "end_seconds": 1.6370068027210884
+              },
+              "comparison": {
+                "text": "没",
+                "line_index": 0,
+                "word_index": 2,
+                "phonemes": [
+                  "M",
+                  "AY"
+                ],
+                "start_frame": 32,
+                "end_frame": 48,
+                "start_seconds": 1.1145578231292517,
+                "end_seconds": 1.6718367346938776
+              },
+              "start_frame_delta": 0,
+              "end_frame_delta": 1,
+              "start_seconds_delta": 0.0,
+              "end_seconds_delta": 0.03482993197278916
+            },
+            {
+              "unit_index": 3,
+              "text": "说",
+              "clean": {
+                "text": "说",
+                "line_index": 0,
+                "word_index": 3,
+                "phonemes": [
+                  "SH",
+                  "UW",
+                  "OW"
+                ],
+                "start_frame": 50,
+                "end_frame": 63,
+                "start_seconds": 1.7414965986394557,
+                "end_seconds": 2.1942857142857144
+              },
+              "comparison": {
+                "text": "说",
+                "line_index": 0,
+                "word_index": 3,
+                "phonemes": [
+                  "SH",
+                  "UW",
+                  "OW"
+                ],
+                "start_frame": 49,
+                "end_frame": 63,
+                "start_seconds": 1.7066666666666666,
+                "end_seconds": 2.1942857142857144
+              },
+              "start_frame_delta": -1,
+              "end_frame_delta": 0,
+              "start_seconds_delta": -0.03482993197278916,
+              "end_seconds_delta": 0.0
+            },
+            {
+              "unit_index": 4,
+              "text": "再",
+              "clean": {
+                "text": "再",
+                "line_index": 0,
+                "word_index": 4,
+                "phonemes": [
+                  "Z",
+                  "AA",
+                  "IY"
+                ],
+                "start_frame": 65,
+                "end_frame": 96,
+                "start_seconds": 2.2639455782312923,
+                "end_seconds": 3.3436734693877552
+              },
+              "comparison": {
+                "text": "再",
+                "line_index": 0,
+                "word_index": 4,
+                "phonemes": [
+                  "Z",
+                  "AA",
+                  "IY"
+                ],
+                "start_frame": 65,
+                "end_frame": 96,
+                "start_seconds": 2.2639455782312923,
+                "end_seconds": 3.3436734693877552
+              },
+              "start_frame_delta": 0,
+              "end_frame_delta": 0,
+              "start_seconds_delta": 0.0,
+              "end_seconds_delta": 0.0
+            },
+            {
+              "unit_index": 5,
+              "text": "见",
+              "clean": {
+                "text": "见",
+                "line_index": 0,
+                "word_index": 5,
+                "phonemes": [
+                  "JH",
+                  "IY",
+                  "AH",
+                  "N"
+                ],
+                "start_frame": 98,
+                "end_frame": 128,
+                "start_seconds": 3.413333333333333,
+                "end_seconds": 4.458231292517007
+              },
+              "comparison": {
+                "text": "见",
+                "line_index": 0,
+                "word_index": 5,
+                "phonemes": [
+                  "JH",
+                  "IY",
+                  "AH",
+                  "N"
+                ],
+                "start_frame": 98,
+                "end_frame": 128,
+                "start_seconds": 3.413333333333333,
+                "end_seconds": 4.458231292517007
+              },
+              "start_frame_delta": 0,
+              "end_frame_delta": 0,
+              "start_seconds_delta": 0.0,
+              "end_seconds_delta": 0.0
+            },
+            {
+              "unit_index": 6,
+              "text": "你",
+              "clean": {
+                "text": "你",
+                "line_index": 0,
+                "word_index": 6,
+                "phonemes": [
+                  "N",
+                  "IY"
+                ],
+                "start_frame": 130,
+                "end_frame": 143,
+                "start_seconds": 4.5278911564625846,
+                "end_seconds": 4.9806802721088435
+              },
+              "comparison": {
+                "text": "你",
+                "line_index": 0,
+                "word_index": 6,
+                "phonemes": [
+                  "N",
+                  "IY"
+                ],
+                "start_frame": 130,
+                "end_frame": 142,
+                "start_seconds": 4.5278911564625846,
+                "end_seconds": 4.9458503401360545
+              },
+              "start_frame_delta": 0,
+              "end_frame_delta": -1,
+              "start_seconds_delta": 0.0,
+              "end_seconds_delta": -0.03482993197278894
+            },
+            {
+              "unit_index": 7,
+              "text": "是",
+              "clean": {
+                "text": "是",
+                "line_index": 0,
+                "word_index": 7,
+                "phonemes": [
+                  "SH",
+                  "IY"
+                ],
+                "start_frame": 145,
+                "end_frame": 158,
+                "start_seconds": 5.050340136054421,
+                "end_seconds": 5.50312925170068
+              },
+              "comparison": {
+                "text": "是",
+                "line_index": 0,
+                "word_index": 7,
+                "phonemes": [
+                  "SH",
+                  "IY"
+                ],
+                "start_frame": 144,
+                "end_frame": 159,
+                "start_seconds": 5.015510204081632,
+                "end_seconds": 5.537959183673469
+              },
+              "start_frame_delta": -1,
+              "end_frame_delta": 1,
+              "start_seconds_delta": -0.03482993197278894,
+              "end_seconds_delta": 0.03482993197278894
+            },
+            {
+              "unit_index": 8,
+              "text": "否",
+              "clean": {
+                "text": "否",
+                "line_index": 0,
+                "word_index": 8,
+                "phonemes": [
+                  "F",
+                  "UW"
+                ],
+                "start_frame": 160,
+                "end_frame": 169,
+                "start_seconds": 5.572789115646258,
+                "end_seconds": 5.88625850340136
+              },
+              "comparison": {
+                "text": "否",
+                "line_index": 0,
+                "word_index": 8,
+                "phonemes": [
+                  "F",
+                  "UW"
+                ],
+                "start_frame": 161,
+                "end_frame": 166,
+                "start_seconds": 5.607619047619047,
+                "end_seconds": 5.781768707482993
+              },
+              "start_frame_delta": 1,
+              "end_frame_delta": -3,
+              "start_seconds_delta": 0.03482993197278894,
+              "end_seconds_delta": -0.10448979591836771
+            },
+            {
+              "unit_index": 9,
+              "text": "心",
+              "clean": {
+                "text": "心",
+                "line_index": 0,
+                "word_index": 9,
+                "phonemes": [
+                  "Z",
+                  "IH",
+                  "N"
+                ],
+                "start_frame": 172,
+                "end_frame": 181,
+                "start_seconds": 5.990748299319728,
+                "end_seconds": 6.304217687074829
+              },
+              "comparison": {
+                "text": "心",
+                "line_index": 0,
+                "word_index": 9,
+                "phonemes": [
+                  "Z",
+                  "IH",
+                  "N"
+                ],
+                "start_frame": 171,
+                "end_frame": 175,
+                "start_seconds": 5.955918367346938,
+                "end_seconds": 6.095238095238095
+              },
+              "start_frame_delta": -1,
+              "end_frame_delta": -6,
+              "start_seconds_delta": -0.03482993197278983,
+              "end_seconds_delta": -0.20897959183673454
+            },
+            {
+              "unit_index": 10,
+              "text": "酸",
+              "clean": {
+                "text": "酸",
+                "line_index": 0,
+                "word_index": 10,
+                "phonemes": [
+                  "S",
+                  "W",
+                  "AA",
+                  "N"
+                ],
+                "start_frame": 188,
+                "end_frame": 229,
+                "start_seconds": 6.548027210884354,
+                "end_seconds": 7.9760544217687075
+              },
+              "comparison": {
+                "text": "酸",
+                "line_index": 0,
+                "word_index": 10,
+                "phonemes": [
+                  "S",
+                  "W",
+                  "AA",
+                  "N"
+                ],
+                "start_frame": 176,
+                "end_frame": 229,
+                "start_seconds": 6.130068027210884,
+                "end_seconds": 7.9760544217687075
+              },
+              "start_frame_delta": -12,
+              "end_frame_delta": 0,
+              "start_seconds_delta": -0.41795918367346996,
+              "end_seconds_delta": 0.0
+            }
+          ],
+          "summary": {
+            "mean_absolute_start_change_seconds": 0.05066171923314789,
+            "max_absolute_start_change_seconds": 0.41795918367346996,
+            "mean_absolute_end_change_seconds": 0.037996289424860843,
+            "max_absolute_end_change_seconds": 0.20897959183673454
+          }
+        }
+      }
+    },
+    "separated": {
+      "MTL": {
+        "audio": {
+          "path": "/home/xcy/auto-lrc/data/local/mixtures/native-vocals-20261010/segment-0001-vocals.wav",
+          "bytes": 2822488,
+          "sha256": "fe4c9d0aa7c6722c426e6565bd818728af69d6e152a64391aaf2ef0949877882"
+        },
+        "observed_forwards": [
+          {
+            "model": "acoustic",
+            "input_shapes": [
+              [
+                1,
+                1,
+                128,
+                690
+              ]
+            ],
+            "input_devices": [
+              "cuda:0"
+            ],
+            "output_shapes": [
+              [
+                1,
+                230,
+                41,
+                47
+              ]
+            ],
+            "output_devices": [
+              "cuda:0"
+            ],
+            "output_finite": true
+          }
+        ],
+        "vocalize": false,
+        "status": "completed",
+        "seed": 7,
+        "runtime_seconds": 0.1084044909999875,
+        "peak_memory": {
+          "allocated_bytes": 1458811904,
+          "reserved_bytes": 2086666240
+        },
+        "result": {
+          "lrc": "[00:00.069]<00:00.069>离<00:00.592>别<00:01.114>没<00:01.741>说<00:02.263>再<00:03.413>见<00:04.527>你<00:05.050>是<00:05.572>否<00:05.990>心<00:06.652>酸",
+          "units": [
+            {
+              "text": "离",
+              "line_index": 0,
+              "word_index": 0,
+              "phonemes": [
+                "L",
+                "IY"
+              ],
+              "start_frame": 2,
+              "end_frame": 15,
+              "start_seconds": 0.06965986394557823,
+              "end_seconds": 0.5224489795918367
+            },
+            {
+              "text": "别",
+              "line_index": 0,
+              "word_index": 1,
+              "phonemes": [
+                "B",
+                "IY"
+              ],
+              "start_frame": 17,
+              "end_frame": 31,
+              "start_seconds": 0.592108843537415,
+              "end_seconds": 1.0797278911564625
+            },
+            {
+              "text": "没",
+              "line_index": 0,
+              "word_index": 2,
+              "phonemes": [
+                "M",
+                "AY"
+              ],
+              "start_frame": 32,
+              "end_frame": 47,
+              "start_seconds": 1.1145578231292517,
+              "end_seconds": 1.6370068027210884
+            },
+            {
+              "text": "说",
+              "line_index": 0,
+              "word_index": 3,
+              "phonemes": [
+                "SH",
+                "UW",
+                "OW"
+              ],
+              "start_frame": 50,
+              "end_frame": 63,
+              "start_seconds": 1.7414965986394557,
+              "end_seconds": 2.1942857142857144
+            },
+            {
+              "text": "再",
+              "line_index": 0,
+              "word_index": 4,
+              "phonemes": [
+                "Z",
+                "AA",
+                "IY"
+              ],
+              "start_frame": 65,
+              "end_frame": 96,
+              "start_seconds": 2.2639455782312923,
+              "end_seconds": 3.3436734693877552
+            },
+            {
+              "text": "见",
+              "line_index": 0,
+              "word_index": 5,
+              "phonemes": [
+                "JH",
+                "IY",
+                "AH",
+                "N"
+              ],
+              "start_frame": 98,
+              "end_frame": 128,
+              "start_seconds": 3.413333333333333,
+              "end_seconds": 4.458231292517007
+            },
+            {
+              "text": "你",
+              "line_index": 0,
+              "word_index": 6,
+              "phonemes": [
+                "N",
+                "IY"
+              ],
+              "start_frame": 130,
+              "end_frame": 143,
+              "start_seconds": 4.5278911564625846,
+              "end_seconds": 4.9806802721088435
+            },
+            {
+              "text": "是",
+              "line_index": 0,
+              "word_index": 7,
+              "phonemes": [
+                "SH",
+                "IY"
+              ],
+              "start_frame": 145,
+              "end_frame": 158,
+              "start_seconds": 5.050340136054421,
+              "end_seconds": 5.50312925170068
+            },
+            {
+              "text": "否",
+              "line_index": 0,
+              "word_index": 8,
+              "phonemes": [
+                "F",
+                "UW"
+              ],
+              "start_frame": 160,
+              "end_frame": 164,
+              "start_seconds": 5.572789115646258,
+              "end_seconds": 5.712108843537415
+            },
+            {
+              "text": "心",
+              "line_index": 0,
+              "word_index": 9,
+              "phonemes": [
+                "Z",
+                "IH",
+                "N"
+              ],
+              "start_frame": 172,
+              "end_frame": 190,
+              "start_seconds": 5.990748299319728,
+              "end_seconds": 6.617687074829932
+            },
+            {
+              "text": "酸",
+              "line_index": 0,
+              "word_index": 10,
+              "phonemes": [
+                "S",
+                "W",
+                "AA",
+                "N"
+              ],
+              "start_frame": 191,
+              "end_frame": 229,
+              "start_seconds": 6.652517006802721,
+              "end_seconds": 7.9760544217687075
+            }
+          ],
+          "alignment": {
+            "sample_rate": 22050,
+            "hop_length": 256,
+            "frame_stride": 3,
+            "frame_resolution_seconds": 0.034829931972789115,
+            "mel_frames": 690,
+            "output_frames": 230,
+            "input_samples": 176400,
+            "method": "MTL",
+            "model_type": "MTL",
+            "bdr": false,
+            "device": "cuda",
+            "score": -163.48825073242188,
+            "score_kind": "whole_path_log_score_uncalibrated",
+            "legacy_frame_origin_seconds": 0.0,
+            "physical_origin_seconds": null,
+            "physical_origin_calibrated": false,
+            "word_frames": [
+              [
+                2,
+                15
+              ],
+              [
+                17,
+                31
+              ],
+              [
+                32,
+                47
+              ],
+              [
+                50,
+                63
+              ],
+              [
+                65,
+                96
+              ],
+              [
+                98,
+                128
+              ],
+              [
+                130,
+                143
+              ],
+              [
+                145,
+                158
+              ],
+              [
+                160,
+                164
+              ],
+              [
+                172,
+                190
+              ],
+              [
+                191,
+                229
+              ]
+            ],
+            "phonemes": [
+              "L",
+              "IY",
+              " ",
+              "B",
+              "IY",
+              " ",
+              "M",
+              "AY",
+              " ",
+              "SH",
+              "UW",
+              "OW",
+              " ",
+              "Z",
+              "AA",
+              "IY",
+              " ",
+              "JH",
+              "IY",
+              "AH",
+              "N",
+              " ",
+              "N",
+              "IY",
+              " ",
+              "SH",
+              "IY",
+              " ",
+              "F",
+              "UW",
+              " ",
+              "Z",
+              "IH",
+              "N",
+              " ",
+              "S",
+              "W",
+              "AA",
+              "N"
+            ],
+            "word_phoneme_indices": [
+              [
+                0,
+                2
+              ],
+              [
+                3,
+                5
+              ],
+              [
+                6,
+                8
+              ],
+              [
+                9,
+                12
+              ],
+              [
+                13,
+                16
+              ],
+              [
+                17,
+                21
+              ],
+              [
+                22,
+                24
+              ],
+              [
+                25,
+                27
+              ],
+              [
+                28,
+                30
+              ],
+              [
+                31,
+                34
+              ],
+              [
+                35,
+                39
+              ]
+            ],
+            "line_phoneme_indices": [
+              [
+                0,
+                39
+              ]
+            ]
+          }
+        },
+        "change_from_clean_prediction": {
+          "status": "comparable",
+          "accuracy_available": false,
+          "time_shift_applied": false,
+          "comparison_kind": "prediction change relative to clean, not boundary error",
+          "positive_delta": "comparison prediction is later than clean prediction",
+          "units": [
+            {
+              "unit_index": 0,
+              "text": "离",
+              "clean": {
+                "text": "离",
+                "line_index": 0,
+                "word_index": 0,
+                "phonemes": [
+                  "L",
+                  "IY"
+                ],
+                "start_frame": 2,
+                "end_frame": 15,
+                "start_seconds": 0.06965986394557823,
+                "end_seconds": 0.5224489795918367
+              },
+              "comparison": {
+                "text": "离",
+                "line_index": 0,
+                "word_index": 0,
+                "phonemes": [
+                  "L",
+                  "IY"
+                ],
+                "start_frame": 2,
+                "end_frame": 15,
+                "start_seconds": 0.06965986394557823,
+                "end_seconds": 0.5224489795918367
+              },
+              "start_frame_delta": 0,
+              "end_frame_delta": 0,
+              "start_seconds_delta": 0.0,
+              "end_seconds_delta": 0.0
+            },
+            {
+              "unit_index": 1,
+              "text": "别",
+              "clean": {
+                "text": "别",
+                "line_index": 0,
+                "word_index": 1,
+                "phonemes": [
+                  "B",
+                  "IY"
+                ],
+                "start_frame": 17,
+                "end_frame": 31,
+                "start_seconds": 0.592108843537415,
+                "end_seconds": 1.0797278911564625
+              },
+              "comparison": {
+                "text": "别",
+                "line_index": 0,
+                "word_index": 1,
+                "phonemes": [
+                  "B",
+                  "IY"
+                ],
+                "start_frame": 17,
+                "end_frame": 31,
+                "start_seconds": 0.592108843537415,
+                "end_seconds": 1.0797278911564625
+              },
+              "start_frame_delta": 0,
+              "end_frame_delta": 0,
+              "start_seconds_delta": 0.0,
+              "end_seconds_delta": 0.0
+            },
+            {
+              "unit_index": 2,
+              "text": "没",
+              "clean": {
+                "text": "没",
+                "line_index": 0,
+                "word_index": 2,
+                "phonemes": [
+                  "M",
+                  "AY"
+                ],
+                "start_frame": 32,
+                "end_frame": 47,
+                "start_seconds": 1.1145578231292517,
+                "end_seconds": 1.6370068027210884
+              },
+              "comparison": {
+                "text": "没",
+                "line_index": 0,
+                "word_index": 2,
+                "phonemes": [
+                  "M",
+                  "AY"
+                ],
+                "start_frame": 32,
+                "end_frame": 47,
+                "start_seconds": 1.1145578231292517,
+                "end_seconds": 1.6370068027210884
+              },
+              "start_frame_delta": 0,
+              "end_frame_delta": 0,
+              "start_seconds_delta": 0.0,
+              "end_seconds_delta": 0.0
+            },
+            {
+              "unit_index": 3,
+              "text": "说",
+              "clean": {
+                "text": "说",
+                "line_index": 0,
+                "word_index": 3,
+                "phonemes": [
+                  "SH",
+                  "UW",
+                  "OW"
+                ],
+                "start_frame": 50,
+                "end_frame": 63,
+                "start_seconds": 1.7414965986394557,
+                "end_seconds": 2.1942857142857144
+              },
+              "comparison": {
+                "text": "说",
+                "line_index": 0,
+                "word_index": 3,
+                "phonemes": [
+                  "SH",
+                  "UW",
+                  "OW"
+                ],
+                "start_frame": 50,
+                "end_frame": 63,
+                "start_seconds": 1.7414965986394557,
+                "end_seconds": 2.1942857142857144
+              },
+              "start_frame_delta": 0,
+              "end_frame_delta": 0,
+              "start_seconds_delta": 0.0,
+              "end_seconds_delta": 0.0
+            },
+            {
+              "unit_index": 4,
+              "text": "再",
+              "clean": {
+                "text": "再",
+                "line_index": 0,
+                "word_index": 4,
+                "phonemes": [
+                  "Z",
+                  "AA",
+                  "IY"
+                ],
+                "start_frame": 65,
+                "end_frame": 96,
+                "start_seconds": 2.2639455782312923,
+                "end_seconds": 3.3436734693877552
+              },
+              "comparison": {
+                "text": "再",
+                "line_index": 0,
+                "word_index": 4,
+                "phonemes": [
+                  "Z",
+                  "AA",
+                  "IY"
+                ],
+                "start_frame": 65,
+                "end_frame": 96,
+                "start_seconds": 2.2639455782312923,
+                "end_seconds": 3.3436734693877552
+              },
+              "start_frame_delta": 0,
+              "end_frame_delta": 0,
+              "start_seconds_delta": 0.0,
+              "end_seconds_delta": 0.0
+            },
+            {
+              "unit_index": 5,
+              "text": "见",
+              "clean": {
+                "text": "见",
+                "line_index": 0,
+                "word_index": 5,
+                "phonemes": [
+                  "JH",
+                  "IY",
+                  "AH",
+                  "N"
+                ],
+                "start_frame": 98,
+                "end_frame": 128,
+                "start_seconds": 3.413333333333333,
+                "end_seconds": 4.458231292517007
+              },
+              "comparison": {
+                "text": "见",
+                "line_index": 0,
+                "word_index": 5,
+                "phonemes": [
+                  "JH",
+                  "IY",
+                  "AH",
+                  "N"
+                ],
+                "start_frame": 98,
+                "end_frame": 128,
+                "start_seconds": 3.413333333333333,
+                "end_seconds": 4.458231292517007
+              },
+              "start_frame_delta": 0,
+              "end_frame_delta": 0,
+              "start_seconds_delta": 0.0,
+              "end_seconds_delta": 0.0
+            },
+            {
+              "unit_index": 6,
+              "text": "你",
+              "clean": {
+                "text": "你",
+                "line_index": 0,
+                "word_index": 6,
+                "phonemes": [
+                  "N",
+                  "IY"
+                ],
+                "start_frame": 130,
+                "end_frame": 143,
+                "start_seconds": 4.5278911564625846,
+                "end_seconds": 4.9806802721088435
+              },
+              "comparison": {
+                "text": "你",
+                "line_index": 0,
+                "word_index": 6,
+                "phonemes": [
+                  "N",
+                  "IY"
+                ],
+                "start_frame": 130,
+                "end_frame": 143,
+                "start_seconds": 4.5278911564625846,
+                "end_seconds": 4.9806802721088435
+              },
+              "start_frame_delta": 0,
+              "end_frame_delta": 0,
+              "start_seconds_delta": 0.0,
+              "end_seconds_delta": 0.0
+            },
+            {
+              "unit_index": 7,
+              "text": "是",
+              "clean": {
+                "text": "是",
+                "line_index": 0,
+                "word_index": 7,
+                "phonemes": [
+                  "SH",
+                  "IY"
+                ],
+                "start_frame": 145,
+                "end_frame": 158,
+                "start_seconds": 5.050340136054421,
+                "end_seconds": 5.50312925170068
+              },
+              "comparison": {
+                "text": "是",
+                "line_index": 0,
+                "word_index": 7,
+                "phonemes": [
+                  "SH",
+                  "IY"
+                ],
+                "start_frame": 145,
+                "end_frame": 158,
+                "start_seconds": 5.050340136054421,
+                "end_seconds": 5.50312925170068
+              },
+              "start_frame_delta": 0,
+              "end_frame_delta": 0,
+              "start_seconds_delta": 0.0,
+              "end_seconds_delta": 0.0
+            },
+            {
+              "unit_index": 8,
+              "text": "否",
+              "clean": {
+                "text": "否",
+                "line_index": 0,
+                "word_index": 8,
+                "phonemes": [
+                  "F",
+                  "UW"
+                ],
+                "start_frame": 160,
+                "end_frame": 169,
+                "start_seconds": 5.572789115646258,
+                "end_seconds": 5.88625850340136
+              },
+              "comparison": {
+                "text": "否",
+                "line_index": 0,
+                "word_index": 8,
+                "phonemes": [
+                  "F",
+                  "UW"
+                ],
+                "start_frame": 160,
+                "end_frame": 164,
+                "start_seconds": 5.572789115646258,
+                "end_seconds": 5.712108843537415
+              },
+              "start_frame_delta": 0,
+              "end_frame_delta": -5,
+              "start_seconds_delta": 0.0,
+              "end_seconds_delta": -0.1741496598639456
+            },
+            {
+              "unit_index": 9,
+              "text": "心",
+              "clean": {
+                "text": "心",
+                "line_index": 0,
+                "word_index": 9,
+                "phonemes": [
+                  "Z",
+                  "IH",
+                  "N"
+                ],
+                "start_frame": 172,
+                "end_frame": 181,
+                "start_seconds": 5.990748299319728,
+                "end_seconds": 6.304217687074829
+              },
+              "comparison": {
+                "text": "心",
+                "line_index": 0,
+                "word_index": 9,
+                "phonemes": [
+                  "Z",
+                  "IH",
+                  "N"
+                ],
+                "start_frame": 172,
+                "end_frame": 190,
+                "start_seconds": 5.990748299319728,
+                "end_seconds": 6.617687074829932
+              },
+              "start_frame_delta": 0,
+              "end_frame_delta": 9,
+              "start_seconds_delta": 0.0,
+              "end_seconds_delta": 0.31346938775510225
+            },
+            {
+              "unit_index": 10,
+              "text": "酸",
+              "clean": {
+                "text": "酸",
+                "line_index": 0,
+                "word_index": 10,
+                "phonemes": [
+                  "S",
+                  "W",
+                  "AA",
+                  "N"
+                ],
+                "start_frame": 188,
+                "end_frame": 229,
+                "start_seconds": 6.548027210884354,
+                "end_seconds": 7.9760544217687075
+              },
+              "comparison": {
+                "text": "酸",
+                "line_index": 0,
+                "word_index": 10,
+                "phonemes": [
+                  "S",
+                  "W",
+                  "AA",
+                  "N"
+                ],
+                "start_frame": 191,
+                "end_frame": 229,
+                "start_seconds": 6.652517006802721,
+                "end_seconds": 7.9760544217687075
+              },
+              "start_frame_delta": 3,
+              "end_frame_delta": 0,
+              "start_seconds_delta": 0.10448979591836682,
+              "end_seconds_delta": 0.0
+            }
+          ],
+          "summary": {
+            "mean_absolute_start_change_seconds": 0.009499072356215166,
+            "max_absolute_start_change_seconds": 0.10448979591836682,
+            "mean_absolute_end_change_seconds": 0.04432900432900435,
+            "max_absolute_end_change_seconds": 0.31346938775510225
+          }
+        }
+      },
+      "MTL_BDR": {
+        "audio": {
+          "path": "/home/xcy/auto-lrc/data/local/mixtures/native-vocals-20261010/segment-0001-vocals.wav",
+          "bytes": 2822488,
+          "sha256": "fe4c9d0aa7c6722c426e6565bd818728af69d6e152a64391aaf2ef0949877882"
+        },
+        "observed_forwards": [
+          {
+            "model": "acoustic",
+            "input_shapes": [
+              [
+                1,
+                1,
+                128,
+                690
+              ]
+            ],
+            "input_devices": [
+              "cuda:0"
+            ],
+            "output_shapes": [
+              [
+                1,
+                230,
+                41,
+                47
+              ]
+            ],
+            "output_devices": [
+              "cuda:0"
+            ],
+            "output_finite": true
+          },
+          {
+            "model": "boundary",
+            "input_shapes": [
+              [
+                1,
+                1,
+                128,
+                690
+              ]
+            ],
+            "input_devices": [
+              "cuda:0"
+            ],
+            "output_shapes": [
+              [
+                1,
+                230,
+                1
+              ]
+            ],
+            "output_devices": [
+              "cuda:0"
+            ],
+            "output_finite": true
+          }
+        ],
+        "vocalize": false,
+        "status": "completed",
+        "seed": 7,
+        "runtime_seconds": 0.12595835199999783,
+        "peak_memory": {
+          "allocated_bytes": 1458925568,
+          "reserved_bytes": 2086666240
+        },
+        "result": {
+          "lrc": "[00:00.069]<00:00.069>离<00:00.592>别<00:01.114>没<00:01.741>说<00:02.263>再<00:03.413>见<00:04.527>你<00:05.050>是<00:05.572>否<00:05.990>心<00:06.652>酸",
+          "units": [
+            {
+              "text": "离",
+              "line_index": 0,
+              "word_index": 0,
+              "phonemes": [
+                "L",
+                "IY"
+              ],
+              "start_frame": 2,
+              "end_frame": 15,
+              "start_seconds": 0.06965986394557823,
+              "end_seconds": 0.5224489795918367
+            },
+            {
+              "text": "别",
+              "line_index": 0,
+              "word_index": 1,
+              "phonemes": [
+                "B",
+                "IY"
+              ],
+              "start_frame": 17,
+              "end_frame": 31,
+              "start_seconds": 0.592108843537415,
+              "end_seconds": 1.0797278911564625
+            },
+            {
+              "text": "没",
+              "line_index": 0,
+              "word_index": 2,
+              "phonemes": [
+                "M",
+                "AY"
+              ],
+              "start_frame": 32,
+              "end_frame": 47,
+              "start_seconds": 1.1145578231292517,
+              "end_seconds": 1.6370068027210884
+            },
+            {
+              "text": "说",
+              "line_index": 0,
+              "word_index": 3,
+              "phonemes": [
+                "SH",
+                "UW",
+                "OW"
+              ],
+              "start_frame": 50,
+              "end_frame": 63,
+              "start_seconds": 1.7414965986394557,
+              "end_seconds": 2.1942857142857144
+            },
+            {
+              "text": "再",
+              "line_index": 0,
+              "word_index": 4,
+              "phonemes": [
+                "Z",
+                "AA",
+                "IY"
+              ],
+              "start_frame": 65,
+              "end_frame": 96,
+              "start_seconds": 2.2639455782312923,
+              "end_seconds": 3.3436734693877552
+            },
+            {
+              "text": "见",
+              "line_index": 0,
+              "word_index": 5,
+              "phonemes": [
+                "JH",
+                "IY",
+                "AH",
+                "N"
+              ],
+              "start_frame": 98,
+              "end_frame": 128,
+              "start_seconds": 3.413333333333333,
+              "end_seconds": 4.458231292517007
+            },
+            {
+              "text": "你",
+              "line_index": 0,
+              "word_index": 6,
+              "phonemes": [
+                "N",
+                "IY"
+              ],
+              "start_frame": 130,
+              "end_frame": 143,
+              "start_seconds": 4.5278911564625846,
+              "end_seconds": 4.9806802721088435
+            },
+            {
+              "text": "是",
+              "line_index": 0,
+              "word_index": 7,
+              "phonemes": [
+                "SH",
+                "IY"
+              ],
+              "start_frame": 145,
+              "end_frame": 158,
+              "start_seconds": 5.050340136054421,
+              "end_seconds": 5.50312925170068
+            },
+            {
+              "text": "否",
+              "line_index": 0,
+              "word_index": 8,
+              "phonemes": [
+                "F",
+                "UW"
+              ],
+              "start_frame": 160,
+              "end_frame": 164,
+              "start_seconds": 5.572789115646258,
+              "end_seconds": 5.712108843537415
+            },
+            {
+              "text": "心",
+              "line_index": 0,
+              "word_index": 9,
+              "phonemes": [
+                "Z",
+                "IH",
+                "N"
+              ],
+              "start_frame": 172,
+              "end_frame": 190,
+              "start_seconds": 5.990748299319728,
+              "end_seconds": 6.617687074829932
+            },
+            {
+              "text": "酸",
+              "line_index": 0,
+              "word_index": 10,
+              "phonemes": [
+                "S",
+                "W",
+                "AA",
+                "N"
+              ],
+              "start_frame": 191,
+              "end_frame": 229,
+              "start_seconds": 6.652517006802721,
+              "end_seconds": 7.9760544217687075
+            }
+          ],
+          "alignment": {
+            "sample_rate": 22050,
+            "hop_length": 256,
+            "frame_stride": 3,
+            "frame_resolution_seconds": 0.034829931972789115,
+            "mel_frames": 690,
+            "output_frames": 230,
+            "input_samples": 176400,
+            "method": "MTL_BDR",
+            "model_type": "MTL",
+            "bdr": true,
+            "device": "cuda",
+            "score": -163.84234147942334,
+            "score_kind": "whole_path_log_score_with_bdr_uncalibrated",
+            "legacy_frame_origin_seconds": 0.0,
+            "physical_origin_seconds": null,
+            "physical_origin_calibrated": false,
+            "word_frames": [
+              [
+                2,
+                15
+              ],
+              [
+                17,
+                31
+              ],
+              [
+                32,
+                47
+              ],
+              [
+                50,
+                63
+              ],
+              [
+                65,
+                96
+              ],
+              [
+                98,
+                128
+              ],
+              [
+                130,
+                143
+              ],
+              [
+                145,
+                158
+              ],
+              [
+                160,
+                164
+              ],
+              [
+                172,
+                190
+              ],
+              [
+                191,
+                229
+              ]
+            ],
+            "phonemes": [
+              "L",
+              "IY",
+              " ",
+              "B",
+              "IY",
+              " ",
+              "M",
+              "AY",
+              " ",
+              "SH",
+              "UW",
+              "OW",
+              " ",
+              "Z",
+              "AA",
+              "IY",
+              " ",
+              "JH",
+              "IY",
+              "AH",
+              "N",
+              " ",
+              "N",
+              "IY",
+              " ",
+              "SH",
+              "IY",
+              " ",
+              "F",
+              "UW",
+              " ",
+              "Z",
+              "IH",
+              "N",
+              " ",
+              "S",
+              "W",
+              "AA",
+              "N"
+            ],
+            "word_phoneme_indices": [
+              [
+                0,
+                2
+              ],
+              [
+                3,
+                5
+              ],
+              [
+                6,
+                8
+              ],
+              [
+                9,
+                12
+              ],
+              [
+                13,
+                16
+              ],
+              [
+                17,
+                21
+              ],
+              [
+                22,
+                24
+              ],
+              [
+                25,
+                27
+              ],
+              [
+                28,
+                30
+              ],
+              [
+                31,
+                34
+              ],
+              [
+                35,
+                39
+              ]
+            ],
+            "line_phoneme_indices": [
+              [
+                0,
+                39
+              ]
+            ]
+          }
+        },
+        "change_from_clean_prediction": {
+          "status": "comparable",
+          "accuracy_available": false,
+          "time_shift_applied": false,
+          "comparison_kind": "prediction change relative to clean, not boundary error",
+          "positive_delta": "comparison prediction is later than clean prediction",
+          "units": [
+            {
+              "unit_index": 0,
+              "text": "离",
+              "clean": {
+                "text": "离",
+                "line_index": 0,
+                "word_index": 0,
+                "phonemes": [
+                  "L",
+                  "IY"
+                ],
+                "start_frame": 2,
+                "end_frame": 15,
+                "start_seconds": 0.06965986394557823,
+                "end_seconds": 0.5224489795918367
+              },
+              "comparison": {
+                "text": "离",
+                "line_index": 0,
+                "word_index": 0,
+                "phonemes": [
+                  "L",
+                  "IY"
+                ],
+                "start_frame": 2,
+                "end_frame": 15,
+                "start_seconds": 0.06965986394557823,
+                "end_seconds": 0.5224489795918367
+              },
+              "start_frame_delta": 0,
+              "end_frame_delta": 0,
+              "start_seconds_delta": 0.0,
+              "end_seconds_delta": 0.0
+            },
+            {
+              "unit_index": 1,
+              "text": "别",
+              "clean": {
+                "text": "别",
+                "line_index": 0,
+                "word_index": 1,
+                "phonemes": [
+                  "B",
+                  "IY"
+                ],
+                "start_frame": 17,
+                "end_frame": 31,
+                "start_seconds": 0.592108843537415,
+                "end_seconds": 1.0797278911564625
+              },
+              "comparison": {
+                "text": "别",
+                "line_index": 0,
+                "word_index": 1,
+                "phonemes": [
+                  "B",
+                  "IY"
+                ],
+                "start_frame": 17,
+                "end_frame": 31,
+                "start_seconds": 0.592108843537415,
+                "end_seconds": 1.0797278911564625
+              },
+              "start_frame_delta": 0,
+              "end_frame_delta": 0,
+              "start_seconds_delta": 0.0,
+              "end_seconds_delta": 0.0
+            },
+            {
+              "unit_index": 2,
+              "text": "没",
+              "clean": {
+                "text": "没",
+                "line_index": 0,
+                "word_index": 2,
+                "phonemes": [
+                  "M",
+                  "AY"
+                ],
+                "start_frame": 32,
+                "end_frame": 47,
+                "start_seconds": 1.1145578231292517,
+                "end_seconds": 1.6370068027210884
+              },
+              "comparison": {
+                "text": "没",
+                "line_index": 0,
+                "word_index": 2,
+                "phonemes": [
+                  "M",
+                  "AY"
+                ],
+                "start_frame": 32,
+                "end_frame": 47,
+                "start_seconds": 1.1145578231292517,
+                "end_seconds": 1.6370068027210884
+              },
+              "start_frame_delta": 0,
+              "end_frame_delta": 0,
+              "start_seconds_delta": 0.0,
+              "end_seconds_delta": 0.0
+            },
+            {
+              "unit_index": 3,
+              "text": "说",
+              "clean": {
+                "text": "说",
+                "line_index": 0,
+                "word_index": 3,
+                "phonemes": [
+                  "SH",
+                  "UW",
+                  "OW"
+                ],
+                "start_frame": 50,
+                "end_frame": 63,
+                "start_seconds": 1.7414965986394557,
+                "end_seconds": 2.1942857142857144
+              },
+              "comparison": {
+                "text": "说",
+                "line_index": 0,
+                "word_index": 3,
+                "phonemes": [
+                  "SH",
+                  "UW",
+                  "OW"
+                ],
+                "start_frame": 50,
+                "end_frame": 63,
+                "start_seconds": 1.7414965986394557,
+                "end_seconds": 2.1942857142857144
+              },
+              "start_frame_delta": 0,
+              "end_frame_delta": 0,
+              "start_seconds_delta": 0.0,
+              "end_seconds_delta": 0.0
+            },
+            {
+              "unit_index": 4,
+              "text": "再",
+              "clean": {
+                "text": "再",
+                "line_index": 0,
+                "word_index": 4,
+                "phonemes": [
+                  "Z",
+                  "AA",
+                  "IY"
+                ],
+                "start_frame": 65,
+                "end_frame": 96,
+                "start_seconds": 2.2639455782312923,
+                "end_seconds": 3.3436734693877552
+              },
+              "comparison": {
+                "text": "再",
+                "line_index": 0,
+                "word_index": 4,
+                "phonemes": [
+                  "Z",
+                  "AA",
+                  "IY"
+                ],
+                "start_frame": 65,
+                "end_frame": 96,
+                "start_seconds": 2.2639455782312923,
+                "end_seconds": 3.3436734693877552
+              },
+              "start_frame_delta": 0,
+              "end_frame_delta": 0,
+              "start_seconds_delta": 0.0,
+              "end_seconds_delta": 0.0
+            },
+            {
+              "unit_index": 5,
+              "text": "见",
+              "clean": {
+                "text": "见",
+                "line_index": 0,
+                "word_index": 5,
+                "phonemes": [
+                  "JH",
+                  "IY",
+                  "AH",
+                  "N"
+                ],
+                "start_frame": 98,
+                "end_frame": 128,
+                "start_seconds": 3.413333333333333,
+                "end_seconds": 4.458231292517007
+              },
+              "comparison": {
+                "text": "见",
+                "line_index": 0,
+                "word_index": 5,
+                "phonemes": [
+                  "JH",
+                  "IY",
+                  "AH",
+                  "N"
+                ],
+                "start_frame": 98,
+                "end_frame": 128,
+                "start_seconds": 3.413333333333333,
+                "end_seconds": 4.458231292517007
+              },
+              "start_frame_delta": 0,
+              "end_frame_delta": 0,
+              "start_seconds_delta": 0.0,
+              "end_seconds_delta": 0.0
+            },
+            {
+              "unit_index": 6,
+              "text": "你",
+              "clean": {
+                "text": "你",
+                "line_index": 0,
+                "word_index": 6,
+                "phonemes": [
+                  "N",
+                  "IY"
+                ],
+                "start_frame": 130,
+                "end_frame": 143,
+                "start_seconds": 4.5278911564625846,
+                "end_seconds": 4.9806802721088435
+              },
+              "comparison": {
+                "text": "你",
+                "line_index": 0,
+                "word_index": 6,
+                "phonemes": [
+                  "N",
+                  "IY"
+                ],
+                "start_frame": 130,
+                "end_frame": 143,
+                "start_seconds": 4.5278911564625846,
+                "end_seconds": 4.9806802721088435
+              },
+              "start_frame_delta": 0,
+              "end_frame_delta": 0,
+              "start_seconds_delta": 0.0,
+              "end_seconds_delta": 0.0
+            },
+            {
+              "unit_index": 7,
+              "text": "是",
+              "clean": {
+                "text": "是",
+                "line_index": 0,
+                "word_index": 7,
+                "phonemes": [
+                  "SH",
+                  "IY"
+                ],
+                "start_frame": 145,
+                "end_frame": 158,
+                "start_seconds": 5.050340136054421,
+                "end_seconds": 5.50312925170068
+              },
+              "comparison": {
+                "text": "是",
+                "line_index": 0,
+                "word_index": 7,
+                "phonemes": [
+                  "SH",
+                  "IY"
+                ],
+                "start_frame": 145,
+                "end_frame": 158,
+                "start_seconds": 5.050340136054421,
+                "end_seconds": 5.50312925170068
+              },
+              "start_frame_delta": 0,
+              "end_frame_delta": 0,
+              "start_seconds_delta": 0.0,
+              "end_seconds_delta": 0.0
+            },
+            {
+              "unit_index": 8,
+              "text": "否",
+              "clean": {
+                "text": "否",
+                "line_index": 0,
+                "word_index": 8,
+                "phonemes": [
+                  "F",
+                  "UW"
+                ],
+                "start_frame": 160,
+                "end_frame": 169,
+                "start_seconds": 5.572789115646258,
+                "end_seconds": 5.88625850340136
+              },
+              "comparison": {
+                "text": "否",
+                "line_index": 0,
+                "word_index": 8,
+                "phonemes": [
+                  "F",
+                  "UW"
+                ],
+                "start_frame": 160,
+                "end_frame": 164,
+                "start_seconds": 5.572789115646258,
+                "end_seconds": 5.712108843537415
+              },
+              "start_frame_delta": 0,
+              "end_frame_delta": -5,
+              "start_seconds_delta": 0.0,
+              "end_seconds_delta": -0.1741496598639456
+            },
+            {
+              "unit_index": 9,
+              "text": "心",
+              "clean": {
+                "text": "心",
+                "line_index": 0,
+                "word_index": 9,
+                "phonemes": [
+                  "Z",
+                  "IH",
+                  "N"
+                ],
+                "start_frame": 172,
+                "end_frame": 181,
+                "start_seconds": 5.990748299319728,
+                "end_seconds": 6.304217687074829
+              },
+              "comparison": {
+                "text": "心",
+                "line_index": 0,
+                "word_index": 9,
+                "phonemes": [
+                  "Z",
+                  "IH",
+                  "N"
+                ],
+                "start_frame": 172,
+                "end_frame": 190,
+                "start_seconds": 5.990748299319728,
+                "end_seconds": 6.617687074829932
+              },
+              "start_frame_delta": 0,
+              "end_frame_delta": 9,
+              "start_seconds_delta": 0.0,
+              "end_seconds_delta": 0.31346938775510225
+            },
+            {
+              "unit_index": 10,
+              "text": "酸",
+              "clean": {
+                "text": "酸",
+                "line_index": 0,
+                "word_index": 10,
+                "phonemes": [
+                  "S",
+                  "W",
+                  "AA",
+                  "N"
+                ],
+                "start_frame": 188,
+                "end_frame": 229,
+                "start_seconds": 6.548027210884354,
+                "end_seconds": 7.9760544217687075
+              },
+              "comparison": {
+                "text": "酸",
+                "line_index": 0,
+                "word_index": 10,
+                "phonemes": [
+                  "S",
+                  "W",
+                  "AA",
+                  "N"
+                ],
+                "start_frame": 191,
+                "end_frame": 229,
+                "start_seconds": 6.652517006802721,
+                "end_seconds": 7.9760544217687075
+              },
+              "start_frame_delta": 3,
+              "end_frame_delta": 0,
+              "start_seconds_delta": 0.10448979591836682,
+              "end_seconds_delta": 0.0
+            }
+          ],
+          "summary": {
+            "mean_absolute_start_change_seconds": 0.009499072356215166,
+            "max_absolute_start_change_seconds": 0.10448979591836682,
+            "mean_absolute_end_change_seconds": 0.04432900432900435,
+            "max_absolute_end_change_seconds": 0.31346938775510225
+          }
+        }
+      }
+    }
+  },
+  "separation": {
+    "observed_forwards": [
+      {
+        "model": "demucs_member_0",
+        "input_shapes": [
+          [
+            1,
+            2,
+            364239
+          ]
+        ],
+        "input_devices": [
+          "cuda:0"
+        ],
+        "output_shapes": [
+          [
+            1,
+            4,
+            2,
+            364239
+          ]
+        ],
+        "output_devices": [
+          "cuda:0"
+        ],
+        "output_finite": true
+      },
+      {
+        "model": "demucs_member_1",
+        "input_shapes": [
+          [
+            1,
+            2,
+            369907
+          ]
+        ],
+        "input_devices": [
+          "cuda:0"
+        ],
+        "output_shapes": [
+          [
+            1,
+            4,
+            2,
+            369907
+          ]
+        ],
+        "output_devices": [
+          "cuda:0"
+        ],
+        "output_finite": true
+      },
+      {
+        "model": "demucs_member_2",
+        "input_shapes": [
+          [
+            1,
+            2,
+            361913
+          ]
+        ],
+        "input_devices": [
+          "cuda:0"
+        ],
+        "output_shapes": [
+          [
+            1,
+            4,
+            2,
+            361913
+          ]
+        ],
+        "output_devices": [
+          "cuda:0"
+        ],
+        "output_finite": true
+      },
+      {
+        "model": "demucs_member_3",
+        "input_shapes": [
+          [
+            1,
+            2,
+            353521
+          ]
+        ],
+        "input_devices": [
+          "cuda:0"
+        ],
+        "output_shapes": [
+          [
+            1,
+            4,
+            2,
+            353521
+          ]
+        ],
+        "output_devices": [
+          "cuda:0"
+        ],
+        "output_finite": true
+      }
+    ],
+    "status": "completed",
+    "seed": 7,
+    "runtime_seconds": 0.996977027000014,
+    "peak_memory": {
+      "allocated_bytes": 1812511744,
+      "reserved_bytes": 2086666240
+    },
+    "output_audio": {
+      "path": "/home/xcy/auto-lrc/data/local/mixtures/native-vocals-20261010/segment-0001-vocals.wav",
+      "bytes": 2822488,
+      "sha256": "fe4c9d0aa7c6722c426e6565bd818728af69d6e152a64391aaf2ef0949877882"
+    },
+    "sample_rate": 44100,
+    "channels": 2,
+    "num_samples": 352800,
+    "expected_floor_num_samples": 352800,
+    "length_delta_from_expected_samples": 0,
+    "output_subtype": "FLOAT",
+    "waveform_time_shift_applied": false,
+    "padding_applied": false,
+    "waveform_correlation": {
+      "diagnostic_only": true,
+      "time_shift_applied": false,
+      "warning": "Waveform correlation is a diagnostic on a restricted lag range. It is not absolute latency or lyric-boundary calibration; no audio or prediction is shifted.",
+      "channel_policy": "first channel, matching the existing alignment runtime",
+      "positive_lag": "comparison is later than reference",
+      "sample_rate": 44100,
+      "max_lag_ms": 50.0,
+      "max_lag_samples": 2205,
+      "reference_samples": 352800,
+      "comparison_samples": 352800,
+      "length_delta_samples": 0,
+      "common_samples": 352800,
+      "windows": [
+        {
+          "name": "overall",
+          "start_sample": 0,
+          "end_sample": 352800,
+          "status": "available",
+          "lag_samples": 0,
+          "lag_seconds": 0.0,
+          "normalized_peak": 0.9961633246814566,
+          "second_peak": 0.3833927176739822,
+          "peak_margin": 0.6127706070074744,
+          "peak_at_search_edge": false,
+          "searched_lag_samples": [
+            -2205,
+            2205
+          ],
+          "overlap_samples_at_peak": 352800,
+          "secondary_peak_exclusion_samples": 44,
+          "confidence_kind": "diagnostic correlation statistics, not boundary confidence",
+          "lag_equivalent_source_samples": 0.0
+        },
+        {
+          "name": "third-1",
+          "start_sample": 0,
+          "end_sample": 117600,
+          "status": "available",
+          "lag_samples": 0,
+          "lag_seconds": 0.0,
+          "normalized_peak": 0.999095375391564,
+          "second_peak": 0.5164404683860613,
+          "peak_margin": 0.48265490700550273,
+          "peak_at_search_edge": false,
+          "searched_lag_samples": [
+            -2205,
+            2205
+          ],
+          "overlap_samples_at_peak": 117600,
+          "secondary_peak_exclusion_samples": 44,
+          "confidence_kind": "diagnostic correlation statistics, not boundary confidence",
+          "lag_equivalent_source_samples": 0.0
+        },
+        {
+          "name": "third-2",
+          "start_sample": 117600,
+          "end_sample": 235200,
+          "status": "available",
+          "lag_samples": 0,
+          "lag_seconds": 0.0,
+          "normalized_peak": 0.9949875443515412,
+          "second_peak": 0.717411023243109,
+          "peak_margin": 0.27757652110843223,
+          "peak_at_search_edge": false,
+          "searched_lag_samples": [
+            -2205,
+            2205
+          ],
+          "overlap_samples_at_peak": 117600,
+          "secondary_peak_exclusion_samples": 44,
+          "confidence_kind": "diagnostic correlation statistics, not boundary confidence",
+          "lag_equivalent_source_samples": 0.0
+        },
+        {
+          "name": "third-3",
+          "start_sample": 235200,
+          "end_sample": 352800,
+          "status": "available",
+          "lag_samples": 0,
+          "lag_seconds": 0.0,
+          "normalized_peak": 0.9937765967556674,
+          "second_peak": 0.785810214663741,
+          "peak_margin": 0.20796638209192642,
+          "peak_at_search_edge": false,
+          "searched_lag_samples": [
+            -2205,
+            2205
+          ],
+          "overlap_samples_at_peak": 117600,
+          "secondary_peak_exclusion_samples": 44,
+          "confidence_kind": "diagnostic correlation statistics, not boundary confidence",
+          "lag_equivalent_source_samples": 0.0
+        }
+      ],
+      "equivalent_source_sample_rate": 48000,
+      "source_sample_mapping": "lag_seconds * source_rate, fractional diagnostic value; never applied"
+    },
+    "correlation_seconds": 0.10391254499998581
+  },
+  "resampling_routes": {
+    "source_sample_rate": 48000,
+    "source_num_samples": 384000,
+    "clean_and_mixture_alignment": [
+      48000,
+      22050
+    ],
+    "mixture_separation": [
+      48000,
+      44100
+    ],
+    "separated_alignment": [
+      44100,
+      22050
+    ],
+    "diagnostic_reference": [
+      48000,
+      44100
+    ],
+    "expected_native_samples_floor": 352800,
+    "native_tail_rounding_fraction_samples": 0.0,
+    "expected_direct_alignment_samples_floor": 176400,
+    "expected_separated_alignment_samples_floor": 176400,
+    "native_output_duration_minus_source_seconds": 0.0,
+    "rounding_policy": "Existing julius floor output length; no padding, 48k return trip or time shift",
+    "word_boundary_calibration": "unmeasured"
+  }
+}

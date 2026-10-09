@@ -1,0 +1,1030 @@
+{
+  "schema_version": "gtsinger-mixtures-v1",
+  "created_at": "2026-10-09T17:12:53.406319+00:00",
+  "segments_source": {
+    "path": "/home/xcy/auto-lrc/reports/p1/representative-wsl-20261010/segments.jsonl",
+    "bytes": 1843778,
+    "sha256": "79520a035bcaa00eca332ad9007500d5d6bf176ac3dd6e5eb6dbc513216b1506"
+  },
+  "source_manifest": {
+    "path": "/home/xcy/auto-lrc/reports/p1/representative-wsl-20261010/source-manifest.json",
+    "bytes": 37836,
+    "sha256": "39d277f3d61bcec5442dba7208bfac2097c34932a5d234a8e586e25aaae20a7e"
+  },
+  "source_license": {
+    "identifier": "CC-BY-NC-SA-4.0",
+    "path": "dataset_license.md",
+    "url": "https://huggingface.co/datasets/AaronZ345/GTSinger/blob/d78cd68d00135b1995da03f25fccb3a221efd8c1/dataset_license.md",
+    "additional_terms": "Read the complete source license, including its additional agreement and citation terms."
+  },
+  "dataset_revision": "d78cd68d00135b1995da03f25fccb3a221efd8c1",
+  "generator": {
+    "source": {
+      "path": "/home/xcy/auto-lrc/scripts/prepare_gtsinger_mixtures.py",
+      "bytes": 13668,
+      "sha256": "bfd69eed285dd4c65e7e9895f300f9179a6f97605d43f306a09db67e2d992ed2"
+    },
+    "dependencies": [
+      {
+        "path": "/home/xcy/auto-lrc/scripts/prepare_gtsinger.py",
+        "bytes": 10740,
+        "sha256": "33702d51ca6c19b1030ac4f88fe4a2cbb7644aa64a54a962b5afea05d868fa53"
+      },
+      {
+        "path": "/home/xcy/auto-lrc/scripts/benchmark_baseline.py",
+        "bytes": 13515,
+        "sha256": "9427e1d6eff190aae21b48f9cd0549502f313ecfa40b1fc28b5b1161b1fd8eed"
+      }
+    ],
+    "kind": "Original additive instrumental synthesis; no third-party recordings or composition",
+    "accompaniment_license": "CC0-1.0",
+    "bpm": 96,
+    "limitation": "Synthetic backing is an engineering fixture, not realistic matched accompaniment or a licensed source for original vocals. Mixed vocals retain the dataset terms."
+  },
+  "config": {
+    "seed": 7,
+    "snr_db": 6.0,
+    "numpy": "1.26.3",
+    "sample_rate": 48000,
+    "pcm_bits": 24
+  },
+  "accuracy": {
+    "available": false,
+    "reason": "Independent human labels remain pending"
+  },
+  "split_policy": "Every mixture inherits its source song/segment split; no independent split assignment",
+  "rows": [
+    {
+      "segment_id": "Chinese/ZH-Alto-1/Breathy/不再见/Control_Group/0000",
+      "song_id": "chinese/不再见",
+      "derived_from_segment_id": "Chinese/ZH-Alto-1/Breathy/不再见/Control_Group/0000",
+      "split": "unassigned",
+      "source_audio": {
+        "path": "/home/xcy/auto-lrc/data/local/gtsinger-representative/Chinese/ZH-Alto-1/Breathy/不再见/Control_Group/0000.wav",
+        "bytes": 1152044,
+        "sha256": "7449f2142d5403d414caaf82cdb11b2898a64c857cfff464e559d4dfdc289093"
+      },
+      "mixture_audio": {
+        "path": "/home/xcy/auto-lrc/data/local/mixtures/representative-v1-20261010/73c4a3fae69aa08786e29488a7af88fb476f728f5a4beb677ad0a1d62a717cc8-mixture.wav",
+        "bytes": 1152044,
+        "sha256": "bdcbab3f054e9ddd558c8f76c0981ab1971d33e2bb978a7894baaf5e9743cf80"
+      },
+      "accompaniment_audio": {
+        "path": "/home/xcy/auto-lrc/data/local/mixtures/representative-v1-20261010/73c4a3fae69aa08786e29488a7af88fb476f728f5a4beb677ad0a1d62a717cc8-backing.wav",
+        "bytes": 1152044,
+        "sha256": "e12389ba31acc1398c8f2c3ae1ec653cfed1e058ed590917584f39397bb28920"
+      },
+      "lyrics": {
+        "path": "/home/xcy/auto-lrc/data/local/mixtures/representative-v1-20261010/73c4a3fae69aa08786e29488a7af88fb476f728f5a4beb677ad0a1d62a717cc8-lyrics.txt",
+        "bytes": 34,
+        "sha256": "6b50a38dd74fd97b5dc8d94c758c47a4b421877d62a063d02805978fd876b55f"
+      },
+      "snr_db": 6.0,
+      "snr_definition": "Full-clip uncentered RMS of vocal and accompaniment components",
+      "mixture_gain": 1.0,
+      "accompaniment_gain": 0.2727948792880404,
+      "timeline": {
+        "source_to_mixture_offset_samples": 0,
+        "sample_rate": 48000,
+        "num_samples": 384000,
+        "resampled": false,
+        "filtered": false,
+        "padded": false,
+        "cropped": false
+      },
+      "sample_rate": 48000,
+      "num_samples": 384000,
+      "channels": 1,
+      "generator_seed": 1942266881,
+      "checks": {
+        "source_unchanged": true,
+        "decoded_num_samples_unchanged": true,
+        "linear_mix_max_abs_residual": 0.0,
+        "quantization_bound": 1.1920928955078125e-07,
+        "quantization_bound_domain": "Decoded mixture minus backing compared to gain-scaled source",
+        "reconstructed_source_max_abs_residual": 0.0,
+        "reconstructed_source_quantization_bound": 1.1920928955078125e-07,
+        "decoded_component_snr_db": 5.999999977495562
+      },
+      "boundary_labels": "Inherited sample coordinates only; no new human labels"
+    },
+    {
+      "segment_id": "Chinese/ZH-Alto-1/Breathy/不再见/Breathy_Group/0000",
+      "song_id": "chinese/不再见",
+      "derived_from_segment_id": "Chinese/ZH-Alto-1/Breathy/不再见/Breathy_Group/0000",
+      "split": "unassigned",
+      "source_audio": {
+        "path": "/home/xcy/auto-lrc/data/local/gtsinger-representative/Chinese/ZH-Alto-1/Breathy/不再见/Breathy_Group/0000.wav",
+        "bytes": 1127564,
+        "sha256": "33c3ec0cd0d42ff46f2e3cec4f4b465e59f4780c5243c1b02bd46e9246d5771c"
+      },
+      "mixture_audio": {
+        "path": "/home/xcy/auto-lrc/data/local/mixtures/representative-v1-20261010/51a7e311ddb606b7dd7b685695ec9916471d57f977ec6bbb317135e44790c0e8-mixture.wav",
+        "bytes": 1127564,
+        "sha256": "7163ed6c697990656dd8e62218a956f361092ae139abe7c2f518d71ec2a686ab"
+      },
+      "accompaniment_audio": {
+        "path": "/home/xcy/auto-lrc/data/local/mixtures/representative-v1-20261010/51a7e311ddb606b7dd7b685695ec9916471d57f977ec6bbb317135e44790c0e8-backing.wav",
+        "bytes": 1127564,
+        "sha256": "536c90a3698ccceb0a2b756946a00fb90dd7822a30047b09ce2a951e934890b8"
+      },
+      "lyrics": {
+        "path": "/home/xcy/auto-lrc/data/local/mixtures/representative-v1-20261010/51a7e311ddb606b7dd7b685695ec9916471d57f977ec6bbb317135e44790c0e8-lyrics.txt",
+        "bytes": 34,
+        "sha256": "6b50a38dd74fd97b5dc8d94c758c47a4b421877d62a063d02805978fd876b55f"
+      },
+      "snr_db": 6.0,
+      "snr_definition": "Full-clip uncentered RMS of vocal and accompaniment components",
+      "mixture_gain": 1.0,
+      "accompaniment_gain": 0.37248607681268,
+      "timeline": {
+        "source_to_mixture_offset_samples": 0,
+        "sample_rate": 48000,
+        "num_samples": 375840,
+        "resampled": false,
+        "filtered": false,
+        "padded": false,
+        "cropped": false
+      },
+      "sample_rate": 48000,
+      "num_samples": 375840,
+      "channels": 1,
+      "generator_seed": 1369957144,
+      "checks": {
+        "source_unchanged": true,
+        "decoded_num_samples_unchanged": true,
+        "linear_mix_max_abs_residual": 0.0,
+        "quantization_bound": 1.1920928955078125e-07,
+        "quantization_bound_domain": "Decoded mixture minus backing compared to gain-scaled source",
+        "reconstructed_source_max_abs_residual": 0.0,
+        "reconstructed_source_quantization_bound": 1.1920928955078125e-07,
+        "decoded_component_snr_db": 5.999999993945525
+      },
+      "boundary_labels": "Inherited sample coordinates only; no new human labels"
+    },
+    {
+      "segment_id": "Chinese/ZH-Alto-1/Breathy/慢慢喜欢你/Control_Group/0000",
+      "song_id": "chinese/慢慢喜欢你",
+      "derived_from_segment_id": "Chinese/ZH-Alto-1/Breathy/慢慢喜欢你/Control_Group/0000",
+      "split": "unassigned",
+      "source_audio": {
+        "path": "/home/xcy/auto-lrc/data/local/gtsinger-representative/Chinese/ZH-Alto-1/Breathy/慢慢喜欢你/Control_Group/0000.wav",
+        "bytes": 1138076,
+        "sha256": "de3fd483b16b73f8dd3b7afd19c02fd17dd0ceccd33487c9a40a8c20603fa674"
+      },
+      "mixture_audio": {
+        "path": "/home/xcy/auto-lrc/data/local/mixtures/representative-v1-20261010/a9cd2b44b22bcae056e02bf854736a5e1ea377df0815de08790ab90393512049-mixture.wav",
+        "bytes": 1138076,
+        "sha256": "838f4e41bac41c570aa2c535fb4e60c5eb58edba7b40965e74e58b8a5725ed07"
+      },
+      "accompaniment_audio": {
+        "path": "/home/xcy/auto-lrc/data/local/mixtures/representative-v1-20261010/a9cd2b44b22bcae056e02bf854736a5e1ea377df0815de08790ab90393512049-backing.wav",
+        "bytes": 1138076,
+        "sha256": "40f9e833612bd684130f052c2a95bb826808060d92f64f381f872561f00cfcf1"
+      },
+      "lyrics": {
+        "path": "/home/xcy/auto-lrc/data/local/mixtures/representative-v1-20261010/a9cd2b44b22bcae056e02bf854736a5e1ea377df0815de08790ab90393512049-lyrics.txt",
+        "bytes": 37,
+        "sha256": "448accb5f0cb691c01f27b125dfc223f5016e9c721ad9a922debb0fc22b021a2"
+      },
+      "snr_db": 6.0,
+      "snr_definition": "Full-clip uncentered RMS of vocal and accompaniment components",
+      "mixture_gain": 1.0,
+      "accompaniment_gain": 0.29619485417173175,
+      "timeline": {
+        "source_to_mixture_offset_samples": 0,
+        "sample_rate": 48000,
+        "num_samples": 379344,
+        "resampled": false,
+        "filtered": false,
+        "padded": false,
+        "cropped": false
+      },
+      "sample_rate": 48000,
+      "num_samples": 379344,
+      "channels": 1,
+      "generator_seed": 2848795467,
+      "checks": {
+        "source_unchanged": true,
+        "decoded_num_samples_unchanged": true,
+        "linear_mix_max_abs_residual": 0.0,
+        "quantization_bound": 1.1920928955078125e-07,
+        "quantization_bound_domain": "Decoded mixture minus backing compared to gain-scaled source",
+        "reconstructed_source_max_abs_residual": 0.0,
+        "reconstructed_source_quantization_bound": 1.1920928955078125e-07,
+        "decoded_component_snr_db": 5.99999998550595
+      },
+      "boundary_labels": "Inherited sample coordinates only; no new human labels"
+    },
+    {
+      "segment_id": "Chinese/ZH-Alto-1/Breathy/慢慢喜欢你/Breathy_Group/0000",
+      "song_id": "chinese/慢慢喜欢你",
+      "derived_from_segment_id": "Chinese/ZH-Alto-1/Breathy/慢慢喜欢你/Breathy_Group/0000",
+      "split": "unassigned",
+      "source_audio": {
+        "path": "/home/xcy/auto-lrc/data/local/gtsinger-representative/Chinese/ZH-Alto-1/Breathy/慢慢喜欢你/Breathy_Group/0000.wav",
+        "bytes": 1170044,
+        "sha256": "ffdd2ac27487e8a9398ca11d4a9c50e659bcfeb944b73a1c52c7a0569bd05057"
+      },
+      "mixture_audio": {
+        "path": "/home/xcy/auto-lrc/data/local/mixtures/representative-v1-20261010/9c0bbe03531b51472c9e660b008ae6c5c02dac353aa94ad23ce037fbb6f6bfee-mixture.wav",
+        "bytes": 1170044,
+        "sha256": "2ba626fd46bb32615db46b0c9101c0a40a9623241cf2e0a31b554bc2ce612c10"
+      },
+      "accompaniment_audio": {
+        "path": "/home/xcy/auto-lrc/data/local/mixtures/representative-v1-20261010/9c0bbe03531b51472c9e660b008ae6c5c02dac353aa94ad23ce037fbb6f6bfee-backing.wav",
+        "bytes": 1170044,
+        "sha256": "ff0db3e735dba7ac96e2dbf7fed9f8d19d7c4bc05d969799d034defb664e30a3"
+      },
+      "lyrics": {
+        "path": "/home/xcy/auto-lrc/data/local/mixtures/representative-v1-20261010/9c0bbe03531b51472c9e660b008ae6c5c02dac353aa94ad23ce037fbb6f6bfee-lyrics.txt",
+        "bytes": 37,
+        "sha256": "448accb5f0cb691c01f27b125dfc223f5016e9c721ad9a922debb0fc22b021a2"
+      },
+      "snr_db": 6.0,
+      "snr_definition": "Full-clip uncentered RMS of vocal and accompaniment components",
+      "mixture_gain": 1.0,
+      "accompaniment_gain": 0.34769710695527983,
+      "timeline": {
+        "source_to_mixture_offset_samples": 0,
+        "sample_rate": 48000,
+        "num_samples": 390000,
+        "resampled": false,
+        "filtered": false,
+        "padded": false,
+        "cropped": false
+      },
+      "sample_rate": 48000,
+      "num_samples": 390000,
+      "channels": 1,
+      "generator_seed": 2618015242,
+      "checks": {
+        "source_unchanged": true,
+        "decoded_num_samples_unchanged": true,
+        "linear_mix_max_abs_residual": 0.0,
+        "quantization_bound": 1.1920928955078125e-07,
+        "quantization_bound_domain": "Decoded mixture minus backing compared to gain-scaled source",
+        "reconstructed_source_max_abs_residual": 0.0,
+        "reconstructed_source_quantization_bound": 1.1920928955078125e-07,
+        "decoded_component_snr_db": 5.9999999967101045
+      },
+      "boundary_labels": "Inherited sample coordinates only; no new human labels"
+    },
+    {
+      "segment_id": "Chinese/ZH-Tenor-1/Breathy/慢慢喜欢你/Breathy_Group/0000",
+      "song_id": "chinese/慢慢喜欢你",
+      "derived_from_segment_id": "Chinese/ZH-Tenor-1/Breathy/慢慢喜欢你/Breathy_Group/0000",
+      "split": "unassigned",
+      "source_audio": {
+        "path": "/home/xcy/auto-lrc/data/local/gtsinger-representative/Chinese/ZH-Tenor-1/Breathy/慢慢喜欢你/Breathy_Group/0000.wav",
+        "bytes": 1065644,
+        "sha256": "e08adb01feb965644ad50fc5e50e27a38f7f3700abaf83aa295a2e70eaa672f0"
+      },
+      "mixture_audio": {
+        "path": "/home/xcy/auto-lrc/data/local/mixtures/representative-v1-20261010/65b7afbe0679be5a62716352a2842cb7a41cb400791fbde972dbb37bf0adde0d-mixture.wav",
+        "bytes": 1065644,
+        "sha256": "c1c8ae3f5a37977929f2dfb9066925477a1826b4b81f720bfc79c520f976d09c"
+      },
+      "accompaniment_audio": {
+        "path": "/home/xcy/auto-lrc/data/local/mixtures/representative-v1-20261010/65b7afbe0679be5a62716352a2842cb7a41cb400791fbde972dbb37bf0adde0d-backing.wav",
+        "bytes": 1065644,
+        "sha256": "8d87cdeebbaef19df5aca03d781086824bd5fa57b5abbb7ac3b8d6c858604ec8"
+      },
+      "lyrics": {
+        "path": "/home/xcy/auto-lrc/data/local/mixtures/representative-v1-20261010/65b7afbe0679be5a62716352a2842cb7a41cb400791fbde972dbb37bf0adde0d-lyrics.txt",
+        "bytes": 40,
+        "sha256": "25b36a8fe78e7011e25c1c8315afb15c36d29539b3ba4dc8a7194df882d36ca5"
+      },
+      "snr_db": 6.0,
+      "snr_definition": "Full-clip uncentered RMS of vocal and accompaniment components",
+      "mixture_gain": 1.0,
+      "accompaniment_gain": 0.20763475538245643,
+      "timeline": {
+        "source_to_mixture_offset_samples": 0,
+        "sample_rate": 48000,
+        "num_samples": 355200,
+        "resampled": false,
+        "filtered": false,
+        "padded": false,
+        "cropped": false
+      },
+      "sample_rate": 48000,
+      "num_samples": 355200,
+      "channels": 1,
+      "generator_seed": 1706536901,
+      "checks": {
+        "source_unchanged": true,
+        "decoded_num_samples_unchanged": true,
+        "linear_mix_max_abs_residual": 0.0,
+        "quantization_bound": 1.1920928955078125e-07,
+        "quantization_bound_domain": "Decoded mixture minus backing compared to gain-scaled source",
+        "reconstructed_source_max_abs_residual": 0.0,
+        "reconstructed_source_quantization_bound": 1.1920928955078125e-07,
+        "decoded_component_snr_db": 6.000000019813097
+      },
+      "boundary_labels": "Inherited sample coordinates only; no new human labels"
+    },
+    {
+      "segment_id": "Chinese/ZH-Tenor-1/Glissando/给电影人的情书/Glissando_Group/0000",
+      "song_id": "chinese/给电影人的情书",
+      "derived_from_segment_id": "Chinese/ZH-Tenor-1/Glissando/给电影人的情书/Glissando_Group/0000",
+      "split": "unassigned",
+      "source_audio": {
+        "path": "/home/xcy/auto-lrc/data/local/gtsinger-representative/Chinese/ZH-Tenor-1/Glissando/给电影人的情书/Glissando_Group/0000.wav",
+        "bytes": 1375964,
+        "sha256": "90cd769e546a039105ac68dd830412a9497c1660f38ccfa280655fba220d8b02"
+      },
+      "mixture_audio": {
+        "path": "/home/xcy/auto-lrc/data/local/mixtures/representative-v1-20261010/00ef374041acbb041ea90fba4296bb56df70a6a28882d77882e12d000d3d34d1-mixture.wav",
+        "bytes": 1375964,
+        "sha256": "4bc459e40c1af182d1cf0d87934a43bb305ab7d8d8f52f65adeeffae7d5f7a47"
+      },
+      "accompaniment_audio": {
+        "path": "/home/xcy/auto-lrc/data/local/mixtures/representative-v1-20261010/00ef374041acbb041ea90fba4296bb56df70a6a28882d77882e12d000d3d34d1-backing.wav",
+        "bytes": 1375964,
+        "sha256": "d9204d6472758a97d47910e99906f3989220fbc1fd8cb153123c1bac4dbf2d39"
+      },
+      "lyrics": {
+        "path": "/home/xcy/auto-lrc/data/local/mixtures/representative-v1-20261010/00ef374041acbb041ea90fba4296bb56df70a6a28882d77882e12d000d3d34d1-lyrics.txt",
+        "bytes": 73,
+        "sha256": "989c953bcacfb8f8c92beb60bb27aa24472a400981ecd76384405e5968d4ddce"
+      },
+      "snr_db": 6.0,
+      "snr_definition": "Full-clip uncentered RMS of vocal and accompaniment components",
+      "mixture_gain": 1.0,
+      "accompaniment_gain": 0.1557614717777216,
+      "timeline": {
+        "source_to_mixture_offset_samples": 0,
+        "sample_rate": 48000,
+        "num_samples": 458640,
+        "resampled": false,
+        "filtered": false,
+        "padded": false,
+        "cropped": false
+      },
+      "sample_rate": 48000,
+      "num_samples": 458640,
+      "channels": 1,
+      "generator_seed": 15677255,
+      "checks": {
+        "source_unchanged": true,
+        "decoded_num_samples_unchanged": true,
+        "linear_mix_max_abs_residual": 0.0,
+        "quantization_bound": 1.1920928955078125e-07,
+        "quantization_bound_domain": "Decoded mixture minus backing compared to gain-scaled source",
+        "reconstructed_source_max_abs_residual": 0.0,
+        "reconstructed_source_quantization_bound": 1.1920928955078125e-07,
+        "decoded_component_snr_db": 5.999999967276275
+      },
+      "boundary_labels": "Inherited sample coordinates only; no new human labels"
+    },
+    {
+      "segment_id": "English/EN-Alto-1/Glissando/my love/Control_Group/0000",
+      "song_id": "english/my love",
+      "derived_from_segment_id": "English/EN-Alto-1/Glissando/my love/Control_Group/0000",
+      "split": "unassigned",
+      "source_audio": {
+        "path": "/home/xcy/auto-lrc/data/local/gtsinger-representative/English/EN-Alto-1/Glissando/my love/Control_Group/0000.wav",
+        "bytes": 1335068,
+        "sha256": "556cc0f8bab110c1434e9cde77643f933b00ba631e3aad348d0cf6c2d88b7399"
+      },
+      "mixture_audio": {
+        "path": "/home/xcy/auto-lrc/data/local/mixtures/representative-v1-20261010/31ec5b1b4bd5bda07e2f1b360218f232a063951e7bb29e7a919844a0bffb0597-mixture.wav",
+        "bytes": 1335068,
+        "sha256": "bb25e666564895d8c9c448ee9b3073a86acfac2d2b2272233b87ad7dd8930b05"
+      },
+      "accompaniment_audio": {
+        "path": "/home/xcy/auto-lrc/data/local/mixtures/representative-v1-20261010/31ec5b1b4bd5bda07e2f1b360218f232a063951e7bb29e7a919844a0bffb0597-backing.wav",
+        "bytes": 1335068,
+        "sha256": "4b8d16bd1ebe9bbf3b24843de9fe09c0448533f083860bd253662fa72ce2c3cf"
+      },
+      "lyrics": {
+        "path": "/home/xcy/auto-lrc/data/local/mixtures/representative-v1-20261010/31ec5b1b4bd5bda07e2f1b360218f232a063951e7bb29e7a919844a0bffb0597-lyrics.txt",
+        "bytes": 68,
+        "sha256": "c929ba5e9c3e97ea86ef62793c7c1e5bbebdbe15f3c621846eda5a6206b8181c"
+      },
+      "snr_db": 6.0,
+      "snr_definition": "Full-clip uncentered RMS of vocal and accompaniment components",
+      "mixture_gain": 1.0,
+      "accompaniment_gain": 0.09595575332533811,
+      "timeline": {
+        "source_to_mixture_offset_samples": 0,
+        "sample_rate": 48000,
+        "num_samples": 445008,
+        "resampled": false,
+        "filtered": false,
+        "padded": false,
+        "cropped": false
+      },
+      "sample_rate": 48000,
+      "num_samples": 445008,
+      "channels": 1,
+      "generator_seed": 837573410,
+      "checks": {
+        "source_unchanged": true,
+        "decoded_num_samples_unchanged": true,
+        "linear_mix_max_abs_residual": 0.0,
+        "quantization_bound": 1.1920928955078125e-07,
+        "quantization_bound_domain": "Decoded mixture minus backing compared to gain-scaled source",
+        "reconstructed_source_max_abs_residual": 0.0,
+        "reconstructed_source_quantization_bound": 1.1920928955078125e-07,
+        "decoded_component_snr_db": 6.000000041204261
+      },
+      "boundary_labels": "Inherited sample coordinates only; no new human labels"
+    },
+    {
+      "segment_id": "English/EN-Alto-1/Glissando/my love/Glissando_Group/0000",
+      "song_id": "english/my love",
+      "derived_from_segment_id": "English/EN-Alto-1/Glissando/my love/Glissando_Group/0000",
+      "split": "unassigned",
+      "source_audio": {
+        "path": "/home/xcy/auto-lrc/data/local/gtsinger-representative/English/EN-Alto-1/Glissando/my love/Glissando_Group/0000.wav",
+        "bytes": 1230092,
+        "sha256": "5190e61a80b8489714165b9eda4f121152cc2844adb8fbae0bd20437caa03948"
+      },
+      "mixture_audio": {
+        "path": "/home/xcy/auto-lrc/data/local/mixtures/representative-v1-20261010/8d831521fd2698642f9e7200f98165b601812ee58b34c39db2966a7632a1a1e7-mixture.wav",
+        "bytes": 1230092,
+        "sha256": "1578019261ad619e706a0cf7c1cd27dcac40c13c382ade1a187114d3f5fd0474"
+      },
+      "accompaniment_audio": {
+        "path": "/home/xcy/auto-lrc/data/local/mixtures/representative-v1-20261010/8d831521fd2698642f9e7200f98165b601812ee58b34c39db2966a7632a1a1e7-backing.wav",
+        "bytes": 1230092,
+        "sha256": "db2d4b42225c8a952175a22dc900606c7f7c27fe08fd88a97b680f2b0014632b"
+      },
+      "lyrics": {
+        "path": "/home/xcy/auto-lrc/data/local/mixtures/representative-v1-20261010/8d831521fd2698642f9e7200f98165b601812ee58b34c39db2966a7632a1a1e7-lyrics.txt",
+        "bytes": 68,
+        "sha256": "c929ba5e9c3e97ea86ef62793c7c1e5bbebdbe15f3c621846eda5a6206b8181c"
+      },
+      "snr_db": 6.0,
+      "snr_definition": "Full-clip uncentered RMS of vocal and accompaniment components",
+      "mixture_gain": 1.0,
+      "accompaniment_gain": 0.09567951417503938,
+      "timeline": {
+        "source_to_mixture_offset_samples": 0,
+        "sample_rate": 48000,
+        "num_samples": 410016,
+        "resampled": false,
+        "filtered": false,
+        "padded": false,
+        "cropped": false
+      },
+      "sample_rate": 48000,
+      "num_samples": 410016,
+      "channels": 1,
+      "generator_seed": 2374178088,
+      "checks": {
+        "source_unchanged": true,
+        "decoded_num_samples_unchanged": true,
+        "linear_mix_max_abs_residual": 0.0,
+        "quantization_bound": 1.1920928955078125e-07,
+        "quantization_bound_domain": "Decoded mixture minus backing compared to gain-scaled source",
+        "reconstructed_source_max_abs_residual": 0.0,
+        "reconstructed_source_quantization_bound": 1.1920928955078125e-07,
+        "decoded_component_snr_db": 5.999999939749526
+      },
+      "boundary_labels": "Inherited sample coordinates only; no new human labels"
+    },
+    {
+      "segment_id": "English/EN-Alto-2/Glissando/My Love/Control_Group/0000",
+      "song_id": "english/my love",
+      "derived_from_segment_id": "English/EN-Alto-2/Glissando/My Love/Control_Group/0000",
+      "split": "unassigned",
+      "source_audio": {
+        "path": "/home/xcy/auto-lrc/data/local/gtsinger-representative/English/EN-Alto-2/Glissando/My Love/Control_Group/0000.wav",
+        "bytes": 1224476,
+        "sha256": "7bc32c1f69784af0ed943e8aceeaaade86fffdde362bae2e1fe364936c7b0f20"
+      },
+      "mixture_audio": {
+        "path": "/home/xcy/auto-lrc/data/local/mixtures/representative-v1-20261010/bb5ebe79fd48062894b405859c56610a95e3001f2d7f08d16f5d07724e2fb6aa-mixture.wav",
+        "bytes": 1224476,
+        "sha256": "6f7ba0ba9a719d629f490e8b8d00884a11f0c1c268e39972c1ea70c927ac4b7a"
+      },
+      "accompaniment_audio": {
+        "path": "/home/xcy/auto-lrc/data/local/mixtures/representative-v1-20261010/bb5ebe79fd48062894b405859c56610a95e3001f2d7f08d16f5d07724e2fb6aa-backing.wav",
+        "bytes": 1224476,
+        "sha256": "24d9fe550c012834343b59d92e8ca6d0436875f49936b67460dd94af296d8185"
+      },
+      "lyrics": {
+        "path": "/home/xcy/auto-lrc/data/local/mixtures/representative-v1-20261010/bb5ebe79fd48062894b405859c56610a95e3001f2d7f08d16f5d07724e2fb6aa-lyrics.txt",
+        "bytes": 54,
+        "sha256": "6a61369f44cb759b686b17d17d8f9ca2effb5a1909101550a6f2b2a4845e9823"
+      },
+      "snr_db": 6.0,
+      "snr_definition": "Full-clip uncentered RMS of vocal and accompaniment components",
+      "mixture_gain": 1.0,
+      "accompaniment_gain": 0.41063301338647745,
+      "timeline": {
+        "source_to_mixture_offset_samples": 0,
+        "sample_rate": 48000,
+        "num_samples": 408144,
+        "resampled": false,
+        "filtered": false,
+        "padded": false,
+        "cropped": false
+      },
+      "sample_rate": 48000,
+      "num_samples": 408144,
+      "channels": 1,
+      "generator_seed": 3143548544,
+      "checks": {
+        "source_unchanged": true,
+        "decoded_num_samples_unchanged": true,
+        "linear_mix_max_abs_residual": 0.0,
+        "quantization_bound": 1.1920928955078125e-07,
+        "quantization_bound_domain": "Decoded mixture minus backing compared to gain-scaled source",
+        "reconstructed_source_max_abs_residual": 0.0,
+        "reconstructed_source_quantization_bound": 1.1920928955078125e-07,
+        "decoded_component_snr_db": 6.000000016958879
+      },
+      "boundary_labels": "Inherited sample coordinates only; no new human labels"
+    },
+    {
+      "segment_id": "English/EN-Alto-2/Glissando/My Love/Glissando_Group/0000",
+      "song_id": "english/my love",
+      "derived_from_segment_id": "English/EN-Alto-2/Glissando/My Love/Glissando_Group/0000",
+      "split": "unassigned",
+      "source_audio": {
+        "path": "/home/xcy/auto-lrc/data/local/gtsinger-representative/English/EN-Alto-2/Glissando/My Love/Glissando_Group/0000.wav",
+        "bytes": 1117916,
+        "sha256": "791578619b7b3e3229822cd5420fb20142909959a6d790101d531b4e217152fb"
+      },
+      "mixture_audio": {
+        "path": "/home/xcy/auto-lrc/data/local/mixtures/representative-v1-20261010/4cfa6940e0c51aa3a8de1c3fd8f4c16077516d954486897bc3619513d579b0ed-mixture.wav",
+        "bytes": 1117916,
+        "sha256": "39f79f389cd8cf13de1a4896d3f55be4e18dafd846157d15c2c43ec8a78f5b80"
+      },
+      "accompaniment_audio": {
+        "path": "/home/xcy/auto-lrc/data/local/mixtures/representative-v1-20261010/4cfa6940e0c51aa3a8de1c3fd8f4c16077516d954486897bc3619513d579b0ed-backing.wav",
+        "bytes": 1117916,
+        "sha256": "b5c7f1314ee4bfe2c22f05c284c0c3f5b731efd264951fec2fc83be2923bfeee"
+      },
+      "lyrics": {
+        "path": "/home/xcy/auto-lrc/data/local/mixtures/representative-v1-20261010/4cfa6940e0c51aa3a8de1c3fd8f4c16077516d954486897bc3619513d579b0ed-lyrics.txt",
+        "bytes": 54,
+        "sha256": "6a61369f44cb759b686b17d17d8f9ca2effb5a1909101550a6f2b2a4845e9823"
+      },
+      "snr_db": 6.0,
+      "snr_definition": "Full-clip uncentered RMS of vocal and accompaniment components",
+      "mixture_gain": 0.7992403252837025,
+      "accompaniment_gain": 0.7079520003722825,
+      "timeline": {
+        "source_to_mixture_offset_samples": 0,
+        "sample_rate": 48000,
+        "num_samples": 372624,
+        "resampled": false,
+        "filtered": false,
+        "padded": false,
+        "cropped": false
+      },
+      "sample_rate": 48000,
+      "num_samples": 372624,
+      "channels": 1,
+      "generator_seed": 1291479367,
+      "checks": {
+        "source_unchanged": true,
+        "decoded_num_samples_unchanged": true,
+        "linear_mix_max_abs_residual": 1.1910227930983508e-07,
+        "quantization_bound": 1.1920928955078125e-07,
+        "quantization_bound_domain": "Decoded mixture minus backing compared to gain-scaled source",
+        "reconstructed_source_max_abs_residual": 1.4901935693442135e-07,
+        "reconstructed_source_quantization_bound": 1.4915324687660885e-07,
+        "decoded_component_snr_db": 6.000000004437361
+      },
+      "boundary_labels": "Inherited sample coordinates only; no new human labels"
+    },
+    {
+      "segment_id": "English/EN-Alto-1/Glissando/rolling in the deep/Control_Group/0000",
+      "song_id": "english/rolling in the deep",
+      "derived_from_segment_id": "English/EN-Alto-1/Glissando/rolling in the deep/Control_Group/0000",
+      "split": "unassigned",
+      "source_audio": {
+        "path": "/home/xcy/auto-lrc/data/local/gtsinger-representative/English/EN-Alto-1/Glissando/rolling in the deep/Control_Group/0000.wav",
+        "bytes": 1445228,
+        "sha256": "022992c90e0fb83ff06a31abcd9f60688afb05302c304d22865508545da0cf3f"
+      },
+      "mixture_audio": {
+        "path": "/home/xcy/auto-lrc/data/local/mixtures/representative-v1-20261010/504016b1712b32d9dd90dbf27bbaa529856bf819b58eacbd566f088362efec6f-mixture.wav",
+        "bytes": 1445228,
+        "sha256": "52072a74851caabbf4f24207f89a911ebb2c119e166a5166243f9f9aff944be4"
+      },
+      "accompaniment_audio": {
+        "path": "/home/xcy/auto-lrc/data/local/mixtures/representative-v1-20261010/504016b1712b32d9dd90dbf27bbaa529856bf819b58eacbd566f088362efec6f-backing.wav",
+        "bytes": 1445228,
+        "sha256": "b9491365b7862c406a29d8370110df8c33d6ca469001d7932cdac65ddc0a8e54"
+      },
+      "lyrics": {
+        "path": "/home/xcy/auto-lrc/data/local/mixtures/representative-v1-20261010/504016b1712b32d9dd90dbf27bbaa529856bf819b58eacbd566f088362efec6f-lyrics.txt",
+        "bytes": 96,
+        "sha256": "4a9e8aba17a5c067a086d4866eef1c8d78cc1e13d378030313fd2a2f34643e2b"
+      },
+      "snr_db": 6.0,
+      "snr_definition": "Full-clip uncentered RMS of vocal and accompaniment components",
+      "mixture_gain": 1.0,
+      "accompaniment_gain": 0.1240292453414571,
+      "timeline": {
+        "source_to_mixture_offset_samples": 0,
+        "sample_rate": 48000,
+        "num_samples": 481728,
+        "resampled": false,
+        "filtered": false,
+        "padded": false,
+        "cropped": false
+      },
+      "sample_rate": 48000,
+      "num_samples": 481728,
+      "channels": 1,
+      "generator_seed": 1346377400,
+      "checks": {
+        "source_unchanged": true,
+        "decoded_num_samples_unchanged": true,
+        "linear_mix_max_abs_residual": 0.0,
+        "quantization_bound": 1.1920928955078125e-07,
+        "quantization_bound_domain": "Decoded mixture minus backing compared to gain-scaled source",
+        "reconstructed_source_max_abs_residual": 0.0,
+        "reconstructed_source_quantization_bound": 1.1920928955078125e-07,
+        "decoded_component_snr_db": 5.999999990249075
+      },
+      "boundary_labels": "Inherited sample coordinates only; no new human labels"
+    },
+    {
+      "segment_id": "English/EN-Alto-1/Glissando/rolling in the deep/Glissando_Group/0000",
+      "song_id": "english/rolling in the deep",
+      "derived_from_segment_id": "English/EN-Alto-1/Glissando/rolling in the deep/Glissando_Group/0000",
+      "split": "unassigned",
+      "source_audio": {
+        "path": "/home/xcy/auto-lrc/data/local/gtsinger-representative/English/EN-Alto-1/Glissando/rolling in the deep/Glissando_Group/0000.wav",
+        "bytes": 1451852,
+        "sha256": "2432b975d551561e08e8be3bd9e13e9db38a7291ca3de14dfbfd972fbc0fd62c"
+      },
+      "mixture_audio": {
+        "path": "/home/xcy/auto-lrc/data/local/mixtures/representative-v1-20261010/4ab193a8058c7e5ac3672f06135bd4b383075adae48432f1e2b6bf01c69330db-mixture.wav",
+        "bytes": 1451852,
+        "sha256": "c467302f982886917b9427f60e073573613a6a901642565ab5b8c35781444553"
+      },
+      "accompaniment_audio": {
+        "path": "/home/xcy/auto-lrc/data/local/mixtures/representative-v1-20261010/4ab193a8058c7e5ac3672f06135bd4b383075adae48432f1e2b6bf01c69330db-backing.wav",
+        "bytes": 1451852,
+        "sha256": "cb9c209bfa3c59d64502962169fc4b0940034435f0c8112f9e153d7e38d2efcc"
+      },
+      "lyrics": {
+        "path": "/home/xcy/auto-lrc/data/local/mixtures/representative-v1-20261010/4ab193a8058c7e5ac3672f06135bd4b383075adae48432f1e2b6bf01c69330db-lyrics.txt",
+        "bytes": 96,
+        "sha256": "4a9e8aba17a5c067a086d4866eef1c8d78cc1e13d378030313fd2a2f34643e2b"
+      },
+      "snr_db": 6.0,
+      "snr_definition": "Full-clip uncentered RMS of vocal and accompaniment components",
+      "mixture_gain": 1.0,
+      "accompaniment_gain": 0.1586821768339482,
+      "timeline": {
+        "source_to_mixture_offset_samples": 0,
+        "sample_rate": 48000,
+        "num_samples": 483936,
+        "resampled": false,
+        "filtered": false,
+        "padded": false,
+        "cropped": false
+      },
+      "sample_rate": 48000,
+      "num_samples": 483936,
+      "channels": 1,
+      "generator_seed": 1253151663,
+      "checks": {
+        "source_unchanged": true,
+        "decoded_num_samples_unchanged": true,
+        "linear_mix_max_abs_residual": 0.0,
+        "quantization_bound": 1.1920928955078125e-07,
+        "quantization_bound_domain": "Decoded mixture minus backing compared to gain-scaled source",
+        "reconstructed_source_max_abs_residual": 0.0,
+        "reconstructed_source_quantization_bound": 1.1920928955078125e-07,
+        "decoded_component_snr_db": 6.000000001364338
+      },
+      "boundary_labels": "Inherited sample coordinates only; no new human labels"
+    },
+    {
+      "segment_id": "English/EN-Tenor-1/Glissando/Rolling in the Deep/Control_Group/0000",
+      "song_id": "english/rolling in the deep",
+      "derived_from_segment_id": "English/EN-Tenor-1/Glissando/Rolling in the Deep/Control_Group/0000",
+      "split": "unassigned",
+      "source_audio": {
+        "path": "/home/xcy/auto-lrc/data/local/gtsinger-representative/English/EN-Tenor-1/Glissando/Rolling in the Deep/Control_Group/0000.wav",
+        "bytes": 1640780,
+        "sha256": "94e3e911a23c260f5294383bfc865b775d3177723b84b581d7603b9818ca5d3b"
+      },
+      "mixture_audio": {
+        "path": "/home/xcy/auto-lrc/data/local/mixtures/representative-v1-20261010/904e3b4b3703799091a4b2f8223c00c14f70e730de6fcada6ff64700aff18896-mixture.wav",
+        "bytes": 1640780,
+        "sha256": "296133d2e0fac783c14197c4c26975c253fe57a1683c69c620ee8f15547ab6ef"
+      },
+      "accompaniment_audio": {
+        "path": "/home/xcy/auto-lrc/data/local/mixtures/representative-v1-20261010/904e3b4b3703799091a4b2f8223c00c14f70e730de6fcada6ff64700aff18896-backing.wav",
+        "bytes": 1640780,
+        "sha256": "265f11cf662f2a4f8e9eea34df53b86c58423f8a7fcd7853f2c06540ff930471"
+      },
+      "lyrics": {
+        "path": "/home/xcy/auto-lrc/data/local/mixtures/representative-v1-20261010/904e3b4b3703799091a4b2f8223c00c14f70e730de6fcada6ff64700aff18896-lyrics.txt",
+        "bytes": 89,
+        "sha256": "0a59dbfbd6cad95a1946a57959529f337a919b6481abb1fc53ac24779a6f5a00"
+      },
+      "snr_db": 6.0,
+      "snr_definition": "Full-clip uncentered RMS of vocal and accompaniment components",
+      "mixture_gain": 1.0,
+      "accompaniment_gain": 0.4962937389834316,
+      "timeline": {
+        "source_to_mixture_offset_samples": 0,
+        "sample_rate": 48000,
+        "num_samples": 546912,
+        "resampled": false,
+        "filtered": false,
+        "padded": false,
+        "cropped": false
+      },
+      "sample_rate": 48000,
+      "num_samples": 546912,
+      "channels": 1,
+      "generator_seed": 2421046098,
+      "checks": {
+        "source_unchanged": true,
+        "decoded_num_samples_unchanged": true,
+        "linear_mix_max_abs_residual": 0.0,
+        "quantization_bound": 1.1920928955078125e-07,
+        "quantization_bound_domain": "Decoded mixture minus backing compared to gain-scaled source",
+        "reconstructed_source_max_abs_residual": 0.0,
+        "reconstructed_source_quantization_bound": 1.1920928955078125e-07,
+        "decoded_component_snr_db": 5.9999999942667115
+      },
+      "boundary_labels": "Inherited sample coordinates only; no new human labels"
+    },
+    {
+      "segment_id": "English/EN-Tenor-1/Glissando/Rolling in the Deep/Glissando_Group/0000",
+      "song_id": "english/rolling in the deep",
+      "derived_from_segment_id": "English/EN-Tenor-1/Glissando/Rolling in the Deep/Glissando_Group/0000",
+      "split": "unassigned",
+      "source_audio": {
+        "path": "/home/xcy/auto-lrc/data/local/gtsinger-representative/English/EN-Tenor-1/Glissando/Rolling in the Deep/Glissando_Group/0000.wav",
+        "bytes": 1577420,
+        "sha256": "dca45b5c869af4c7886fc91b643cf447de113b9c96879a7754115e94dc9d2cc2"
+      },
+      "mixture_audio": {
+        "path": "/home/xcy/auto-lrc/data/local/mixtures/representative-v1-20261010/319d2e71132ee629e2fb2d5ccefb95d2e5c846255c0d7d8631ade38c6aba20e0-mixture.wav",
+        "bytes": 1577420,
+        "sha256": "db9ea0851431c732343e29d40917475393604bfa207276a8f7774ce004ac1890"
+      },
+      "accompaniment_audio": {
+        "path": "/home/xcy/auto-lrc/data/local/mixtures/representative-v1-20261010/319d2e71132ee629e2fb2d5ccefb95d2e5c846255c0d7d8631ade38c6aba20e0-backing.wav",
+        "bytes": 1577420,
+        "sha256": "016482efd720308d84572b8925c317ce4fa019d95acac07e45d3460c1f32b521"
+      },
+      "lyrics": {
+        "path": "/home/xcy/auto-lrc/data/local/mixtures/representative-v1-20261010/319d2e71132ee629e2fb2d5ccefb95d2e5c846255c0d7d8631ade38c6aba20e0-lyrics.txt",
+        "bytes": 89,
+        "sha256": "0a59dbfbd6cad95a1946a57959529f337a919b6481abb1fc53ac24779a6f5a00"
+      },
+      "snr_db": 6.0,
+      "snr_definition": "Full-clip uncentered RMS of vocal and accompaniment components",
+      "mixture_gain": 1.0,
+      "accompaniment_gain": 0.5364840925855844,
+      "timeline": {
+        "source_to_mixture_offset_samples": 0,
+        "sample_rate": 48000,
+        "num_samples": 525792,
+        "resampled": false,
+        "filtered": false,
+        "padded": false,
+        "cropped": false
+      },
+      "sample_rate": 48000,
+      "num_samples": 525792,
+      "channels": 1,
+      "generator_seed": 832384632,
+      "checks": {
+        "source_unchanged": true,
+        "decoded_num_samples_unchanged": true,
+        "linear_mix_max_abs_residual": 0.0,
+        "quantization_bound": 1.1920928955078125e-07,
+        "quantization_bound_domain": "Decoded mixture minus backing compared to gain-scaled source",
+        "reconstructed_source_max_abs_residual": 0.0,
+        "reconstructed_source_quantization_bound": 1.1920928955078125e-07,
+        "decoded_component_snr_db": 6.000000011084925
+      },
+      "boundary_labels": "Inherited sample coordinates only; no new human labels"
+    },
+    {
+      "segment_id": "English/EN-Alto-2/Glissando/Someone Like You/Control_Group/0000",
+      "song_id": "english/someone like you",
+      "derived_from_segment_id": "English/EN-Alto-2/Glissando/Someone Like You/Control_Group/0000",
+      "split": "unassigned",
+      "source_audio": {
+        "path": "/home/xcy/auto-lrc/data/local/gtsinger-representative/English/EN-Alto-2/Glissando/Someone Like You/Control_Group/0000.wav",
+        "bytes": 1126268,
+        "sha256": "ad6c8d0959c1388116f73293b948d6cc5be727de93122a6987e4a104b992abd8"
+      },
+      "mixture_audio": {
+        "path": "/home/xcy/auto-lrc/data/local/mixtures/representative-v1-20261010/1bbffda16951fb8087a0883a2d19c4a18a5d94fb6edc66007d61e93ac6043d99-mixture.wav",
+        "bytes": 1126268,
+        "sha256": "58e7e12d136c08567b804ceeb18e3216f459255bd7d75a4e57bca3ff4344ed68"
+      },
+      "accompaniment_audio": {
+        "path": "/home/xcy/auto-lrc/data/local/mixtures/representative-v1-20261010/1bbffda16951fb8087a0883a2d19c4a18a5d94fb6edc66007d61e93ac6043d99-backing.wav",
+        "bytes": 1126268,
+        "sha256": "c8beea2f99ffb88fe8f44a45933d0ef96c8d4230a15f2cadce978136b6ead917"
+      },
+      "lyrics": {
+        "path": "/home/xcy/auto-lrc/data/local/mixtures/representative-v1-20261010/1bbffda16951fb8087a0883a2d19c4a18a5d94fb6edc66007d61e93ac6043d99-lyrics.txt",
+        "bytes": 21,
+        "sha256": "508d9d122848e66db990f9ec2afc3b86762833699553ffd17e23b10bb2ed9854"
+      },
+      "snr_db": 6.0,
+      "snr_definition": "Full-clip uncentered RMS of vocal and accompaniment components",
+      "mixture_gain": 1.0,
+      "accompaniment_gain": 0.42714353324014703,
+      "timeline": {
+        "source_to_mixture_offset_samples": 0,
+        "sample_rate": 48000,
+        "num_samples": 375408,
+        "resampled": false,
+        "filtered": false,
+        "padded": false,
+        "cropped": false
+      },
+      "sample_rate": 48000,
+      "num_samples": 375408,
+      "channels": 1,
+      "generator_seed": 465567144,
+      "checks": {
+        "source_unchanged": true,
+        "decoded_num_samples_unchanged": true,
+        "linear_mix_max_abs_residual": 0.0,
+        "quantization_bound": 1.1920928955078125e-07,
+        "quantization_bound_domain": "Decoded mixture minus backing compared to gain-scaled source",
+        "reconstructed_source_max_abs_residual": 0.0,
+        "reconstructed_source_quantization_bound": 1.1920928955078125e-07,
+        "decoded_component_snr_db": 6.000000026576247
+      },
+      "boundary_labels": "Inherited sample coordinates only; no new human labels"
+    },
+    {
+      "segment_id": "English/EN-Alto-2/Glissando/Someone Like You/Glissando_Group/0000",
+      "song_id": "english/someone like you",
+      "derived_from_segment_id": "English/EN-Alto-2/Glissando/Someone Like You/Glissando_Group/0000",
+      "split": "unassigned",
+      "source_audio": {
+        "path": "/home/xcy/auto-lrc/data/local/gtsinger-representative/English/EN-Alto-2/Glissando/Someone Like You/Glissando_Group/0000.wav",
+        "bytes": 1011068,
+        "sha256": "471317b8cbb263cb47cd1e70613bb77340dcafaafcba4d4c19b7047a9687af57"
+      },
+      "mixture_audio": {
+        "path": "/home/xcy/auto-lrc/data/local/mixtures/representative-v1-20261010/0daa37466d8e35e4e69ec947ca90fb04c7124d7a9ec43beec10087707db86179-mixture.wav",
+        "bytes": 1011068,
+        "sha256": "6c8d79205918c0ec0818054f5a58de593ad8f3cc545dba999dfbb24b0d0a5697"
+      },
+      "accompaniment_audio": {
+        "path": "/home/xcy/auto-lrc/data/local/mixtures/representative-v1-20261010/0daa37466d8e35e4e69ec947ca90fb04c7124d7a9ec43beec10087707db86179-backing.wav",
+        "bytes": 1011068,
+        "sha256": "19cf70bb1069e0e85f69599763d00f310cd9e4d48a0c234a315ecc0155f0aab8"
+      },
+      "lyrics": {
+        "path": "/home/xcy/auto-lrc/data/local/mixtures/representative-v1-20261010/0daa37466d8e35e4e69ec947ca90fb04c7124d7a9ec43beec10087707db86179-lyrics.txt",
+        "bytes": 21,
+        "sha256": "508d9d122848e66db990f9ec2afc3b86762833699553ffd17e23b10bb2ed9854"
+      },
+      "snr_db": 6.0,
+      "snr_definition": "Full-clip uncentered RMS of vocal and accompaniment components",
+      "mixture_gain": 1.0,
+      "accompaniment_gain": 0.3131026875675422,
+      "timeline": {
+        "source_to_mixture_offset_samples": 0,
+        "sample_rate": 48000,
+        "num_samples": 337008,
+        "resampled": false,
+        "filtered": false,
+        "padded": false,
+        "cropped": false
+      },
+      "sample_rate": 48000,
+      "num_samples": 337008,
+      "channels": 1,
+      "generator_seed": 229259085,
+      "checks": {
+        "source_unchanged": true,
+        "decoded_num_samples_unchanged": true,
+        "linear_mix_max_abs_residual": 0.0,
+        "quantization_bound": 1.1920928955078125e-07,
+        "quantization_bound_domain": "Decoded mixture minus backing compared to gain-scaled source",
+        "reconstructed_source_max_abs_residual": 0.0,
+        "reconstructed_source_quantization_bound": 1.1920928955078125e-07,
+        "decoded_component_snr_db": 5.999999990207412
+      },
+      "boundary_labels": "Inherited sample coordinates only; no new human labels"
+    },
+    {
+      "segment_id": "English/EN-Tenor-1/Glissando/Someone Like You/Control_Group/0000",
+      "song_id": "english/someone like you",
+      "derived_from_segment_id": "English/EN-Tenor-1/Glissando/Someone Like You/Control_Group/0000",
+      "split": "unassigned",
+      "source_audio": {
+        "path": "/home/xcy/auto-lrc/data/local/gtsinger-representative/English/EN-Tenor-1/Glissando/Someone Like You/Control_Group/0000.wav",
+        "bytes": 1119068,
+        "sha256": "e5da7d9fc2b2c7b2351af73731264fa2c2f9fdbafc5ee5bdaf06c68f53959335"
+      },
+      "mixture_audio": {
+        "path": "/home/xcy/auto-lrc/data/local/mixtures/representative-v1-20261010/1c5a1615d70152579b97db1820b76e1e4b9d0c2e3c16a89412fce64b0b1dd0d3-mixture.wav",
+        "bytes": 1119068,
+        "sha256": "a9cd2aa0a9a65e0f5f152f6b9a0af00f7db610563959b32886b3752203814ab7"
+      },
+      "accompaniment_audio": {
+        "path": "/home/xcy/auto-lrc/data/local/mixtures/representative-v1-20261010/1c5a1615d70152579b97db1820b76e1e4b9d0c2e3c16a89412fce64b0b1dd0d3-backing.wav",
+        "bytes": 1119068,
+        "sha256": "dbac3c777a16306333864db0ceff77e179ae03f9742c68489e78d9f6750f90db"
+      },
+      "lyrics": {
+        "path": "/home/xcy/auto-lrc/data/local/mixtures/representative-v1-20261010/1c5a1615d70152579b97db1820b76e1e4b9d0c2e3c16a89412fce64b0b1dd0d3-lyrics.txt",
+        "bytes": 42,
+        "sha256": "0f542bcb073f2b039270ab082f4714dcb1e1a52eb0b8317045a2c9cfe3f2d3cf"
+      },
+      "snr_db": 6.0,
+      "snr_definition": "Full-clip uncentered RMS of vocal and accompaniment components",
+      "mixture_gain": 1.0,
+      "accompaniment_gain": 0.36337757717493874,
+      "timeline": {
+        "source_to_mixture_offset_samples": 0,
+        "sample_rate": 48000,
+        "num_samples": 373008,
+        "resampled": false,
+        "filtered": false,
+        "padded": false,
+        "cropped": false
+      },
+      "sample_rate": 48000,
+      "num_samples": 373008,
+      "channels": 1,
+      "generator_seed": 475665948,
+      "checks": {
+        "source_unchanged": true,
+        "decoded_num_samples_unchanged": true,
+        "linear_mix_max_abs_residual": 0.0,
+        "quantization_bound": 1.1920928955078125e-07,
+        "quantization_bound_domain": "Decoded mixture minus backing compared to gain-scaled source",
+        "reconstructed_source_max_abs_residual": 0.0,
+        "reconstructed_source_quantization_bound": 1.1920928955078125e-07,
+        "decoded_component_snr_db": 5.999999996339088
+      },
+      "boundary_labels": "Inherited sample coordinates only; no new human labels"
+    },
+    {
+      "segment_id": "English/EN-Tenor-1/Glissando/Someone Like You/Glissando_Group/0000",
+      "song_id": "english/someone like you",
+      "derived_from_segment_id": "English/EN-Tenor-1/Glissando/Someone Like You/Glissando_Group/0000",
+      "split": "unassigned",
+      "source_audio": {
+        "path": "/home/xcy/auto-lrc/data/local/gtsinger-representative/English/EN-Tenor-1/Glissando/Someone Like You/Glissando_Group/0000.wav",
+        "bytes": 1150892,
+        "sha256": "f57f34872ab7c5190cccfe4bf1c9bc0c1267aa4b000dde20f80104cc79e05264"
+      },
+      "mixture_audio": {
+        "path": "/home/xcy/auto-lrc/data/local/mixtures/representative-v1-20261010/dc8f1e31a4ae1403a8a7afea5347e1ba102593ccd1a1bd78632b73251ef1126b-mixture.wav",
+        "bytes": 1150892,
+        "sha256": "bcda8d869b0c9bd6fa8e8ce00265673c7293869493ddcc3cddb1d33d84f97d08"
+      },
+      "accompaniment_audio": {
+        "path": "/home/xcy/auto-lrc/data/local/mixtures/representative-v1-20261010/dc8f1e31a4ae1403a8a7afea5347e1ba102593ccd1a1bd78632b73251ef1126b-backing.wav",
+        "bytes": 1150892,
+        "sha256": "ffbc66bf2d3efcd9fe698c3168824ab1917c0ffc3ea31508b85d7725776e5bca"
+      },
+      "lyrics": {
+        "path": "/home/xcy/auto-lrc/data/local/mixtures/representative-v1-20261010/dc8f1e31a4ae1403a8a7afea5347e1ba102593ccd1a1bd78632b73251ef1126b-lyrics.txt",
+        "bytes": 42,
+        "sha256": "0f542bcb073f2b039270ab082f4714dcb1e1a52eb0b8317045a2c9cfe3f2d3cf"
+      },
+      "snr_db": 6.0,
+      "snr_definition": "Full-clip uncentered RMS of vocal and accompaniment components",
+      "mixture_gain": 1.0,
+      "accompaniment_gain": 0.32534440498541495,
+      "timeline": {
+        "source_to_mixture_offset_samples": 0,
+        "sample_rate": 48000,
+        "num_samples": 383616,
+        "resampled": false,
+        "filtered": false,
+        "padded": false,
+        "cropped": false
+      },
+      "sample_rate": 48000,
+      "num_samples": 383616,
+      "channels": 1,
+      "generator_seed": 3700366904,
+      "checks": {
+        "source_unchanged": true,
+        "decoded_num_samples_unchanged": true,
+        "linear_mix_max_abs_residual": 0.0,
+        "quantization_bound": 1.1920928955078125e-07,
+        "quantization_bound_domain": "Decoded mixture minus backing compared to gain-scaled source",
+        "reconstructed_source_max_abs_residual": 0.0,
+        "reconstructed_source_quantization_bound": 1.1920928955078125e-07,
+        "decoded_component_snr_db": 6.000000010696466
+      },
+      "boundary_labels": "Inherited sample coordinates only; no new human labels"
+    }
+  ]
+}

@@ -1,0 +1,5175 @@
+{
+  "row_index": 2,
+  "segment_id": "English/EN-Alto-1/Glissando/my love/Control_Group/0000",
+  "song_id": "english/my love",
+  "derived_from_segment_id": "English/EN-Alto-1/Glissando/my love/Control_Group/0000",
+  "split": "unassigned",
+  "snr_db": 6.0,
+  "mixture_gain": 1.0,
+  "accompaniment_gain": 0.09595575332533811,
+  "source_timeline": {
+    "source_to_mixture_offset_samples": 0,
+    "sample_rate": 48000,
+    "num_samples": 445008,
+    "resampled": false,
+    "filtered": false,
+    "padded": false,
+    "cropped": false
+  },
+  "status": "completed",
+  "inputs": {
+    "source_audio": {
+      "path": "/home/xcy/auto-lrc/data/local/gtsinger-representative/English/EN-Alto-1/Glissando/my love/Control_Group/0000.wav",
+      "bytes": 1335068,
+      "sha256": "556cc0f8bab110c1434e9cde77643f933b00ba631e3aad348d0cf6c2d88b7399",
+      "audio": {
+        "sample_rate": 48000,
+        "num_samples": 445008,
+        "channels": 1,
+        "subtype": "PCM_24"
+      }
+    },
+    "mixture_audio": {
+      "path": "/home/xcy/auto-lrc/data/local/mixtures/representative-v1-20261010/31ec5b1b4bd5bda07e2f1b360218f232a063951e7bb29e7a919844a0bffb0597-mixture.wav",
+      "bytes": 1335068,
+      "sha256": "bb25e666564895d8c9c448ee9b3073a86acfac2d2b2272233b87ad7dd8930b05",
+      "audio": {
+        "sample_rate": 48000,
+        "num_samples": 445008,
+        "channels": 1,
+        "subtype": "PCM_24"
+      }
+    },
+    "accompaniment_audio": {
+      "path": "/home/xcy/auto-lrc/data/local/mixtures/representative-v1-20261010/31ec5b1b4bd5bda07e2f1b360218f232a063951e7bb29e7a919844a0bffb0597-backing.wav",
+      "bytes": 1335068,
+      "sha256": "4b8d16bd1ebe9bbf3b24843de9fe09c0448533f083860bd253662fa72ce2c3cf",
+      "audio": {
+        "sample_rate": 48000,
+        "num_samples": 445008,
+        "channels": 1,
+        "subtype": "PCM_24"
+      }
+    },
+    "lyrics": {
+      "path": "/home/xcy/auto-lrc/data/local/mixtures/representative-v1-20261010/31ec5b1b4bd5bda07e2f1b360218f232a063951e7bb29e7a919844a0bffb0597-lyrics.txt",
+      "bytes": 68,
+      "sha256": "c929ba5e9c3e97ea86ef62793c7c1e5bbebdbe15f3c621846eda5a6206b8181c"
+    }
+  },
+  "predictions": {
+    "clean": {
+      "MTL": {
+        "audio": {
+          "path": "/home/xcy/auto-lrc/data/local/gtsinger-representative/English/EN-Alto-1/Glissando/my love/Control_Group/0000.wav",
+          "bytes": 1335068,
+          "sha256": "556cc0f8bab110c1434e9cde77643f933b00ba631e3aad348d0cf6c2d88b7399"
+        },
+        "observed_forwards": [
+          {
+            "model": "acoustic",
+            "input_shapes": [
+              [
+                1,
+                1,
+                128,
+                799
+              ]
+            ],
+            "input_devices": [
+              "cuda:0"
+            ],
+            "output_shapes": [
+              [
+                1,
+                266,
+                41,
+                47
+              ]
+            ],
+            "output_devices": [
+              "cuda:0"
+            ],
+            "output_finite": true
+          }
+        ],
+        "vocalize": false,
+        "status": "completed",
+        "seed": 7,
+        "runtime_seconds": 0.0746270139999865,
+        "peak_memory": {
+          "allocated_bytes": 1466343424,
+          "reserved_bytes": 2086666240
+        },
+        "result": {
+          "lrc": "[00:00.975]<00:00.975>an<00:01.184> empty<00:01.811> street<00:02.612> an<00:02.821> empty<00:03.448> house<00:04.318> a<00:04.458> hole<00:04.876> inside<00:05.537> my<00:05.990> heart<00:07.453> i'm<00:07.732> all<00:08.219> alone",
+          "units": [
+            {
+              "text": "an",
+              "line_index": 0,
+              "word_index": 0,
+              "phonemes": [
+                "AE",
+                "N"
+              ],
+              "start_frame": 28,
+              "end_frame": 32,
+              "start_seconds": 0.9752380952380952,
+              "end_seconds": 1.1145578231292517
+            },
+            {
+              "text": " empty",
+              "line_index": 0,
+              "word_index": 1,
+              "phonemes": [
+                "EH",
+                "M",
+                "P",
+                "T",
+                "IY"
+              ],
+              "start_frame": 34,
+              "end_frame": 51,
+              "start_seconds": 1.18421768707483,
+              "end_seconds": 1.7763265306122449
+            },
+            {
+              "text": " street",
+              "line_index": 0,
+              "word_index": 2,
+              "phonemes": [
+                "S",
+                "T",
+                "R",
+                "IY",
+                "T"
+              ],
+              "start_frame": 52,
+              "end_frame": 72,
+              "start_seconds": 1.811156462585034,
+              "end_seconds": 2.507755102040816
+            },
+            {
+              "text": " an",
+              "line_index": 0,
+              "word_index": 3,
+              "phonemes": [
+                "AE",
+                "N"
+              ],
+              "start_frame": 75,
+              "end_frame": 78,
+              "start_seconds": 2.6122448979591835,
+              "end_seconds": 2.7167346938775507
+            },
+            {
+              "text": " empty",
+              "line_index": 0,
+              "word_index": 4,
+              "phonemes": [
+                "EH",
+                "M",
+                "P",
+                "T",
+                "IY"
+              ],
+              "start_frame": 81,
+              "end_frame": 98,
+              "start_seconds": 2.8212244897959184,
+              "end_seconds": 3.413333333333333
+            },
+            {
+              "text": " house",
+              "line_index": 0,
+              "word_index": 5,
+              "phonemes": [
+                "HH",
+                "AW",
+                "S"
+              ],
+              "start_frame": 99,
+              "end_frame": 121,
+              "start_seconds": 3.4481632653061225,
+              "end_seconds": 4.214421768707483
+            },
+            {
+              "text": " a",
+              "line_index": 0,
+              "word_index": 6,
+              "phonemes": [
+                "AH"
+              ],
+              "start_frame": 124,
+              "end_frame": 126,
+              "start_seconds": 4.31891156462585,
+              "end_seconds": 4.388571428571429
+            },
+            {
+              "text": " hole",
+              "line_index": 0,
+              "word_index": 7,
+              "phonemes": [
+                "HH",
+                "OW",
+                "L"
+              ],
+              "start_frame": 128,
+              "end_frame": 138,
+              "start_seconds": 4.458231292517007,
+              "end_seconds": 4.806530612244898
+            },
+            {
+              "text": " inside",
+              "line_index": 0,
+              "word_index": 8,
+              "phonemes": [
+                "IH",
+                "N",
+                "S",
+                "AY",
+                "D"
+              ],
+              "start_frame": 140,
+              "end_frame": 157,
+              "start_seconds": 4.876190476190476,
+              "end_seconds": 5.468299319727891
+            },
+            {
+              "text": " my",
+              "line_index": 0,
+              "word_index": 9,
+              "phonemes": [
+                "M",
+                "AY"
+              ],
+              "start_frame": 159,
+              "end_frame": 170,
+              "start_seconds": 5.537959183673469,
+              "end_seconds": 5.921088435374149
+            },
+            {
+              "text": " heart",
+              "line_index": 0,
+              "word_index": 10,
+              "phonemes": [
+                "HH",
+                "AA",
+                "R",
+                "T"
+              ],
+              "start_frame": 172,
+              "end_frame": 212,
+              "start_seconds": 5.990748299319728,
+              "end_seconds": 7.383945578231292
+            },
+            {
+              "text": " i'm",
+              "line_index": 0,
+              "word_index": 11,
+              "phonemes": [
+                "AY",
+                "M"
+              ],
+              "start_frame": 214,
+              "end_frame": 219,
+              "start_seconds": 7.453605442176871,
+              "end_seconds": 7.627755102040816
+            },
+            {
+              "text": " all",
+              "line_index": 0,
+              "word_index": 12,
+              "phonemes": [
+                "AO",
+                "L"
+              ],
+              "start_frame": 222,
+              "end_frame": 234,
+              "start_seconds": 7.732244897959183,
+              "end_seconds": 8.150204081632653
+            },
+            {
+              "text": " alone",
+              "line_index": 0,
+              "word_index": 13,
+              "phonemes": [
+                "AH",
+                "L",
+                "OW",
+                "N"
+              ],
+              "start_frame": 236,
+              "end_frame": 265,
+              "start_seconds": 8.219863945578231,
+              "end_seconds": 9.229931972789116
+            }
+          ],
+          "alignment": {
+            "sample_rate": 22050,
+            "hop_length": 256,
+            "frame_stride": 3,
+            "frame_resolution_seconds": 0.034829931972789115,
+            "mel_frames": 799,
+            "output_frames": 266,
+            "input_samples": 204425,
+            "method": "MTL",
+            "model_type": "MTL",
+            "bdr": false,
+            "device": "cuda",
+            "score": -129.05763244628906,
+            "score_kind": "whole_path_log_score_uncalibrated",
+            "legacy_frame_origin_seconds": 0.0,
+            "physical_origin_seconds": null,
+            "physical_origin_calibrated": false,
+            "word_frames": [
+              [
+                28,
+                32
+              ],
+              [
+                34,
+                51
+              ],
+              [
+                52,
+                72
+              ],
+              [
+                75,
+                78
+              ],
+              [
+                81,
+                98
+              ],
+              [
+                99,
+                121
+              ],
+              [
+                124,
+                126
+              ],
+              [
+                128,
+                138
+              ],
+              [
+                140,
+                157
+              ],
+              [
+                159,
+                170
+              ],
+              [
+                172,
+                212
+              ],
+              [
+                214,
+                219
+              ],
+              [
+                222,
+                234
+              ],
+              [
+                236,
+                265
+              ]
+            ],
+            "phonemes": [
+              "AE",
+              "N",
+              " ",
+              "EH",
+              "M",
+              "P",
+              "T",
+              "IY",
+              " ",
+              "S",
+              "T",
+              "R",
+              "IY",
+              "T",
+              " ",
+              "AE",
+              "N",
+              " ",
+              "EH",
+              "M",
+              "P",
+              "T",
+              "IY",
+              " ",
+              "HH",
+              "AW",
+              "S",
+              " ",
+              "AH",
+              " ",
+              "HH",
+              "OW",
+              "L",
+              " ",
+              "IH",
+              "N",
+              "S",
+              "AY",
+              "D",
+              " ",
+              "M",
+              "AY",
+              " ",
+              "HH",
+              "AA",
+              "R",
+              "T",
+              " ",
+              "AY",
+              "M",
+              " ",
+              "AO",
+              "L",
+              " ",
+              "AH",
+              "L",
+              "OW",
+              "N"
+            ],
+            "word_phoneme_indices": [
+              [
+                0,
+                2
+              ],
+              [
+                3,
+                8
+              ],
+              [
+                9,
+                14
+              ],
+              [
+                15,
+                17
+              ],
+              [
+                18,
+                23
+              ],
+              [
+                24,
+                27
+              ],
+              [
+                28,
+                29
+              ],
+              [
+                30,
+                33
+              ],
+              [
+                34,
+                39
+              ],
+              [
+                40,
+                42
+              ],
+              [
+                43,
+                47
+              ],
+              [
+                48,
+                50
+              ],
+              [
+                51,
+                53
+              ],
+              [
+                54,
+                58
+              ]
+            ],
+            "line_phoneme_indices": [
+              [
+                0,
+                58
+              ]
+            ]
+          }
+        }
+      },
+      "MTL_BDR": {
+        "audio": {
+          "path": "/home/xcy/auto-lrc/data/local/gtsinger-representative/English/EN-Alto-1/Glissando/my love/Control_Group/0000.wav",
+          "bytes": 1335068,
+          "sha256": "556cc0f8bab110c1434e9cde77643f933b00ba631e3aad348d0cf6c2d88b7399"
+        },
+        "observed_forwards": [
+          {
+            "model": "acoustic",
+            "input_shapes": [
+              [
+                1,
+                1,
+                128,
+                799
+              ]
+            ],
+            "input_devices": [
+              "cuda:0"
+            ],
+            "output_shapes": [
+              [
+                1,
+                266,
+                41,
+                47
+              ]
+            ],
+            "output_devices": [
+              "cuda:0"
+            ],
+            "output_finite": true
+          },
+          {
+            "model": "boundary",
+            "input_shapes": [
+              [
+                1,
+                1,
+                128,
+                799
+              ]
+            ],
+            "input_devices": [
+              "cuda:0"
+            ],
+            "output_shapes": [
+              [
+                1,
+                266,
+                1
+              ]
+            ],
+            "output_devices": [
+              "cuda:0"
+            ],
+            "output_finite": true
+          }
+        ],
+        "vocalize": false,
+        "status": "completed",
+        "seed": 7,
+        "runtime_seconds": 0.0948076899999819,
+        "peak_memory": {
+          "allocated_bytes": 1466475520,
+          "reserved_bytes": 2086666240
+        },
+        "result": {
+          "lrc": "[00:00.975]<00:00.975>an<00:01.184> empty<00:01.811> street<00:02.612> an<00:02.821> empty<00:03.448> house<00:04.318> a<00:04.458> hole<00:04.876> inside<00:05.537> my<00:05.990> heart<00:07.453> i'm<00:07.732> all<00:08.219> alone",
+          "units": [
+            {
+              "text": "an",
+              "line_index": 0,
+              "word_index": 0,
+              "phonemes": [
+                "AE",
+                "N"
+              ],
+              "start_frame": 28,
+              "end_frame": 32,
+              "start_seconds": 0.9752380952380952,
+              "end_seconds": 1.1145578231292517
+            },
+            {
+              "text": " empty",
+              "line_index": 0,
+              "word_index": 1,
+              "phonemes": [
+                "EH",
+                "M",
+                "P",
+                "T",
+                "IY"
+              ],
+              "start_frame": 34,
+              "end_frame": 51,
+              "start_seconds": 1.18421768707483,
+              "end_seconds": 1.7763265306122449
+            },
+            {
+              "text": " street",
+              "line_index": 0,
+              "word_index": 2,
+              "phonemes": [
+                "S",
+                "T",
+                "R",
+                "IY",
+                "T"
+              ],
+              "start_frame": 52,
+              "end_frame": 72,
+              "start_seconds": 1.811156462585034,
+              "end_seconds": 2.507755102040816
+            },
+            {
+              "text": " an",
+              "line_index": 0,
+              "word_index": 3,
+              "phonemes": [
+                "AE",
+                "N"
+              ],
+              "start_frame": 75,
+              "end_frame": 78,
+              "start_seconds": 2.6122448979591835,
+              "end_seconds": 2.7167346938775507
+            },
+            {
+              "text": " empty",
+              "line_index": 0,
+              "word_index": 4,
+              "phonemes": [
+                "EH",
+                "M",
+                "P",
+                "T",
+                "IY"
+              ],
+              "start_frame": 81,
+              "end_frame": 98,
+              "start_seconds": 2.8212244897959184,
+              "end_seconds": 3.413333333333333
+            },
+            {
+              "text": " house",
+              "line_index": 0,
+              "word_index": 5,
+              "phonemes": [
+                "HH",
+                "AW",
+                "S"
+              ],
+              "start_frame": 99,
+              "end_frame": 121,
+              "start_seconds": 3.4481632653061225,
+              "end_seconds": 4.214421768707483
+            },
+            {
+              "text": " a",
+              "line_index": 0,
+              "word_index": 6,
+              "phonemes": [
+                "AH"
+              ],
+              "start_frame": 124,
+              "end_frame": 126,
+              "start_seconds": 4.31891156462585,
+              "end_seconds": 4.388571428571429
+            },
+            {
+              "text": " hole",
+              "line_index": 0,
+              "word_index": 7,
+              "phonemes": [
+                "HH",
+                "OW",
+                "L"
+              ],
+              "start_frame": 128,
+              "end_frame": 138,
+              "start_seconds": 4.458231292517007,
+              "end_seconds": 4.806530612244898
+            },
+            {
+              "text": " inside",
+              "line_index": 0,
+              "word_index": 8,
+              "phonemes": [
+                "IH",
+                "N",
+                "S",
+                "AY",
+                "D"
+              ],
+              "start_frame": 140,
+              "end_frame": 157,
+              "start_seconds": 4.876190476190476,
+              "end_seconds": 5.468299319727891
+            },
+            {
+              "text": " my",
+              "line_index": 0,
+              "word_index": 9,
+              "phonemes": [
+                "M",
+                "AY"
+              ],
+              "start_frame": 159,
+              "end_frame": 170,
+              "start_seconds": 5.537959183673469,
+              "end_seconds": 5.921088435374149
+            },
+            {
+              "text": " heart",
+              "line_index": 0,
+              "word_index": 10,
+              "phonemes": [
+                "HH",
+                "AA",
+                "R",
+                "T"
+              ],
+              "start_frame": 172,
+              "end_frame": 212,
+              "start_seconds": 5.990748299319728,
+              "end_seconds": 7.383945578231292
+            },
+            {
+              "text": " i'm",
+              "line_index": 0,
+              "word_index": 11,
+              "phonemes": [
+                "AY",
+                "M"
+              ],
+              "start_frame": 214,
+              "end_frame": 219,
+              "start_seconds": 7.453605442176871,
+              "end_seconds": 7.627755102040816
+            },
+            {
+              "text": " all",
+              "line_index": 0,
+              "word_index": 12,
+              "phonemes": [
+                "AO",
+                "L"
+              ],
+              "start_frame": 222,
+              "end_frame": 234,
+              "start_seconds": 7.732244897959183,
+              "end_seconds": 8.150204081632653
+            },
+            {
+              "text": " alone",
+              "line_index": 0,
+              "word_index": 13,
+              "phonemes": [
+                "AH",
+                "L",
+                "OW",
+                "N"
+              ],
+              "start_frame": 236,
+              "end_frame": 265,
+              "start_seconds": 8.219863945578231,
+              "end_seconds": 9.229931972789116
+            }
+          ],
+          "alignment": {
+            "sample_rate": 22050,
+            "hop_length": 256,
+            "frame_stride": 3,
+            "frame_resolution_seconds": 0.034829931972789115,
+            "mel_frames": 799,
+            "output_frames": 266,
+            "input_samples": 204425,
+            "method": "MTL_BDR",
+            "model_type": "MTL",
+            "bdr": true,
+            "device": "cuda",
+            "score": -129.60847447979904,
+            "score_kind": "whole_path_log_score_with_bdr_uncalibrated",
+            "legacy_frame_origin_seconds": 0.0,
+            "physical_origin_seconds": null,
+            "physical_origin_calibrated": false,
+            "word_frames": [
+              [
+                28,
+                32
+              ],
+              [
+                34,
+                51
+              ],
+              [
+                52,
+                72
+              ],
+              [
+                75,
+                78
+              ],
+              [
+                81,
+                98
+              ],
+              [
+                99,
+                121
+              ],
+              [
+                124,
+                126
+              ],
+              [
+                128,
+                138
+              ],
+              [
+                140,
+                157
+              ],
+              [
+                159,
+                170
+              ],
+              [
+                172,
+                212
+              ],
+              [
+                214,
+                219
+              ],
+              [
+                222,
+                234
+              ],
+              [
+                236,
+                265
+              ]
+            ],
+            "phonemes": [
+              "AE",
+              "N",
+              " ",
+              "EH",
+              "M",
+              "P",
+              "T",
+              "IY",
+              " ",
+              "S",
+              "T",
+              "R",
+              "IY",
+              "T",
+              " ",
+              "AE",
+              "N",
+              " ",
+              "EH",
+              "M",
+              "P",
+              "T",
+              "IY",
+              " ",
+              "HH",
+              "AW",
+              "S",
+              " ",
+              "AH",
+              " ",
+              "HH",
+              "OW",
+              "L",
+              " ",
+              "IH",
+              "N",
+              "S",
+              "AY",
+              "D",
+              " ",
+              "M",
+              "AY",
+              " ",
+              "HH",
+              "AA",
+              "R",
+              "T",
+              " ",
+              "AY",
+              "M",
+              " ",
+              "AO",
+              "L",
+              " ",
+              "AH",
+              "L",
+              "OW",
+              "N"
+            ],
+            "word_phoneme_indices": [
+              [
+                0,
+                2
+              ],
+              [
+                3,
+                8
+              ],
+              [
+                9,
+                14
+              ],
+              [
+                15,
+                17
+              ],
+              [
+                18,
+                23
+              ],
+              [
+                24,
+                27
+              ],
+              [
+                28,
+                29
+              ],
+              [
+                30,
+                33
+              ],
+              [
+                34,
+                39
+              ],
+              [
+                40,
+                42
+              ],
+              [
+                43,
+                47
+              ],
+              [
+                48,
+                50
+              ],
+              [
+                51,
+                53
+              ],
+              [
+                54,
+                58
+              ]
+            ],
+            "line_phoneme_indices": [
+              [
+                0,
+                58
+              ]
+            ]
+          }
+        }
+      }
+    },
+    "mixture": {
+      "MTL": {
+        "audio": {
+          "path": "/home/xcy/auto-lrc/data/local/mixtures/representative-v1-20261010/31ec5b1b4bd5bda07e2f1b360218f232a063951e7bb29e7a919844a0bffb0597-mixture.wav",
+          "bytes": 1335068,
+          "sha256": "bb25e666564895d8c9c448ee9b3073a86acfac2d2b2272233b87ad7dd8930b05"
+        },
+        "observed_forwards": [
+          {
+            "model": "acoustic",
+            "input_shapes": [
+              [
+                1,
+                1,
+                128,
+                799
+              ]
+            ],
+            "input_devices": [
+              "cuda:0"
+            ],
+            "output_shapes": [
+              [
+                1,
+                266,
+                41,
+                47
+              ]
+            ],
+            "output_devices": [
+              "cuda:0"
+            ],
+            "output_finite": true
+          }
+        ],
+        "vocalize": false,
+        "status": "completed",
+        "seed": 7,
+        "runtime_seconds": 0.0946266210000033,
+        "peak_memory": {
+          "allocated_bytes": 1466343424,
+          "reserved_bytes": 2086666240
+        },
+        "result": {
+          "lrc": "[00:00.975]<00:00.975>an<00:01.184> empty<00:01.811> street<00:02.612> an<00:02.821> empty<00:03.448> house<00:04.284> a<00:04.458> hole<00:04.876> inside<00:05.537> my<00:05.990> heart<00:06.965> i'm<00:07.732> all<00:08.219> alone",
+          "units": [
+            {
+              "text": "an",
+              "line_index": 0,
+              "word_index": 0,
+              "phonemes": [
+                "AE",
+                "N"
+              ],
+              "start_frame": 28,
+              "end_frame": 31,
+              "start_seconds": 0.9752380952380952,
+              "end_seconds": 1.0797278911564625
+            },
+            {
+              "text": " empty",
+              "line_index": 0,
+              "word_index": 1,
+              "phonemes": [
+                "EH",
+                "M",
+                "P",
+                "T",
+                "IY"
+              ],
+              "start_frame": 34,
+              "end_frame": 51,
+              "start_seconds": 1.18421768707483,
+              "end_seconds": 1.7763265306122449
+            },
+            {
+              "text": " street",
+              "line_index": 0,
+              "word_index": 2,
+              "phonemes": [
+                "S",
+                "T",
+                "R",
+                "IY",
+                "T"
+              ],
+              "start_frame": 52,
+              "end_frame": 71,
+              "start_seconds": 1.811156462585034,
+              "end_seconds": 2.4729251700680273
+            },
+            {
+              "text": " an",
+              "line_index": 0,
+              "word_index": 3,
+              "phonemes": [
+                "AE",
+                "N"
+              ],
+              "start_frame": 75,
+              "end_frame": 78,
+              "start_seconds": 2.6122448979591835,
+              "end_seconds": 2.7167346938775507
+            },
+            {
+              "text": " empty",
+              "line_index": 0,
+              "word_index": 4,
+              "phonemes": [
+                "EH",
+                "M",
+                "P",
+                "T",
+                "IY"
+              ],
+              "start_frame": 81,
+              "end_frame": 98,
+              "start_seconds": 2.8212244897959184,
+              "end_seconds": 3.413333333333333
+            },
+            {
+              "text": " house",
+              "line_index": 0,
+              "word_index": 5,
+              "phonemes": [
+                "HH",
+                "AW",
+                "S"
+              ],
+              "start_frame": 99,
+              "end_frame": 121,
+              "start_seconds": 3.4481632653061225,
+              "end_seconds": 4.214421768707483
+            },
+            {
+              "text": " a",
+              "line_index": 0,
+              "word_index": 6,
+              "phonemes": [
+                "AH"
+              ],
+              "start_frame": 123,
+              "end_frame": 126,
+              "start_seconds": 4.284081632653061,
+              "end_seconds": 4.388571428571429
+            },
+            {
+              "text": " hole",
+              "line_index": 0,
+              "word_index": 7,
+              "phonemes": [
+                "HH",
+                "OW",
+                "L"
+              ],
+              "start_frame": 128,
+              "end_frame": 138,
+              "start_seconds": 4.458231292517007,
+              "end_seconds": 4.806530612244898
+            },
+            {
+              "text": " inside",
+              "line_index": 0,
+              "word_index": 8,
+              "phonemes": [
+                "IH",
+                "N",
+                "S",
+                "AY",
+                "D"
+              ],
+              "start_frame": 140,
+              "end_frame": 157,
+              "start_seconds": 4.876190476190476,
+              "end_seconds": 5.468299319727891
+            },
+            {
+              "text": " my",
+              "line_index": 0,
+              "word_index": 9,
+              "phonemes": [
+                "M",
+                "AY"
+              ],
+              "start_frame": 159,
+              "end_frame": 170,
+              "start_seconds": 5.537959183673469,
+              "end_seconds": 5.921088435374149
+            },
+            {
+              "text": " heart",
+              "line_index": 0,
+              "word_index": 10,
+              "phonemes": [
+                "HH",
+                "AA",
+                "R",
+                "T"
+              ],
+              "start_frame": 172,
+              "end_frame": 196,
+              "start_seconds": 5.990748299319728,
+              "end_seconds": 6.826666666666666
+            },
+            {
+              "text": " i'm",
+              "line_index": 0,
+              "word_index": 11,
+              "phonemes": [
+                "AY",
+                "M"
+              ],
+              "start_frame": 200,
+              "end_frame": 219,
+              "start_seconds": 6.965986394557823,
+              "end_seconds": 7.627755102040816
+            },
+            {
+              "text": " all",
+              "line_index": 0,
+              "word_index": 12,
+              "phonemes": [
+                "AO",
+                "L"
+              ],
+              "start_frame": 222,
+              "end_frame": 233,
+              "start_seconds": 7.732244897959183,
+              "end_seconds": 8.115374149659864
+            },
+            {
+              "text": " alone",
+              "line_index": 0,
+              "word_index": 13,
+              "phonemes": [
+                "AH",
+                "L",
+                "OW",
+                "N"
+              ],
+              "start_frame": 236,
+              "end_frame": 265,
+              "start_seconds": 8.219863945578231,
+              "end_seconds": 9.229931972789116
+            }
+          ],
+          "alignment": {
+            "sample_rate": 22050,
+            "hop_length": 256,
+            "frame_stride": 3,
+            "frame_resolution_seconds": 0.034829931972789115,
+            "mel_frames": 799,
+            "output_frames": 266,
+            "input_samples": 204425,
+            "method": "MTL",
+            "model_type": "MTL",
+            "bdr": false,
+            "device": "cuda",
+            "score": -125.59585571289062,
+            "score_kind": "whole_path_log_score_uncalibrated",
+            "legacy_frame_origin_seconds": 0.0,
+            "physical_origin_seconds": null,
+            "physical_origin_calibrated": false,
+            "word_frames": [
+              [
+                28,
+                31
+              ],
+              [
+                34,
+                51
+              ],
+              [
+                52,
+                71
+              ],
+              [
+                75,
+                78
+              ],
+              [
+                81,
+                98
+              ],
+              [
+                99,
+                121
+              ],
+              [
+                123,
+                126
+              ],
+              [
+                128,
+                138
+              ],
+              [
+                140,
+                157
+              ],
+              [
+                159,
+                170
+              ],
+              [
+                172,
+                196
+              ],
+              [
+                200,
+                219
+              ],
+              [
+                222,
+                233
+              ],
+              [
+                236,
+                265
+              ]
+            ],
+            "phonemes": [
+              "AE",
+              "N",
+              " ",
+              "EH",
+              "M",
+              "P",
+              "T",
+              "IY",
+              " ",
+              "S",
+              "T",
+              "R",
+              "IY",
+              "T",
+              " ",
+              "AE",
+              "N",
+              " ",
+              "EH",
+              "M",
+              "P",
+              "T",
+              "IY",
+              " ",
+              "HH",
+              "AW",
+              "S",
+              " ",
+              "AH",
+              " ",
+              "HH",
+              "OW",
+              "L",
+              " ",
+              "IH",
+              "N",
+              "S",
+              "AY",
+              "D",
+              " ",
+              "M",
+              "AY",
+              " ",
+              "HH",
+              "AA",
+              "R",
+              "T",
+              " ",
+              "AY",
+              "M",
+              " ",
+              "AO",
+              "L",
+              " ",
+              "AH",
+              "L",
+              "OW",
+              "N"
+            ],
+            "word_phoneme_indices": [
+              [
+                0,
+                2
+              ],
+              [
+                3,
+                8
+              ],
+              [
+                9,
+                14
+              ],
+              [
+                15,
+                17
+              ],
+              [
+                18,
+                23
+              ],
+              [
+                24,
+                27
+              ],
+              [
+                28,
+                29
+              ],
+              [
+                30,
+                33
+              ],
+              [
+                34,
+                39
+              ],
+              [
+                40,
+                42
+              ],
+              [
+                43,
+                47
+              ],
+              [
+                48,
+                50
+              ],
+              [
+                51,
+                53
+              ],
+              [
+                54,
+                58
+              ]
+            ],
+            "line_phoneme_indices": [
+              [
+                0,
+                58
+              ]
+            ]
+          }
+        },
+        "change_from_clean_prediction": {
+          "status": "comparable",
+          "accuracy_available": false,
+          "time_shift_applied": false,
+          "comparison_kind": "prediction change relative to clean, not boundary error",
+          "positive_delta": "comparison prediction is later than clean prediction",
+          "units": [
+            {
+              "unit_index": 0,
+              "text": "an",
+              "clean": {
+                "text": "an",
+                "line_index": 0,
+                "word_index": 0,
+                "phonemes": [
+                  "AE",
+                  "N"
+                ],
+                "start_frame": 28,
+                "end_frame": 32,
+                "start_seconds": 0.9752380952380952,
+                "end_seconds": 1.1145578231292517
+              },
+              "comparison": {
+                "text": "an",
+                "line_index": 0,
+                "word_index": 0,
+                "phonemes": [
+                  "AE",
+                  "N"
+                ],
+                "start_frame": 28,
+                "end_frame": 31,
+                "start_seconds": 0.9752380952380952,
+                "end_seconds": 1.0797278911564625
+              },
+              "start_frame_delta": 0,
+              "end_frame_delta": -1,
+              "start_seconds_delta": 0.0,
+              "end_seconds_delta": -0.03482993197278916
+            },
+            {
+              "unit_index": 1,
+              "text": " empty",
+              "clean": {
+                "text": " empty",
+                "line_index": 0,
+                "word_index": 1,
+                "phonemes": [
+                  "EH",
+                  "M",
+                  "P",
+                  "T",
+                  "IY"
+                ],
+                "start_frame": 34,
+                "end_frame": 51,
+                "start_seconds": 1.18421768707483,
+                "end_seconds": 1.7763265306122449
+              },
+              "comparison": {
+                "text": " empty",
+                "line_index": 0,
+                "word_index": 1,
+                "phonemes": [
+                  "EH",
+                  "M",
+                  "P",
+                  "T",
+                  "IY"
+                ],
+                "start_frame": 34,
+                "end_frame": 51,
+                "start_seconds": 1.18421768707483,
+                "end_seconds": 1.7763265306122449
+              },
+              "start_frame_delta": 0,
+              "end_frame_delta": 0,
+              "start_seconds_delta": 0.0,
+              "end_seconds_delta": 0.0
+            },
+            {
+              "unit_index": 2,
+              "text": " street",
+              "clean": {
+                "text": " street",
+                "line_index": 0,
+                "word_index": 2,
+                "phonemes": [
+                  "S",
+                  "T",
+                  "R",
+                  "IY",
+                  "T"
+                ],
+                "start_frame": 52,
+                "end_frame": 72,
+                "start_seconds": 1.811156462585034,
+                "end_seconds": 2.507755102040816
+              },
+              "comparison": {
+                "text": " street",
+                "line_index": 0,
+                "word_index": 2,
+                "phonemes": [
+                  "S",
+                  "T",
+                  "R",
+                  "IY",
+                  "T"
+                ],
+                "start_frame": 52,
+                "end_frame": 71,
+                "start_seconds": 1.811156462585034,
+                "end_seconds": 2.4729251700680273
+              },
+              "start_frame_delta": 0,
+              "end_frame_delta": -1,
+              "start_seconds_delta": 0.0,
+              "end_seconds_delta": -0.03482993197278894
+            },
+            {
+              "unit_index": 3,
+              "text": " an",
+              "clean": {
+                "text": " an",
+                "line_index": 0,
+                "word_index": 3,
+                "phonemes": [
+                  "AE",
+                  "N"
+                ],
+                "start_frame": 75,
+                "end_frame": 78,
+                "start_seconds": 2.6122448979591835,
+                "end_seconds": 2.7167346938775507
+              },
+              "comparison": {
+                "text": " an",
+                "line_index": 0,
+                "word_index": 3,
+                "phonemes": [
+                  "AE",
+                  "N"
+                ],
+                "start_frame": 75,
+                "end_frame": 78,
+                "start_seconds": 2.6122448979591835,
+                "end_seconds": 2.7167346938775507
+              },
+              "start_frame_delta": 0,
+              "end_frame_delta": 0,
+              "start_seconds_delta": 0.0,
+              "end_seconds_delta": 0.0
+            },
+            {
+              "unit_index": 4,
+              "text": " empty",
+              "clean": {
+                "text": " empty",
+                "line_index": 0,
+                "word_index": 4,
+                "phonemes": [
+                  "EH",
+                  "M",
+                  "P",
+                  "T",
+                  "IY"
+                ],
+                "start_frame": 81,
+                "end_frame": 98,
+                "start_seconds": 2.8212244897959184,
+                "end_seconds": 3.413333333333333
+              },
+              "comparison": {
+                "text": " empty",
+                "line_index": 0,
+                "word_index": 4,
+                "phonemes": [
+                  "EH",
+                  "M",
+                  "P",
+                  "T",
+                  "IY"
+                ],
+                "start_frame": 81,
+                "end_frame": 98,
+                "start_seconds": 2.8212244897959184,
+                "end_seconds": 3.413333333333333
+              },
+              "start_frame_delta": 0,
+              "end_frame_delta": 0,
+              "start_seconds_delta": 0.0,
+              "end_seconds_delta": 0.0
+            },
+            {
+              "unit_index": 5,
+              "text": " house",
+              "clean": {
+                "text": " house",
+                "line_index": 0,
+                "word_index": 5,
+                "phonemes": [
+                  "HH",
+                  "AW",
+                  "S"
+                ],
+                "start_frame": 99,
+                "end_frame": 121,
+                "start_seconds": 3.4481632653061225,
+                "end_seconds": 4.214421768707483
+              },
+              "comparison": {
+                "text": " house",
+                "line_index": 0,
+                "word_index": 5,
+                "phonemes": [
+                  "HH",
+                  "AW",
+                  "S"
+                ],
+                "start_frame": 99,
+                "end_frame": 121,
+                "start_seconds": 3.4481632653061225,
+                "end_seconds": 4.214421768707483
+              },
+              "start_frame_delta": 0,
+              "end_frame_delta": 0,
+              "start_seconds_delta": 0.0,
+              "end_seconds_delta": 0.0
+            },
+            {
+              "unit_index": 6,
+              "text": " a",
+              "clean": {
+                "text": " a",
+                "line_index": 0,
+                "word_index": 6,
+                "phonemes": [
+                  "AH"
+                ],
+                "start_frame": 124,
+                "end_frame": 126,
+                "start_seconds": 4.31891156462585,
+                "end_seconds": 4.388571428571429
+              },
+              "comparison": {
+                "text": " a",
+                "line_index": 0,
+                "word_index": 6,
+                "phonemes": [
+                  "AH"
+                ],
+                "start_frame": 123,
+                "end_frame": 126,
+                "start_seconds": 4.284081632653061,
+                "end_seconds": 4.388571428571429
+              },
+              "start_frame_delta": -1,
+              "end_frame_delta": 0,
+              "start_seconds_delta": -0.03482993197278894,
+              "end_seconds_delta": 0.0
+            },
+            {
+              "unit_index": 7,
+              "text": " hole",
+              "clean": {
+                "text": " hole",
+                "line_index": 0,
+                "word_index": 7,
+                "phonemes": [
+                  "HH",
+                  "OW",
+                  "L"
+                ],
+                "start_frame": 128,
+                "end_frame": 138,
+                "start_seconds": 4.458231292517007,
+                "end_seconds": 4.806530612244898
+              },
+              "comparison": {
+                "text": " hole",
+                "line_index": 0,
+                "word_index": 7,
+                "phonemes": [
+                  "HH",
+                  "OW",
+                  "L"
+                ],
+                "start_frame": 128,
+                "end_frame": 138,
+                "start_seconds": 4.458231292517007,
+                "end_seconds": 4.806530612244898
+              },
+              "start_frame_delta": 0,
+              "end_frame_delta": 0,
+              "start_seconds_delta": 0.0,
+              "end_seconds_delta": 0.0
+            },
+            {
+              "unit_index": 8,
+              "text": " inside",
+              "clean": {
+                "text": " inside",
+                "line_index": 0,
+                "word_index": 8,
+                "phonemes": [
+                  "IH",
+                  "N",
+                  "S",
+                  "AY",
+                  "D"
+                ],
+                "start_frame": 140,
+                "end_frame": 157,
+                "start_seconds": 4.876190476190476,
+                "end_seconds": 5.468299319727891
+              },
+              "comparison": {
+                "text": " inside",
+                "line_index": 0,
+                "word_index": 8,
+                "phonemes": [
+                  "IH",
+                  "N",
+                  "S",
+                  "AY",
+                  "D"
+                ],
+                "start_frame": 140,
+                "end_frame": 157,
+                "start_seconds": 4.876190476190476,
+                "end_seconds": 5.468299319727891
+              },
+              "start_frame_delta": 0,
+              "end_frame_delta": 0,
+              "start_seconds_delta": 0.0,
+              "end_seconds_delta": 0.0
+            },
+            {
+              "unit_index": 9,
+              "text": " my",
+              "clean": {
+                "text": " my",
+                "line_index": 0,
+                "word_index": 9,
+                "phonemes": [
+                  "M",
+                  "AY"
+                ],
+                "start_frame": 159,
+                "end_frame": 170,
+                "start_seconds": 5.537959183673469,
+                "end_seconds": 5.921088435374149
+              },
+              "comparison": {
+                "text": " my",
+                "line_index": 0,
+                "word_index": 9,
+                "phonemes": [
+                  "M",
+                  "AY"
+                ],
+                "start_frame": 159,
+                "end_frame": 170,
+                "start_seconds": 5.537959183673469,
+                "end_seconds": 5.921088435374149
+              },
+              "start_frame_delta": 0,
+              "end_frame_delta": 0,
+              "start_seconds_delta": 0.0,
+              "end_seconds_delta": 0.0
+            },
+            {
+              "unit_index": 10,
+              "text": " heart",
+              "clean": {
+                "text": " heart",
+                "line_index": 0,
+                "word_index": 10,
+                "phonemes": [
+                  "HH",
+                  "AA",
+                  "R",
+                  "T"
+                ],
+                "start_frame": 172,
+                "end_frame": 212,
+                "start_seconds": 5.990748299319728,
+                "end_seconds": 7.383945578231292
+              },
+              "comparison": {
+                "text": " heart",
+                "line_index": 0,
+                "word_index": 10,
+                "phonemes": [
+                  "HH",
+                  "AA",
+                  "R",
+                  "T"
+                ],
+                "start_frame": 172,
+                "end_frame": 196,
+                "start_seconds": 5.990748299319728,
+                "end_seconds": 6.826666666666666
+              },
+              "start_frame_delta": 0,
+              "end_frame_delta": -16,
+              "start_seconds_delta": 0.0,
+              "end_seconds_delta": -0.5572789115646257
+            },
+            {
+              "unit_index": 11,
+              "text": " i'm",
+              "clean": {
+                "text": " i'm",
+                "line_index": 0,
+                "word_index": 11,
+                "phonemes": [
+                  "AY",
+                  "M"
+                ],
+                "start_frame": 214,
+                "end_frame": 219,
+                "start_seconds": 7.453605442176871,
+                "end_seconds": 7.627755102040816
+              },
+              "comparison": {
+                "text": " i'm",
+                "line_index": 0,
+                "word_index": 11,
+                "phonemes": [
+                  "AY",
+                  "M"
+                ],
+                "start_frame": 200,
+                "end_frame": 219,
+                "start_seconds": 6.965986394557823,
+                "end_seconds": 7.627755102040816
+              },
+              "start_frame_delta": -14,
+              "end_frame_delta": 0,
+              "start_seconds_delta": -0.48761904761904784,
+              "end_seconds_delta": 0.0
+            },
+            {
+              "unit_index": 12,
+              "text": " all",
+              "clean": {
+                "text": " all",
+                "line_index": 0,
+                "word_index": 12,
+                "phonemes": [
+                  "AO",
+                  "L"
+                ],
+                "start_frame": 222,
+                "end_frame": 234,
+                "start_seconds": 7.732244897959183,
+                "end_seconds": 8.150204081632653
+              },
+              "comparison": {
+                "text": " all",
+                "line_index": 0,
+                "word_index": 12,
+                "phonemes": [
+                  "AO",
+                  "L"
+                ],
+                "start_frame": 222,
+                "end_frame": 233,
+                "start_seconds": 7.732244897959183,
+                "end_seconds": 8.115374149659864
+              },
+              "start_frame_delta": 0,
+              "end_frame_delta": -1,
+              "start_seconds_delta": 0.0,
+              "end_seconds_delta": -0.03482993197278894
+            },
+            {
+              "unit_index": 13,
+              "text": " alone",
+              "clean": {
+                "text": " alone",
+                "line_index": 0,
+                "word_index": 13,
+                "phonemes": [
+                  "AH",
+                  "L",
+                  "OW",
+                  "N"
+                ],
+                "start_frame": 236,
+                "end_frame": 265,
+                "start_seconds": 8.219863945578231,
+                "end_seconds": 9.229931972789116
+              },
+              "comparison": {
+                "text": " alone",
+                "line_index": 0,
+                "word_index": 13,
+                "phonemes": [
+                  "AH",
+                  "L",
+                  "OW",
+                  "N"
+                ],
+                "start_frame": 236,
+                "end_frame": 265,
+                "start_seconds": 8.219863945578231,
+                "end_seconds": 9.229931972789116
+              },
+              "start_frame_delta": 0,
+              "end_frame_delta": 0,
+              "start_seconds_delta": 0.0,
+              "end_seconds_delta": 0.0
+            }
+          ],
+          "summary": {
+            "mean_absolute_start_change_seconds": 0.03731778425655977,
+            "max_absolute_start_change_seconds": 0.48761904761904784,
+            "mean_absolute_end_change_seconds": 0.04726919339164234,
+            "max_absolute_end_change_seconds": 0.5572789115646257
+          }
+        }
+      },
+      "MTL_BDR": {
+        "audio": {
+          "path": "/home/xcy/auto-lrc/data/local/mixtures/representative-v1-20261010/31ec5b1b4bd5bda07e2f1b360218f232a063951e7bb29e7a919844a0bffb0597-mixture.wav",
+          "bytes": 1335068,
+          "sha256": "bb25e666564895d8c9c448ee9b3073a86acfac2d2b2272233b87ad7dd8930b05"
+        },
+        "observed_forwards": [
+          {
+            "model": "acoustic",
+            "input_shapes": [
+              [
+                1,
+                1,
+                128,
+                799
+              ]
+            ],
+            "input_devices": [
+              "cuda:0"
+            ],
+            "output_shapes": [
+              [
+                1,
+                266,
+                41,
+                47
+              ]
+            ],
+            "output_devices": [
+              "cuda:0"
+            ],
+            "output_finite": true
+          },
+          {
+            "model": "boundary",
+            "input_shapes": [
+              [
+                1,
+                1,
+                128,
+                799
+              ]
+            ],
+            "input_devices": [
+              "cuda:0"
+            ],
+            "output_shapes": [
+              [
+                1,
+                266,
+                1
+              ]
+            ],
+            "output_devices": [
+              "cuda:0"
+            ],
+            "output_finite": true
+          }
+        ],
+        "vocalize": false,
+        "status": "completed",
+        "seed": 7,
+        "runtime_seconds": 0.09591131999999902,
+        "peak_memory": {
+          "allocated_bytes": 1466475520,
+          "reserved_bytes": 2086666240
+        },
+        "result": {
+          "lrc": "[00:00.975]<00:00.975>an<00:01.184> empty<00:01.811> street<00:02.612> an<00:02.821> empty<00:03.448> house<00:04.284> a<00:04.458> hole<00:04.876> inside<00:05.537> my<00:05.990> heart<00:06.965> i'm<00:07.732> all<00:08.219> alone",
+          "units": [
+            {
+              "text": "an",
+              "line_index": 0,
+              "word_index": 0,
+              "phonemes": [
+                "AE",
+                "N"
+              ],
+              "start_frame": 28,
+              "end_frame": 31,
+              "start_seconds": 0.9752380952380952,
+              "end_seconds": 1.0797278911564625
+            },
+            {
+              "text": " empty",
+              "line_index": 0,
+              "word_index": 1,
+              "phonemes": [
+                "EH",
+                "M",
+                "P",
+                "T",
+                "IY"
+              ],
+              "start_frame": 34,
+              "end_frame": 51,
+              "start_seconds": 1.18421768707483,
+              "end_seconds": 1.7763265306122449
+            },
+            {
+              "text": " street",
+              "line_index": 0,
+              "word_index": 2,
+              "phonemes": [
+                "S",
+                "T",
+                "R",
+                "IY",
+                "T"
+              ],
+              "start_frame": 52,
+              "end_frame": 71,
+              "start_seconds": 1.811156462585034,
+              "end_seconds": 2.4729251700680273
+            },
+            {
+              "text": " an",
+              "line_index": 0,
+              "word_index": 3,
+              "phonemes": [
+                "AE",
+                "N"
+              ],
+              "start_frame": 75,
+              "end_frame": 78,
+              "start_seconds": 2.6122448979591835,
+              "end_seconds": 2.7167346938775507
+            },
+            {
+              "text": " empty",
+              "line_index": 0,
+              "word_index": 4,
+              "phonemes": [
+                "EH",
+                "M",
+                "P",
+                "T",
+                "IY"
+              ],
+              "start_frame": 81,
+              "end_frame": 98,
+              "start_seconds": 2.8212244897959184,
+              "end_seconds": 3.413333333333333
+            },
+            {
+              "text": " house",
+              "line_index": 0,
+              "word_index": 5,
+              "phonemes": [
+                "HH",
+                "AW",
+                "S"
+              ],
+              "start_frame": 99,
+              "end_frame": 121,
+              "start_seconds": 3.4481632653061225,
+              "end_seconds": 4.214421768707483
+            },
+            {
+              "text": " a",
+              "line_index": 0,
+              "word_index": 6,
+              "phonemes": [
+                "AH"
+              ],
+              "start_frame": 123,
+              "end_frame": 126,
+              "start_seconds": 4.284081632653061,
+              "end_seconds": 4.388571428571429
+            },
+            {
+              "text": " hole",
+              "line_index": 0,
+              "word_index": 7,
+              "phonemes": [
+                "HH",
+                "OW",
+                "L"
+              ],
+              "start_frame": 128,
+              "end_frame": 138,
+              "start_seconds": 4.458231292517007,
+              "end_seconds": 4.806530612244898
+            },
+            {
+              "text": " inside",
+              "line_index": 0,
+              "word_index": 8,
+              "phonemes": [
+                "IH",
+                "N",
+                "S",
+                "AY",
+                "D"
+              ],
+              "start_frame": 140,
+              "end_frame": 157,
+              "start_seconds": 4.876190476190476,
+              "end_seconds": 5.468299319727891
+            },
+            {
+              "text": " my",
+              "line_index": 0,
+              "word_index": 9,
+              "phonemes": [
+                "M",
+                "AY"
+              ],
+              "start_frame": 159,
+              "end_frame": 170,
+              "start_seconds": 5.537959183673469,
+              "end_seconds": 5.921088435374149
+            },
+            {
+              "text": " heart",
+              "line_index": 0,
+              "word_index": 10,
+              "phonemes": [
+                "HH",
+                "AA",
+                "R",
+                "T"
+              ],
+              "start_frame": 172,
+              "end_frame": 196,
+              "start_seconds": 5.990748299319728,
+              "end_seconds": 6.826666666666666
+            },
+            {
+              "text": " i'm",
+              "line_index": 0,
+              "word_index": 11,
+              "phonemes": [
+                "AY",
+                "M"
+              ],
+              "start_frame": 200,
+              "end_frame": 219,
+              "start_seconds": 6.965986394557823,
+              "end_seconds": 7.627755102040816
+            },
+            {
+              "text": " all",
+              "line_index": 0,
+              "word_index": 12,
+              "phonemes": [
+                "AO",
+                "L"
+              ],
+              "start_frame": 222,
+              "end_frame": 233,
+              "start_seconds": 7.732244897959183,
+              "end_seconds": 8.115374149659864
+            },
+            {
+              "text": " alone",
+              "line_index": 0,
+              "word_index": 13,
+              "phonemes": [
+                "AH",
+                "L",
+                "OW",
+                "N"
+              ],
+              "start_frame": 236,
+              "end_frame": 265,
+              "start_seconds": 8.219863945578231,
+              "end_seconds": 9.229931972789116
+            }
+          ],
+          "alignment": {
+            "sample_rate": 22050,
+            "hop_length": 256,
+            "frame_stride": 3,
+            "frame_resolution_seconds": 0.034829931972789115,
+            "mel_frames": 799,
+            "output_frames": 266,
+            "input_samples": 204425,
+            "method": "MTL_BDR",
+            "model_type": "MTL",
+            "bdr": true,
+            "device": "cuda",
+            "score": -126.14451496180845,
+            "score_kind": "whole_path_log_score_with_bdr_uncalibrated",
+            "legacy_frame_origin_seconds": 0.0,
+            "physical_origin_seconds": null,
+            "physical_origin_calibrated": false,
+            "word_frames": [
+              [
+                28,
+                31
+              ],
+              [
+                34,
+                51
+              ],
+              [
+                52,
+                71
+              ],
+              [
+                75,
+                78
+              ],
+              [
+                81,
+                98
+              ],
+              [
+                99,
+                121
+              ],
+              [
+                123,
+                126
+              ],
+              [
+                128,
+                138
+              ],
+              [
+                140,
+                157
+              ],
+              [
+                159,
+                170
+              ],
+              [
+                172,
+                196
+              ],
+              [
+                200,
+                219
+              ],
+              [
+                222,
+                233
+              ],
+              [
+                236,
+                265
+              ]
+            ],
+            "phonemes": [
+              "AE",
+              "N",
+              " ",
+              "EH",
+              "M",
+              "P",
+              "T",
+              "IY",
+              " ",
+              "S",
+              "T",
+              "R",
+              "IY",
+              "T",
+              " ",
+              "AE",
+              "N",
+              " ",
+              "EH",
+              "M",
+              "P",
+              "T",
+              "IY",
+              " ",
+              "HH",
+              "AW",
+              "S",
+              " ",
+              "AH",
+              " ",
+              "HH",
+              "OW",
+              "L",
+              " ",
+              "IH",
+              "N",
+              "S",
+              "AY",
+              "D",
+              " ",
+              "M",
+              "AY",
+              " ",
+              "HH",
+              "AA",
+              "R",
+              "T",
+              " ",
+              "AY",
+              "M",
+              " ",
+              "AO",
+              "L",
+              " ",
+              "AH",
+              "L",
+              "OW",
+              "N"
+            ],
+            "word_phoneme_indices": [
+              [
+                0,
+                2
+              ],
+              [
+                3,
+                8
+              ],
+              [
+                9,
+                14
+              ],
+              [
+                15,
+                17
+              ],
+              [
+                18,
+                23
+              ],
+              [
+                24,
+                27
+              ],
+              [
+                28,
+                29
+              ],
+              [
+                30,
+                33
+              ],
+              [
+                34,
+                39
+              ],
+              [
+                40,
+                42
+              ],
+              [
+                43,
+                47
+              ],
+              [
+                48,
+                50
+              ],
+              [
+                51,
+                53
+              ],
+              [
+                54,
+                58
+              ]
+            ],
+            "line_phoneme_indices": [
+              [
+                0,
+                58
+              ]
+            ]
+          }
+        },
+        "change_from_clean_prediction": {
+          "status": "comparable",
+          "accuracy_available": false,
+          "time_shift_applied": false,
+          "comparison_kind": "prediction change relative to clean, not boundary error",
+          "positive_delta": "comparison prediction is later than clean prediction",
+          "units": [
+            {
+              "unit_index": 0,
+              "text": "an",
+              "clean": {
+                "text": "an",
+                "line_index": 0,
+                "word_index": 0,
+                "phonemes": [
+                  "AE",
+                  "N"
+                ],
+                "start_frame": 28,
+                "end_frame": 32,
+                "start_seconds": 0.9752380952380952,
+                "end_seconds": 1.1145578231292517
+              },
+              "comparison": {
+                "text": "an",
+                "line_index": 0,
+                "word_index": 0,
+                "phonemes": [
+                  "AE",
+                  "N"
+                ],
+                "start_frame": 28,
+                "end_frame": 31,
+                "start_seconds": 0.9752380952380952,
+                "end_seconds": 1.0797278911564625
+              },
+              "start_frame_delta": 0,
+              "end_frame_delta": -1,
+              "start_seconds_delta": 0.0,
+              "end_seconds_delta": -0.03482993197278916
+            },
+            {
+              "unit_index": 1,
+              "text": " empty",
+              "clean": {
+                "text": " empty",
+                "line_index": 0,
+                "word_index": 1,
+                "phonemes": [
+                  "EH",
+                  "M",
+                  "P",
+                  "T",
+                  "IY"
+                ],
+                "start_frame": 34,
+                "end_frame": 51,
+                "start_seconds": 1.18421768707483,
+                "end_seconds": 1.7763265306122449
+              },
+              "comparison": {
+                "text": " empty",
+                "line_index": 0,
+                "word_index": 1,
+                "phonemes": [
+                  "EH",
+                  "M",
+                  "P",
+                  "T",
+                  "IY"
+                ],
+                "start_frame": 34,
+                "end_frame": 51,
+                "start_seconds": 1.18421768707483,
+                "end_seconds": 1.7763265306122449
+              },
+              "start_frame_delta": 0,
+              "end_frame_delta": 0,
+              "start_seconds_delta": 0.0,
+              "end_seconds_delta": 0.0
+            },
+            {
+              "unit_index": 2,
+              "text": " street",
+              "clean": {
+                "text": " street",
+                "line_index": 0,
+                "word_index": 2,
+                "phonemes": [
+                  "S",
+                  "T",
+                  "R",
+                  "IY",
+                  "T"
+                ],
+                "start_frame": 52,
+                "end_frame": 72,
+                "start_seconds": 1.811156462585034,
+                "end_seconds": 2.507755102040816
+              },
+              "comparison": {
+                "text": " street",
+                "line_index": 0,
+                "word_index": 2,
+                "phonemes": [
+                  "S",
+                  "T",
+                  "R",
+                  "IY",
+                  "T"
+                ],
+                "start_frame": 52,
+                "end_frame": 71,
+                "start_seconds": 1.811156462585034,
+                "end_seconds": 2.4729251700680273
+              },
+              "start_frame_delta": 0,
+              "end_frame_delta": -1,
+              "start_seconds_delta": 0.0,
+              "end_seconds_delta": -0.03482993197278894
+            },
+            {
+              "unit_index": 3,
+              "text": " an",
+              "clean": {
+                "text": " an",
+                "line_index": 0,
+                "word_index": 3,
+                "phonemes": [
+                  "AE",
+                  "N"
+                ],
+                "start_frame": 75,
+                "end_frame": 78,
+                "start_seconds": 2.6122448979591835,
+                "end_seconds": 2.7167346938775507
+              },
+              "comparison": {
+                "text": " an",
+                "line_index": 0,
+                "word_index": 3,
+                "phonemes": [
+                  "AE",
+                  "N"
+                ],
+                "start_frame": 75,
+                "end_frame": 78,
+                "start_seconds": 2.6122448979591835,
+                "end_seconds": 2.7167346938775507
+              },
+              "start_frame_delta": 0,
+              "end_frame_delta": 0,
+              "start_seconds_delta": 0.0,
+              "end_seconds_delta": 0.0
+            },
+            {
+              "unit_index": 4,
+              "text": " empty",
+              "clean": {
+                "text": " empty",
+                "line_index": 0,
+                "word_index": 4,
+                "phonemes": [
+                  "EH",
+                  "M",
+                  "P",
+                  "T",
+                  "IY"
+                ],
+                "start_frame": 81,
+                "end_frame": 98,
+                "start_seconds": 2.8212244897959184,
+                "end_seconds": 3.413333333333333
+              },
+              "comparison": {
+                "text": " empty",
+                "line_index": 0,
+                "word_index": 4,
+                "phonemes": [
+                  "EH",
+                  "M",
+                  "P",
+                  "T",
+                  "IY"
+                ],
+                "start_frame": 81,
+                "end_frame": 98,
+                "start_seconds": 2.8212244897959184,
+                "end_seconds": 3.413333333333333
+              },
+              "start_frame_delta": 0,
+              "end_frame_delta": 0,
+              "start_seconds_delta": 0.0,
+              "end_seconds_delta": 0.0
+            },
+            {
+              "unit_index": 5,
+              "text": " house",
+              "clean": {
+                "text": " house",
+                "line_index": 0,
+                "word_index": 5,
+                "phonemes": [
+                  "HH",
+                  "AW",
+                  "S"
+                ],
+                "start_frame": 99,
+                "end_frame": 121,
+                "start_seconds": 3.4481632653061225,
+                "end_seconds": 4.214421768707483
+              },
+              "comparison": {
+                "text": " house",
+                "line_index": 0,
+                "word_index": 5,
+                "phonemes": [
+                  "HH",
+                  "AW",
+                  "S"
+                ],
+                "start_frame": 99,
+                "end_frame": 121,
+                "start_seconds": 3.4481632653061225,
+                "end_seconds": 4.214421768707483
+              },
+              "start_frame_delta": 0,
+              "end_frame_delta": 0,
+              "start_seconds_delta": 0.0,
+              "end_seconds_delta": 0.0
+            },
+            {
+              "unit_index": 6,
+              "text": " a",
+              "clean": {
+                "text": " a",
+                "line_index": 0,
+                "word_index": 6,
+                "phonemes": [
+                  "AH"
+                ],
+                "start_frame": 124,
+                "end_frame": 126,
+                "start_seconds": 4.31891156462585,
+                "end_seconds": 4.388571428571429
+              },
+              "comparison": {
+                "text": " a",
+                "line_index": 0,
+                "word_index": 6,
+                "phonemes": [
+                  "AH"
+                ],
+                "start_frame": 123,
+                "end_frame": 126,
+                "start_seconds": 4.284081632653061,
+                "end_seconds": 4.388571428571429
+              },
+              "start_frame_delta": -1,
+              "end_frame_delta": 0,
+              "start_seconds_delta": -0.03482993197278894,
+              "end_seconds_delta": 0.0
+            },
+            {
+              "unit_index": 7,
+              "text": " hole",
+              "clean": {
+                "text": " hole",
+                "line_index": 0,
+                "word_index": 7,
+                "phonemes": [
+                  "HH",
+                  "OW",
+                  "L"
+                ],
+                "start_frame": 128,
+                "end_frame": 138,
+                "start_seconds": 4.458231292517007,
+                "end_seconds": 4.806530612244898
+              },
+              "comparison": {
+                "text": " hole",
+                "line_index": 0,
+                "word_index": 7,
+                "phonemes": [
+                  "HH",
+                  "OW",
+                  "L"
+                ],
+                "start_frame": 128,
+                "end_frame": 138,
+                "start_seconds": 4.458231292517007,
+                "end_seconds": 4.806530612244898
+              },
+              "start_frame_delta": 0,
+              "end_frame_delta": 0,
+              "start_seconds_delta": 0.0,
+              "end_seconds_delta": 0.0
+            },
+            {
+              "unit_index": 8,
+              "text": " inside",
+              "clean": {
+                "text": " inside",
+                "line_index": 0,
+                "word_index": 8,
+                "phonemes": [
+                  "IH",
+                  "N",
+                  "S",
+                  "AY",
+                  "D"
+                ],
+                "start_frame": 140,
+                "end_frame": 157,
+                "start_seconds": 4.876190476190476,
+                "end_seconds": 5.468299319727891
+              },
+              "comparison": {
+                "text": " inside",
+                "line_index": 0,
+                "word_index": 8,
+                "phonemes": [
+                  "IH",
+                  "N",
+                  "S",
+                  "AY",
+                  "D"
+                ],
+                "start_frame": 140,
+                "end_frame": 157,
+                "start_seconds": 4.876190476190476,
+                "end_seconds": 5.468299319727891
+              },
+              "start_frame_delta": 0,
+              "end_frame_delta": 0,
+              "start_seconds_delta": 0.0,
+              "end_seconds_delta": 0.0
+            },
+            {
+              "unit_index": 9,
+              "text": " my",
+              "clean": {
+                "text": " my",
+                "line_index": 0,
+                "word_index": 9,
+                "phonemes": [
+                  "M",
+                  "AY"
+                ],
+                "start_frame": 159,
+                "end_frame": 170,
+                "start_seconds": 5.537959183673469,
+                "end_seconds": 5.921088435374149
+              },
+              "comparison": {
+                "text": " my",
+                "line_index": 0,
+                "word_index": 9,
+                "phonemes": [
+                  "M",
+                  "AY"
+                ],
+                "start_frame": 159,
+                "end_frame": 170,
+                "start_seconds": 5.537959183673469,
+                "end_seconds": 5.921088435374149
+              },
+              "start_frame_delta": 0,
+              "end_frame_delta": 0,
+              "start_seconds_delta": 0.0,
+              "end_seconds_delta": 0.0
+            },
+            {
+              "unit_index": 10,
+              "text": " heart",
+              "clean": {
+                "text": " heart",
+                "line_index": 0,
+                "word_index": 10,
+                "phonemes": [
+                  "HH",
+                  "AA",
+                  "R",
+                  "T"
+                ],
+                "start_frame": 172,
+                "end_frame": 212,
+                "start_seconds": 5.990748299319728,
+                "end_seconds": 7.383945578231292
+              },
+              "comparison": {
+                "text": " heart",
+                "line_index": 0,
+                "word_index": 10,
+                "phonemes": [
+                  "HH",
+                  "AA",
+                  "R",
+                  "T"
+                ],
+                "start_frame": 172,
+                "end_frame": 196,
+                "start_seconds": 5.990748299319728,
+                "end_seconds": 6.826666666666666
+              },
+              "start_frame_delta": 0,
+              "end_frame_delta": -16,
+              "start_seconds_delta": 0.0,
+              "end_seconds_delta": -0.5572789115646257
+            },
+            {
+              "unit_index": 11,
+              "text": " i'm",
+              "clean": {
+                "text": " i'm",
+                "line_index": 0,
+                "word_index": 11,
+                "phonemes": [
+                  "AY",
+                  "M"
+                ],
+                "start_frame": 214,
+                "end_frame": 219,
+                "start_seconds": 7.453605442176871,
+                "end_seconds": 7.627755102040816
+              },
+              "comparison": {
+                "text": " i'm",
+                "line_index": 0,
+                "word_index": 11,
+                "phonemes": [
+                  "AY",
+                  "M"
+                ],
+                "start_frame": 200,
+                "end_frame": 219,
+                "start_seconds": 6.965986394557823,
+                "end_seconds": 7.627755102040816
+              },
+              "start_frame_delta": -14,
+              "end_frame_delta": 0,
+              "start_seconds_delta": -0.48761904761904784,
+              "end_seconds_delta": 0.0
+            },
+            {
+              "unit_index": 12,
+              "text": " all",
+              "clean": {
+                "text": " all",
+                "line_index": 0,
+                "word_index": 12,
+                "phonemes": [
+                  "AO",
+                  "L"
+                ],
+                "start_frame": 222,
+                "end_frame": 234,
+                "start_seconds": 7.732244897959183,
+                "end_seconds": 8.150204081632653
+              },
+              "comparison": {
+                "text": " all",
+                "line_index": 0,
+                "word_index": 12,
+                "phonemes": [
+                  "AO",
+                  "L"
+                ],
+                "start_frame": 222,
+                "end_frame": 233,
+                "start_seconds": 7.732244897959183,
+                "end_seconds": 8.115374149659864
+              },
+              "start_frame_delta": 0,
+              "end_frame_delta": -1,
+              "start_seconds_delta": 0.0,
+              "end_seconds_delta": -0.03482993197278894
+            },
+            {
+              "unit_index": 13,
+              "text": " alone",
+              "clean": {
+                "text": " alone",
+                "line_index": 0,
+                "word_index": 13,
+                "phonemes": [
+                  "AH",
+                  "L",
+                  "OW",
+                  "N"
+                ],
+                "start_frame": 236,
+                "end_frame": 265,
+                "start_seconds": 8.219863945578231,
+                "end_seconds": 9.229931972789116
+              },
+              "comparison": {
+                "text": " alone",
+                "line_index": 0,
+                "word_index": 13,
+                "phonemes": [
+                  "AH",
+                  "L",
+                  "OW",
+                  "N"
+                ],
+                "start_frame": 236,
+                "end_frame": 265,
+                "start_seconds": 8.219863945578231,
+                "end_seconds": 9.229931972789116
+              },
+              "start_frame_delta": 0,
+              "end_frame_delta": 0,
+              "start_seconds_delta": 0.0,
+              "end_seconds_delta": 0.0
+            }
+          ],
+          "summary": {
+            "mean_absolute_start_change_seconds": 0.03731778425655977,
+            "max_absolute_start_change_seconds": 0.48761904761904784,
+            "mean_absolute_end_change_seconds": 0.04726919339164234,
+            "max_absolute_end_change_seconds": 0.5572789115646257
+          }
+        }
+      }
+    },
+    "separated": {
+      "MTL": {
+        "audio": {
+          "path": "/home/xcy/auto-lrc/data/local/mixtures/native-vocals-20261010/segment-0002-vocals.wav",
+          "bytes": 3270896,
+          "sha256": "19f6277fd279edfc335e85c7d47235318f898fb7bc42dd8d91b1c99ffb572979"
+        },
+        "observed_forwards": [
+          {
+            "model": "acoustic",
+            "input_shapes": [
+              [
+                1,
+                1,
+                128,
+                799
+              ]
+            ],
+            "input_devices": [
+              "cuda:0"
+            ],
+            "output_shapes": [
+              [
+                1,
+                266,
+                41,
+                47
+              ]
+            ],
+            "output_devices": [
+              "cuda:0"
+            ],
+            "output_finite": true
+          }
+        ],
+        "vocalize": false,
+        "status": "completed",
+        "seed": 7,
+        "runtime_seconds": 0.07698120800000652,
+        "peak_memory": {
+          "allocated_bytes": 1479427072,
+          "reserved_bytes": 2388656128
+        },
+        "result": {
+          "lrc": "[00:00.975]<00:00.975>an<00:01.184> empty<00:01.811> street<00:02.612> an<00:02.821> empty<00:03.448> house<00:04.318> a<00:04.458> hole<00:04.876> inside<00:05.537> my<00:05.990> heart<00:06.861> i'm<00:07.732> all<00:08.219> alone",
+          "units": [
+            {
+              "text": "an",
+              "line_index": 0,
+              "word_index": 0,
+              "phonemes": [
+                "AE",
+                "N"
+              ],
+              "start_frame": 28,
+              "end_frame": 31,
+              "start_seconds": 0.9752380952380952,
+              "end_seconds": 1.0797278911564625
+            },
+            {
+              "text": " empty",
+              "line_index": 0,
+              "word_index": 1,
+              "phonemes": [
+                "EH",
+                "M",
+                "P",
+                "T",
+                "IY"
+              ],
+              "start_frame": 34,
+              "end_frame": 51,
+              "start_seconds": 1.18421768707483,
+              "end_seconds": 1.7763265306122449
+            },
+            {
+              "text": " street",
+              "line_index": 0,
+              "word_index": 2,
+              "phonemes": [
+                "S",
+                "T",
+                "R",
+                "IY",
+                "T"
+              ],
+              "start_frame": 52,
+              "end_frame": 72,
+              "start_seconds": 1.811156462585034,
+              "end_seconds": 2.507755102040816
+            },
+            {
+              "text": " an",
+              "line_index": 0,
+              "word_index": 3,
+              "phonemes": [
+                "AE",
+                "N"
+              ],
+              "start_frame": 75,
+              "end_frame": 78,
+              "start_seconds": 2.6122448979591835,
+              "end_seconds": 2.7167346938775507
+            },
+            {
+              "text": " empty",
+              "line_index": 0,
+              "word_index": 4,
+              "phonemes": [
+                "EH",
+                "M",
+                "P",
+                "T",
+                "IY"
+              ],
+              "start_frame": 81,
+              "end_frame": 98,
+              "start_seconds": 2.8212244897959184,
+              "end_seconds": 3.413333333333333
+            },
+            {
+              "text": " house",
+              "line_index": 0,
+              "word_index": 5,
+              "phonemes": [
+                "HH",
+                "AW",
+                "S"
+              ],
+              "start_frame": 99,
+              "end_frame": 121,
+              "start_seconds": 3.4481632653061225,
+              "end_seconds": 4.214421768707483
+            },
+            {
+              "text": " a",
+              "line_index": 0,
+              "word_index": 6,
+              "phonemes": [
+                "AH"
+              ],
+              "start_frame": 124,
+              "end_frame": 126,
+              "start_seconds": 4.31891156462585,
+              "end_seconds": 4.388571428571429
+            },
+            {
+              "text": " hole",
+              "line_index": 0,
+              "word_index": 7,
+              "phonemes": [
+                "HH",
+                "OW",
+                "L"
+              ],
+              "start_frame": 128,
+              "end_frame": 138,
+              "start_seconds": 4.458231292517007,
+              "end_seconds": 4.806530612244898
+            },
+            {
+              "text": " inside",
+              "line_index": 0,
+              "word_index": 8,
+              "phonemes": [
+                "IH",
+                "N",
+                "S",
+                "AY",
+                "D"
+              ],
+              "start_frame": 140,
+              "end_frame": 157,
+              "start_seconds": 4.876190476190476,
+              "end_seconds": 5.468299319727891
+            },
+            {
+              "text": " my",
+              "line_index": 0,
+              "word_index": 9,
+              "phonemes": [
+                "M",
+                "AY"
+              ],
+              "start_frame": 159,
+              "end_frame": 170,
+              "start_seconds": 5.537959183673469,
+              "end_seconds": 5.921088435374149
+            },
+            {
+              "text": " heart",
+              "line_index": 0,
+              "word_index": 10,
+              "phonemes": [
+                "HH",
+                "AA",
+                "R",
+                "T"
+              ],
+              "start_frame": 172,
+              "end_frame": 193,
+              "start_seconds": 5.990748299319728,
+              "end_seconds": 6.722176870748299
+            },
+            {
+              "text": " i'm",
+              "line_index": 0,
+              "word_index": 11,
+              "phonemes": [
+                "AY",
+                "M"
+              ],
+              "start_frame": 197,
+              "end_frame": 219,
+              "start_seconds": 6.861496598639455,
+              "end_seconds": 7.627755102040816
+            },
+            {
+              "text": " all",
+              "line_index": 0,
+              "word_index": 12,
+              "phonemes": [
+                "AO",
+                "L"
+              ],
+              "start_frame": 222,
+              "end_frame": 233,
+              "start_seconds": 7.732244897959183,
+              "end_seconds": 8.115374149659864
+            },
+            {
+              "text": " alone",
+              "line_index": 0,
+              "word_index": 13,
+              "phonemes": [
+                "AH",
+                "L",
+                "OW",
+                "N"
+              ],
+              "start_frame": 236,
+              "end_frame": 265,
+              "start_seconds": 8.219863945578231,
+              "end_seconds": 9.229931972789116
+            }
+          ],
+          "alignment": {
+            "sample_rate": 22050,
+            "hop_length": 256,
+            "frame_stride": 3,
+            "frame_resolution_seconds": 0.034829931972789115,
+            "mel_frames": 799,
+            "output_frames": 266,
+            "input_samples": 204425,
+            "method": "MTL",
+            "model_type": "MTL",
+            "bdr": false,
+            "device": "cuda",
+            "score": -124.60116577148438,
+            "score_kind": "whole_path_log_score_uncalibrated",
+            "legacy_frame_origin_seconds": 0.0,
+            "physical_origin_seconds": null,
+            "physical_origin_calibrated": false,
+            "word_frames": [
+              [
+                28,
+                31
+              ],
+              [
+                34,
+                51
+              ],
+              [
+                52,
+                72
+              ],
+              [
+                75,
+                78
+              ],
+              [
+                81,
+                98
+              ],
+              [
+                99,
+                121
+              ],
+              [
+                124,
+                126
+              ],
+              [
+                128,
+                138
+              ],
+              [
+                140,
+                157
+              ],
+              [
+                159,
+                170
+              ],
+              [
+                172,
+                193
+              ],
+              [
+                197,
+                219
+              ],
+              [
+                222,
+                233
+              ],
+              [
+                236,
+                265
+              ]
+            ],
+            "phonemes": [
+              "AE",
+              "N",
+              " ",
+              "EH",
+              "M",
+              "P",
+              "T",
+              "IY",
+              " ",
+              "S",
+              "T",
+              "R",
+              "IY",
+              "T",
+              " ",
+              "AE",
+              "N",
+              " ",
+              "EH",
+              "M",
+              "P",
+              "T",
+              "IY",
+              " ",
+              "HH",
+              "AW",
+              "S",
+              " ",
+              "AH",
+              " ",
+              "HH",
+              "OW",
+              "L",
+              " ",
+              "IH",
+              "N",
+              "S",
+              "AY",
+              "D",
+              " ",
+              "M",
+              "AY",
+              " ",
+              "HH",
+              "AA",
+              "R",
+              "T",
+              " ",
+              "AY",
+              "M",
+              " ",
+              "AO",
+              "L",
+              " ",
+              "AH",
+              "L",
+              "OW",
+              "N"
+            ],
+            "word_phoneme_indices": [
+              [
+                0,
+                2
+              ],
+              [
+                3,
+                8
+              ],
+              [
+                9,
+                14
+              ],
+              [
+                15,
+                17
+              ],
+              [
+                18,
+                23
+              ],
+              [
+                24,
+                27
+              ],
+              [
+                28,
+                29
+              ],
+              [
+                30,
+                33
+              ],
+              [
+                34,
+                39
+              ],
+              [
+                40,
+                42
+              ],
+              [
+                43,
+                47
+              ],
+              [
+                48,
+                50
+              ],
+              [
+                51,
+                53
+              ],
+              [
+                54,
+                58
+              ]
+            ],
+            "line_phoneme_indices": [
+              [
+                0,
+                58
+              ]
+            ]
+          }
+        },
+        "change_from_clean_prediction": {
+          "status": "comparable",
+          "accuracy_available": false,
+          "time_shift_applied": false,
+          "comparison_kind": "prediction change relative to clean, not boundary error",
+          "positive_delta": "comparison prediction is later than clean prediction",
+          "units": [
+            {
+              "unit_index": 0,
+              "text": "an",
+              "clean": {
+                "text": "an",
+                "line_index": 0,
+                "word_index": 0,
+                "phonemes": [
+                  "AE",
+                  "N"
+                ],
+                "start_frame": 28,
+                "end_frame": 32,
+                "start_seconds": 0.9752380952380952,
+                "end_seconds": 1.1145578231292517
+              },
+              "comparison": {
+                "text": "an",
+                "line_index": 0,
+                "word_index": 0,
+                "phonemes": [
+                  "AE",
+                  "N"
+                ],
+                "start_frame": 28,
+                "end_frame": 31,
+                "start_seconds": 0.9752380952380952,
+                "end_seconds": 1.0797278911564625
+              },
+              "start_frame_delta": 0,
+              "end_frame_delta": -1,
+              "start_seconds_delta": 0.0,
+              "end_seconds_delta": -0.03482993197278916
+            },
+            {
+              "unit_index": 1,
+              "text": " empty",
+              "clean": {
+                "text": " empty",
+                "line_index": 0,
+                "word_index": 1,
+                "phonemes": [
+                  "EH",
+                  "M",
+                  "P",
+                  "T",
+                  "IY"
+                ],
+                "start_frame": 34,
+                "end_frame": 51,
+                "start_seconds": 1.18421768707483,
+                "end_seconds": 1.7763265306122449
+              },
+              "comparison": {
+                "text": " empty",
+                "line_index": 0,
+                "word_index": 1,
+                "phonemes": [
+                  "EH",
+                  "M",
+                  "P",
+                  "T",
+                  "IY"
+                ],
+                "start_frame": 34,
+                "end_frame": 51,
+                "start_seconds": 1.18421768707483,
+                "end_seconds": 1.7763265306122449
+              },
+              "start_frame_delta": 0,
+              "end_frame_delta": 0,
+              "start_seconds_delta": 0.0,
+              "end_seconds_delta": 0.0
+            },
+            {
+              "unit_index": 2,
+              "text": " street",
+              "clean": {
+                "text": " street",
+                "line_index": 0,
+                "word_index": 2,
+                "phonemes": [
+                  "S",
+                  "T",
+                  "R",
+                  "IY",
+                  "T"
+                ],
+                "start_frame": 52,
+                "end_frame": 72,
+                "start_seconds": 1.811156462585034,
+                "end_seconds": 2.507755102040816
+              },
+              "comparison": {
+                "text": " street",
+                "line_index": 0,
+                "word_index": 2,
+                "phonemes": [
+                  "S",
+                  "T",
+                  "R",
+                  "IY",
+                  "T"
+                ],
+                "start_frame": 52,
+                "end_frame": 72,
+                "start_seconds": 1.811156462585034,
+                "end_seconds": 2.507755102040816
+              },
+              "start_frame_delta": 0,
+              "end_frame_delta": 0,
+              "start_seconds_delta": 0.0,
+              "end_seconds_delta": 0.0
+            },
+            {
+              "unit_index": 3,
+              "text": " an",
+              "clean": {
+                "text": " an",
+                "line_index": 0,
+                "word_index": 3,
+                "phonemes": [
+                  "AE",
+                  "N"
+                ],
+                "start_frame": 75,
+                "end_frame": 78,
+                "start_seconds": 2.6122448979591835,
+                "end_seconds": 2.7167346938775507
+              },
+              "comparison": {
+                "text": " an",
+                "line_index": 0,
+                "word_index": 3,
+                "phonemes": [
+                  "AE",
+                  "N"
+                ],
+                "start_frame": 75,
+                "end_frame": 78,
+                "start_seconds": 2.6122448979591835,
+                "end_seconds": 2.7167346938775507
+              },
+              "start_frame_delta": 0,
+              "end_frame_delta": 0,
+              "start_seconds_delta": 0.0,
+              "end_seconds_delta": 0.0
+            },
+            {
+              "unit_index": 4,
+              "text": " empty",
+              "clean": {
+                "text": " empty",
+                "line_index": 0,
+                "word_index": 4,
+                "phonemes": [
+                  "EH",
+                  "M",
+                  "P",
+                  "T",
+                  "IY"
+                ],
+                "start_frame": 81,
+                "end_frame": 98,
+                "start_seconds": 2.8212244897959184,
+                "end_seconds": 3.413333333333333
+              },
+              "comparison": {
+                "text": " empty",
+                "line_index": 0,
+                "word_index": 4,
+                "phonemes": [
+                  "EH",
+                  "M",
+                  "P",
+                  "T",
+                  "IY"
+                ],
+                "start_frame": 81,
+                "end_frame": 98,
+                "start_seconds": 2.8212244897959184,
+                "end_seconds": 3.413333333333333
+              },
+              "start_frame_delta": 0,
+              "end_frame_delta": 0,
+              "start_seconds_delta": 0.0,
+              "end_seconds_delta": 0.0
+            },
+            {
+              "unit_index": 5,
+              "text": " house",
+              "clean": {
+                "text": " house",
+                "line_index": 0,
+                "word_index": 5,
+                "phonemes": [
+                  "HH",
+                  "AW",
+                  "S"
+                ],
+                "start_frame": 99,
+                "end_frame": 121,
+                "start_seconds": 3.4481632653061225,
+                "end_seconds": 4.214421768707483
+              },
+              "comparison": {
+                "text": " house",
+                "line_index": 0,
+                "word_index": 5,
+                "phonemes": [
+                  "HH",
+                  "AW",
+                  "S"
+                ],
+                "start_frame": 99,
+                "end_frame": 121,
+                "start_seconds": 3.4481632653061225,
+                "end_seconds": 4.214421768707483
+              },
+              "start_frame_delta": 0,
+              "end_frame_delta": 0,
+              "start_seconds_delta": 0.0,
+              "end_seconds_delta": 0.0
+            },
+            {
+              "unit_index": 6,
+              "text": " a",
+              "clean": {
+                "text": " a",
+                "line_index": 0,
+                "word_index": 6,
+                "phonemes": [
+                  "AH"
+                ],
+                "start_frame": 124,
+                "end_frame": 126,
+                "start_seconds": 4.31891156462585,
+                "end_seconds": 4.388571428571429
+              },
+              "comparison": {
+                "text": " a",
+                "line_index": 0,
+                "word_index": 6,
+                "phonemes": [
+                  "AH"
+                ],
+                "start_frame": 124,
+                "end_frame": 126,
+                "start_seconds": 4.31891156462585,
+                "end_seconds": 4.388571428571429
+              },
+              "start_frame_delta": 0,
+              "end_frame_delta": 0,
+              "start_seconds_delta": 0.0,
+              "end_seconds_delta": 0.0
+            },
+            {
+              "unit_index": 7,
+              "text": " hole",
+              "clean": {
+                "text": " hole",
+                "line_index": 0,
+                "word_index": 7,
+                "phonemes": [
+                  "HH",
+                  "OW",
+                  "L"
+                ],
+                "start_frame": 128,
+                "end_frame": 138,
+                "start_seconds": 4.458231292517007,
+                "end_seconds": 4.806530612244898
+              },
+              "comparison": {
+                "text": " hole",
+                "line_index": 0,
+                "word_index": 7,
+                "phonemes": [
+                  "HH",
+                  "OW",
+                  "L"
+                ],
+                "start_frame": 128,
+                "end_frame": 138,
+                "start_seconds": 4.458231292517007,
+                "end_seconds": 4.806530612244898
+              },
+              "start_frame_delta": 0,
+              "end_frame_delta": 0,
+              "start_seconds_delta": 0.0,
+              "end_seconds_delta": 0.0
+            },
+            {
+              "unit_index": 8,
+              "text": " inside",
+              "clean": {
+                "text": " inside",
+                "line_index": 0,
+                "word_index": 8,
+                "phonemes": [
+                  "IH",
+                  "N",
+                  "S",
+                  "AY",
+                  "D"
+                ],
+                "start_frame": 140,
+                "end_frame": 157,
+                "start_seconds": 4.876190476190476,
+                "end_seconds": 5.468299319727891
+              },
+              "comparison": {
+                "text": " inside",
+                "line_index": 0,
+                "word_index": 8,
+                "phonemes": [
+                  "IH",
+                  "N",
+                  "S",
+                  "AY",
+                  "D"
+                ],
+                "start_frame": 140,
+                "end_frame": 157,
+                "start_seconds": 4.876190476190476,
+                "end_seconds": 5.468299319727891
+              },
+              "start_frame_delta": 0,
+              "end_frame_delta": 0,
+              "start_seconds_delta": 0.0,
+              "end_seconds_delta": 0.0
+            },
+            {
+              "unit_index": 9,
+              "text": " my",
+              "clean": {
+                "text": " my",
+                "line_index": 0,
+                "word_index": 9,
+                "phonemes": [
+                  "M",
+                  "AY"
+                ],
+                "start_frame": 159,
+                "end_frame": 170,
+                "start_seconds": 5.537959183673469,
+                "end_seconds": 5.921088435374149
+              },
+              "comparison": {
+                "text": " my",
+                "line_index": 0,
+                "word_index": 9,
+                "phonemes": [
+                  "M",
+                  "AY"
+                ],
+                "start_frame": 159,
+                "end_frame": 170,
+                "start_seconds": 5.537959183673469,
+                "end_seconds": 5.921088435374149
+              },
+              "start_frame_delta": 0,
+              "end_frame_delta": 0,
+              "start_seconds_delta": 0.0,
+              "end_seconds_delta": 0.0
+            },
+            {
+              "unit_index": 10,
+              "text": " heart",
+              "clean": {
+                "text": " heart",
+                "line_index": 0,
+                "word_index": 10,
+                "phonemes": [
+                  "HH",
+                  "AA",
+                  "R",
+                  "T"
+                ],
+                "start_frame": 172,
+                "end_frame": 212,
+                "start_seconds": 5.990748299319728,
+                "end_seconds": 7.383945578231292
+              },
+              "comparison": {
+                "text": " heart",
+                "line_index": 0,
+                "word_index": 10,
+                "phonemes": [
+                  "HH",
+                  "AA",
+                  "R",
+                  "T"
+                ],
+                "start_frame": 172,
+                "end_frame": 193,
+                "start_seconds": 5.990748299319728,
+                "end_seconds": 6.722176870748299
+              },
+              "start_frame_delta": 0,
+              "end_frame_delta": -19,
+              "start_seconds_delta": 0.0,
+              "end_seconds_delta": -0.6617687074829925
+            },
+            {
+              "unit_index": 11,
+              "text": " i'm",
+              "clean": {
+                "text": " i'm",
+                "line_index": 0,
+                "word_index": 11,
+                "phonemes": [
+                  "AY",
+                  "M"
+                ],
+                "start_frame": 214,
+                "end_frame": 219,
+                "start_seconds": 7.453605442176871,
+                "end_seconds": 7.627755102040816
+              },
+              "comparison": {
+                "text": " i'm",
+                "line_index": 0,
+                "word_index": 11,
+                "phonemes": [
+                  "AY",
+                  "M"
+                ],
+                "start_frame": 197,
+                "end_frame": 219,
+                "start_seconds": 6.861496598639455,
+                "end_seconds": 7.627755102040816
+              },
+              "start_frame_delta": -17,
+              "end_frame_delta": 0,
+              "start_seconds_delta": -0.5921088435374156,
+              "end_seconds_delta": 0.0
+            },
+            {
+              "unit_index": 12,
+              "text": " all",
+              "clean": {
+                "text": " all",
+                "line_index": 0,
+                "word_index": 12,
+                "phonemes": [
+                  "AO",
+                  "L"
+                ],
+                "start_frame": 222,
+                "end_frame": 234,
+                "start_seconds": 7.732244897959183,
+                "end_seconds": 8.150204081632653
+              },
+              "comparison": {
+                "text": " all",
+                "line_index": 0,
+                "word_index": 12,
+                "phonemes": [
+                  "AO",
+                  "L"
+                ],
+                "start_frame": 222,
+                "end_frame": 233,
+                "start_seconds": 7.732244897959183,
+                "end_seconds": 8.115374149659864
+              },
+              "start_frame_delta": 0,
+              "end_frame_delta": -1,
+              "start_seconds_delta": 0.0,
+              "end_seconds_delta": -0.03482993197278894
+            },
+            {
+              "unit_index": 13,
+              "text": " alone",
+              "clean": {
+                "text": " alone",
+                "line_index": 0,
+                "word_index": 13,
+                "phonemes": [
+                  "AH",
+                  "L",
+                  "OW",
+                  "N"
+                ],
+                "start_frame": 236,
+                "end_frame": 265,
+                "start_seconds": 8.219863945578231,
+                "end_seconds": 9.229931972789116
+              },
+              "comparison": {
+                "text": " alone",
+                "line_index": 0,
+                "word_index": 13,
+                "phonemes": [
+                  "AH",
+                  "L",
+                  "OW",
+                  "N"
+                ],
+                "start_frame": 236,
+                "end_frame": 265,
+                "start_seconds": 8.219863945578231,
+                "end_seconds": 9.229931972789116
+              },
+              "start_frame_delta": 0,
+              "end_frame_delta": 0,
+              "start_seconds_delta": 0.0,
+              "end_seconds_delta": 0.0
+            }
+          ],
+          "summary": {
+            "mean_absolute_start_change_seconds": 0.04229348882410111,
+            "max_absolute_start_change_seconds": 0.5921088435374156,
+            "mean_absolute_end_change_seconds": 0.05224489795918362,
+            "max_absolute_end_change_seconds": 0.6617687074829925
+          }
+        }
+      },
+      "MTL_BDR": {
+        "audio": {
+          "path": "/home/xcy/auto-lrc/data/local/mixtures/native-vocals-20261010/segment-0002-vocals.wav",
+          "bytes": 3270896,
+          "sha256": "19f6277fd279edfc335e85c7d47235318f898fb7bc42dd8d91b1c99ffb572979"
+        },
+        "observed_forwards": [
+          {
+            "model": "acoustic",
+            "input_shapes": [
+              [
+                1,
+                1,
+                128,
+                799
+              ]
+            ],
+            "input_devices": [
+              "cuda:0"
+            ],
+            "output_shapes": [
+              [
+                1,
+                266,
+                41,
+                47
+              ]
+            ],
+            "output_devices": [
+              "cuda:0"
+            ],
+            "output_finite": true
+          },
+          {
+            "model": "boundary",
+            "input_shapes": [
+              [
+                1,
+                1,
+                128,
+                799
+              ]
+            ],
+            "input_devices": [
+              "cuda:0"
+            ],
+            "output_shapes": [
+              [
+                1,
+                266,
+                1
+              ]
+            ],
+            "output_devices": [
+              "cuda:0"
+            ],
+            "output_finite": true
+          }
+        ],
+        "vocalize": false,
+        "status": "completed",
+        "seed": 7,
+        "runtime_seconds": 0.09540923000000134,
+        "peak_memory": {
+          "allocated_bytes": 1479559168,
+          "reserved_bytes": 2388656128
+        },
+        "result": {
+          "lrc": "[00:00.975]<00:00.975>an<00:01.184> empty<00:01.811> street<00:02.612> an<00:02.821> empty<00:03.448> house<00:04.318> a<00:04.458> hole<00:04.876> inside<00:05.537> my<00:05.990> heart<00:06.861> i'm<00:07.732> all<00:08.219> alone",
+          "units": [
+            {
+              "text": "an",
+              "line_index": 0,
+              "word_index": 0,
+              "phonemes": [
+                "AE",
+                "N"
+              ],
+              "start_frame": 28,
+              "end_frame": 31,
+              "start_seconds": 0.9752380952380952,
+              "end_seconds": 1.0797278911564625
+            },
+            {
+              "text": " empty",
+              "line_index": 0,
+              "word_index": 1,
+              "phonemes": [
+                "EH",
+                "M",
+                "P",
+                "T",
+                "IY"
+              ],
+              "start_frame": 34,
+              "end_frame": 51,
+              "start_seconds": 1.18421768707483,
+              "end_seconds": 1.7763265306122449
+            },
+            {
+              "text": " street",
+              "line_index": 0,
+              "word_index": 2,
+              "phonemes": [
+                "S",
+                "T",
+                "R",
+                "IY",
+                "T"
+              ],
+              "start_frame": 52,
+              "end_frame": 72,
+              "start_seconds": 1.811156462585034,
+              "end_seconds": 2.507755102040816
+            },
+            {
+              "text": " an",
+              "line_index": 0,
+              "word_index": 3,
+              "phonemes": [
+                "AE",
+                "N"
+              ],
+              "start_frame": 75,
+              "end_frame": 78,
+              "start_seconds": 2.6122448979591835,
+              "end_seconds": 2.7167346938775507
+            },
+            {
+              "text": " empty",
+              "line_index": 0,
+              "word_index": 4,
+              "phonemes": [
+                "EH",
+                "M",
+                "P",
+                "T",
+                "IY"
+              ],
+              "start_frame": 81,
+              "end_frame": 98,
+              "start_seconds": 2.8212244897959184,
+              "end_seconds": 3.413333333333333
+            },
+            {
+              "text": " house",
+              "line_index": 0,
+              "word_index": 5,
+              "phonemes": [
+                "HH",
+                "AW",
+                "S"
+              ],
+              "start_frame": 99,
+              "end_frame": 121,
+              "start_seconds": 3.4481632653061225,
+              "end_seconds": 4.214421768707483
+            },
+            {
+              "text": " a",
+              "line_index": 0,
+              "word_index": 6,
+              "phonemes": [
+                "AH"
+              ],
+              "start_frame": 124,
+              "end_frame": 126,
+              "start_seconds": 4.31891156462585,
+              "end_seconds": 4.388571428571429
+            },
+            {
+              "text": " hole",
+              "line_index": 0,
+              "word_index": 7,
+              "phonemes": [
+                "HH",
+                "OW",
+                "L"
+              ],
+              "start_frame": 128,
+              "end_frame": 138,
+              "start_seconds": 4.458231292517007,
+              "end_seconds": 4.806530612244898
+            },
+            {
+              "text": " inside",
+              "line_index": 0,
+              "word_index": 8,
+              "phonemes": [
+                "IH",
+                "N",
+                "S",
+                "AY",
+                "D"
+              ],
+              "start_frame": 140,
+              "end_frame": 157,
+              "start_seconds": 4.876190476190476,
+              "end_seconds": 5.468299319727891
+            },
+            {
+              "text": " my",
+              "line_index": 0,
+              "word_index": 9,
+              "phonemes": [
+                "M",
+                "AY"
+              ],
+              "start_frame": 159,
+              "end_frame": 170,
+              "start_seconds": 5.537959183673469,
+              "end_seconds": 5.921088435374149
+            },
+            {
+              "text": " heart",
+              "line_index": 0,
+              "word_index": 10,
+              "phonemes": [
+                "HH",
+                "AA",
+                "R",
+                "T"
+              ],
+              "start_frame": 172,
+              "end_frame": 193,
+              "start_seconds": 5.990748299319728,
+              "end_seconds": 6.722176870748299
+            },
+            {
+              "text": " i'm",
+              "line_index": 0,
+              "word_index": 11,
+              "phonemes": [
+                "AY",
+                "M"
+              ],
+              "start_frame": 197,
+              "end_frame": 219,
+              "start_seconds": 6.861496598639455,
+              "end_seconds": 7.627755102040816
+            },
+            {
+              "text": " all",
+              "line_index": 0,
+              "word_index": 12,
+              "phonemes": [
+                "AO",
+                "L"
+              ],
+              "start_frame": 222,
+              "end_frame": 233,
+              "start_seconds": 7.732244897959183,
+              "end_seconds": 8.115374149659864
+            },
+            {
+              "text": " alone",
+              "line_index": 0,
+              "word_index": 13,
+              "phonemes": [
+                "AH",
+                "L",
+                "OW",
+                "N"
+              ],
+              "start_frame": 236,
+              "end_frame": 265,
+              "start_seconds": 8.219863945578231,
+              "end_seconds": 9.229931972789116
+            }
+          ],
+          "alignment": {
+            "sample_rate": 22050,
+            "hop_length": 256,
+            "frame_stride": 3,
+            "frame_resolution_seconds": 0.034829931972789115,
+            "mel_frames": 799,
+            "output_frames": 266,
+            "input_samples": 204425,
+            "method": "MTL_BDR",
+            "model_type": "MTL",
+            "bdr": true,
+            "device": "cuda",
+            "score": -124.88553542190493,
+            "score_kind": "whole_path_log_score_with_bdr_uncalibrated",
+            "legacy_frame_origin_seconds": 0.0,
+            "physical_origin_seconds": null,
+            "physical_origin_calibrated": false,
+            "word_frames": [
+              [
+                28,
+                31
+              ],
+              [
+                34,
+                51
+              ],
+              [
+                52,
+                72
+              ],
+              [
+                75,
+                78
+              ],
+              [
+                81,
+                98
+              ],
+              [
+                99,
+                121
+              ],
+              [
+                124,
+                126
+              ],
+              [
+                128,
+                138
+              ],
+              [
+                140,
+                157
+              ],
+              [
+                159,
+                170
+              ],
+              [
+                172,
+                193
+              ],
+              [
+                197,
+                219
+              ],
+              [
+                222,
+                233
+              ],
+              [
+                236,
+                265
+              ]
+            ],
+            "phonemes": [
+              "AE",
+              "N",
+              " ",
+              "EH",
+              "M",
+              "P",
+              "T",
+              "IY",
+              " ",
+              "S",
+              "T",
+              "R",
+              "IY",
+              "T",
+              " ",
+              "AE",
+              "N",
+              " ",
+              "EH",
+              "M",
+              "P",
+              "T",
+              "IY",
+              " ",
+              "HH",
+              "AW",
+              "S",
+              " ",
+              "AH",
+              " ",
+              "HH",
+              "OW",
+              "L",
+              " ",
+              "IH",
+              "N",
+              "S",
+              "AY",
+              "D",
+              " ",
+              "M",
+              "AY",
+              " ",
+              "HH",
+              "AA",
+              "R",
+              "T",
+              " ",
+              "AY",
+              "M",
+              " ",
+              "AO",
+              "L",
+              " ",
+              "AH",
+              "L",
+              "OW",
+              "N"
+            ],
+            "word_phoneme_indices": [
+              [
+                0,
+                2
+              ],
+              [
+                3,
+                8
+              ],
+              [
+                9,
+                14
+              ],
+              [
+                15,
+                17
+              ],
+              [
+                18,
+                23
+              ],
+              [
+                24,
+                27
+              ],
+              [
+                28,
+                29
+              ],
+              [
+                30,
+                33
+              ],
+              [
+                34,
+                39
+              ],
+              [
+                40,
+                42
+              ],
+              [
+                43,
+                47
+              ],
+              [
+                48,
+                50
+              ],
+              [
+                51,
+                53
+              ],
+              [
+                54,
+                58
+              ]
+            ],
+            "line_phoneme_indices": [
+              [
+                0,
+                58
+              ]
+            ]
+          }
+        },
+        "change_from_clean_prediction": {
+          "status": "comparable",
+          "accuracy_available": false,
+          "time_shift_applied": false,
+          "comparison_kind": "prediction change relative to clean, not boundary error",
+          "positive_delta": "comparison prediction is later than clean prediction",
+          "units": [
+            {
+              "unit_index": 0,
+              "text": "an",
+              "clean": {
+                "text": "an",
+                "line_index": 0,
+                "word_index": 0,
+                "phonemes": [
+                  "AE",
+                  "N"
+                ],
+                "start_frame": 28,
+                "end_frame": 32,
+                "start_seconds": 0.9752380952380952,
+                "end_seconds": 1.1145578231292517
+              },
+              "comparison": {
+                "text": "an",
+                "line_index": 0,
+                "word_index": 0,
+                "phonemes": [
+                  "AE",
+                  "N"
+                ],
+                "start_frame": 28,
+                "end_frame": 31,
+                "start_seconds": 0.9752380952380952,
+                "end_seconds": 1.0797278911564625
+              },
+              "start_frame_delta": 0,
+              "end_frame_delta": -1,
+              "start_seconds_delta": 0.0,
+              "end_seconds_delta": -0.03482993197278916
+            },
+            {
+              "unit_index": 1,
+              "text": " empty",
+              "clean": {
+                "text": " empty",
+                "line_index": 0,
+                "word_index": 1,
+                "phonemes": [
+                  "EH",
+                  "M",
+                  "P",
+                  "T",
+                  "IY"
+                ],
+                "start_frame": 34,
+                "end_frame": 51,
+                "start_seconds": 1.18421768707483,
+                "end_seconds": 1.7763265306122449
+              },
+              "comparison": {
+                "text": " empty",
+                "line_index": 0,
+                "word_index": 1,
+                "phonemes": [
+                  "EH",
+                  "M",
+                  "P",
+                  "T",
+                  "IY"
+                ],
+                "start_frame": 34,
+                "end_frame": 51,
+                "start_seconds": 1.18421768707483,
+                "end_seconds": 1.7763265306122449
+              },
+              "start_frame_delta": 0,
+              "end_frame_delta": 0,
+              "start_seconds_delta": 0.0,
+              "end_seconds_delta": 0.0
+            },
+            {
+              "unit_index": 2,
+              "text": " street",
+              "clean": {
+                "text": " street",
+                "line_index": 0,
+                "word_index": 2,
+                "phonemes": [
+                  "S",
+                  "T",
+                  "R",
+                  "IY",
+                  "T"
+                ],
+                "start_frame": 52,
+                "end_frame": 72,
+                "start_seconds": 1.811156462585034,
+                "end_seconds": 2.507755102040816
+              },
+              "comparison": {
+                "text": " street",
+                "line_index": 0,
+                "word_index": 2,
+                "phonemes": [
+                  "S",
+                  "T",
+                  "R",
+                  "IY",
+                  "T"
+                ],
+                "start_frame": 52,
+                "end_frame": 72,
+                "start_seconds": 1.811156462585034,
+                "end_seconds": 2.507755102040816
+              },
+              "start_frame_delta": 0,
+              "end_frame_delta": 0,
+              "start_seconds_delta": 0.0,
+              "end_seconds_delta": 0.0
+            },
+            {
+              "unit_index": 3,
+              "text": " an",
+              "clean": {
+                "text": " an",
+                "line_index": 0,
+                "word_index": 3,
+                "phonemes": [
+                  "AE",
+                  "N"
+                ],
+                "start_frame": 75,
+                "end_frame": 78,
+                "start_seconds": 2.6122448979591835,
+                "end_seconds": 2.7167346938775507
+              },
+              "comparison": {
+                "text": " an",
+                "line_index": 0,
+                "word_index": 3,
+                "phonemes": [
+                  "AE",
+                  "N"
+                ],
+                "start_frame": 75,
+                "end_frame": 78,
+                "start_seconds": 2.6122448979591835,
+                "end_seconds": 2.7167346938775507
+              },
+              "start_frame_delta": 0,
+              "end_frame_delta": 0,
+              "start_seconds_delta": 0.0,
+              "end_seconds_delta": 0.0
+            },
+            {
+              "unit_index": 4,
+              "text": " empty",
+              "clean": {
+                "text": " empty",
+                "line_index": 0,
+                "word_index": 4,
+                "phonemes": [
+                  "EH",
+                  "M",
+                  "P",
+                  "T",
+                  "IY"
+                ],
+                "start_frame": 81,
+                "end_frame": 98,
+                "start_seconds": 2.8212244897959184,
+                "end_seconds": 3.413333333333333
+              },
+              "comparison": {
+                "text": " empty",
+                "line_index": 0,
+                "word_index": 4,
+                "phonemes": [
+                  "EH",
+                  "M",
+                  "P",
+                  "T",
+                  "IY"
+                ],
+                "start_frame": 81,
+                "end_frame": 98,
+                "start_seconds": 2.8212244897959184,
+                "end_seconds": 3.413333333333333
+              },
+              "start_frame_delta": 0,
+              "end_frame_delta": 0,
+              "start_seconds_delta": 0.0,
+              "end_seconds_delta": 0.0
+            },
+            {
+              "unit_index": 5,
+              "text": " house",
+              "clean": {
+                "text": " house",
+                "line_index": 0,
+                "word_index": 5,
+                "phonemes": [
+                  "HH",
+                  "AW",
+                  "S"
+                ],
+                "start_frame": 99,
+                "end_frame": 121,
+                "start_seconds": 3.4481632653061225,
+                "end_seconds": 4.214421768707483
+              },
+              "comparison": {
+                "text": " house",
+                "line_index": 0,
+                "word_index": 5,
+                "phonemes": [
+                  "HH",
+                  "AW",
+                  "S"
+                ],
+                "start_frame": 99,
+                "end_frame": 121,
+                "start_seconds": 3.4481632653061225,
+                "end_seconds": 4.214421768707483
+              },
+              "start_frame_delta": 0,
+              "end_frame_delta": 0,
+              "start_seconds_delta": 0.0,
+              "end_seconds_delta": 0.0
+            },
+            {
+              "unit_index": 6,
+              "text": " a",
+              "clean": {
+                "text": " a",
+                "line_index": 0,
+                "word_index": 6,
+                "phonemes": [
+                  "AH"
+                ],
+                "start_frame": 124,
+                "end_frame": 126,
+                "start_seconds": 4.31891156462585,
+                "end_seconds": 4.388571428571429
+              },
+              "comparison": {
+                "text": " a",
+                "line_index": 0,
+                "word_index": 6,
+                "phonemes": [
+                  "AH"
+                ],
+                "start_frame": 124,
+                "end_frame": 126,
+                "start_seconds": 4.31891156462585,
+                "end_seconds": 4.388571428571429
+              },
+              "start_frame_delta": 0,
+              "end_frame_delta": 0,
+              "start_seconds_delta": 0.0,
+              "end_seconds_delta": 0.0
+            },
+            {
+              "unit_index": 7,
+              "text": " hole",
+              "clean": {
+                "text": " hole",
+                "line_index": 0,
+                "word_index": 7,
+                "phonemes": [
+                  "HH",
+                  "OW",
+                  "L"
+                ],
+                "start_frame": 128,
+                "end_frame": 138,
+                "start_seconds": 4.458231292517007,
+                "end_seconds": 4.806530612244898
+              },
+              "comparison": {
+                "text": " hole",
+                "line_index": 0,
+                "word_index": 7,
+                "phonemes": [
+                  "HH",
+                  "OW",
+                  "L"
+                ],
+                "start_frame": 128,
+                "end_frame": 138,
+                "start_seconds": 4.458231292517007,
+                "end_seconds": 4.806530612244898
+              },
+              "start_frame_delta": 0,
+              "end_frame_delta": 0,
+              "start_seconds_delta": 0.0,
+              "end_seconds_delta": 0.0
+            },
+            {
+              "unit_index": 8,
+              "text": " inside",
+              "clean": {
+                "text": " inside",
+                "line_index": 0,
+                "word_index": 8,
+                "phonemes": [
+                  "IH",
+                  "N",
+                  "S",
+                  "AY",
+                  "D"
+                ],
+                "start_frame": 140,
+                "end_frame": 157,
+                "start_seconds": 4.876190476190476,
+                "end_seconds": 5.468299319727891
+              },
+              "comparison": {
+                "text": " inside",
+                "line_index": 0,
+                "word_index": 8,
+                "phonemes": [
+                  "IH",
+                  "N",
+                  "S",
+                  "AY",
+                  "D"
+                ],
+                "start_frame": 140,
+                "end_frame": 157,
+                "start_seconds": 4.876190476190476,
+                "end_seconds": 5.468299319727891
+              },
+              "start_frame_delta": 0,
+              "end_frame_delta": 0,
+              "start_seconds_delta": 0.0,
+              "end_seconds_delta": 0.0
+            },
+            {
+              "unit_index": 9,
+              "text": " my",
+              "clean": {
+                "text": " my",
+                "line_index": 0,
+                "word_index": 9,
+                "phonemes": [
+                  "M",
+                  "AY"
+                ],
+                "start_frame": 159,
+                "end_frame": 170,
+                "start_seconds": 5.537959183673469,
+                "end_seconds": 5.921088435374149
+              },
+              "comparison": {
+                "text": " my",
+                "line_index": 0,
+                "word_index": 9,
+                "phonemes": [
+                  "M",
+                  "AY"
+                ],
+                "start_frame": 159,
+                "end_frame": 170,
+                "start_seconds": 5.537959183673469,
+                "end_seconds": 5.921088435374149
+              },
+              "start_frame_delta": 0,
+              "end_frame_delta": 0,
+              "start_seconds_delta": 0.0,
+              "end_seconds_delta": 0.0
+            },
+            {
+              "unit_index": 10,
+              "text": " heart",
+              "clean": {
+                "text": " heart",
+                "line_index": 0,
+                "word_index": 10,
+                "phonemes": [
+                  "HH",
+                  "AA",
+                  "R",
+                  "T"
+                ],
+                "start_frame": 172,
+                "end_frame": 212,
+                "start_seconds": 5.990748299319728,
+                "end_seconds": 7.383945578231292
+              },
+              "comparison": {
+                "text": " heart",
+                "line_index": 0,
+                "word_index": 10,
+                "phonemes": [
+                  "HH",
+                  "AA",
+                  "R",
+                  "T"
+                ],
+                "start_frame": 172,
+                "end_frame": 193,
+                "start_seconds": 5.990748299319728,
+                "end_seconds": 6.722176870748299
+              },
+              "start_frame_delta": 0,
+              "end_frame_delta": -19,
+              "start_seconds_delta": 0.0,
+              "end_seconds_delta": -0.6617687074829925
+            },
+            {
+              "unit_index": 11,
+              "text": " i'm",
+              "clean": {
+                "text": " i'm",
+                "line_index": 0,
+                "word_index": 11,
+                "phonemes": [
+                  "AY",
+                  "M"
+                ],
+                "start_frame": 214,
+                "end_frame": 219,
+                "start_seconds": 7.453605442176871,
+                "end_seconds": 7.627755102040816
+              },
+              "comparison": {
+                "text": " i'm",
+                "line_index": 0,
+                "word_index": 11,
+                "phonemes": [
+                  "AY",
+                  "M"
+                ],
+                "start_frame": 197,
+                "end_frame": 219,
+                "start_seconds": 6.861496598639455,
+                "end_seconds": 7.627755102040816
+              },
+              "start_frame_delta": -17,
+              "end_frame_delta": 0,
+              "start_seconds_delta": -0.5921088435374156,
+              "end_seconds_delta": 0.0
+            },
+            {
+              "unit_index": 12,
+              "text": " all",
+              "clean": {
+                "text": " all",
+                "line_index": 0,
+                "word_index": 12,
+                "phonemes": [
+                  "AO",
+                  "L"
+                ],
+                "start_frame": 222,
+                "end_frame": 234,
+                "start_seconds": 7.732244897959183,
+                "end_seconds": 8.150204081632653
+              },
+              "comparison": {
+                "text": " all",
+                "line_index": 0,
+                "word_index": 12,
+                "phonemes": [
+                  "AO",
+                  "L"
+                ],
+                "start_frame": 222,
+                "end_frame": 233,
+                "start_seconds": 7.732244897959183,
+                "end_seconds": 8.115374149659864
+              },
+              "start_frame_delta": 0,
+              "end_frame_delta": -1,
+              "start_seconds_delta": 0.0,
+              "end_seconds_delta": -0.03482993197278894
+            },
+            {
+              "unit_index": 13,
+              "text": " alone",
+              "clean": {
+                "text": " alone",
+                "line_index": 0,
+                "word_index": 13,
+                "phonemes": [
+                  "AH",
+                  "L",
+                  "OW",
+                  "N"
+                ],
+                "start_frame": 236,
+                "end_frame": 265,
+                "start_seconds": 8.219863945578231,
+                "end_seconds": 9.229931972789116
+              },
+              "comparison": {
+                "text": " alone",
+                "line_index": 0,
+                "word_index": 13,
+                "phonemes": [
+                  "AH",
+                  "L",
+                  "OW",
+                  "N"
+                ],
+                "start_frame": 236,
+                "end_frame": 265,
+                "start_seconds": 8.219863945578231,
+                "end_seconds": 9.229931972789116
+              },
+              "start_frame_delta": 0,
+              "end_frame_delta": 0,
+              "start_seconds_delta": 0.0,
+              "end_seconds_delta": 0.0
+            }
+          ],
+          "summary": {
+            "mean_absolute_start_change_seconds": 0.04229348882410111,
+            "max_absolute_start_change_seconds": 0.5921088435374156,
+            "mean_absolute_end_change_seconds": 0.05224489795918362,
+            "max_absolute_end_change_seconds": 0.6617687074829925
+          }
+        }
+      }
+    }
+  },
+  "separation": {
+    "observed_forwards": [
+      {
+        "model": "demucs_member_0",
+        "input_shapes": [
+          [
+            1,
+            2,
+            420290
+          ]
+        ],
+        "input_devices": [
+          "cuda:0"
+        ],
+        "output_shapes": [
+          [
+            1,
+            4,
+            2,
+            420290
+          ]
+        ],
+        "output_devices": [
+          "cuda:0"
+        ],
+        "output_finite": true
+      },
+      {
+        "model": "demucs_member_1",
+        "input_shapes": [
+          [
+            1,
+            2,
+            425958
+          ]
+        ],
+        "input_devices": [
+          "cuda:0"
+        ],
+        "output_shapes": [
+          [
+            1,
+            4,
+            2,
+            425958
+          ]
+        ],
+        "output_devices": [
+          "cuda:0"
+        ],
+        "output_finite": true
+      },
+      {
+        "model": "demucs_member_2",
+        "input_shapes": [
+          [
+            1,
+            2,
+            417964
+          ]
+        ],
+        "input_devices": [
+          "cuda:0"
+        ],
+        "output_shapes": [
+          [
+            1,
+            4,
+            2,
+            417964
+          ]
+        ],
+        "output_devices": [
+          "cuda:0"
+        ],
+        "output_finite": true
+      },
+      {
+        "model": "demucs_member_3",
+        "input_shapes": [
+          [
+            1,
+            2,
+            409572
+          ]
+        ],
+        "input_devices": [
+          "cuda:0"
+        ],
+        "output_shapes": [
+          [
+            1,
+            4,
+            2,
+            409572
+          ]
+        ],
+        "output_devices": [
+          "cuda:0"
+        ],
+        "output_finite": true
+      }
+    ],
+    "status": "completed",
+    "seed": 7,
+    "runtime_seconds": 0.5562549420000096,
+    "peak_memory": {
+      "allocated_bytes": 1880775680,
+      "reserved_bytes": 2388656128
+    },
+    "output_audio": {
+      "path": "/home/xcy/auto-lrc/data/local/mixtures/native-vocals-20261010/segment-0002-vocals.wav",
+      "bytes": 3270896,
+      "sha256": "19f6277fd279edfc335e85c7d47235318f898fb7bc42dd8d91b1c99ffb572979"
+    },
+    "sample_rate": 44100,
+    "channels": 2,
+    "num_samples": 408851,
+    "expected_floor_num_samples": 408851,
+    "length_delta_from_expected_samples": 0,
+    "output_subtype": "FLOAT",
+    "waveform_time_shift_applied": false,
+    "padding_applied": false,
+    "waveform_correlation": {
+      "diagnostic_only": true,
+      "time_shift_applied": false,
+      "warning": "Waveform correlation is a diagnostic on a restricted lag range. It is not absolute latency or lyric-boundary calibration; no audio or prediction is shifted.",
+      "channel_policy": "first channel, matching the existing alignment runtime",
+      "positive_lag": "comparison is later than reference",
+      "sample_rate": 44100,
+      "max_lag_ms": 50.0,
+      "max_lag_samples": 2205,
+      "reference_samples": 408851,
+      "comparison_samples": 408851,
+      "length_delta_samples": 0,
+      "common_samples": 408851,
+      "windows": [
+        {
+          "name": "overall",
+          "start_sample": 0,
+          "end_sample": 408851,
+          "status": "available",
+          "lag_samples": 0,
+          "lag_seconds": 0.0,
+          "normalized_peak": 0.9955627758643968,
+          "second_peak": 0.38396989420487637,
+          "peak_margin": 0.6115928816595204,
+          "peak_at_search_edge": false,
+          "searched_lag_samples": [
+            -2205,
+            2205
+          ],
+          "overlap_samples_at_peak": 408851,
+          "secondary_peak_exclusion_samples": 44,
+          "confidence_kind": "diagnostic correlation statistics, not boundary confidence",
+          "lag_equivalent_source_samples": 0.0
+        },
+        {
+          "name": "third-1",
+          "start_sample": 0,
+          "end_sample": 136283,
+          "status": "available",
+          "lag_samples": 0,
+          "lag_seconds": 0.0,
+          "normalized_peak": 0.9956803978465879,
+          "second_peak": 0.617491730726269,
+          "peak_margin": 0.37818866712031896,
+          "peak_at_search_edge": false,
+          "searched_lag_samples": [
+            -2205,
+            2205
+          ],
+          "overlap_samples_at_peak": 136283,
+          "secondary_peak_exclusion_samples": 44,
+          "confidence_kind": "diagnostic correlation statistics, not boundary confidence",
+          "lag_equivalent_source_samples": 0.0
+        },
+        {
+          "name": "third-2",
+          "start_sample": 136283,
+          "end_sample": 272567,
+          "status": "available",
+          "lag_samples": 0,
+          "lag_seconds": 0.0,
+          "normalized_peak": 0.9963603824977055,
+          "second_peak": 0.4267395564455783,
+          "peak_margin": 0.5696208260521272,
+          "peak_at_search_edge": false,
+          "searched_lag_samples": [
+            -2205,
+            2205
+          ],
+          "overlap_samples_at_peak": 136284,
+          "secondary_peak_exclusion_samples": 44,
+          "confidence_kind": "diagnostic correlation statistics, not boundary confidence",
+          "lag_equivalent_source_samples": 0.0
+        },
+        {
+          "name": "third-3",
+          "start_sample": 272567,
+          "end_sample": 408851,
+          "status": "available",
+          "lag_samples": 0,
+          "lag_seconds": 0.0,
+          "normalized_peak": 0.9942499457099981,
+          "second_peak": 0.7302800306032062,
+          "peak_margin": 0.2639699151067919,
+          "peak_at_search_edge": false,
+          "searched_lag_samples": [
+            -2205,
+            2205
+          ],
+          "overlap_samples_at_peak": 136284,
+          "secondary_peak_exclusion_samples": 44,
+          "confidence_kind": "diagnostic correlation statistics, not boundary confidence",
+          "lag_equivalent_source_samples": 0.0
+        }
+      ],
+      "equivalent_source_sample_rate": 48000,
+      "source_sample_mapping": "lag_seconds * source_rate, fractional diagnostic value; never applied"
+    },
+    "correlation_seconds": 0.1197389479999913
+  },
+  "resampling_routes": {
+    "source_sample_rate": 48000,
+    "source_num_samples": 445008,
+    "clean_and_mixture_alignment": [
+      48000,
+      22050
+    ],
+    "mixture_separation": [
+      48000,
+      44100
+    ],
+    "separated_alignment": [
+      44100,
+      22050
+    ],
+    "diagnostic_reference": [
+      48000,
+      44100
+    ],
+    "expected_native_samples_floor": 408851,
+    "native_tail_rounding_fraction_samples": 0.1,
+    "expected_direct_alignment_samples_floor": 204425,
+    "expected_separated_alignment_samples_floor": 204425,
+    "native_output_duration_minus_source_seconds": -2.2675736968125193e-06,
+    "rounding_policy": "Existing julius floor output length; no padding, 48k return trip or time shift",
+    "word_boundary_calibration": "unmeasured"
+  }
+}

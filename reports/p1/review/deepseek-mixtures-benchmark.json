@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "success": false,
+  "status": "failed",
+  "exit_code": 1,
+  "timed_out": false,
+  "session_id": "513bd580-1a1f-4e3b-bb23-fe3ea3505be6",
+  "permission_denials": [],
+  "model": "deepseek-flash",
+  "usage": {
+    "input_tokens": 27479,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 219520,
+    "output_tokens": 16072,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "",
+    "iterations": [],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "model_usage": {
+    "deepseek-flash": {
+      "inputTokens": 27479,
+      "outputTokens": 16072,
+      "cacheReadInputTokens": 219520,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 0,
+      "costUSD": 0.648955,
+      "contextWindow": 200000,
+      "maxOutputTokens": 32000,
+      "thinkingTokens": 0,
+      "canonicalModel": "deepseek-flash",
+      "provider": "firstParty",
+      "costBasis": "unknown"
+    }
+  },
+  "result": null,
+  "errors": [
+    "Reached maximum number of turns (8)"
+  ],
+  "stderr": "[claude-code:unrecognized_model] {\"model\":\"deepseek-flash\",\"query_source\":\"sdk\"}\n",
+  "partial_execution_possible": true,
+  "review_required": true,
+  "credential_source": "env_file",
+  "dry_run": false,
+  "config_dir": "/Users/xcy/.local/state/deepseek-worker/sessions/513bd580-1a1f-4e3b-bb23-fe3ea3505be6/claude",
+  "contract": {
+    "session_id": "513bd580-1a1f-4e3b-bb23-fe3ea3505be6",
+    "cwd": "/Users/xcy/Program/auto-lrc",
+    "model": "deepseek-flash",
+    "base_url": "https://api.deepseek.com/anthropic",
+    "mode": "read",
+    "tools": [
+      "Glob",
+      "Grep",
+      "Read"
+    ],
+    "allowed_files": []
+  },
+  "reported_cost_usd": 0.648955,
+  "num_turns": 9,
+  "subtype": "error_max_turns",
+  "duration_seconds": 76.553
+}

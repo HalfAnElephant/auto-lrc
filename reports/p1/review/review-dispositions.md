@@ -83,3 +83,46 @@ they do not supply an actual human onset judgement.
 Canonical song identity review, real independent boundary labels, disagreement
 adjudication and fixed evaluation splits remain pending. No 5ms success claim
 or permission to enter P2 follows from these checks.
+
+## Controlled mixture experiment
+
+[Generator review](deepseek-mixtures-generator.json), session
+`3b76a426-bad9-4e6b-9c1d-ea5460324065`, completed successfully with
+Read/Glob/Grep only. The generator and its tests were unchanged during review.
+
+- The existing 1-LSB check applied to gain-scaled source samples. Metadata now
+  explicitly names that domain and also records the inverse-gain reconstruction
+  bound. This clarifies amplitude quantization, not time precision. A decoded
+  silent backing now fails explicitly before calculating measured SNR.
+- Generator provenance now includes both imported helper modules. Actual WSL
+  output records the post-review source and dependency hashes.
+- Arbitrary new generator output paths remain supported, consistent with the
+  other dataset tools. Audio handling in this task uses ignored `data/local/`
+  directories and explicit text-only Git staging. The CLI license notice and
+  guide state that mixed vocals retain the dataset terms; no audio is committed.
+
+[Benchmark review](deepseek-mixtures-benchmark.json), session
+`513bd580-1a1f-4e3b-bb23-fe3ea3505be6`, hit the 8-turn limit and therefore
+failed that invocation. Root inspected the transcript and unchanged pre/post
+source/test hashes. A [bounded same-session conclusion](deepseek-mixtures-benchmark-finish.json)
+then completed successfully in one turn without further tools. The reviewer
+confirmed no functional defect by static inspection. It ran no tests or CUDA.
+
+- The cached Demucs checkpoint naming assumption was checked by the real WSL
+  execution: four unique checkpoints were recorded and all four models forwarded
+  for each selected segment.
+- This small complete-fixture benchmark intentionally rejects a missing unit
+  interval instead of treating a partial alignment as success. The failed-run
+  report preserves the failure and earlier completed predictions, but does not
+  retain raw details of the particular prediction rejected inside validation.
+  All 12 actual predictions had complete finite intervals. This strict fixture
+  acceptance is not a general evaluation missing-alignment policy.
+
+Root's two focused test modules passed **53 tests in 1.15s**, and syntax checks
+passed. WSL generated 18 fixtures; the selected Chinese and English examples
+completed 12 real CUDA alignments plus two four-member separations. Artifact
+inspection in `../mixtures-cuda-20261010/acceptance.json` checks source/model
+hashes, actual CUDA observations, sample-grid and quantization invariants.
+Existing 138 P1 and 60 P0 test results were reused; no equivalent CI or baseline
+inference was repeated. Realistic matched accompaniment, independent human
+boundaries, canonical song identity and final P1 acceptance remain pending.

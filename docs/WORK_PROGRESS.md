@@ -1,6 +1,6 @@
 # 工作进度与恢复入口
 
-恢复执行：2026-10-09；更新至2026-10-10。**P0 运行与复现验收完成；P1 代表性数据、来源分类、隔离划分与盲标工具已实现，人工复核和整体验收未完成。没有独立人工真值，不得宣称达到 5ms，也不得跳过 P1 验收进入 P2–P6。**
+恢复执行：2026-10-09；更新至2026-10-10。**P0 运行与复现验收完成；P1 代表性数据、来源分类、隔离划分、盲标工具及受控混音对照已实现，人工复核和整体验收未完成。没有独立人工真值，不得宣称达到 5ms，也不得跳过 P1 验收进入 P2–P6。**
 
 ## 用户目标与约束
 
@@ -19,15 +19,18 @@
 - P1：`t2l/datasets/` 提供四联文件读取、显式数据结构、带来源/规则/证据的分类和歌曲/歌手隔离划分；受限下载/整理/划分 CLI 及 `review_gtsinger.py`、`audit_gtsinger_annotations.py` 提供盲标与来源误差审计。人工标签保持原始 WAV 整数采样点，保存含指纹、历史修订和跨进程保护，候选不出现在盲标界面。`requirements-data.txt` 为可选数据依赖，未改变推理依赖版本。
 - 固定 revision `d78cd68d00135b1995da03f25fccb3a221efd8c1` 的中英文原件已取得：smoke 原件在 `data/local/gtsinger-p1/`，代表性原件在 `data/local/gtsinger-representative/`，均 Git 忽略。代表性清单含20段、81文件、25,807,238字节、6个歌名候选和5位歌手。当前分类结果在 `reports/p1/samples-v2/`（25个待复标边界）和 `reports/p1/representative-v2/`（18可用/2排除、231个待复标边界）。两段源 JSON 末端越过 WAV 一个采样点，原件保留，不自动裁切；其他所查字段冲突0。
 - 18段可用样本均完成保守的 MusicXML 歌词对应，231单位中23个符合乐谱长音筛查规则；乐谱时值不转换成实录秒。连读、重唱和不支持的音素/乐谱结构保持 unknown。人工真值为空，精度 unavailable，划分 unassigned。
+- `prepare_gtsinger_mixtures.py` 生成原创合成伴奏及6dB受控混音，逐采样点保留48k原始网格、原件摘要和父歌曲身份；独立伴奏CC0，人声/混音仍遵循数据集条款。`benchmark_gtsinger_mixtures.py` 对清唱/混音/原生44.1k分离结果运行MTL/MTL_BDR，保留原始预测、受限波形互相关及实际CUDA前向证据。两脚本不修改产品推理接口。
 
 P0 已通过 60 项轻量测试、`compileall`、`git diff --check` 和两轮 DeepSeek 只读审查。恢复中修复了 benchmark 线程初始化顺序、非有限诊断分数和失败报告序列化；新版8次推理及定点复审均已完成：4个配置各重复两次结果一致，同环境原版/legacy逐值一致。GPU 环境、MTL/BDR 完整 demo、Demucs 四成员片段及完整默认 CLI 均通过真实验收。
 
 P1 定点测试共138项通过（读取/分类53、获取/整理39、歌曲/歌手分组25、人工标签/API21）。真实下载/校验/prepare、原始48kHz与盲标导出检查通过；桌面1440px/手机390px Playwright检查画布非空、无横向溢出、无页面异常，截图在 `reports/p1/review/ui-*.png`。独立 DeepSeek 只读审查分别覆盖数据和复标/划分，提出的问题及处理依据见 `reports/p1/review/review-dispositions.md`；首个数据审查触达上限后，沿用同会话限定收尾成功。旧 `deepseek.md` 仅覆盖早期版本。P0成功结果复用，未重复模型或等价CI。
 
+受控混音新增53项定点测试及语法检查通过，两脚本独立DeepSeek审查完成。WSL实际生成18段/155.963秒混音，选其中中英文各一段完成12次对齐及2次四成员Demucs分离，报告在 `reports/p1/mixtures-cuda-20261010/`。源码/检查点与Mac摘要一致；本次18段混音、伴奏及分离WAV保存在WSL的 `data/local/mixtures/`，提交仅含文本证据。原有成功检查未重跑。
+
 ## 已核查事实
 
 - 原始 HEAD：`2c475cc`，分支 `main`，origin 为 HalfAnElephant/auto-lrc。开始时仅有用户自有未跟踪的 `AGENTS.md`；不纳入本次实现提交。
-- 本地阶段提交：P0 为 `96ad584`；P1 数据准备和复标工具单独提交，整体验收仍待人工复核。未推送。P0 两个 Demucs WAV 仅作本机证据，不纳入提交。
+- 本地阶段提交：P0 为 `96ad584`；P1 数据准备和复标工具为 `4f1b131`，受控混音对照另行提交，整体验收仍待人工复核。未推送。P0 两个 Demucs WAV 仅作本机证据，不纳入提交。
 - 根目录不存在 `.codegraph/`，本次按普通源码入口检查。
 - Git LFS 本地初始化及 pull 已成功，三个检查点和语言模型是真实文件。
 - 原版 STFT hop=256，采样率 22050Hz，时间池化 stride=3，输出名义步长约 34.83ms。实际音频边界原点仍未校准。
@@ -47,6 +50,7 @@ P1 定点测试共138项通过（读取/分类53、获取/整理39、歌曲/歌�
 - GPU MTL/BDR 都得到482个完整单位；Demucs 六秒片段四成员全部执行；默认CLI完整demo在30.387秒完成分离、CUDA对齐和三种输出验证。结果在 `reports/p0/gpu/`。单阶段耗时/显存及范围见报告，不以一次运行声明重复性。
 - 跨平台 MTL 有1个起点差1帧；BDR有79个起点不同，最大649帧。设备、torch与系统同时变化，尚未隔离原因；后续固定环境评估并保留此风险。独立人工标注和精度指标仍不可用。
 - WSL P1 集成通过，报告在 `reports/p1/wsl/wsl-validation-20261010/`：20个原始 WAV 均48kHz，18可用/2排除，231标签 pending；Linux排他目录发布和重复运行拒绝覆盖通过，原报告摘要不变。仅添加 praatio6.2.2，numpy及torch版本不变，87包依赖检查通过。集成报告保留执行时的源码摘要；审查后3个更新文件已同步，Mac/WSL摘要一致，WSL语法检查3/3通过，记录在 `post-review-code-sync.json`。读取器/分类/清单等7个原集成输入未变，未重跑prepare或模型，不混写旧证据。
+- 受控混音实机实验用时12.900秒，峰值已分配/保留显存约1.75/2.22GiB。相对清唱预测，中文混音/分离后起点平均绝对变化50.66/9.50ms，英文37.32/42.29ms；不是人工精度。八个波形窗口在±50ms内的相关峰值均位于0样本，不能据此断言发声边界已校准；未施加任何平移。英文44.1k分离输出按既有floor长度比原片段短约2.268微秒，未补齐或往返48k。未重复推理，不声称重复性。
 
 ## 恢复顺序
 
@@ -56,9 +60,10 @@ P1 定点测试共138项通过（读取/分类53、获取/整理39、歌曲/歌�
 4. 源码、3检查点、lid和demo已同步至 `/home/xcy/auto-lrc`；Windows中转文件为 `C:/Users/Haer/auto-lrc-p0-runtime-20261009.tar.gz`（本任务创建，可在验收后清理）。
 5. `scripts/verify_gpu_runtime.py` 的三个阶段均已运行成功；完整默认CLI另外验收。所有结果已从WSL同步回 `reports/p0/gpu/`，包括原始诊断/分离片段/日志；不重跑相同输入。
 6. SSH：`ssh -p 12345 -o BatchMode=yes -o StrictHostKeyChecking=yes Haer@127.0.0.1 'wsl.exe -d archlinux -- sh -s'`，stdin提供Linux脚本，必须先 `cd /home/xcy/auto-lrc`。使用现有密钥，无需再次询问密码。
-7. 先读 [p1-data-preparation.md](p1-data-preparation.md) 和 `reports/p1/samples-v2/REVIEW.md`。当前本地盲标服务地址 `http://127.0.0.1:8765`；恢复命令见文档，session 为 `data/local/reviews/xcy-smoke-v2.json`。尚无人保存真实标签。第二复核者须使用独立 session；候选时间另存，应复标完成后再查看。不能把原标注复制为人工真值。
+7. 先读 [p1-data-preparation.md](p1-data-preparation.md) 和 `reports/p1/samples-v2/REVIEW.md`。当前本地盲标服务地址 `http://127.0.0.1:8765`；恢复命令见文档，session 为 `data/local/reviews/xcy-smoke-v2.json`。受控混音实验后再次核实 revision=0、已复标0/25。第二复核者须使用独立 session；候选时间另存，应复标完成后再查看。不能把原标注复制为人工真值。
 8. 核实6个歌名候选、同曲别名/技巧组/配对语音/派生混音身份，提供有实际复核者的歌曲身份映射，再生成固定 train/val/test 及可行的歌手独立子集。先完成25个 smoke 边界的独立复标、第二复核及分歧裁决，执行来源误差审计；扩充正式隔离测试集。禁止跳过P1验收进入P2–P6，不重跑相关输入未变的成功检查。
+9. 受控混音与两段GPU对照已完成，无需重跑；恢复路径和完整命令在数据文档。WSL原始混音位于 `data/local/mixtures/representative-v1-20261010/`，分离音频位于 `data/local/mixtures/native-vocals-20261010/`。现有报告与音频目录均不可覆盖。合成夹具不代表真实配器覆盖或人工起点真值。
 
 ## 尚未实现
 
-P1歌曲身份人工复核、实际固定划分、独立边界复标/分歧裁决、来源标注误差和整体验收仍未完成；合法伴奏来源及混音延迟实验也未完成。原整歌偏移未知，来源分类不代表声学真值。P2 粗对齐增强、P3 DSP 精修、P4 轻量网络训练、P5 全局优化、P6 精度评测/失败可视化，以及 precision/refiner/device/confidence 等后续 CLI 均未实现。没有轻量边界模型、没有训练结果或5ms成功证据。
+P1歌曲身份人工复核、实际固定划分、独立边界复标/分歧裁决、来源标注误差和整体验收仍未完成。合法原创合成伴奏的受控实验已完成，真实匹配伴奏覆盖及逐音素分离延迟校准仍待验证。原整歌偏移未知，来源分类不代表声学真值。P2 粗对齐增强、P3 DSP 精修、P4 轻量网络训练、P5 全局优化、P6 精度评测/失败可视化，以及 precision/refiner/device/confidence 等后续 CLI 均未实现。没有轻量边界模型、没有训练结果或5ms成功证据。

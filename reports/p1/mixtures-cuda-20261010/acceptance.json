@@ -1,0 +1,89 @@
+{
+  "status": "passed",
+  "scope": "Inspection of completed WSL artifacts; no inference repeated",
+  "source_hashes_match_local": [
+    "scripts/benchmark_gtsinger_mixtures.py",
+    "t2l/t2l.py",
+    "t2l/phonetic.py",
+    "t2l/mtl/wrapper.py",
+    "t2l/mtl/model.py",
+    "t2l/mtl/utils.py",
+    "lid.176.ftz",
+    "checkpoints/checkpoint_MTL",
+    "checkpoints/checkpoint_BDR",
+    "scripts/prepare_gtsinger_mixtures.py",
+    "scripts/prepare_gtsinger.py",
+    "scripts/benchmark_baseline.py"
+  ],
+  "mixture_manifest_hash_matches_benchmark": true,
+  "mixture_rows": 18,
+  "inference_rows": 2,
+  "alignment_runs": 12,
+  "demucs_runs": 2,
+  "accuracy_available": false,
+  "repeated_inference": false,
+  "mixture_checks": {
+    "unchanged_sources": true,
+    "duration_seconds": 155.963,
+    "maximum_scaled_domain_residual": 1.1910227930983508e-07,
+    "pcm_lsb": 1.1920928955078125e-07,
+    "gain_range": [
+      0.7992403252837025,
+      1.0
+    ]
+  },
+  "rows": [
+    {
+      "segment_id": "Chinese/ZH-Alto-1/Breathy/不再见/Control_Group/0000",
+      "mtl_and_bdr_intervals_identical_in_all_modes": true,
+      "changes_relative_to_clean_prediction": {
+        "mixture": {
+          "mean_absolute_start_change_ms": 50.66171923314789,
+          "max_absolute_start_change_ms": 417.95918367346997,
+          "changed_start_count": 5
+        },
+        "separated": {
+          "mean_absolute_start_change_ms": 9.499072356215166,
+          "max_absolute_start_change_ms": 104.48979591836682,
+          "changed_start_count": 1
+        }
+      },
+      "xcorr_lags_native_samples": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "xcorr_peak_range": [
+        0.9937765967556674,
+        0.999095375391564
+      ]
+    },
+    {
+      "segment_id": "English/EN-Alto-1/Glissando/my love/Control_Group/0000",
+      "mtl_and_bdr_intervals_identical_in_all_modes": true,
+      "changes_relative_to_clean_prediction": {
+        "mixture": {
+          "mean_absolute_start_change_ms": 37.317784256559776,
+          "max_absolute_start_change_ms": 487.6190476190478,
+          "changed_start_count": 2
+        },
+        "separated": {
+          "mean_absolute_start_change_ms": 42.29348882410111,
+          "max_absolute_start_change_ms": 592.1088435374155,
+          "changed_start_count": 1
+        }
+      },
+      "xcorr_lags_native_samples": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "xcorr_peak_range": [
+        0.9942499457099981,
+        0.9963603824977055
+      ]
+    }
+  ]
+}

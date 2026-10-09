@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "success": true,
+  "status": "success",
+  "exit_code": 0,
+  "timed_out": false,
+  "session_id": "513bd580-1a1f-4e3b-bb23-fe3ea3505be6",
+  "permission_denials": [],
+  "model": "deepseek-flash",
+  "usage": {
+    "input_tokens": 543,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 43136,
+    "output_tokens": 13368,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "",
+    "iterations": [],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "model_usage": {
+    "deepseek-flash": {
+      "inputTokens": 28022,
+      "outputTokens": 29440,
+      "thinkingTokens": 0,
+      "cacheReadInputTokens": 262656,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 0,
+      "costUSD": 1.007438,
+      "contextWindow": 200000,
+      "maxOutputTokens": 32000,
+      "canonicalModel": "deepseek-flash",
+      "provider": "firstParty",
+      "costBasis": "unknown"
+    }
+  },
+  "result": "## Review verdict\n\nNo functional defect was confirmed in the frozen files within the five focus areas. I traced the data/control flow statically against the runtime contracts in `t2l/t2l.py`, `t2l/mtl/wrapper.py`, and the invoked third‑party `julius` resampler. I did **not** execute tests, models, or CUDA; the primary agent's 53-test run and any CUDA run are not mine to claim.\n\nFiles reviewed (unchanged, read-only): `scripts/benchmark_gtsinger_mixtures.py`, `tests/test_gtsinger_mixture_benchmark.py`, `t2l/t2l.py`, `t2l/mtl/wrapper.py`.\n\n## What I verified, per focus area\n\n**Sample time mapping — consistent.**\n- `expected_native = num_samples * native_rate // source_rate` (`scripts/benchmark_gtsinger_mixtures.py:446`) matches the invoked resampler: `julius.resample_frac` defaults to `floor(new_sr*length/old_sr)` (`.venv-baseline/.../julius/resample.py:137-142`). Same for the 22 050 floors at `:473-474`.\n- The 44.1 k path is preserved: `run_row` calls `separate_vocals(..., sample_rate=native_rate, demucs_model=demucs)` (`:433-435`); in `t2l.py:244-245` the final resample is skipped because `new_sr == model.samplerate`, so no 44.1→48 return trip and no padding. `subtype=\"FLOAT\"` at `:445`.\n- Lag conversion `lag * source_rate / native_rate` (`:460`) is the correct direction and the positive-lag convention (`comparison is later`) is implemented correctly in `_window_xcorr` (FFT `y*conj(x)` with overlap-energy denominator, `:174-198`); sign is exercised by `test_fft_diagnostic_has_correct_lag_sign_without_shifting_audio`.\n- Search bound: `max_lag = floor(sample_rate*max_lag_ms/1000)` with `max_lag_ms ≤ 50` enforced (`:205-209`); overall and thirds reuse the same bound (`:210-222`).\n\n**Comparability — guarded, no forced matching.**\n- `prediction_changes` refuses to compare when unit counts/identities or `frame_resolution_seconds` differ, and returns `status:\"unavailable\"` with no units (`:231-237`); tests cover text/phoneme/count/grid/missing mutations. Deltas are explicitly labeled non-accuracy and shift-free (`:228-254`).\n\n**CUDA evidence — enforced by hooks.**\n- `cuda_forward_observations` requires every model's parameters on `cuda:0`, every forward input/output on `cuda:0`, and finite outputs, and post-yield asserts each expected role actually forwarded (`:292-301`). Role sets are `acoustic` (+`boundary` for MTL_BDR) and all four `demucs_member_N` (`:409`, `:431`). `apply_model` iterates bag members (`demucs/apply.py:179-200`), so all four hooks fire. `validate_prediction` additionally re-checks `device ∈ {cuda, cuda:0}`, method string, unit frames, and `seconds == frame*resolution` (`:327-345`).\n\n**Input provenance — digest + grid + no-mutation.**\n- All four inputs are resolved from `ROOT`, hashed, and byte/SHA compared, plus sample grid for the three audio files (`:108-129`); inputs are re-hashed after the row (`:480-483`). Predictions record per-audio provenance (`:407`), and source/mixture/accompaniment shapes must match before inference (`:395-399`).\n\n**Failed/partial reports — written, not lost.**\n- `reserve_outputs` refuses existing/dangling-symlink outputs, non-`data/local` audio dirs, and overlap, creating only the report dir (`:375-388`). The `cli` try/except/finally writes `result.json`, per-row status, a `traceback.txt`, and always finalizes `result.json` (`:566-583`); the CPU-fallback test asserts a readable failed report and no audio dir.\n\n## Residual verification items (not confirmed defects)\n\n1. `demucs_provenance` assumes each bag signature caches as exactly one `\"<sig>-*.th\"` under `Path(torch.hub.get_dir())/\"checkpoints\"` and raises otherwise (`:366-370`). If the installed demucs cache layout/filenames differ, the run aborts before the first row. This is a hard guard (fails loudly, does not silently misreport), but it is the one runtime assumption I could not fully confirm statically; verify it on the CUDA host before the real run.\n2. `validate_prediction` treats a legitimately missing unit interval as fatal (`:337-341`), while the invoked runtime emits `None` frames when `word_align` is shorter than the lyric words (`t2l/t2l.py:117-131`). A short alignment would therefore abort the row and discard otherwise-raw predictions rather than record them as partial. Confirm this acceptance policy is intended.\n\n**Limitation:** verdict is static only — no tests, models, CUDA, or fixtures were executed by me, so none of the above is runtime-confirmed. No files were modified.",
+  "errors": [],
+  "stderr": "[claude-code:unrecognized_model] {\"model\":\"deepseek-flash\",\"query_source\":\"sdk\"}\n",
+  "partial_execution_possible": true,
+  "review_required": true,
+  "credential_source": "env_file",
+  "dry_run": false,
+  "config_dir": "/Users/xcy/.local/state/deepseek-worker/sessions/513bd580-1a1f-4e3b-bb23-fe3ea3505be6/claude",
+  "contract": {
+    "session_id": "513bd580-1a1f-4e3b-bb23-fe3ea3505be6",
+    "cwd": "/Users/xcy/Program/auto-lrc",
+    "model": "deepseek-flash",
+    "base_url": "https://api.deepseek.com/anthropic",
+    "mode": "read",
+    "tools": [
+      "Glob",
+      "Grep",
+      "Read"
+    ],
+    "allowed_files": []
+  },
+  "reported_cost_usd": 1.007438,
+  "num_turns": 1,
+  "subtype": "success",
+  "duration_seconds": 57.551
+}
