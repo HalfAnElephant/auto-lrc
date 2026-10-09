@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "success": false,
+  "status": "failed",
+  "exit_code": 1,
+  "timed_out": false,
+  "session_id": "5e5894b9-cc1a-497d-83d0-c375eb695075",
+  "permission_denials": [],
+  "model": "deepseek-flash[1m]",
+  "usage": {
+    "input_tokens": 52456,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 134016,
+    "output_tokens": 3383,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "",
+    "iterations": [],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "model_usage": {
+    "deepseek-flash[1m]": {
+      "inputTokens": 52456,
+      "outputTokens": 3383,
+      "cacheReadInputTokens": 134016,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 0,
+      "costUSD": 0.413863,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 32000,
+      "thinkingTokens": 0,
+      "canonicalModel": "deepseek-flash[1m]",
+      "provider": "firstParty",
+      "costBasis": "unknown"
+    }
+  },
+  "result": null,
+  "errors": [
+    "Reached maximum number of turns (8)"
+  ],
+  "stderr": "[claude-code:unrecognized_model] {\"model\":\"deepseek-flash[1m]\",\"query_source\":\"sdk\"}\n",
+  "partial_execution_possible": true,
+  "review_required": true,
+  "credential_source": "env_file",
+  "dry_run": false,
+  "config_dir": "/Users/xcy/.local/state/deepseek-worker/sessions/5e5894b9-cc1a-497d-83d0-c375eb695075/claude",
+  "contract": {
+    "session_id": "5e5894b9-cc1a-497d-83d0-c375eb695075",
+    "cwd": "/Users/xcy/Program/auto-lrc",
+    "model": "deepseek-flash[1m]",
+    "base_url": "https://api.deepseek.com/anthropic",
+    "mode": "read",
+    "tools": [
+      "Glob",
+      "Grep",
+      "Read"
+    ],
+    "allowed_files": []
+  },
+  "reported_cost_usd": 0.413863,
+  "num_turns": 9,
+  "subtype": "error_max_turns",
+  "duration_seconds": 21.922
+}

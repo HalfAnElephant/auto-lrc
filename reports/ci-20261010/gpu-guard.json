@@ -1,0 +1,73 @@
+{
+  "status": "passed",
+  "scope": "Original workflow run block with shell stubs only; no models, CUDA or pytest.",
+  "workflow_sha256": "4a0e81c869f6cdd90c62421e313132b223a36919765a20534392040ea64c476e",
+  "fixture_directory": "/tmp/auto-lrc-ci-guard.0lmbKs",
+  "realpath_version": "realpath (GNU coreutils) 9.10",
+  "bash": "GNU bash, version 5.3.9(1)-release (x86_64-pc-linux-gnu)",
+  "checks": [
+    {
+      "case": "external-symlink-all",
+      "gpu_python": "/tmp/auto-lrc-ci-guard.0lmbKs/external-venv/bin/python",
+      "resolved_python_executable": "/tmp/auto-lrc-ci-guard.0lmbKs/base/python-stub",
+      "exit_code": 0,
+      "calls": [
+        {
+          "invoked_path": "/tmp/auto-lrc-ci-guard.0lmbKs/external-venv/bin/python",
+          "stage": "mtl",
+          "output": "reports/ci-gpu/42000-1/mtl"
+        },
+        {
+          "invoked_path": "/tmp/auto-lrc-ci-guard.0lmbKs/external-venv/bin/python",
+          "stage": "mtl_bdr",
+          "output": "reports/ci-gpu/42000-1/mtl_bdr"
+        },
+        {
+          "invoked_path": "/tmp/auto-lrc-ci-guard.0lmbKs/external-venv/bin/python",
+          "stage": "demucs",
+          "output": "reports/ci-gpu/42000-1/demucs"
+        }
+      ],
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "case": "inside-checkout",
+      "gpu_python": "/tmp/auto-lrc-ci-guard.0lmbKs/workspace/.venv/bin/python",
+      "resolved_python_executable": "/tmp/auto-lrc-ci-guard.0lmbKs/base/python-stub",
+      "exit_code": 1,
+      "calls": [],
+      "stdout": "",
+      "stderr": "CUDA Python must be outside the checkout.\n"
+    },
+    {
+      "case": "directory-symlink-inside",
+      "gpu_python": "/tmp/auto-lrc-ci-guard.0lmbKs/outside-alias/bin/python",
+      "resolved_python_executable": "/tmp/auto-lrc-ci-guard.0lmbKs/base/python-stub",
+      "exit_code": 1,
+      "calls": [],
+      "stdout": "",
+      "stderr": "CUDA Python must be outside the checkout.\n"
+    },
+    {
+      "case": "stop-after-failure",
+      "gpu_python": "/tmp/auto-lrc-ci-guard.0lmbKs/external-venv/bin/python",
+      "resolved_python_executable": "/tmp/auto-lrc-ci-guard.0lmbKs/base/python-stub",
+      "exit_code": 37,
+      "calls": [
+        {
+          "invoked_path": "/tmp/auto-lrc-ci-guard.0lmbKs/external-venv/bin/python",
+          "stage": "mtl",
+          "output": "reports/ci-gpu/42000-1/mtl"
+        },
+        {
+          "invoked_path": "/tmp/auto-lrc-ci-guard.0lmbKs/external-venv/bin/python",
+          "stage": "mtl_bdr",
+          "output": "reports/ci-gpu/42000-1/mtl_bdr"
+        }
+      ],
+      "stdout": "",
+      "stderr": ""
+    }
+  ]
+}

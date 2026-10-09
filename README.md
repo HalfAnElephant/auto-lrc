@@ -34,6 +34,10 @@ python -m pytest -q
 
 The tests use synthetic data and do not load checkpoints or download Demucs models.
 
+GitHub Actions runs the same suite on Linux/Python 3.10 using CPU-only PyTorch
+wheels and [requirements-ci.txt](requirements-ci.txt). The optional CUDA workflow
+is manually dispatched on a prepared GPU runner. See [CI setup and scope](docs/ci.md).
+
 ## Quick Start
 
 ```bash

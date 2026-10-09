@@ -1,0 +1,68 @@
+name: Optional CUDA integration
+
+on:
+  workflow_dispatch:
+    inputs:
+      stage:
+        description: Real CUDA acceptance stage
+        type: choice
+        required: true
+        default: all
+        options:
+          - all
+          - mtl
+          - mtl_bdr
+          - demucs
+
+permissions:
+  contents: read
+
+concurrency:
+  group: auto-lrc-gpu
+  cancel-in-progress: false
+
+jobs:
+  integration:
+    runs-on: [self-hosted, linux, x64, auto-lrc-gpu]
+    timeout-minutes: 20
+    env:
+      GPU_PYTHON: ${{ vars.AUTO_LRC_GPU_PYTHON }}
+      REQUESTED_STAGE: ${{ inputs.stage }}
+    steps:
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
+        with:
+          lfs: true
+          persist-credentials: false
+      - name: Run real CUDA acceptance
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [[ "$GPU_PYTHON" != /* || ! -x "$GPU_PYTHON" ]]; then
+            echo "Set AUTO_LRC_GPU_PYTHON to an existing absolute CUDA Python path outside the checkout." >&2
+            exit 1
+          fi
+          python_directory=$(realpath -e -- "$(dirname -- "$GPU_PYTHON")")
+          workspace=$(realpath -e -- "$GITHUB_WORKSPACE")
+          case "$python_directory" in
+            "$workspace"|"$workspace"/*) echo "CUDA Python must be outside the checkout." >&2; exit 1 ;;
+          esac
+          case "$REQUESTED_STAGE" in
+            all) stages=(mtl mtl_bdr demucs) ;;
+            mtl|mtl_bdr|demucs) stages=("$REQUESTED_STAGE") ;;
+            *) echo "Unknown acceptance stage" >&2; exit 1 ;;
+          esac
+          for stage in "${stages[@]}"; do
+            "$GPU_PYTHON" scripts/verify_gpu_runtime.py --stage "$stage" \
+              -o "reports/ci-gpu/${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}/$stage"
+          done
+      - name: Save CUDA diagnostics
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: cuda-integration-${{ github.run_id }}-${{ github.run_attempt }}
+          path: |
+            reports/ci-gpu/**/*.json
+            reports/ci-gpu/**/*.lrc
+            reports/ci-gpu/**/traceback.txt
+          if-no-files-found: warn
+          retention-days: 7

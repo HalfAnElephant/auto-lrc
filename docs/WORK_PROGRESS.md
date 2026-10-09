@@ -6,7 +6,7 @@
 
 完整实施规格保存在 [progress/high-precision-spec.md](progress/high-precision-spec.md)。按 P0 → P1 → P2 → P3 → P4 → P5 → P6 顺序执行，每阶段验收后才推进；保留原 API、检查点、默认 CLI/LRC 行为。Mac 用于开发和基础验证；RTX 5060 / Arch Linux WSL2 用于后续 GPU 实验。用户补充账号 `Haer` 后，现有 SSH 密钥已登录 Windows。WSL2 发行版 `archlinux`、Linux用户 `xcy`；实机 RTX 5060 / 8151MiB显存 / compute capability12.0 / 驱动617.42，WSL可用内存约15GiB。
 
-当前验证渠道选定为本地，不重复安排等价云端 CI。仓库原先没有 CI；用户要求的基础 CI 属于后续交付，目前没有新增工作流。
+当前验证渠道选定为本地，不重复安排等价云端 CI。新增基础 CPU CI 和手动 CUDA 集成工作流，运行范围及 runner 配置见 [ci.md](ci.md)；本次未推送或触发云端任务，不把工作流存在视为 CI 通过。
 
 ## 已落盘的代码
 
@@ -20,6 +20,7 @@
 - 固定 revision `d78cd68d00135b1995da03f25fccb3a221efd8c1` 的中英文原件已取得：smoke 原件在 `data/local/gtsinger-p1/`，代表性原件在 `data/local/gtsinger-representative/`，均 Git 忽略。代表性清单含20段、81文件、25,807,238字节、6个歌名候选和5位歌手。当前分类结果在 `reports/p1/samples-v2/`（25个待复标边界）和 `reports/p1/representative-v2/`（18可用/2排除、231个待复标边界）。两段源 JSON 末端越过 WAV 一个采样点，原件保留，不自动裁切；其他所查字段冲突0。
 - 18段可用样本均完成保守的 MusicXML 歌词对应，231单位中23个符合乐谱长音筛查规则；乐谱时值不转换成实录秒。连读、重唱和不支持的音素/乐谱结构保持 unknown。人工真值为空，精度 unavailable，划分 unassigned。
 - `prepare_gtsinger_mixtures.py` 生成原创合成伴奏及6dB受控混音，逐采样点保留48k原始网格、原件摘要和父歌曲身份；独立伴奏CC0，人声/混音仍遵循数据集条款。`benchmark_gtsinger_mixtures.py` 对清唱/混音/原生44.1k分离结果运行MTL/MTL_BDR，保留原始预测、受限波形互相关及实际CUDA前向证据。两脚本不修改产品推理接口。
+- `.github/workflows/tests.yml` 在 push/PR 上执行单个 Linux/Python3.10 CPU job，使用独立测试依赖子集，不获取模型/数据；`gpu-integration.yml` 仅手动触发，复用现有真实 CUDA 验证入口，需外部预配置 runner。另建 `/home/xcy/auto-lrc-ci-20261010/.venv-ci` 完成 CPU 依赖安装及251项测试，最终保留原始 LFS 指针验证模型文件不参与测试。范围与证据见 [CI 本地验收](../reports/ci-20261010/README.md)。
 
 P0 已通过 60 项轻量测试、`compileall`、`git diff --check` 和两轮 DeepSeek 只读审查。恢复中修复了 benchmark 线程初始化顺序、非有限诊断分数和失败报告序列化；新版8次推理及定点复审均已完成：4个配置各重复两次结果一致，同环境原版/legacy逐值一致。GPU 环境、MTL/BDR 完整 demo、Demucs 四成员片段及完整默认 CLI 均通过真实验收。
 
@@ -30,7 +31,7 @@ P1 定点测试共138项通过（读取/分类53、获取/整理39、歌曲/歌�
 ## 已核查事实
 
 - 原始 HEAD：`2c475cc`，分支 `main`，origin 为 HalfAnElephant/auto-lrc。开始时仅有用户自有未跟踪的 `AGENTS.md`；不纳入本次实现提交。
-- 本地阶段提交：P0 为 `96ad584`；P1 数据准备和复标工具为 `4f1b131`，受控混音对照另行提交，整体验收仍待人工复核。未推送。P0 两个 Demucs WAV 仅作本机证据，不纳入提交。
+- 本地阶段提交：P0 为 `96ad584`；P1 数据准备和复标工具为 `4f1b131`，受控混音对照为 `879c166`，整体验收仍待人工复核。未推送。P0 两个 Demucs WAV 仅作本机证据，不纳入提交。
 - 根目录不存在 `.codegraph/`，本次按普通源码入口检查。
 - Git LFS 本地初始化及 pull 已成功，三个检查点和语言模型是真实文件。
 - 原版 STFT hop=256，采样率 22050Hz，时间池化 stride=3，输出名义步长约 34.83ms。实际音频边界原点仍未校准。
@@ -51,6 +52,7 @@ P1 定点测试共138项通过（读取/分类53、获取/整理39、歌曲/歌�
 - 跨平台 MTL 有1个起点差1帧；BDR有79个起点不同，最大649帧。设备、torch与系统同时变化，尚未隔离原因；后续固定环境评估并保留此风险。独立人工标注和精度指标仍不可用。
 - WSL P1 集成通过，报告在 `reports/p1/wsl/wsl-validation-20261010/`：20个原始 WAV 均48kHz，18可用/2排除，231标签 pending；Linux排他目录发布和重复运行拒绝覆盖通过，原报告摘要不变。仅添加 praatio6.2.2，numpy及torch版本不变，87包依赖检查通过。集成报告保留执行时的源码摘要；审查后3个更新文件已同步，Mac/WSL摘要一致，WSL语法检查3/3通过，记录在 `post-review-code-sync.json`。读取器/分类/清单等7个原集成输入未变，未重跑prepare或模型，不混写旧证据。
 - 受控混音实机实验用时12.900秒，峰值已分配/保留显存约1.75/2.22GiB。相对清唱预测，中文混音/分离后起点平均绝对变化50.66/9.50ms，英文37.32/42.29ms；不是人工精度。八个波形窗口在±50ms内的相关峰值均位于0样本，不能据此断言发声边界已校准；未施加任何平移。英文44.1k分离输出按既有floor长度比原片段短约2.268微秒，未补齐或往返48k。未重复推理，不声称重复性。
+- 基础 CI 本地验证：独立 Arch Linux WSL / Python3.10.16 / torch与torchaudio2.1.2+cpu 环境，`pip check`、251项完整测试及 `compileall` 通过；最终无模型实体，仅4个原始 LFS 指针，0失败/0跳过。49个源码/依赖/CPU工作流摘要与Mac一致。两个工作流的 actionlint 和所有 Bash run 块语法检查通过；Linux 原始 GPU run 块的路径/失败停止夹具通过，未运行模型。DeepSeek 只读审查指出解析可执行文件 symlink 会绕过虚拟环境，已改为检查目录并保留原调用路径，夹具验证修复。原审查触达轮数上限后限定收尾成功，原文和处理依据均在CI报告；不把初次失败记为审查成功。未注册 runner、推送或运行 GitHub Actions。
 
 ## 恢复顺序
 
@@ -63,6 +65,7 @@ P1 定点测试共138项通过（读取/分类53、获取/整理39、歌曲/歌�
 7. 先读 [p1-data-preparation.md](p1-data-preparation.md) 和 `reports/p1/samples-v2/REVIEW.md`。当前本地盲标服务地址 `http://127.0.0.1:8765`；恢复命令见文档，session 为 `data/local/reviews/xcy-smoke-v2.json`。受控混音实验后再次核实 revision=0、已复标0/25。第二复核者须使用独立 session；候选时间另存，应复标完成后再查看。不能把原标注复制为人工真值。
 8. 核实6个歌名候选、同曲别名/技巧组/配对语音/派生混音身份，提供有实际复核者的歌曲身份映射，再生成固定 train/val/test 及可行的歌手独立子集。先完成25个 smoke 边界的独立复标、第二复核及分歧裁决，执行来源误差审计；扩充正式隔离测试集。禁止跳过P1验收进入P2–P6，不重跑相关输入未变的成功检查。
 9. 受控混音与两段GPU对照已完成，无需重跑；恢复路径和完整命令在数据文档。WSL原始混音位于 `data/local/mixtures/representative-v1-20261010/`，分离音频位于 `data/local/mixtures/native-vocals-20261010/`。现有报告与音频目录均不可覆盖。合成夹具不代表真实配器覆盖或人工起点真值。
+10. 基础 CI 的安装/测试成功结果见 `reports/ci-20261010/lfs-pointer/`，初次展开模型的结果保留在上层目录；相关输入未变时复用，不重建环境或重跑。可选 GPU runner 的外部配置见 [ci.md](ci.md)，本次没有注册 runner 或触发远程任务。
 
 ## 尚未实现
 
