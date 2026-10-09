@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "repository": "AaronZ345/GTSinger",
+  "dataset_revision": "d78cd68d00135b1995da03f25fccb3a221efd8c1",
+  "license": {
+    "identifier": "CC-BY-NC-SA-4.0",
+    "path": "dataset_license.md",
+    "url": "https://huggingface.co/datasets/AaronZ345/GTSinger/blob/d78cd68d00135b1995da03f25fccb3a221efd8c1/dataset_license.md",
+    "additional_terms": "Read the complete source license, including its additional agreement and citation terms."
+  },
+  "source_files": [
+    {
+      "path": "dataset_license.md",
+      "size": 1463,
+      "git_blob_sha1": "c5dced3ca87433d76c157bb871d4fd5c247d1ed4",
+      "content_sha256": "3f230608aebb15ce29762809690142e6284940924e9e34b938c5afb7ea4806f0",
+      "source_url": "https://huggingface.co/datasets/AaronZ345/GTSinger/resolve/d78cd68d00135b1995da03f25fccb3a221efd8c1/dataset_license.md"
+    },
+    {
+      "path": "Chinese/ZH-Alto-1/Breathy/不再见/Control_Group/0000.TextGrid",
+      "size": 12539,
+      "git_blob_sha1": "e67ea0781992247f18c4e0f767c2a4f4919dbb72",
+      "content_sha256": "443e0a8e9f6ad91bb6ebae0e9df1cb232e635bfdceb4cf559d73f1f39edce846",
+      "source_url": "https://huggingface.co/datasets/AaronZ345/GTSinger/resolve/d78cd68d00135b1995da03f25fccb3a221efd8c1/Chinese/ZH-Alto-1/Breathy/%E4%B8%8D%E5%86%8D%E8%A7%81/Control_Group/0000.TextGrid"
+    },
+    {
+      "path": "Chinese/ZH-Alto-1/Breathy/不再见/Control_Group/0000.json",
+      "size": 12140,
+      "git_blob_sha1": "274bfaf6274388c4badf0392b7c8bc4d01d860ad",
+      "content_sha256": "13a87fd475c6ea15282232124085e8d659f0a3b164033f448efa274f5dfe42ad",
+      "source_url": "https://huggingface.co/datasets/AaronZ345/GTSinger/resolve/d78cd68d00135b1995da03f25fccb3a221efd8c1/Chinese/ZH-Alto-1/Breathy/%E4%B8%8D%E5%86%8D%E8%A7%81/Control_Group/0000.json"
+    },
+    {
+      "path": "Chinese/ZH-Alto-1/Breathy/不再见/Control_Group/0000.musicxml",
+      "size": 7237,
+      "git_blob_sha1": "21ff203df6fc6dedc38520c69bfe3c6fdff5c4ba",
+      "content_sha256": "4bb15e5a1c557d9d342119243fe29d76969b825f825d81fa044f9642ec008323",
+      "source_url": "https://huggingface.co/datasets/AaronZ345/GTSinger/resolve/d78cd68d00135b1995da03f25fccb3a221efd8c1/Chinese/ZH-Alto-1/Breathy/%E4%B8%8D%E5%86%8D%E8%A7%81/Control_Group/0000.musicxml"
+    },
+    {
+      "path": "Chinese/ZH-Alto-1/Breathy/不再见/Control_Group/0000.wav",
+      "size": 1152044,
+      "sha256": "7449f2142d5403d414caaf82cdb11b2898a64c857cfff464e559d4dfdc289093",
+      "content_sha256": "7449f2142d5403d414caaf82cdb11b2898a64c857cfff464e559d4dfdc289093",
+      "source_url": "https://huggingface.co/datasets/AaronZ345/GTSinger/resolve/d78cd68d00135b1995da03f25fccb3a221efd8c1/Chinese/ZH-Alto-1/Breathy/%E4%B8%8D%E5%86%8D%E8%A7%81/Control_Group/0000.wav"
+    },
+    {
+      "path": "English/EN-Alto-1/Glissando/my love/Control_Group/0000.json",
+      "size": 21112,
+      "git_blob_sha1": "e22e5d8ba76de4e828f15ddc52a7ee8c6cbb5896",
+      "content_sha256": "b08e0055dc2e7174792b44cdcbd3f88d0614188d6ce7d0869f70b072303e397d",
+      "source_url": "https://huggingface.co/datasets/AaronZ345/GTSinger/resolve/d78cd68d00135b1995da03f25fccb3a221efd8c1/English/EN-Alto-1/Glissando/my%20love/Control_Group/0000.json"
+    },
+    {
+      "path": "English/EN-Alto-1/Glissando/my love/Control_Group/0000.musicxml",
+      "size": 11030,
+      "git_blob_sha1": "e10e2e95c7cc80675a4f1f089776bcca85f408d6",
+      "content_sha256": "2f01014ed8dc2f7ff357218cf619499b3b283fe3c7e1667283f6cc559195be04",
+      "source_url": "https://huggingface.co/datasets/AaronZ345/GTSinger/resolve/d78cd68d00135b1995da03f25fccb3a221efd8c1/English/EN-Alto-1/Glissando/my%20love/Control_Group/0000.musicxml"
+    },
+    {
+      "path": "English/EN-Alto-1/Glissando/my love/Control_Group/0000.wav",
+      "size": 1335068,
+      "sha256": "556cc0f8bab110c1434e9cde77643f933b00ba631e3aad348d0cf6c2d88b7399",
+      "content_sha256": "556cc0f8bab110c1434e9cde77643f933b00ba631e3aad348d0cf6c2d88b7399",
+      "source_url": "https://huggingface.co/datasets/AaronZ345/GTSinger/resolve/d78cd68d00135b1995da03f25fccb3a221efd8c1/English/EN-Alto-1/Glissando/my%20love/Control_Group/0000.wav"
+    },
+    {
+      "path": "English/EN-Alto-1/Glissando/my love/Control_Group/0000_TextGrid",
+      "size": 24996,
+      "git_blob_sha1": "98fc1533622fc00449e08eaf6af706c22e3581d7",
+      "content_sha256": "112f0a7224a8bf7d8db29e0929e48b511d932debef50cd58e150c2bec9c12154",
+      "source_url": "https://huggingface.co/datasets/AaronZ345/GTSinger/resolve/d78cd68d00135b1995da03f25fccb3a221efd8c1/English/EN-Alto-1/Glissando/my%20love/Control_Group/0000_TextGrid"
+    }
+  ],
+  "segment_count": 2,
+  "song_count": 2,
+  "language_counts": {
+    "Chinese": 1,
+    "English": 1
+  },
+  "unit_kind_counts": {
+    "lyric": 25,
+    "breath": 1,
+    "silence": 5
+  },
+  "validation_issue_count": 0,
+  "validation_issue_counts": {},
+  "validation_issues": [],
+  "review_boundary_count": 25,
+  "independent_reviewed_boundaries": 0,
+  "review_status": "pending",
+  "split_status": "unassigned",
+  "split_reason": "Two inspection samples do not establish train/validation/test splits.",
+  "accuracy": {
+    "status": "unavailable",
+    "reason": "No independent human boundary labels.",
+    "mae_ms": null,
+    "p90_ms": null,
+    "coverage_5ms": null,
+    "coverage_10ms": null,
+    "coverage_20ms": null,
+    "coverage_50ms": null
+  },
+  "boundary_semantics": "Source annotation candidates are not independent human ground truth.",
+  "review_protocol": "Blind review: use audio and manual-review files first. Inspect annotation candidates and normalized segments only after independent labels are recorded."
+}

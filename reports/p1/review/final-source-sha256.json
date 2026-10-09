@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-10",
+  "scope": "final P1 reviewed code and focused checks",
+  "sha256": {
+    "t2l/datasets/annotations.py": "f742034399fc4034b32cf2a70591396d867a26a03d5d3e04ca6d3130f44d0a4c",
+    "scripts/review_gtsinger.py": "b986a27bcb2c5108f5dcb6fa66cd65ce155e5e74eb5706b3fa91172a7e4e85e0",
+    "scripts/build_gtsinger_representative_manifest.py": "40c0aa7384fedce2ff28a9732a9f6efc1a6ac7964b7929c492879e77f444b1e7",
+    "scripts/prepare_gtsinger.py": "33702d51ca6c19b1030ac4f88fe4a2cbb7644aa64a54a962b5afea05d868fa53",
+    "t2l/datasets/splits.py": "8a7597e4f2fa12de28622164dfbb064a89cd2f032f5283ddbf5630112a628a3d",
+    "tests/test_annotations.py": "e302f2391c4910601aa7c7b8766bcf4f98771228ef9869a95f3c1e048b4711f3",
+    "tests/test_gtsinger_tools.py": "661aff6c59b9bd5212b0a14760caa368f71167511d5d653f890fbff748c39750",
+    "tests/test_gtsinger_splits.py": "598f52b82d29969c6158cd314e1261499f6e0e3c84e8703c4a88b0612854e2ec"
+  },
+  "tests": {
+    "reader_classification": 53,
+    "fetch_prepare": 39,
+    "song_singer_splits": 25,
+    "annotations_http": 21,
+    "total": 138
+  },
+  "integration": {
+    "mac": "reports/p1/representative-v2/quality-summary.json",
+    "wsl": "reports/p1/wsl/wsl-validation-20261010/integration-checks-final.json",
+    "post_review_sync": "reports/p1/wsl/wsl-validation-20261010/post-review-code-sync.json"
+  },
+  "human_labels_completed": 0,
+  "phase_acceptance": "P1 pending human song identity and boundary review"
+}

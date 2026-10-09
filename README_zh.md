@@ -28,6 +28,7 @@ pip install -r requirements.txt
 运行不加载检查点、不下载 Demucs 模型的轻量 CPU 回归测试：
 
 ```bash
+pip install -r requirements-data.txt  # 数据读取器的可选依赖，运行其测试时需要
 python -m pytest -q
 ```
 
@@ -51,6 +52,9 @@ python main.py <歌词文件> <音频文件> [选项]
   -m, --model      Demucs 模型：mdx | mdx_extra（默认）| mdx_q | mdx_extra_q
   -i, --idx        Demucs 模型索引：-1 = 集成（默认），0-3 = 单个子模型
   -o, --out_dir    标准 LRC 输出目录（默认：demofile）
+  --aligner       mtl（默认）| mtl_bdr（增加行边界评分）
+  --json-output PATH          保存原始对齐诊断 JSON
+  --enhanced-lrc-output PATH  另外保存当前逐字/逐句 LRC 输出
 ```
 
 ### 示例
@@ -68,7 +72,15 @@ python main.py lyrics.txt song.mp3 -m mdx_q
 
 # 指定标准 LRC 输出目录
 python main.py lyrics.txt song.mp3 -o output
+
+# 比较 BDR 基线，同时保存未舍入的对齐诊断
+python main.py lyrics.txt song.mp3 -v 0 --aligner mtl_bdr -o output \
+  --json-output output/alignment.json --enhanced-lrc-output output/enhanced.lrc
 ```
+
+## 数据准备（实验阶段）
+
+`scripts/fetch_gtsinger_samples.py` 与 `scripts/prepare_gtsinger.py` 支持固定版本的双样本和20段 GTSinger 中英文子集。`scripts/review_gtsinger.py` 提供基于原始 WAV 采样点的本地盲标界面。独立人工真值、复核后的正式划分及精度评测仍未完成。命令见 [P1 数据准备](docs/p1-data-preparation.md)，基准实验见 [P0 结果](docs/p0-results.md)。
 
 ## Python API
 
@@ -92,6 +104,8 @@ print(lrc)
 ```
 
 `format` 参数当前仅接受 `"lrc"`，其他值会抛出 `ValueError`。直接对齐多声道原始音频（`vocalize=False`）时，为兼容既有输出并避免声道首尾串接，程序使用第一个声道。
+
+向 `process()` 传入 `return_details=True` 可获得含 `lrc`、`units`、`alignment` 的字典。逐字词结果保存文字、行/词索引、音素、原始帧索引及未舍入的秒数，缺失对齐以 `null` 表示。默认仍返回 LRC 字符串。全路径分数未经置信度校准，约 34.83ms 的名义帧网格也尚未对真实演唱起点校准。可复现实验与限制见[基准方法](docs/p0-methodology.md)。
 
 如需避免多次调用时重复加载模型，可使用 `t2l.init_model`：
 
@@ -143,7 +157,7 @@ lrc2 = process(lines2, "song2.mp3", mtl_model=model)
 | `checkpoint_MTL` | 多任务 | 默认模型，类数 (41, 47) |
 | `checkpoint_BDR` | 边界检测 | 1.8 MB，与 `*_BDR` 变体配合使用 |
 
-对齐流水线的 `method` 参数接受 `"Baseline"`、`"MTL"`、`"Baseline_BDR"` 或 `"MTL_BDR"`。BDR 变体包含边界检测，可获得更精确的字词起始时间。
+对齐流水线的 `method` 参数接受 `"Baseline"`、`"MTL"`、`"Baseline_BDR"` 或 `"MTL_BDR"`。BDR 变体在歌词行起点加入学习得到的边界评分；精度收益需要参考标注验证。
 
 ### 关键参数
 

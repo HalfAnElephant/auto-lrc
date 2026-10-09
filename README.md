@@ -28,6 +28,7 @@ pip install -r requirements.txt
 Run the lightweight CPU-only regression suite with:
 
 ```bash
+pip install -r requirements-data.txt  # Optional data reader, required for its tests
 python -m pytest -q
 ```
 
@@ -53,6 +54,9 @@ Options:
   -m, --model      Demucs model: mdx | mdx_extra (default) | mdx_q | mdx_extra_q
   -i, --idx        Demucs model index: -1 = ensemble (default), 0-3 = single sub-model
   -o, --out_dir    Standard LRC output directory (default: demofile)
+  --aligner       mtl (default) | mtl_bdr (adds line-boundary scoring)
+  --json-output PATH          Save raw alignment diagnostics as JSON
+  --enhanced-lrc-output PATH  Also save the current word/line LRC output
 ```
 
 ### Examples
@@ -70,7 +74,15 @@ python main.py lyrics.txt song.mp3 -m mdx_q
 
 # Specify a custom output directory for standard LRC
 python main.py lyrics.txt song.mp3 -o output
+
+# Compare the BDR baseline and retain unrounded alignment diagnostics
+python main.py lyrics.txt song.mp3 -v 0 --aligner mtl_bdr -o output \
+  --json-output output/alignment.json --enhanced-lrc-output output/enhanced.lrc
 ```
+
+## Experimental data preparation
+
+`scripts/fetch_gtsinger_samples.py` and `scripts/prepare_gtsinger.py` support pinned two-sample and 20-segment Chinese/English GTSinger subsets. `scripts/review_gtsinger.py` provides a local blind annotation workspace using original WAV samples. Independent human labels, reviewed corpus splits and accuracy evaluation remain incomplete. See [P1 data preparation](docs/p1-data-preparation.md) for commands and [P0 results](docs/p0-results.md) for completed baseline experiments.
 
 ## Python API
 
@@ -94,6 +106,8 @@ print(lrc)
 ```
 
 The `format` argument currently accepts only `"lrc"`; unsupported values raise `ValueError`. When alignment runs directly on multichannel audio (`vocalize=False`), the first channel is used for compatibility with earlier output while avoiding channel concatenation.
+
+Pass `return_details=True` to `process()` to receive a dictionary with `lrc`, `units`, and `alignment`. Units include text, line/word indices, phonemes, raw frame indices and unrounded seconds; missing alignments use `null`. The default return value remains an LRC string. The global path score is uncalibrated, and the nominal 34.83 ms frame grid has not been calibrated against physical singing onsets. See the [baseline methodology](docs/p0-methodology.md) for reproducible experiments and limitations.
 
 To avoid repeated model loading across multiple calls, use `t2l.init_model`:
 
@@ -145,7 +159,7 @@ Stored in `./checkpoints/`, managed via Git LFS:
 | `checkpoint_MTL` | Multi-task | Default model, classes (41, 47) |
 | `checkpoint_BDR` | Boundary detection | 1.8 MB, used with `*_BDR` variants |
 
-The `method` parameter in the alignment pipeline accepts `"Baseline"`, `"MTL"`, `"Baseline_BDR"`, or `"MTL_BDR"`. BDR variants include boundary detection for more precise word onsets.
+The `method` parameter in the alignment pipeline accepts `"Baseline"`, `"MTL"`, `"Baseline_BDR"`, or `"MTL_BDR"`. BDR variants add a learned boundary score at lyric-line starts; accuracy gains require evaluation against reference annotations.
 
 ### Key Parameters
 

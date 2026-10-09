@@ -1,0 +1,1850 @@
+[
+  {
+    "segment_id": "Chinese/ZH-Alto-1/Breathy/不再见/Control_Group/0000",
+    "unit_index": 0,
+    "text": "离",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 0.0,
+    "candidate_sample": 0
+  },
+  {
+    "segment_id": "Chinese/ZH-Alto-1/Breathy/不再见/Control_Group/0000",
+    "unit_index": 1,
+    "text": "别",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 0.52,
+    "candidate_sample": 24960
+  },
+  {
+    "segment_id": "Chinese/ZH-Alto-1/Breathy/不再见/Control_Group/0000",
+    "unit_index": 2,
+    "text": "没",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 1.02,
+    "candidate_sample": 48960
+  },
+  {
+    "segment_id": "Chinese/ZH-Alto-1/Breathy/不再见/Control_Group/0000",
+    "unit_index": 3,
+    "text": "说",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 1.58,
+    "candidate_sample": 75840
+  },
+  {
+    "segment_id": "Chinese/ZH-Alto-1/Breathy/不再见/Control_Group/0000",
+    "unit_index": 4,
+    "text": "再",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 2.12,
+    "candidate_sample": 101760
+  },
+  {
+    "segment_id": "Chinese/ZH-Alto-1/Breathy/不再见/Control_Group/0000",
+    "unit_index": 5,
+    "text": "见",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 3.23,
+    "candidate_sample": 155040
+  },
+  {
+    "segment_id": "Chinese/ZH-Alto-1/Breathy/不再见/Control_Group/0000",
+    "unit_index": 7,
+    "text": "你",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 4.51,
+    "candidate_sample": 216480
+  },
+  {
+    "segment_id": "Chinese/ZH-Alto-1/Breathy/不再见/Control_Group/0000",
+    "unit_index": 8,
+    "text": "是",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 4.92,
+    "candidate_sample": 236160
+  },
+  {
+    "segment_id": "Chinese/ZH-Alto-1/Breathy/不再见/Control_Group/0000",
+    "unit_index": 9,
+    "text": "否",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 5.44,
+    "candidate_sample": 261120
+  },
+  {
+    "segment_id": "Chinese/ZH-Alto-1/Breathy/不再见/Control_Group/0000",
+    "unit_index": 10,
+    "text": "心",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 5.99,
+    "candidate_sample": 287520
+  },
+  {
+    "segment_id": "Chinese/ZH-Alto-1/Breathy/不再见/Control_Group/0000",
+    "unit_index": 11,
+    "text": "酸",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 6.5,
+    "candidate_sample": 312000
+  },
+  {
+    "segment_id": "Chinese/ZH-Alto-1/Breathy/不再见/Breathy_Group/0000",
+    "unit_index": 0,
+    "text": "离",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 0.0,
+    "candidate_sample": 0
+  },
+  {
+    "segment_id": "Chinese/ZH-Alto-1/Breathy/不再见/Breathy_Group/0000",
+    "unit_index": 1,
+    "text": "别",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 0.55,
+    "candidate_sample": 26400
+  },
+  {
+    "segment_id": "Chinese/ZH-Alto-1/Breathy/不再见/Breathy_Group/0000",
+    "unit_index": 2,
+    "text": "没",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 1.03,
+    "candidate_sample": 49440
+  },
+  {
+    "segment_id": "Chinese/ZH-Alto-1/Breathy/不再见/Breathy_Group/0000",
+    "unit_index": 3,
+    "text": "说",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 1.59,
+    "candidate_sample": 76320
+  },
+  {
+    "segment_id": "Chinese/ZH-Alto-1/Breathy/不再见/Breathy_Group/0000",
+    "unit_index": 4,
+    "text": "再",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 2.05,
+    "candidate_sample": 98400
+  },
+  {
+    "segment_id": "Chinese/ZH-Alto-1/Breathy/不再见/Breathy_Group/0000",
+    "unit_index": 5,
+    "text": "见",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 3.2,
+    "candidate_sample": 153600
+  },
+  {
+    "segment_id": "Chinese/ZH-Alto-1/Breathy/不再见/Breathy_Group/0000",
+    "unit_index": 7,
+    "text": "你",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 4.37,
+    "candidate_sample": 209760
+  },
+  {
+    "segment_id": "Chinese/ZH-Alto-1/Breathy/不再见/Breathy_Group/0000",
+    "unit_index": 8,
+    "text": "是",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 4.82,
+    "candidate_sample": 231360
+  },
+  {
+    "segment_id": "Chinese/ZH-Alto-1/Breathy/不再见/Breathy_Group/0000",
+    "unit_index": 9,
+    "text": "否",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 5.27,
+    "candidate_sample": 252960
+  },
+  {
+    "segment_id": "Chinese/ZH-Alto-1/Breathy/不再见/Breathy_Group/0000",
+    "unit_index": 10,
+    "text": "心",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 5.78,
+    "candidate_sample": 277440
+  },
+  {
+    "segment_id": "Chinese/ZH-Alto-1/Breathy/不再见/Breathy_Group/0000",
+    "unit_index": 11,
+    "text": "酸",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 6.33,
+    "candidate_sample": 303840
+  },
+  {
+    "segment_id": "Chinese/ZH-Alto-1/Breathy/慢慢喜欢你/Control_Group/0000",
+    "unit_index": 0,
+    "text": "书",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 0.0,
+    "candidate_sample": 0
+  },
+  {
+    "segment_id": "Chinese/ZH-Alto-1/Breathy/慢慢喜欢你/Control_Group/0000",
+    "unit_index": 1,
+    "text": "里",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 0.684,
+    "candidate_sample": 32832
+  },
+  {
+    "segment_id": "Chinese/ZH-Alto-1/Breathy/慢慢喜欢你/Control_Group/0000",
+    "unit_index": 2,
+    "text": "总",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 1.2,
+    "candidate_sample": 57600
+  },
+  {
+    "segment_id": "Chinese/ZH-Alto-1/Breathy/慢慢喜欢你/Control_Group/0000",
+    "unit_index": 3,
+    "text": "爱",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 1.787,
+    "candidate_sample": 85776
+  },
+  {
+    "segment_id": "Chinese/ZH-Alto-1/Breathy/慢慢喜欢你/Control_Group/0000",
+    "unit_index": 4,
+    "text": "写",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 2.25,
+    "candidate_sample": 108000
+  },
+  {
+    "segment_id": "Chinese/ZH-Alto-1/Breathy/慢慢喜欢你/Control_Group/0000",
+    "unit_index": 5,
+    "text": "到",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 2.87,
+    "candidate_sample": 137760
+  },
+  {
+    "segment_id": "Chinese/ZH-Alto-1/Breathy/慢慢喜欢你/Control_Group/0000",
+    "unit_index": 6,
+    "text": "喜",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 3.36,
+    "candidate_sample": 161280
+  },
+  {
+    "segment_id": "Chinese/ZH-Alto-1/Breathy/慢慢喜欢你/Control_Group/0000",
+    "unit_index": 7,
+    "text": "出",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 3.95,
+    "candidate_sample": 189600
+  },
+  {
+    "segment_id": "Chinese/ZH-Alto-1/Breathy/慢慢喜欢你/Control_Group/0000",
+    "unit_index": 8,
+    "text": "望",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 4.647,
+    "candidate_sample": 223056
+  },
+  {
+    "segment_id": "Chinese/ZH-Alto-1/Breathy/慢慢喜欢你/Control_Group/0000",
+    "unit_index": 9,
+    "text": "外",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 5.17,
+    "candidate_sample": 248160
+  },
+  {
+    "segment_id": "Chinese/ZH-Alto-1/Breathy/慢慢喜欢你/Control_Group/0000",
+    "unit_index": 11,
+    "text": "的",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 5.8,
+    "candidate_sample": 278400
+  },
+  {
+    "segment_id": "Chinese/ZH-Alto-1/Breathy/慢慢喜欢你/Control_Group/0000",
+    "unit_index": 12,
+    "text": "傍",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 6.266,
+    "candidate_sample": 300768
+  },
+  {
+    "segment_id": "Chinese/ZH-Alto-1/Breathy/慢慢喜欢你/Breathy_Group/0000",
+    "unit_index": 0,
+    "text": "书",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 0.0,
+    "candidate_sample": 0
+  },
+  {
+    "segment_id": "Chinese/ZH-Alto-1/Breathy/慢慢喜欢你/Breathy_Group/0000",
+    "unit_index": 1,
+    "text": "里",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 0.79,
+    "candidate_sample": 37920
+  },
+  {
+    "segment_id": "Chinese/ZH-Alto-1/Breathy/慢慢喜欢你/Breathy_Group/0000",
+    "unit_index": 2,
+    "text": "总",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 1.41,
+    "candidate_sample": 67680
+  },
+  {
+    "segment_id": "Chinese/ZH-Alto-1/Breathy/慢慢喜欢你/Breathy_Group/0000",
+    "unit_index": 3,
+    "text": "爱",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 2.061,
+    "candidate_sample": 98928
+  },
+  {
+    "segment_id": "Chinese/ZH-Alto-1/Breathy/慢慢喜欢你/Breathy_Group/0000",
+    "unit_index": 4,
+    "text": "写",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 2.59,
+    "candidate_sample": 124320
+  },
+  {
+    "segment_id": "Chinese/ZH-Alto-1/Breathy/慢慢喜欢你/Breathy_Group/0000",
+    "unit_index": 5,
+    "text": "到",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 3.217,
+    "candidate_sample": 154416
+  },
+  {
+    "segment_id": "Chinese/ZH-Alto-1/Breathy/慢慢喜欢你/Breathy_Group/0000",
+    "unit_index": 6,
+    "text": "喜",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 3.73,
+    "candidate_sample": 179040
+  },
+  {
+    "segment_id": "Chinese/ZH-Alto-1/Breathy/慢慢喜欢你/Breathy_Group/0000",
+    "unit_index": 7,
+    "text": "出",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 4.3,
+    "candidate_sample": 206400
+  },
+  {
+    "segment_id": "Chinese/ZH-Alto-1/Breathy/慢慢喜欢你/Breathy_Group/0000",
+    "unit_index": 8,
+    "text": "望",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 4.927,
+    "candidate_sample": 236496
+  },
+  {
+    "segment_id": "Chinese/ZH-Alto-1/Breathy/慢慢喜欢你/Breathy_Group/0000",
+    "unit_index": 9,
+    "text": "外",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 5.426,
+    "candidate_sample": 260448
+  },
+  {
+    "segment_id": "Chinese/ZH-Alto-1/Breathy/慢慢喜欢你/Breathy_Group/0000",
+    "unit_index": 10,
+    "text": "的",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 5.955,
+    "candidate_sample": 285840
+  },
+  {
+    "segment_id": "Chinese/ZH-Alto-1/Breathy/慢慢喜欢你/Breathy_Group/0000",
+    "unit_index": 11,
+    "text": "傍",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 6.559,
+    "candidate_sample": 314832
+  },
+  {
+    "segment_id": "Chinese/ZH-Tenor-1/Breathy/慢慢喜欢你/Breathy_Group/0000",
+    "unit_index": 0,
+    "text": "书",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 0.0,
+    "candidate_sample": 0
+  },
+  {
+    "segment_id": "Chinese/ZH-Tenor-1/Breathy/慢慢喜欢你/Breathy_Group/0000",
+    "unit_index": 1,
+    "text": "里",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 0.46,
+    "candidate_sample": 22080
+  },
+  {
+    "segment_id": "Chinese/ZH-Tenor-1/Breathy/慢慢喜欢你/Breathy_Group/0000",
+    "unit_index": 2,
+    "text": "总",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 1.01,
+    "candidate_sample": 48480
+  },
+  {
+    "segment_id": "Chinese/ZH-Tenor-1/Breathy/慢慢喜欢你/Breathy_Group/0000",
+    "unit_index": 3,
+    "text": "爱",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 1.57,
+    "candidate_sample": 75360
+  },
+  {
+    "segment_id": "Chinese/ZH-Tenor-1/Breathy/慢慢喜欢你/Breathy_Group/0000",
+    "unit_index": 4,
+    "text": "写",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 1.89,
+    "candidate_sample": 90720
+  },
+  {
+    "segment_id": "Chinese/ZH-Tenor-1/Breathy/慢慢喜欢你/Breathy_Group/0000",
+    "unit_index": 5,
+    "text": "到",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 2.39,
+    "candidate_sample": 114720
+  },
+  {
+    "segment_id": "Chinese/ZH-Tenor-1/Breathy/慢慢喜欢你/Breathy_Group/0000",
+    "unit_index": 6,
+    "text": "喜",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 2.74,
+    "candidate_sample": 131520
+  },
+  {
+    "segment_id": "Chinese/ZH-Tenor-1/Breathy/慢慢喜欢你/Breathy_Group/0000",
+    "unit_index": 7,
+    "text": "出",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 3.21,
+    "candidate_sample": 154080
+  },
+  {
+    "segment_id": "Chinese/ZH-Tenor-1/Breathy/慢慢喜欢你/Breathy_Group/0000",
+    "unit_index": 8,
+    "text": "望",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 3.81,
+    "candidate_sample": 182880
+  },
+  {
+    "segment_id": "Chinese/ZH-Tenor-1/Breathy/慢慢喜欢你/Breathy_Group/0000",
+    "unit_index": 9,
+    "text": "外",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 4.23,
+    "candidate_sample": 203040
+  },
+  {
+    "segment_id": "Chinese/ZH-Tenor-1/Breathy/慢慢喜欢你/Breathy_Group/0000",
+    "unit_index": 10,
+    "text": "的",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 4.63,
+    "candidate_sample": 222240
+  },
+  {
+    "segment_id": "Chinese/ZH-Tenor-1/Breathy/慢慢喜欢你/Breathy_Group/0000",
+    "unit_index": 11,
+    "text": "傍",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 5.07,
+    "candidate_sample": 243360
+  },
+  {
+    "segment_id": "Chinese/ZH-Tenor-1/Breathy/慢慢喜欢你/Breathy_Group/0000",
+    "unit_index": 13,
+    "text": "晚",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 6.76,
+    "candidate_sample": 324480
+  },
+  {
+    "segment_id": "Chinese/ZH-Tenor-1/Glissando/给电影人的情书/Glissando_Group/0000",
+    "unit_index": 0,
+    "text": "多",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 0.0,
+    "candidate_sample": 0
+  },
+  {
+    "segment_id": "Chinese/ZH-Tenor-1/Glissando/给电影人的情书/Glissando_Group/0000",
+    "unit_index": 1,
+    "text": "少",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 0.25,
+    "candidate_sample": 12000
+  },
+  {
+    "segment_id": "Chinese/ZH-Tenor-1/Glissando/给电影人的情书/Glissando_Group/0000",
+    "unit_index": 2,
+    "text": "人",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 0.53,
+    "candidate_sample": 25440
+  },
+  {
+    "segment_id": "Chinese/ZH-Tenor-1/Glissando/给电影人的情书/Glissando_Group/0000",
+    "unit_index": 3,
+    "text": "爱",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 1.24,
+    "candidate_sample": 59520
+  },
+  {
+    "segment_id": "Chinese/ZH-Tenor-1/Glissando/给电影人的情书/Glissando_Group/0000",
+    "unit_index": 4,
+    "text": "你",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 1.52,
+    "candidate_sample": 72960
+  },
+  {
+    "segment_id": "Chinese/ZH-Tenor-1/Glissando/给电影人的情书/Glissando_Group/0000",
+    "unit_index": 5,
+    "text": "遗",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 1.892,
+    "candidate_sample": 90816
+  },
+  {
+    "segment_id": "Chinese/ZH-Tenor-1/Glissando/给电影人的情书/Glissando_Group/0000",
+    "unit_index": 6,
+    "text": "留",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 2.1,
+    "candidate_sample": 100800
+  },
+  {
+    "segment_id": "Chinese/ZH-Tenor-1/Glissando/给电影人的情书/Glissando_Group/0000",
+    "unit_index": 7,
+    "text": "银",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 2.75,
+    "candidate_sample": 132000
+  },
+  {
+    "segment_id": "Chinese/ZH-Tenor-1/Glissando/给电影人的情书/Glissando_Group/0000",
+    "unit_index": 8,
+    "text": "幕",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 2.98,
+    "candidate_sample": 143040
+  },
+  {
+    "segment_id": "Chinese/ZH-Tenor-1/Glissando/给电影人的情书/Glissando_Group/0000",
+    "unit_index": 9,
+    "text": "的",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 3.69,
+    "candidate_sample": 177120
+  },
+  {
+    "segment_id": "Chinese/ZH-Tenor-1/Glissando/给电影人的情书/Glissando_Group/0000",
+    "unit_index": 10,
+    "text": "风",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 3.91,
+    "candidate_sample": 187680
+  },
+  {
+    "segment_id": "Chinese/ZH-Tenor-1/Glissando/给电影人的情书/Glissando_Group/0000",
+    "unit_index": 11,
+    "text": "采",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 4.23,
+    "candidate_sample": 203040
+  },
+  {
+    "segment_id": "Chinese/ZH-Tenor-1/Glissando/给电影人的情书/Glissando_Group/0000",
+    "unit_index": 13,
+    "text": "多",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 4.92,
+    "candidate_sample": 236160
+  },
+  {
+    "segment_id": "Chinese/ZH-Tenor-1/Glissando/给电影人的情书/Glissando_Group/0000",
+    "unit_index": 14,
+    "text": "少",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 5.15,
+    "candidate_sample": 247200
+  },
+  {
+    "segment_id": "Chinese/ZH-Tenor-1/Glissando/给电影人的情书/Glissando_Group/0000",
+    "unit_index": 15,
+    "text": "人",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 5.45,
+    "candidate_sample": 261600
+  },
+  {
+    "segment_id": "Chinese/ZH-Tenor-1/Glissando/给电影人的情书/Glissando_Group/0000",
+    "unit_index": 16,
+    "text": "爱",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 6.18,
+    "candidate_sample": 296640
+  },
+  {
+    "segment_id": "Chinese/ZH-Tenor-1/Glissando/给电影人的情书/Glissando_Group/0000",
+    "unit_index": 17,
+    "text": "你",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 6.45,
+    "candidate_sample": 309600
+  },
+  {
+    "segment_id": "Chinese/ZH-Tenor-1/Glissando/给电影人的情书/Glissando_Group/0000",
+    "unit_index": 18,
+    "text": "遗",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 6.59,
+    "candidate_sample": 316320
+  },
+  {
+    "segment_id": "Chinese/ZH-Tenor-1/Glissando/给电影人的情书/Glissando_Group/0000",
+    "unit_index": 19,
+    "text": "世",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 7.021,
+    "candidate_sample": 337008
+  },
+  {
+    "segment_id": "Chinese/ZH-Tenor-1/Glissando/给电影人的情书/Glissando_Group/0000",
+    "unit_index": 20,
+    "text": "独",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 7.75,
+    "candidate_sample": 372000
+  },
+  {
+    "segment_id": "Chinese/ZH-Tenor-1/Glissando/给电影人的情书/Glissando_Group/0000",
+    "unit_index": 21,
+    "text": "立",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 8.07,
+    "candidate_sample": 387360
+  },
+  {
+    "segment_id": "Chinese/ZH-Tenor-1/Glissando/给电影人的情书/Glissando_Group/0000",
+    "unit_index": 22,
+    "text": "的",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 8.62,
+    "candidate_sample": 413760
+  },
+  {
+    "segment_id": "Chinese/ZH-Tenor-1/Glissando/给电影人的情书/Glissando_Group/0000",
+    "unit_index": 23,
+    "text": "姿",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 8.9,
+    "candidate_sample": 427200
+  },
+  {
+    "segment_id": "Chinese/ZH-Tenor-1/Glissando/给电影人的情书/Glissando_Group/0000",
+    "unit_index": 24,
+    "text": "态",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 9.22,
+    "candidate_sample": 442560
+  },
+  {
+    "segment_id": "English/EN-Alto-1/Glissando/my love/Control_Group/0000",
+    "unit_index": 1,
+    "text": "an",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 0.91,
+    "candidate_sample": 43680
+  },
+  {
+    "segment_id": "English/EN-Alto-1/Glissando/my love/Control_Group/0000",
+    "unit_index": 2,
+    "text": "empty",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 1.23,
+    "candidate_sample": 59040
+  },
+  {
+    "segment_id": "English/EN-Alto-1/Glissando/my love/Control_Group/0000",
+    "unit_index": 3,
+    "text": "street",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 1.69,
+    "candidate_sample": 81120
+  },
+  {
+    "segment_id": "English/EN-Alto-1/Glissando/my love/Control_Group/0000",
+    "unit_index": 5,
+    "text": "an",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 2.55,
+    "candidate_sample": 122400
+  },
+  {
+    "segment_id": "English/EN-Alto-1/Glissando/my love/Control_Group/0000",
+    "unit_index": 6,
+    "text": "empty",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 2.79,
+    "candidate_sample": 133920
+  },
+  {
+    "segment_id": "English/EN-Alto-1/Glissando/my love/Control_Group/0000",
+    "unit_index": 7,
+    "text": "house",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 3.411,
+    "candidate_sample": 163728
+  },
+  {
+    "segment_id": "English/EN-Alto-1/Glissando/my love/Control_Group/0000",
+    "unit_index": 9,
+    "text": "a",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 4.261,
+    "candidate_sample": 204528
+  },
+  {
+    "segment_id": "English/EN-Alto-1/Glissando/my love/Control_Group/0000",
+    "unit_index": 10,
+    "text": "hole",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 4.441,
+    "candidate_sample": 213168
+  },
+  {
+    "segment_id": "English/EN-Alto-1/Glissando/my love/Control_Group/0000",
+    "unit_index": 11,
+    "text": "inside",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 4.791,
+    "candidate_sample": 229968
+  },
+  {
+    "segment_id": "English/EN-Alto-1/Glissando/my love/Control_Group/0000",
+    "unit_index": 12,
+    "text": "my",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 5.511,
+    "candidate_sample": 264528
+  },
+  {
+    "segment_id": "English/EN-Alto-1/Glissando/my love/Control_Group/0000",
+    "unit_index": 13,
+    "text": "heart",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 5.901,
+    "candidate_sample": 283248
+  },
+  {
+    "segment_id": "English/EN-Alto-1/Glissando/my love/Control_Group/0000",
+    "unit_index": 15,
+    "text": "i'm",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 7.671,
+    "candidate_sample": 368208
+  },
+  {
+    "segment_id": "English/EN-Alto-1/Glissando/my love/Control_Group/0000",
+    "unit_index": 16,
+    "text": "all",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 7.981,
+    "candidate_sample": 383088
+  },
+  {
+    "segment_id": "English/EN-Alto-1/Glissando/my love/Control_Group/0000",
+    "unit_index": 17,
+    "text": "alone",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 8.121,
+    "candidate_sample": 389808
+  },
+  {
+    "segment_id": "English/EN-Alto-1/Glissando/my love/Glissando_Group/0000",
+    "unit_index": 1,
+    "text": "an",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 0.56,
+    "candidate_sample": 26880
+  },
+  {
+    "segment_id": "English/EN-Alto-1/Glissando/my love/Glissando_Group/0000",
+    "unit_index": 2,
+    "text": "empty",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 0.767,
+    "candidate_sample": 36816
+  },
+  {
+    "segment_id": "English/EN-Alto-1/Glissando/my love/Glissando_Group/0000",
+    "unit_index": 3,
+    "text": "street",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 1.311,
+    "candidate_sample": 62928
+  },
+  {
+    "segment_id": "English/EN-Alto-1/Glissando/my love/Glissando_Group/0000",
+    "unit_index": 5,
+    "text": "an",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 2.21,
+    "candidate_sample": 106080
+  },
+  {
+    "segment_id": "English/EN-Alto-1/Glissando/my love/Glissando_Group/0000",
+    "unit_index": 6,
+    "text": "empty",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 2.386,
+    "candidate_sample": 114528
+  },
+  {
+    "segment_id": "English/EN-Alto-1/Glissando/my love/Glissando_Group/0000",
+    "unit_index": 7,
+    "text": "house",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 2.991,
+    "candidate_sample": 143568
+  },
+  {
+    "segment_id": "English/EN-Alto-1/Glissando/my love/Glissando_Group/0000",
+    "unit_index": 9,
+    "text": "a",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 3.906,
+    "candidate_sample": 187488
+  },
+  {
+    "segment_id": "English/EN-Alto-1/Glissando/my love/Glissando_Group/0000",
+    "unit_index": 10,
+    "text": "hole",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 3.961,
+    "candidate_sample": 190128
+  },
+  {
+    "segment_id": "English/EN-Alto-1/Glissando/my love/Glissando_Group/0000",
+    "unit_index": 11,
+    "text": "inside",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 4.485,
+    "candidate_sample": 215280
+  },
+  {
+    "segment_id": "English/EN-Alto-1/Glissando/my love/Glissando_Group/0000",
+    "unit_index": 12,
+    "text": "my",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 5.172,
+    "candidate_sample": 248256
+  },
+  {
+    "segment_id": "English/EN-Alto-1/Glissando/my love/Glissando_Group/0000",
+    "unit_index": 13,
+    "text": "heart",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 5.542,
+    "candidate_sample": 266016
+  },
+  {
+    "segment_id": "English/EN-Alto-1/Glissando/my love/Glissando_Group/0000",
+    "unit_index": 15,
+    "text": "i'm",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 7.302,
+    "candidate_sample": 350496
+  },
+  {
+    "segment_id": "English/EN-Alto-1/Glissando/my love/Glissando_Group/0000",
+    "unit_index": 16,
+    "text": "all",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 7.441,
+    "candidate_sample": 357168
+  },
+  {
+    "segment_id": "English/EN-Alto-1/Glissando/my love/Glissando_Group/0000",
+    "unit_index": 17,
+    "text": "alone",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 7.692,
+    "candidate_sample": 369216
+  },
+  {
+    "segment_id": "English/EN-Alto-2/Glissando/My Love/Control_Group/0000",
+    "unit_index": 1,
+    "text": "an",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 1.9,
+    "candidate_sample": 91200
+  },
+  {
+    "segment_id": "English/EN-Alto-2/Glissando/My Love/Control_Group/0000",
+    "unit_index": 2,
+    "text": "empty",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 2.15,
+    "candidate_sample": 103200
+  },
+  {
+    "segment_id": "English/EN-Alto-2/Glissando/My Love/Control_Group/0000",
+    "unit_index": 3,
+    "text": "street",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 2.59,
+    "candidate_sample": 124320
+  },
+  {
+    "segment_id": "English/EN-Alto-2/Glissando/My Love/Control_Group/0000",
+    "unit_index": 5,
+    "text": "an",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 3.562,
+    "candidate_sample": 170976
+  },
+  {
+    "segment_id": "English/EN-Alto-2/Glissando/My Love/Control_Group/0000",
+    "unit_index": 6,
+    "text": "empty",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 3.792,
+    "candidate_sample": 182016
+  },
+  {
+    "segment_id": "English/EN-Alto-2/Glissando/My Love/Control_Group/0000",
+    "unit_index": 7,
+    "text": "house",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 4.282,
+    "candidate_sample": 205536
+  },
+  {
+    "segment_id": "English/EN-Alto-2/Glissando/My Love/Control_Group/0000",
+    "unit_index": 9,
+    "text": "a",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 5.192,
+    "candidate_sample": 249216
+  },
+  {
+    "segment_id": "English/EN-Alto-2/Glissando/My Love/Control_Group/0000",
+    "unit_index": 10,
+    "text": "hole",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 5.292,
+    "candidate_sample": 254016
+  },
+  {
+    "segment_id": "English/EN-Alto-2/Glissando/My Love/Control_Group/0000",
+    "unit_index": 11,
+    "text": "inside",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 5.742,
+    "candidate_sample": 275616
+  },
+  {
+    "segment_id": "English/EN-Alto-2/Glissando/My Love/Control_Group/0000",
+    "unit_index": 12,
+    "text": "my",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 6.423,
+    "candidate_sample": 308304
+  },
+  {
+    "segment_id": "English/EN-Alto-2/Glissando/My Love/Control_Group/0000",
+    "unit_index": 13,
+    "text": "heart",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 6.773,
+    "candidate_sample": 325104
+  },
+  {
+    "segment_id": "English/EN-Alto-2/Glissando/My Love/Glissando_Group/0000",
+    "unit_index": 1,
+    "text": "an",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 1.11,
+    "candidate_sample": 53280
+  },
+  {
+    "segment_id": "English/EN-Alto-2/Glissando/My Love/Glissando_Group/0000",
+    "unit_index": 2,
+    "text": "empty",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 1.36,
+    "candidate_sample": 65280
+  },
+  {
+    "segment_id": "English/EN-Alto-2/Glissando/My Love/Glissando_Group/0000",
+    "unit_index": 3,
+    "text": "street",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 1.82,
+    "candidate_sample": 87360
+  },
+  {
+    "segment_id": "English/EN-Alto-2/Glissando/My Love/Glissando_Group/0000",
+    "unit_index": 5,
+    "text": "an",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 2.72,
+    "candidate_sample": 130560
+  },
+  {
+    "segment_id": "English/EN-Alto-2/Glissando/My Love/Glissando_Group/0000",
+    "unit_index": 6,
+    "text": "empty",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 2.954,
+    "candidate_sample": 141792
+  },
+  {
+    "segment_id": "English/EN-Alto-2/Glissando/My Love/Glissando_Group/0000",
+    "unit_index": 7,
+    "text": "house",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 3.421,
+    "candidate_sample": 164208
+  },
+  {
+    "segment_id": "English/EN-Alto-2/Glissando/My Love/Glissando_Group/0000",
+    "unit_index": 9,
+    "text": "a",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 4.401,
+    "candidate_sample": 211248
+  },
+  {
+    "segment_id": "English/EN-Alto-2/Glissando/My Love/Glissando_Group/0000",
+    "unit_index": 10,
+    "text": "hole",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 4.461,
+    "candidate_sample": 214128
+  },
+  {
+    "segment_id": "English/EN-Alto-2/Glissando/My Love/Glissando_Group/0000",
+    "unit_index": 11,
+    "text": "inside",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 4.971,
+    "candidate_sample": 238608
+  },
+  {
+    "segment_id": "English/EN-Alto-2/Glissando/My Love/Glissando_Group/0000",
+    "unit_index": 12,
+    "text": "my",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 5.581,
+    "candidate_sample": 267888
+  },
+  {
+    "segment_id": "English/EN-Alto-2/Glissando/My Love/Glissando_Group/0000",
+    "unit_index": 13,
+    "text": "heart",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 6.122,
+    "candidate_sample": 293856
+  },
+  {
+    "segment_id": "English/EN-Alto-1/Glissando/rolling in the deep/Control_Group/0000",
+    "unit_index": 1,
+    "text": "there's",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 0.68,
+    "candidate_sample": 32640
+  },
+  {
+    "segment_id": "English/EN-Alto-1/Glissando/rolling in the deep/Control_Group/0000",
+    "unit_index": 2,
+    "text": "a",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 1.851,
+    "candidate_sample": 88848
+  },
+  {
+    "segment_id": "English/EN-Alto-1/Glissando/rolling in the deep/Control_Group/0000",
+    "unit_index": 3,
+    "text": "fire",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 1.891,
+    "candidate_sample": 90768
+  },
+  {
+    "segment_id": "English/EN-Alto-1/Glissando/rolling in the deep/Control_Group/0000",
+    "unit_index": 4,
+    "text": "starting",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 3.062,
+    "candidate_sample": 146976
+  },
+  {
+    "segment_id": "English/EN-Alto-1/Glissando/rolling in the deep/Control_Group/0000",
+    "unit_index": 5,
+    "text": "in",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 3.612,
+    "candidate_sample": 173376
+  },
+  {
+    "segment_id": "English/EN-Alto-1/Glissando/rolling in the deep/Control_Group/0000",
+    "unit_index": 6,
+    "text": "my",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 4.092,
+    "candidate_sample": 196416
+  },
+  {
+    "segment_id": "English/EN-Alto-1/Glissando/rolling in the deep/Control_Group/0000",
+    "unit_index": 7,
+    "text": "heart",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 4.592,
+    "candidate_sample": 220416
+  },
+  {
+    "segment_id": "English/EN-Alto-1/Glissando/rolling in the deep/Control_Group/0000",
+    "unit_index": 9,
+    "text": "reaching",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 5.473,
+    "candidate_sample": 262704
+  },
+  {
+    "segment_id": "English/EN-Alto-1/Glissando/rolling in the deep/Control_Group/0000",
+    "unit_index": 10,
+    "text": "a",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 6.473,
+    "candidate_sample": 310704
+  },
+  {
+    "segment_id": "English/EN-Alto-1/Glissando/rolling in the deep/Control_Group/0000",
+    "unit_index": 11,
+    "text": "fever",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 6.614,
+    "candidate_sample": 317472
+  },
+  {
+    "segment_id": "English/EN-Alto-1/Glissando/rolling in the deep/Control_Group/0000",
+    "unit_index": 12,
+    "text": "pitch",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 7.184,
+    "candidate_sample": 344832
+  },
+  {
+    "segment_id": "English/EN-Alto-1/Glissando/rolling in the deep/Control_Group/0000",
+    "unit_index": 13,
+    "text": "and",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 7.604,
+    "candidate_sample": 364992
+  },
+  {
+    "segment_id": "English/EN-Alto-1/Glissando/rolling in the deep/Control_Group/0000",
+    "unit_index": 14,
+    "text": "it's",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 7.734,
+    "candidate_sample": 371232
+  },
+  {
+    "segment_id": "English/EN-Alto-1/Glissando/rolling in the deep/Control_Group/0000",
+    "unit_index": 15,
+    "text": "bringing",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 7.814,
+    "candidate_sample": 375072
+  },
+  {
+    "segment_id": "English/EN-Alto-1/Glissando/rolling in the deep/Control_Group/0000",
+    "unit_index": 16,
+    "text": "me",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 8.134,
+    "candidate_sample": 390432
+  },
+  {
+    "segment_id": "English/EN-Alto-1/Glissando/rolling in the deep/Control_Group/0000",
+    "unit_index": 17,
+    "text": "out",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 8.374,
+    "candidate_sample": 401952
+  },
+  {
+    "segment_id": "English/EN-Alto-1/Glissando/rolling in the deep/Control_Group/0000",
+    "unit_index": 18,
+    "text": "of",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 8.654,
+    "candidate_sample": 415392
+  },
+  {
+    "segment_id": "English/EN-Alto-1/Glissando/rolling in the deep/Control_Group/0000",
+    "unit_index": 19,
+    "text": "the",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 8.725,
+    "candidate_sample": 418800
+  },
+  {
+    "segment_id": "English/EN-Alto-1/Glissando/rolling in the deep/Control_Group/0000",
+    "unit_index": 20,
+    "text": "dark",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 8.795,
+    "candidate_sample": 422160
+  },
+  {
+    "segment_id": "English/EN-Alto-1/Glissando/rolling in the deep/Glissando_Group/0000",
+    "unit_index": 1,
+    "text": "there's",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 0.69,
+    "candidate_sample": 33120
+  },
+  {
+    "segment_id": "English/EN-Alto-1/Glissando/rolling in the deep/Glissando_Group/0000",
+    "unit_index": 2,
+    "text": "a",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 1.34,
+    "candidate_sample": 64320
+  },
+  {
+    "segment_id": "English/EN-Alto-1/Glissando/rolling in the deep/Glissando_Group/0000",
+    "unit_index": 3,
+    "text": "fire",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 1.81,
+    "candidate_sample": 86880
+  },
+  {
+    "segment_id": "English/EN-Alto-1/Glissando/rolling in the deep/Glissando_Group/0000",
+    "unit_index": 4,
+    "text": "starting",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 2.931,
+    "candidate_sample": 140688
+  },
+  {
+    "segment_id": "English/EN-Alto-1/Glissando/rolling in the deep/Glissando_Group/0000",
+    "unit_index": 5,
+    "text": "in",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 3.461,
+    "candidate_sample": 166128
+  },
+  {
+    "segment_id": "English/EN-Alto-1/Glissando/rolling in the deep/Glissando_Group/0000",
+    "unit_index": 6,
+    "text": "my",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 3.981,
+    "candidate_sample": 191088
+  },
+  {
+    "segment_id": "English/EN-Alto-1/Glissando/rolling in the deep/Glissando_Group/0000",
+    "unit_index": 7,
+    "text": "heart",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 4.431,
+    "candidate_sample": 212688
+  },
+  {
+    "segment_id": "English/EN-Alto-1/Glissando/rolling in the deep/Glissando_Group/0000",
+    "unit_index": 9,
+    "text": "reaching",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 5.341,
+    "candidate_sample": 256368
+  },
+  {
+    "segment_id": "English/EN-Alto-1/Glissando/rolling in the deep/Glissando_Group/0000",
+    "unit_index": 10,
+    "text": "a",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 6.306,
+    "candidate_sample": 302688
+  },
+  {
+    "segment_id": "English/EN-Alto-1/Glissando/rolling in the deep/Glissando_Group/0000",
+    "unit_index": 11,
+    "text": "fever",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 6.452,
+    "candidate_sample": 309696
+  },
+  {
+    "segment_id": "English/EN-Alto-1/Glissando/rolling in the deep/Glissando_Group/0000",
+    "unit_index": 12,
+    "text": "pitch",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 7.032,
+    "candidate_sample": 337536
+  },
+  {
+    "segment_id": "English/EN-Alto-1/Glissando/rolling in the deep/Glissando_Group/0000",
+    "unit_index": 13,
+    "text": "and",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 7.432,
+    "candidate_sample": 356736
+  },
+  {
+    "segment_id": "English/EN-Alto-1/Glissando/rolling in the deep/Glissando_Group/0000",
+    "unit_index": 14,
+    "text": "it's",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 7.532,
+    "candidate_sample": 361536
+  },
+  {
+    "segment_id": "English/EN-Alto-1/Glissando/rolling in the deep/Glissando_Group/0000",
+    "unit_index": 15,
+    "text": "bringing",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 7.742,
+    "candidate_sample": 371616
+  },
+  {
+    "segment_id": "English/EN-Alto-1/Glissando/rolling in the deep/Glissando_Group/0000",
+    "unit_index": 16,
+    "text": "me",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 8.042,
+    "candidate_sample": 386016
+  },
+  {
+    "segment_id": "English/EN-Alto-1/Glissando/rolling in the deep/Glissando_Group/0000",
+    "unit_index": 17,
+    "text": "out",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 8.312,
+    "candidate_sample": 398976
+  },
+  {
+    "segment_id": "English/EN-Alto-1/Glissando/rolling in the deep/Glissando_Group/0000",
+    "unit_index": 18,
+    "text": "of",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 8.442,
+    "candidate_sample": 405216
+  },
+  {
+    "segment_id": "English/EN-Alto-1/Glissando/rolling in the deep/Glissando_Group/0000",
+    "unit_index": 19,
+    "text": "the",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 8.682,
+    "candidate_sample": 416736
+  },
+  {
+    "segment_id": "English/EN-Alto-1/Glissando/rolling in the deep/Glissando_Group/0000",
+    "unit_index": 20,
+    "text": "dark",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 8.772,
+    "candidate_sample": 421056
+  },
+  {
+    "segment_id": "English/EN-Tenor-1/Glissando/Rolling in the Deep/Control_Group/0000",
+    "unit_index": 1,
+    "text": "there's",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 0.25,
+    "candidate_sample": 12000
+  },
+  {
+    "segment_id": "English/EN-Tenor-1/Glissando/Rolling in the Deep/Control_Group/0000",
+    "unit_index": 2,
+    "text": "a",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 0.87,
+    "candidate_sample": 41760
+  },
+  {
+    "segment_id": "English/EN-Tenor-1/Glissando/Rolling in the Deep/Control_Group/0000",
+    "unit_index": 3,
+    "text": "fire",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 1.45,
+    "candidate_sample": 69600
+  },
+  {
+    "segment_id": "English/EN-Tenor-1/Glissando/Rolling in the Deep/Control_Group/0000",
+    "unit_index": 4,
+    "text": "starting",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 2.59,
+    "candidate_sample": 124320
+  },
+  {
+    "segment_id": "English/EN-Tenor-1/Glissando/Rolling in the Deep/Control_Group/0000",
+    "unit_index": 5,
+    "text": "in",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 3.481,
+    "candidate_sample": 167088
+  },
+  {
+    "segment_id": "English/EN-Tenor-1/Glissando/Rolling in the Deep/Control_Group/0000",
+    "unit_index": 6,
+    "text": "my",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 3.861,
+    "candidate_sample": 185328
+  },
+  {
+    "segment_id": "English/EN-Tenor-1/Glissando/Rolling in the Deep/Control_Group/0000",
+    "unit_index": 7,
+    "text": "heart",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 4.401,
+    "candidate_sample": 211248
+  },
+  {
+    "segment_id": "English/EN-Tenor-1/Glissando/Rolling in the Deep/Control_Group/0000",
+    "unit_index": 9,
+    "text": "reaching",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 5.741,
+    "candidate_sample": 275568
+  },
+  {
+    "segment_id": "English/EN-Tenor-1/Glissando/Rolling in the Deep/Control_Group/0000",
+    "unit_index": 10,
+    "text": "a",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 6.783,
+    "candidate_sample": 325584
+  },
+  {
+    "segment_id": "English/EN-Tenor-1/Glissando/Rolling in the Deep/Control_Group/0000",
+    "unit_index": 11,
+    "text": "fever",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 7.033,
+    "candidate_sample": 337584
+  },
+  {
+    "segment_id": "English/EN-Tenor-1/Glissando/Rolling in the Deep/Control_Group/0000",
+    "unit_index": 12,
+    "text": "pitch",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 7.703,
+    "candidate_sample": 369744
+  },
+  {
+    "segment_id": "English/EN-Tenor-1/Glissando/Rolling in the Deep/Control_Group/0000",
+    "unit_index": 13,
+    "text": "it's",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 8.177,
+    "candidate_sample": 392496
+  },
+  {
+    "segment_id": "English/EN-Tenor-1/Glissando/Rolling in the Deep/Control_Group/0000",
+    "unit_index": 14,
+    "text": "bringing",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 8.463,
+    "candidate_sample": 406224
+  },
+  {
+    "segment_id": "English/EN-Tenor-1/Glissando/Rolling in the Deep/Control_Group/0000",
+    "unit_index": 15,
+    "text": "me",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 9.013,
+    "candidate_sample": 432624
+  },
+  {
+    "segment_id": "English/EN-Tenor-1/Glissando/Rolling in the Deep/Control_Group/0000",
+    "unit_index": 16,
+    "text": "out",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 9.373,
+    "candidate_sample": 449904
+  },
+  {
+    "segment_id": "English/EN-Tenor-1/Glissando/Rolling in the Deep/Control_Group/0000",
+    "unit_index": 17,
+    "text": "the",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 9.724,
+    "candidate_sample": 466752
+  },
+  {
+    "segment_id": "English/EN-Tenor-1/Glissando/Rolling in the Deep/Control_Group/0000",
+    "unit_index": 18,
+    "text": "dark",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 10.044,
+    "candidate_sample": 482112
+  },
+  {
+    "segment_id": "English/EN-Tenor-1/Glissando/Rolling in the Deep/Glissando_Group/0000",
+    "unit_index": 0,
+    "text": "there's",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 0.0,
+    "candidate_sample": 0
+  },
+  {
+    "segment_id": "English/EN-Tenor-1/Glissando/Rolling in the Deep/Glissando_Group/0000",
+    "unit_index": 1,
+    "text": "a",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 0.82,
+    "candidate_sample": 39360
+  },
+  {
+    "segment_id": "English/EN-Tenor-1/Glissando/Rolling in the Deep/Glissando_Group/0000",
+    "unit_index": 2,
+    "text": "fire",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 1.37,
+    "candidate_sample": 65760
+  },
+  {
+    "segment_id": "English/EN-Tenor-1/Glissando/Rolling in the Deep/Glissando_Group/0000",
+    "unit_index": 3,
+    "text": "starting",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 2.61,
+    "candidate_sample": 125280
+  },
+  {
+    "segment_id": "English/EN-Tenor-1/Glissando/Rolling in the Deep/Glissando_Group/0000",
+    "unit_index": 4,
+    "text": "in",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 3.501,
+    "candidate_sample": 168048
+  },
+  {
+    "segment_id": "English/EN-Tenor-1/Glissando/Rolling in the Deep/Glissando_Group/0000",
+    "unit_index": 5,
+    "text": "my",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 3.941,
+    "candidate_sample": 189168
+  },
+  {
+    "segment_id": "English/EN-Tenor-1/Glissando/Rolling in the Deep/Glissando_Group/0000",
+    "unit_index": 6,
+    "text": "heart",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 4.541,
+    "candidate_sample": 217968
+  },
+  {
+    "segment_id": "English/EN-Tenor-1/Glissando/Rolling in the Deep/Glissando_Group/0000",
+    "unit_index": 8,
+    "text": "reaching",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 5.761,
+    "candidate_sample": 276528
+  },
+  {
+    "segment_id": "English/EN-Tenor-1/Glissando/Rolling in the Deep/Glissando_Group/0000",
+    "unit_index": 9,
+    "text": "a",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 6.823,
+    "candidate_sample": 327504
+  },
+  {
+    "segment_id": "English/EN-Tenor-1/Glissando/Rolling in the Deep/Glissando_Group/0000",
+    "unit_index": 10,
+    "text": "fever",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 7.073,
+    "candidate_sample": 339504
+  },
+  {
+    "segment_id": "English/EN-Tenor-1/Glissando/Rolling in the Deep/Glissando_Group/0000",
+    "unit_index": 11,
+    "text": "pitch",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 7.753,
+    "candidate_sample": 372144
+  },
+  {
+    "segment_id": "English/EN-Tenor-1/Glissando/Rolling in the Deep/Glissando_Group/0000",
+    "unit_index": 12,
+    "text": "it's",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 8.213,
+    "candidate_sample": 394224
+  },
+  {
+    "segment_id": "English/EN-Tenor-1/Glissando/Rolling in the Deep/Glissando_Group/0000",
+    "unit_index": 13,
+    "text": "bringing",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 8.423,
+    "candidate_sample": 404304
+  },
+  {
+    "segment_id": "English/EN-Tenor-1/Glissando/Rolling in the Deep/Glissando_Group/0000",
+    "unit_index": 14,
+    "text": "me",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 8.853,
+    "candidate_sample": 424944
+  },
+  {
+    "segment_id": "English/EN-Tenor-1/Glissando/Rolling in the Deep/Glissando_Group/0000",
+    "unit_index": 15,
+    "text": "out",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 9.193,
+    "candidate_sample": 441264
+  },
+  {
+    "segment_id": "English/EN-Tenor-1/Glissando/Rolling in the Deep/Glissando_Group/0000",
+    "unit_index": 16,
+    "text": "the",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 9.513,
+    "candidate_sample": 456624
+  },
+  {
+    "segment_id": "English/EN-Tenor-1/Glissando/Rolling in the Deep/Glissando_Group/0000",
+    "unit_index": 17,
+    "text": "dark",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 9.623,
+    "candidate_sample": 461904
+  },
+  {
+    "segment_id": "English/EN-Alto-2/Glissando/Someone Like You/Control_Group/0000",
+    "unit_index": 1,
+    "text": "i",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 2.62,
+    "candidate_sample": 125760
+  },
+  {
+    "segment_id": "English/EN-Alto-2/Glissando/Someone Like You/Control_Group/0000",
+    "unit_index": 2,
+    "text": "heard",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 3.851,
+    "candidate_sample": 184848
+  },
+  {
+    "segment_id": "English/EN-Alto-2/Glissando/Someone Like You/Control_Group/0000",
+    "unit_index": 4,
+    "text": "that",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 6.061,
+    "candidate_sample": 290928
+  },
+  {
+    "segment_id": "English/EN-Alto-2/Glissando/Someone Like You/Control_Group/0000",
+    "unit_index": 5,
+    "text": "you",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 6.481,
+    "candidate_sample": 311088
+  },
+  {
+    "segment_id": "English/EN-Alto-2/Glissando/Someone Like You/Control_Group/0000",
+    "unit_index": 6,
+    "text": "are",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 6.931,
+    "candidate_sample": 332688
+  },
+  {
+    "segment_id": "English/EN-Alto-2/Glissando/Someone Like You/Glissando_Group/0000",
+    "unit_index": 1,
+    "text": "i",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 1.88,
+    "candidate_sample": 90240
+  },
+  {
+    "segment_id": "English/EN-Alto-2/Glissando/Someone Like You/Glissando_Group/0000",
+    "unit_index": 2,
+    "text": "heard",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 3.11,
+    "candidate_sample": 149280
+  },
+  {
+    "segment_id": "English/EN-Alto-2/Glissando/Someone Like You/Glissando_Group/0000",
+    "unit_index": 4,
+    "text": "that",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 5.48,
+    "candidate_sample": 263040
+  },
+  {
+    "segment_id": "English/EN-Alto-2/Glissando/Someone Like You/Glissando_Group/0000",
+    "unit_index": 5,
+    "text": "you",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 5.78,
+    "candidate_sample": 277440
+  },
+  {
+    "segment_id": "English/EN-Alto-2/Glissando/Someone Like You/Glissando_Group/0000",
+    "unit_index": 6,
+    "text": "are",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 6.291,
+    "candidate_sample": 301968
+  },
+  {
+    "segment_id": "English/EN-Tenor-1/Glissando/Someone Like You/Control_Group/0000",
+    "unit_index": 1,
+    "text": "i",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 0.34,
+    "candidate_sample": 16320
+  },
+  {
+    "segment_id": "English/EN-Tenor-1/Glissando/Someone Like You/Control_Group/0000",
+    "unit_index": 2,
+    "text": "heard",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 1.09,
+    "candidate_sample": 52320
+  },
+  {
+    "segment_id": "English/EN-Tenor-1/Glissando/Someone Like You/Control_Group/0000",
+    "unit_index": 3,
+    "text": "that",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 2.25,
+    "candidate_sample": 108000
+  },
+  {
+    "segment_id": "English/EN-Tenor-1/Glissando/Someone Like You/Control_Group/0000",
+    "unit_index": 4,
+    "text": "you've",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 2.64,
+    "candidate_sample": 126720
+  },
+  {
+    "segment_id": "English/EN-Tenor-1/Glissando/Someone Like You/Control_Group/0000",
+    "unit_index": 6,
+    "text": "settled",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 3.971,
+    "candidate_sample": 190608
+  },
+  {
+    "segment_id": "English/EN-Tenor-1/Glissando/Someone Like You/Control_Group/0000",
+    "unit_index": 7,
+    "text": "down",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 4.781,
+    "candidate_sample": 229488
+  },
+  {
+    "segment_id": "English/EN-Tenor-1/Glissando/Someone Like You/Control_Group/0000",
+    "unit_index": 8,
+    "text": "that",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 5.941,
+    "candidate_sample": 285168
+  },
+  {
+    "segment_id": "English/EN-Tenor-1/Glissando/Someone Like You/Control_Group/0000",
+    "unit_index": 9,
+    "text": "you",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 6.361,
+    "candidate_sample": 305328
+  },
+  {
+    "segment_id": "English/EN-Tenor-1/Glissando/Someone Like You/Glissando_Group/0000",
+    "unit_index": 0,
+    "text": "i",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 0.0,
+    "candidate_sample": 0
+  },
+  {
+    "segment_id": "English/EN-Tenor-1/Glissando/Someone Like You/Glissando_Group/0000",
+    "unit_index": 1,
+    "text": "heard",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 0.75,
+    "candidate_sample": 36000
+  },
+  {
+    "segment_id": "English/EN-Tenor-1/Glissando/Someone Like You/Glissando_Group/0000",
+    "unit_index": 2,
+    "text": "that",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 2.282,
+    "candidate_sample": 109536
+  },
+  {
+    "segment_id": "English/EN-Tenor-1/Glissando/Someone Like You/Glissando_Group/0000",
+    "unit_index": 3,
+    "text": "you've",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 2.62,
+    "candidate_sample": 125760
+  },
+  {
+    "segment_id": "English/EN-Tenor-1/Glissando/Someone Like You/Glissando_Group/0000",
+    "unit_index": 5,
+    "text": "settled",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 4.051,
+    "candidate_sample": 194448
+  },
+  {
+    "segment_id": "English/EN-Tenor-1/Glissando/Someone Like You/Glissando_Group/0000",
+    "unit_index": 6,
+    "text": "down",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 4.871,
+    "candidate_sample": 233808
+  },
+  {
+    "segment_id": "English/EN-Tenor-1/Glissando/Someone Like You/Glissando_Group/0000",
+    "unit_index": 7,
+    "text": "that",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 6.101,
+    "candidate_sample": 292848
+  },
+  {
+    "segment_id": "English/EN-Tenor-1/Glissando/Someone Like You/Glissando_Group/0000",
+    "unit_index": 8,
+    "text": "you",
+    "candidate_source": "textgrid:first_phone",
+    "candidate_seconds": 6.481,
+    "candidate_sample": 311088
+  }
+]

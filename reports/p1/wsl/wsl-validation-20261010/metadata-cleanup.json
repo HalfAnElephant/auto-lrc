@@ -1,0 +1,550 @@
+{
+  "removed_count": 136,
+  "method": "Only AppleDouble files in this task archive with byte-identical content were removed.",
+  "removed_files": [
+    {
+      "path": "t2l/._datasets",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "t2l/datasets/._classification.py",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "t2l/datasets/.___init__.py",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "t2l/datasets/._gtsinger.py",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "t2l/datasets/._splits.py",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "t2l/datasets/._annotations.py",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "t2l/datasets/._schema.py",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "scripts/._prepare_gtsinger.py",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "scripts/._fetch_gtsinger_samples.py",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/._gtsinger-representative.json",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "._requirements-data.txt",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/._gtsinger-representative",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/._English",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/._Chinese",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/._dataset_license.md",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/Chinese/._ZH-Alto-1",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/Chinese/._ZH-Tenor-1",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/Chinese/ZH-Tenor-1/._Breathy",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/Chinese/ZH-Tenor-1/._Glissando",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/Chinese/ZH-Tenor-1/Glissando/._给电影人的情书",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/Chinese/ZH-Tenor-1/Glissando/给电影人的情书/._Glissando_Group",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/Chinese/ZH-Tenor-1/Glissando/给电影人的情书/._Control_Group",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/Chinese/ZH-Tenor-1/Glissando/给电影人的情书/Control_Group/._0000.TextGrid",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/Chinese/ZH-Tenor-1/Glissando/给电影人的情书/Control_Group/._0000.wav",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/Chinese/ZH-Tenor-1/Glissando/给电影人的情书/Control_Group/._0000.json",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/Chinese/ZH-Tenor-1/Glissando/给电影人的情书/Control_Group/._0000.musicxml",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/Chinese/ZH-Tenor-1/Glissando/给电影人的情书/Glissando_Group/._0000.TextGrid",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/Chinese/ZH-Tenor-1/Glissando/给电影人的情书/Glissando_Group/._0000.wav",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/Chinese/ZH-Tenor-1/Glissando/给电影人的情书/Glissando_Group/._0000.json",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/Chinese/ZH-Tenor-1/Glissando/给电影人的情书/Glissando_Group/._0000.musicxml",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/Chinese/ZH-Tenor-1/Breathy/._慢慢喜欢你",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/Chinese/ZH-Tenor-1/Breathy/慢慢喜欢你/._Control_Group",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/Chinese/ZH-Tenor-1/Breathy/慢慢喜欢你/._Breathy_Group",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/Chinese/ZH-Tenor-1/Breathy/慢慢喜欢你/Breathy_Group/._0000.TextGrid",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/Chinese/ZH-Tenor-1/Breathy/慢慢喜欢你/Breathy_Group/._0000.wav",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/Chinese/ZH-Tenor-1/Breathy/慢慢喜欢你/Breathy_Group/._0000.json",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/Chinese/ZH-Tenor-1/Breathy/慢慢喜欢你/Breathy_Group/._0000.musicxml",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/Chinese/ZH-Tenor-1/Breathy/慢慢喜欢你/Control_Group/._0000.TextGrid",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/Chinese/ZH-Tenor-1/Breathy/慢慢喜欢你/Control_Group/._0000.wav",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/Chinese/ZH-Tenor-1/Breathy/慢慢喜欢你/Control_Group/._0000.json",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/Chinese/ZH-Tenor-1/Breathy/慢慢喜欢你/Control_Group/._0000.musicxml",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/Chinese/ZH-Alto-1/._Breathy",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/Chinese/ZH-Alto-1/Breathy/._不再见",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/Chinese/ZH-Alto-1/Breathy/._慢慢喜欢你",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/Chinese/ZH-Alto-1/Breathy/慢慢喜欢你/._Control_Group",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/Chinese/ZH-Alto-1/Breathy/慢慢喜欢你/._Breathy_Group",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/Chinese/ZH-Alto-1/Breathy/慢慢喜欢你/Breathy_Group/._0000.TextGrid",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/Chinese/ZH-Alto-1/Breathy/慢慢喜欢你/Breathy_Group/._0000.wav",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/Chinese/ZH-Alto-1/Breathy/慢慢喜欢你/Breathy_Group/._0000.json",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/Chinese/ZH-Alto-1/Breathy/慢慢喜欢你/Breathy_Group/._0000.musicxml",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/Chinese/ZH-Alto-1/Breathy/慢慢喜欢你/Control_Group/._0000.TextGrid",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/Chinese/ZH-Alto-1/Breathy/慢慢喜欢你/Control_Group/._0000.wav",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/Chinese/ZH-Alto-1/Breathy/慢慢喜欢你/Control_Group/._0000.json",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/Chinese/ZH-Alto-1/Breathy/慢慢喜欢你/Control_Group/._0000.musicxml",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/Chinese/ZH-Alto-1/Breathy/不再见/._Control_Group",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/Chinese/ZH-Alto-1/Breathy/不再见/._Breathy_Group",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/Chinese/ZH-Alto-1/Breathy/不再见/Breathy_Group/._0000.TextGrid",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/Chinese/ZH-Alto-1/Breathy/不再见/Breathy_Group/._0000.wav",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/Chinese/ZH-Alto-1/Breathy/不再见/Breathy_Group/._0000.json",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/Chinese/ZH-Alto-1/Breathy/不再见/Breathy_Group/._0000.musicxml",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/Chinese/ZH-Alto-1/Breathy/不再见/Control_Group/._0000.TextGrid",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/Chinese/ZH-Alto-1/Breathy/不再见/Control_Group/._0000.wav",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/Chinese/ZH-Alto-1/Breathy/不再见/Control_Group/._0000.json",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/Chinese/ZH-Alto-1/Breathy/不再见/Control_Group/._0000.musicxml",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/English/._EN-Alto-1",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/English/._EN-Tenor-1",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/English/._EN-Alto-2",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/English/EN-Alto-2/._Glissando",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/English/EN-Alto-2/Glissando/._My Love",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/English/EN-Alto-2/Glissando/._Someone Like You",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/English/EN-Alto-2/Glissando/Someone Like You/._Glissando_Group",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/English/EN-Alto-2/Glissando/Someone Like You/._Control_Group",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/English/EN-Alto-2/Glissando/Someone Like You/Control_Group/._0000.TextGrid",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/English/EN-Alto-2/Glissando/Someone Like You/Control_Group/._0000.wav",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/English/EN-Alto-2/Glissando/Someone Like You/Control_Group/._0000.json",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/English/EN-Alto-2/Glissando/Someone Like You/Control_Group/._0000.musicxml",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/English/EN-Alto-2/Glissando/Someone Like You/Glissando_Group/._0000.TextGrid",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/English/EN-Alto-2/Glissando/Someone Like You/Glissando_Group/._0000.wav",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/English/EN-Alto-2/Glissando/Someone Like You/Glissando_Group/._0000.json",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/English/EN-Alto-2/Glissando/Someone Like You/Glissando_Group/._0000.musicxml",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/English/EN-Alto-2/Glissando/My Love/._Glissando_Group",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/English/EN-Alto-2/Glissando/My Love/._Control_Group",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/English/EN-Alto-2/Glissando/My Love/Control_Group/._0000.TextGrid",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/English/EN-Alto-2/Glissando/My Love/Control_Group/._0000.wav",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/English/EN-Alto-2/Glissando/My Love/Control_Group/._0000.json",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/English/EN-Alto-2/Glissando/My Love/Control_Group/._0000.musicxml",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/English/EN-Alto-2/Glissando/My Love/Glissando_Group/._0000.TextGrid",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/English/EN-Alto-2/Glissando/My Love/Glissando_Group/._0000.wav",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/English/EN-Alto-2/Glissando/My Love/Glissando_Group/._0000.json",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/English/EN-Alto-2/Glissando/My Love/Glissando_Group/._0000.musicxml",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/English/EN-Tenor-1/._Glissando",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/English/EN-Tenor-1/Glissando/._Rolling in the Deep",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/English/EN-Tenor-1/Glissando/._Someone Like You",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/English/EN-Tenor-1/Glissando/Someone Like You/._Glissando_Group",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/English/EN-Tenor-1/Glissando/Someone Like You/._Control_Group",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/English/EN-Tenor-1/Glissando/Someone Like You/Control_Group/._0000.TextGrid",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/English/EN-Tenor-1/Glissando/Someone Like You/Control_Group/._0000.wav",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/English/EN-Tenor-1/Glissando/Someone Like You/Control_Group/._0000.json",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/English/EN-Tenor-1/Glissando/Someone Like You/Control_Group/._0000.musicxml",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/English/EN-Tenor-1/Glissando/Someone Like You/Glissando_Group/._0000.TextGrid",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/English/EN-Tenor-1/Glissando/Someone Like You/Glissando_Group/._0000.wav",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/English/EN-Tenor-1/Glissando/Someone Like You/Glissando_Group/._0000.json",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/English/EN-Tenor-1/Glissando/Someone Like You/Glissando_Group/._0000.musicxml",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/English/EN-Tenor-1/Glissando/Rolling in the Deep/._Glissando_Group",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/English/EN-Tenor-1/Glissando/Rolling in the Deep/._Control_Group",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/English/EN-Tenor-1/Glissando/Rolling in the Deep/Control_Group/._0000.TextGrid",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/English/EN-Tenor-1/Glissando/Rolling in the Deep/Control_Group/._0000.wav",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/English/EN-Tenor-1/Glissando/Rolling in the Deep/Control_Group/._0000.json",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/English/EN-Tenor-1/Glissando/Rolling in the Deep/Control_Group/._0000.musicxml",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/English/EN-Tenor-1/Glissando/Rolling in the Deep/Glissando_Group/._0000.TextGrid",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/English/EN-Tenor-1/Glissando/Rolling in the Deep/Glissando_Group/._0000.wav",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/English/EN-Tenor-1/Glissando/Rolling in the Deep/Glissando_Group/._0000.json",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/English/EN-Tenor-1/Glissando/Rolling in the Deep/Glissando_Group/._0000.musicxml",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/English/EN-Alto-1/._Glissando",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/English/EN-Alto-1/Glissando/._my love",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/English/EN-Alto-1/Glissando/._rolling in the deep",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/English/EN-Alto-1/Glissando/rolling in the deep/._Glissando_Group",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/English/EN-Alto-1/Glissando/rolling in the deep/._Control_Group",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/English/EN-Alto-1/Glissando/rolling in the deep/Control_Group/._0000.wav",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/English/EN-Alto-1/Glissando/rolling in the deep/Control_Group/._0000.json",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/English/EN-Alto-1/Glissando/rolling in the deep/Control_Group/._0000.musicxml",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/English/EN-Alto-1/Glissando/rolling in the deep/Control_Group/._0000_TextGrid",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/English/EN-Alto-1/Glissando/rolling in the deep/Glissando_Group/._0000.wav",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/English/EN-Alto-1/Glissando/rolling in the deep/Glissando_Group/._0000.json",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/English/EN-Alto-1/Glissando/rolling in the deep/Glissando_Group/._0000.musicxml",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/English/EN-Alto-1/Glissando/rolling in the deep/Glissando_Group/._0000_TextGrid",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/English/EN-Alto-1/Glissando/my love/._Glissando_Group",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/English/EN-Alto-1/Glissando/my love/._Control_Group",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/English/EN-Alto-1/Glissando/my love/Control_Group/._0000.wav",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/English/EN-Alto-1/Glissando/my love/Control_Group/._0000.json",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/English/EN-Alto-1/Glissando/my love/Control_Group/._0000.musicxml",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/English/EN-Alto-1/Glissando/my love/Control_Group/._0000_TextGrid",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/English/EN-Alto-1/Glissando/my love/Glissando_Group/._0000.wav",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/English/EN-Alto-1/Glissando/my love/Glissando_Group/._0000.json",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/English/EN-Alto-1/Glissando/my love/Glissando_Group/._0000.musicxml",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    },
+    {
+      "path": "data/local/gtsinger-representative/English/EN-Alto-1/Glissando/my love/Glissando_Group/._0000_TextGrid",
+      "sha256": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491"
+    }
+  ]
+}

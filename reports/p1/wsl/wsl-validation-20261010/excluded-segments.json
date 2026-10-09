@@ -1,0 +1,14 @@
+[
+  {
+    "segment_id": "Chinese/ZH-Tenor-1/Breathy/慢慢喜欢你/Control_Group/0000",
+    "song_id": "chinese/慢慢喜欢你",
+    "reason": "/home/xcy/auto-lrc/data/local/gtsinger-representative/Chinese/ZH-Tenor-1/Breathy/慢慢喜欢你/Control_Group/0000.json[12]: interval [6.77, 7.34] must satisfy 0 <= start < end <= 7.339979166666667",
+    "exception_type": "ValueError"
+  },
+  {
+    "segment_id": "Chinese/ZH-Tenor-1/Glissando/给电影人的情书/Control_Group/0000",
+    "song_id": "chinese/给电影人的情书",
+    "reason": "/home/xcy/auto-lrc/data/local/gtsinger-representative/Chinese/ZH-Tenor-1/Glissando/给电影人的情书/Control_Group/0000.json[24]: interval [9.3, 9.662] must satisfy 0 <= start < end <= 9.661979166666667",
+    "exception_type": "ValueError"
+  }
+]

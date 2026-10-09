@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>边界复核 · auto-lrc</title><link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header><div><strong>auto-lrc</strong><span>边界复核</span></div><div class="header-actions"><span id="progress">0 / 0</span><a class="icon" href="/export" title="导出标注" aria-label="导出标注"><i data-lucide="download"></i></a></div></header>
+  <main>
+    <aside><label for="segment">音频片段</label><select id="segment"></select><div id="metadata"></div><ol id="units"></ol></aside>
+    <section class="workspace">
+      <div class="title-row"><div><div class="eyebrow" id="position"></div><h1 id="word"></h1></div><span class="badge" id="status">待复核</span></div>
+      <div class="toolbar">
+        <button class="icon" id="play" title="播放当前窗口" aria-label="播放当前窗口"><i data-lucide="play"></i></button>
+        <button class="icon" id="stop" title="停止播放" aria-label="停止播放"><i data-lucide="square"></i></button>
+        <label>速度 <select id="speed"><option value="1">1×</option><option value="0.75">0.75×</option><option value="0.5">0.5×</option></select></label>
+        <span class="divider"></span>
+        <button class="icon" id="pan-left" title="向前移动窗口" aria-label="向前移动窗口"><i data-lucide="chevron-left"></i></button>
+        <button class="icon" id="zoom-in" title="放大时间轴" aria-label="放大时间轴"><i data-lucide="zoom-in"></i></button>
+        <button class="icon" id="zoom-out" title="缩小时间轴" aria-label="缩小时间轴"><i data-lucide="zoom-out"></i></button>
+        <button class="icon" id="pan-right" title="向后移动窗口" aria-label="向后移动窗口"><i data-lucide="chevron-right"></i></button>
+        <button class="icon" id="reset-view" title="完整片段" aria-label="完整片段"><i data-lucide="maximize"></i></button>
+        <output id="window"></output>
+      </div>
+      <div class="signal"><div class="signal-label">波形 <span>原始 WAV</span></div><canvas id="waveform" height="180" aria-label="原始音频波形"></canvas><div class="signal-label">频谱 <span>0–10 kHz</span></div><canvas id="spectrum" height="200" aria-label="原始音频频谱"></canvas><div id="ticks"></div></div>
+      <div class="annotation">
+        <div class="sample-fields"><label>起点采样点<input id="sample" type="number" min="0" step="1" inputmode="numeric"></label><label>起点 / 秒<output id="seconds">未选择</output></label><div class="nudge"><button class="icon" id="previous-sample" title="前移一个采样点" aria-label="前移一个采样点"><i data-lucide="minus"></i></button><button class="icon" id="next-sample" title="后移一个采样点" aria-label="后移一个采样点"><i data-lucide="plus"></i></button></div></div>
+        <div class="review-fields"><label>复核者<input id="reviewer" autocomplete="name"></label><label>置信度 <output id="confidence-value">0.8</output><input id="confidence" type="range" min="0" max="1" step="0.05" value="0.8"></label><label class="checkbox"><input id="ambiguous" type="checkbox">边界不明确</label></div>
+        <label>复核备注<textarea id="notes" rows="2"></textarea></label>
+        <div class="footer-actions"><span id="message" role="status"></span><button id="save"><i data-lucide="check"></i>保存标注</button><button class="icon" id="next" title="下一个词" aria-label="下一个词"><i data-lucide="arrow-right"></i></button></div>
+      </div>
+    </section>
+  </main><audio id="audio" preload="auto"></audio>
+  <script src="/lucide.min.js"></script><script src="/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,5 @@
+# Optional P1 annotation reader; isolated from model/inference requirements.
+# PyPI 6.2.2 metadata verified 2026-10-09; MIT, supports Python 3.10.
+praatio==6.2.2
+# Original-sample waveform and FFT display in the independent review workspace.
+numpy==1.26.3

@@ -1,0 +1,662 @@
+{
+  "schema_version": 1,
+  "repository": "AaronZ345/GTSinger",
+  "dataset_revision": "d78cd68d00135b1995da03f25fccb3a221efd8c1",
+  "license": {
+    "identifier": "CC-BY-NC-SA-4.0",
+    "path": "dataset_license.md",
+    "url": "https://huggingface.co/datasets/AaronZ345/GTSinger/blob/d78cd68d00135b1995da03f25fccb3a221efd8c1/dataset_license.md",
+    "additional_terms": "Read the complete source license, including its additional agreement and citation terms."
+  },
+  "source_files": [
+    {
+      "path": "dataset_license.md",
+      "size": 1463,
+      "git_blob_sha1": "c5dced3ca87433d76c157bb871d4fd5c247d1ed4",
+      "content_sha256": "3f230608aebb15ce29762809690142e6284940924e9e34b938c5afb7ea4806f0",
+      "source_url": "https://huggingface.co/datasets/AaronZ345/GTSinger/resolve/d78cd68d00135b1995da03f25fccb3a221efd8c1/dataset_license.md"
+    },
+    {
+      "path": "Chinese/ZH-Alto-1/Breathy/不再见/Control_Group/0000.TextGrid",
+      "size": 12539,
+      "git_blob_sha1": "e67ea0781992247f18c4e0f767c2a4f4919dbb72",
+      "content_sha256": "443e0a8e9f6ad91bb6ebae0e9df1cb232e635bfdceb4cf559d73f1f39edce846",
+      "source_url": "https://huggingface.co/datasets/AaronZ345/GTSinger/resolve/d78cd68d00135b1995da03f25fccb3a221efd8c1/Chinese/ZH-Alto-1/Breathy/%E4%B8%8D%E5%86%8D%E8%A7%81/Control_Group/0000.TextGrid"
+    },
+    {
+      "path": "Chinese/ZH-Alto-1/Breathy/不再见/Control_Group/0000.json",
+      "size": 12140,
+      "git_blob_sha1": "274bfaf6274388c4badf0392b7c8bc4d01d860ad",
+      "content_sha256": "13a87fd475c6ea15282232124085e8d659f0a3b164033f448efa274f5dfe42ad",
+      "source_url": "https://huggingface.co/datasets/AaronZ345/GTSinger/resolve/d78cd68d00135b1995da03f25fccb3a221efd8c1/Chinese/ZH-Alto-1/Breathy/%E4%B8%8D%E5%86%8D%E8%A7%81/Control_Group/0000.json"
+    },
+    {
+      "path": "Chinese/ZH-Alto-1/Breathy/不再见/Control_Group/0000.musicxml",
+      "size": 7237,
+      "git_blob_sha1": "21ff203df6fc6dedc38520c69bfe3c6fdff5c4ba",
+      "content_sha256": "4bb15e5a1c557d9d342119243fe29d76969b825f825d81fa044f9642ec008323",
+      "source_url": "https://huggingface.co/datasets/AaronZ345/GTSinger/resolve/d78cd68d00135b1995da03f25fccb3a221efd8c1/Chinese/ZH-Alto-1/Breathy/%E4%B8%8D%E5%86%8D%E8%A7%81/Control_Group/0000.musicxml"
+    },
+    {
+      "path": "Chinese/ZH-Alto-1/Breathy/不再见/Control_Group/0000.wav",
+      "size": 1152044,
+      "sha256": "7449f2142d5403d414caaf82cdb11b2898a64c857cfff464e559d4dfdc289093",
+      "content_sha256": "7449f2142d5403d414caaf82cdb11b2898a64c857cfff464e559d4dfdc289093",
+      "source_url": "https://huggingface.co/datasets/AaronZ345/GTSinger/resolve/d78cd68d00135b1995da03f25fccb3a221efd8c1/Chinese/ZH-Alto-1/Breathy/%E4%B8%8D%E5%86%8D%E8%A7%81/Control_Group/0000.wav"
+    },
+    {
+      "path": "Chinese/ZH-Alto-1/Breathy/不再见/Breathy_Group/0000.TextGrid",
+      "size": 12572,
+      "git_blob_sha1": "40f7c7a40083dd0d1bbc5050511a88f3164623ae",
+      "content_sha256": "9325059dcb9b6ecd753a54222459f3342ec2c69a2b5d54efe0c5a88261045757",
+      "source_url": "https://huggingface.co/datasets/AaronZ345/GTSinger/resolve/d78cd68d00135b1995da03f25fccb3a221efd8c1/Chinese/ZH-Alto-1/Breathy/%E4%B8%8D%E5%86%8D%E8%A7%81/Breathy_Group/0000.TextGrid"
+    },
+    {
+      "path": "Chinese/ZH-Alto-1/Breathy/不再见/Breathy_Group/0000.json",
+      "size": 12149,
+      "git_blob_sha1": "362b1c71bc0593c223263e7e55f18c0efcbdc08d",
+      "content_sha256": "21cbe140a5cc6aac15d3aee42904d774205e0b40e4479fdf360dbb09d29c1ebf",
+      "source_url": "https://huggingface.co/datasets/AaronZ345/GTSinger/resolve/d78cd68d00135b1995da03f25fccb3a221efd8c1/Chinese/ZH-Alto-1/Breathy/%E4%B8%8D%E5%86%8D%E8%A7%81/Breathy_Group/0000.json"
+    },
+    {
+      "path": "Chinese/ZH-Alto-1/Breathy/不再见/Breathy_Group/0000.musicxml",
+      "size": 7616,
+      "git_blob_sha1": "734b7c415c347a1e43e3a1c42500711a4668d2b8",
+      "content_sha256": "88651c7d8a3edc38dc417f3d83bb697ccca711659f4d0c1dd4b9c4e4ff7736da",
+      "source_url": "https://huggingface.co/datasets/AaronZ345/GTSinger/resolve/d78cd68d00135b1995da03f25fccb3a221efd8c1/Chinese/ZH-Alto-1/Breathy/%E4%B8%8D%E5%86%8D%E8%A7%81/Breathy_Group/0000.musicxml"
+    },
+    {
+      "path": "Chinese/ZH-Alto-1/Breathy/不再见/Breathy_Group/0000.wav",
+      "size": 1127564,
+      "sha256": "33c3ec0cd0d42ff46f2e3cec4f4b465e59f4780c5243c1b02bd46e9246d5771c",
+      "content_sha256": "33c3ec0cd0d42ff46f2e3cec4f4b465e59f4780c5243c1b02bd46e9246d5771c",
+      "source_url": "https://huggingface.co/datasets/AaronZ345/GTSinger/resolve/d78cd68d00135b1995da03f25fccb3a221efd8c1/Chinese/ZH-Alto-1/Breathy/%E4%B8%8D%E5%86%8D%E8%A7%81/Breathy_Group/0000.wav"
+    },
+    {
+      "path": "Chinese/ZH-Alto-1/Breathy/慢慢喜欢你/Control_Group/0000.TextGrid",
+      "size": 12172,
+      "git_blob_sha1": "6ab257981c0f7b1c1a70b8dc0aa9c27f50334b9e",
+      "content_sha256": "33c4fe64b3f77034ac9f864efdad3be0269558eb2079bf15ad51228d01db44f8",
+      "source_url": "https://huggingface.co/datasets/AaronZ345/GTSinger/resolve/d78cd68d00135b1995da03f25fccb3a221efd8c1/Chinese/ZH-Alto-1/Breathy/%E6%85%A2%E6%85%A2%E5%96%9C%E6%AC%A2%E4%BD%A0/Control_Group/0000.TextGrid"
+    },
+    {
+      "path": "Chinese/ZH-Alto-1/Breathy/慢慢喜欢你/Control_Group/0000.json",
+      "size": 13431,
+      "git_blob_sha1": "f63ca3f78ca3e1fed3a6ea17a1d4aa131ef8867d",
+      "content_sha256": "e9f04a711084b97f2a6da0f5ba09a3f4dd1eba4e2ca12d9a9a491a70cdadd301",
+      "source_url": "https://huggingface.co/datasets/AaronZ345/GTSinger/resolve/d78cd68d00135b1995da03f25fccb3a221efd8c1/Chinese/ZH-Alto-1/Breathy/%E6%85%A2%E6%85%A2%E5%96%9C%E6%AC%A2%E4%BD%A0/Control_Group/0000.json"
+    },
+    {
+      "path": "Chinese/ZH-Alto-1/Breathy/慢慢喜欢你/Control_Group/0000.musicxml",
+      "size": 8183,
+      "git_blob_sha1": "92f40980f12e3b5882afb1bc23f9059aef0d9994",
+      "content_sha256": "4b956bcb18b08692deb94321ac3325464d5ea534725ade4d8083469423aac113",
+      "source_url": "https://huggingface.co/datasets/AaronZ345/GTSinger/resolve/d78cd68d00135b1995da03f25fccb3a221efd8c1/Chinese/ZH-Alto-1/Breathy/%E6%85%A2%E6%85%A2%E5%96%9C%E6%AC%A2%E4%BD%A0/Control_Group/0000.musicxml"
+    },
+    {
+      "path": "Chinese/ZH-Alto-1/Breathy/慢慢喜欢你/Control_Group/0000.wav",
+      "size": 1138076,
+      "sha256": "de3fd483b16b73f8dd3b7afd19c02fd17dd0ceccd33487c9a40a8c20603fa674",
+      "content_sha256": "de3fd483b16b73f8dd3b7afd19c02fd17dd0ceccd33487c9a40a8c20603fa674",
+      "source_url": "https://huggingface.co/datasets/AaronZ345/GTSinger/resolve/d78cd68d00135b1995da03f25fccb3a221efd8c1/Chinese/ZH-Alto-1/Breathy/%E6%85%A2%E6%85%A2%E5%96%9C%E6%AC%A2%E4%BD%A0/Control_Group/0000.wav"
+    },
+    {
+      "path": "Chinese/ZH-Alto-1/Breathy/慢慢喜欢你/Breathy_Group/0000.TextGrid",
+      "size": 11714,
+      "git_blob_sha1": "711bdc7330dcbfef67d25ebeb7545fbfd4fccfc4",
+      "content_sha256": "957c6a7466bec7cee79a4d776efd35e4a1fa03a05dc0442f5a0dcaeb1ddf2371",
+      "source_url": "https://huggingface.co/datasets/AaronZ345/GTSinger/resolve/d78cd68d00135b1995da03f25fccb3a221efd8c1/Chinese/ZH-Alto-1/Breathy/%E6%85%A2%E6%85%A2%E5%96%9C%E6%AC%A2%E4%BD%A0/Breathy_Group/0000.TextGrid"
+    },
+    {
+      "path": "Chinese/ZH-Alto-1/Breathy/慢慢喜欢你/Breathy_Group/0000.json",
+      "size": 12549,
+      "git_blob_sha1": "a7471e10d41fee6d6833bfe5d9475a01a3523b78",
+      "content_sha256": "6393ee4d14a1d506bda9f03c576964f6234d7f299106bef679d103da73312fd8",
+      "source_url": "https://huggingface.co/datasets/AaronZ345/GTSinger/resolve/d78cd68d00135b1995da03f25fccb3a221efd8c1/Chinese/ZH-Alto-1/Breathy/%E6%85%A2%E6%85%A2%E5%96%9C%E6%AC%A2%E4%BD%A0/Breathy_Group/0000.json"
+    },
+    {
+      "path": "Chinese/ZH-Alto-1/Breathy/慢慢喜欢你/Breathy_Group/0000.musicxml",
+      "size": 8428,
+      "git_blob_sha1": "c413856d157bec2ead326573a7a042303f46302e",
+      "content_sha256": "473e274cd1abb360ce175eaca55a6287ae6b968f2284891cd3546471d0a2c3df",
+      "source_url": "https://huggingface.co/datasets/AaronZ345/GTSinger/resolve/d78cd68d00135b1995da03f25fccb3a221efd8c1/Chinese/ZH-Alto-1/Breathy/%E6%85%A2%E6%85%A2%E5%96%9C%E6%AC%A2%E4%BD%A0/Breathy_Group/0000.musicxml"
+    },
+    {
+      "path": "Chinese/ZH-Alto-1/Breathy/慢慢喜欢你/Breathy_Group/0000.wav",
+      "size": 1170044,
+      "sha256": "ffdd2ac27487e8a9398ca11d4a9c50e659bcfeb944b73a1c52c7a0569bd05057",
+      "content_sha256": "ffdd2ac27487e8a9398ca11d4a9c50e659bcfeb944b73a1c52c7a0569bd05057",
+      "source_url": "https://huggingface.co/datasets/AaronZ345/GTSinger/resolve/d78cd68d00135b1995da03f25fccb3a221efd8c1/Chinese/ZH-Alto-1/Breathy/%E6%85%A2%E6%85%A2%E5%96%9C%E6%AC%A2%E4%BD%A0/Breathy_Group/0000.wav"
+    },
+    {
+      "path": "Chinese/ZH-Tenor-1/Breathy/慢慢喜欢你/Control_Group/0000.TextGrid",
+      "size": 12101,
+      "git_blob_sha1": "e44669d7d13d28721b08a8364bc68f769b102a51",
+      "content_sha256": "9b5f12ab3ff24c15c9bc2a34bb56f94520c29bf976a2d8af6249574246b4b48a",
+      "source_url": "https://huggingface.co/datasets/AaronZ345/GTSinger/resolve/d78cd68d00135b1995da03f25fccb3a221efd8c1/Chinese/ZH-Tenor-1/Breathy/%E6%85%A2%E6%85%A2%E5%96%9C%E6%AC%A2%E4%BD%A0/Control_Group/0000.TextGrid"
+    },
+    {
+      "path": "Chinese/ZH-Tenor-1/Breathy/慢慢喜欢你/Control_Group/0000.json",
+      "size": 12589,
+      "git_blob_sha1": "6add663b4a4a4b2a7af72d8e5a3905e208e9c2fc",
+      "content_sha256": "9a38cf0a188f3dc7d6e61b35da3013b3a053bce9c714b9cd46616ac0f9b2cf52",
+      "source_url": "https://huggingface.co/datasets/AaronZ345/GTSinger/resolve/d78cd68d00135b1995da03f25fccb3a221efd8c1/Chinese/ZH-Tenor-1/Breathy/%E6%85%A2%E6%85%A2%E5%96%9C%E6%AC%A2%E4%BD%A0/Control_Group/0000.json"
+    },
+    {
+      "path": "Chinese/ZH-Tenor-1/Breathy/慢慢喜欢你/Control_Group/0000.musicxml",
+      "size": 8690,
+      "git_blob_sha1": "e87ef71b6096d498e579867a53c2501cd5bda913",
+      "content_sha256": "1b9c8de83c129c8da2f29ed83e25e40624fd35012fbc61c05ca8295bf99bb1c6",
+      "source_url": "https://huggingface.co/datasets/AaronZ345/GTSinger/resolve/d78cd68d00135b1995da03f25fccb3a221efd8c1/Chinese/ZH-Tenor-1/Breathy/%E6%85%A2%E6%85%A2%E5%96%9C%E6%AC%A2%E4%BD%A0/Control_Group/0000.musicxml"
+    },
+    {
+      "path": "Chinese/ZH-Tenor-1/Breathy/慢慢喜欢你/Control_Group/0000.wav",
+      "size": 1057002,
+      "sha256": "b80975fbba5fceac1b17be18e7af14d50ee372401668511da25ad0da6df0cf4d",
+      "content_sha256": "b80975fbba5fceac1b17be18e7af14d50ee372401668511da25ad0da6df0cf4d",
+      "source_url": "https://huggingface.co/datasets/AaronZ345/GTSinger/resolve/d78cd68d00135b1995da03f25fccb3a221efd8c1/Chinese/ZH-Tenor-1/Breathy/%E6%85%A2%E6%85%A2%E5%96%9C%E6%AC%A2%E4%BD%A0/Control_Group/0000.wav"
+    },
+    {
+      "path": "Chinese/ZH-Tenor-1/Breathy/慢慢喜欢你/Breathy_Group/0000.TextGrid",
+      "size": 12604,
+      "git_blob_sha1": "602dde8670e5ef4f1f35ca07e258d2d4171078f6",
+      "content_sha256": "b3a0913b9bdb7dcbddd7fb57f8b8fe32d28dd96aa65194f875acdea55e9e81c0",
+      "source_url": "https://huggingface.co/datasets/AaronZ345/GTSinger/resolve/d78cd68d00135b1995da03f25fccb3a221efd8c1/Chinese/ZH-Tenor-1/Breathy/%E6%85%A2%E6%85%A2%E5%96%9C%E6%AC%A2%E4%BD%A0/Breathy_Group/0000.TextGrid"
+    },
+    {
+      "path": "Chinese/ZH-Tenor-1/Breathy/慢慢喜欢你/Breathy_Group/0000.json",
+      "size": 13288,
+      "git_blob_sha1": "bbe500000140229e2be2436ce4196938c968a5c2",
+      "content_sha256": "fa1f10863d1b0090cf55d32d9730b38e80f4328a37b3dd5122e74b93b09f2785",
+      "source_url": "https://huggingface.co/datasets/AaronZ345/GTSinger/resolve/d78cd68d00135b1995da03f25fccb3a221efd8c1/Chinese/ZH-Tenor-1/Breathy/%E6%85%A2%E6%85%A2%E5%96%9C%E6%AC%A2%E4%BD%A0/Breathy_Group/0000.json"
+    },
+    {
+      "path": "Chinese/ZH-Tenor-1/Breathy/慢慢喜欢你/Breathy_Group/0000.musicxml",
+      "size": 8737,
+      "git_blob_sha1": "d0c6057e9b778a0cac07c9f8a8d89420d20c7744",
+      "content_sha256": "c9a33a11d2705aa61a0f37ed450e3e8e8e6ec8ef2adf458cbc69478bfad7d83c",
+      "source_url": "https://huggingface.co/datasets/AaronZ345/GTSinger/resolve/d78cd68d00135b1995da03f25fccb3a221efd8c1/Chinese/ZH-Tenor-1/Breathy/%E6%85%A2%E6%85%A2%E5%96%9C%E6%AC%A2%E4%BD%A0/Breathy_Group/0000.musicxml"
+    },
+    {
+      "path": "Chinese/ZH-Tenor-1/Breathy/慢慢喜欢你/Breathy_Group/0000.wav",
+      "size": 1065644,
+      "sha256": "e08adb01feb965644ad50fc5e50e27a38f7f3700abaf83aa295a2e70eaa672f0",
+      "content_sha256": "e08adb01feb965644ad50fc5e50e27a38f7f3700abaf83aa295a2e70eaa672f0",
+      "source_url": "https://huggingface.co/datasets/AaronZ345/GTSinger/resolve/d78cd68d00135b1995da03f25fccb3a221efd8c1/Chinese/ZH-Tenor-1/Breathy/%E6%85%A2%E6%85%A2%E5%96%9C%E6%AC%A2%E4%BD%A0/Breathy_Group/0000.wav"
+    },
+    {
+      "path": "Chinese/ZH-Tenor-1/Glissando/给电影人的情书/Control_Group/0000.TextGrid",
+      "size": 23142,
+      "git_blob_sha1": "1fe493bd3634299116b5dd9ff50d246be1e3c537",
+      "content_sha256": "9caa9d889d066cc69906822aac9d62bdd904f74691970dc0d91625b703904599",
+      "source_url": "https://huggingface.co/datasets/AaronZ345/GTSinger/resolve/d78cd68d00135b1995da03f25fccb3a221efd8c1/Chinese/ZH-Tenor-1/Glissando/%E7%BB%99%E7%94%B5%E5%BD%B1%E4%BA%BA%E7%9A%84%E6%83%85%E4%B9%A6/Control_Group/0000.TextGrid"
+    },
+    {
+      "path": "Chinese/ZH-Tenor-1/Glissando/给电影人的情书/Control_Group/0000.json",
+      "size": 24207,
+      "git_blob_sha1": "dbc8a376e8c51cd045c4f534cdc95eccfb557c6f",
+      "content_sha256": "69323b89540f392dcc60e03a6df16622496582ca32ba8ec1da6c4b198dc4110c",
+      "source_url": "https://huggingface.co/datasets/AaronZ345/GTSinger/resolve/d78cd68d00135b1995da03f25fccb3a221efd8c1/Chinese/ZH-Tenor-1/Glissando/%E7%BB%99%E7%94%B5%E5%BD%B1%E4%BA%BA%E7%9A%84%E6%83%85%E4%B9%A6/Control_Group/0000.json"
+    },
+    {
+      "path": "Chinese/ZH-Tenor-1/Glissando/给电影人的情书/Control_Group/0000.musicxml",
+      "size": 9436,
+      "git_blob_sha1": "b28ab958cb6ad1cb180e4f25cef779d073a01e2a",
+      "content_sha256": "42bfad0422f109f913197b512f11653203d59ac2e70058966344d6394743b357",
+      "source_url": "https://huggingface.co/datasets/AaronZ345/GTSinger/resolve/d78cd68d00135b1995da03f25fccb3a221efd8c1/Chinese/ZH-Tenor-1/Glissando/%E7%BB%99%E7%94%B5%E5%BD%B1%E4%BA%BA%E7%9A%84%E6%83%85%E4%B9%A6/Control_Group/0000.musicxml"
+    },
+    {
+      "path": "Chinese/ZH-Tenor-1/Glissando/给电影人的情书/Control_Group/0000.wav",
+      "size": 1391370,
+      "sha256": "02a35dc75db739ea0543984c8999b2ae84c61da453be51a05bc767a1cf078325",
+      "content_sha256": "02a35dc75db739ea0543984c8999b2ae84c61da453be51a05bc767a1cf078325",
+      "source_url": "https://huggingface.co/datasets/AaronZ345/GTSinger/resolve/d78cd68d00135b1995da03f25fccb3a221efd8c1/Chinese/ZH-Tenor-1/Glissando/%E7%BB%99%E7%94%B5%E5%BD%B1%E4%BA%BA%E7%9A%84%E6%83%85%E4%B9%A6/Control_Group/0000.wav"
+    },
+    {
+      "path": "Chinese/ZH-Tenor-1/Glissando/给电影人的情书/Glissando_Group/0000.TextGrid",
+      "size": 23110,
+      "git_blob_sha1": "fd8f4cbbb5285f82a7fe3909d1794a1dba1895aa",
+      "content_sha256": "cdbba5a49627818192d32e11ed91af8d75500359cdbbc7ee21d233b9e7b44546",
+      "source_url": "https://huggingface.co/datasets/AaronZ345/GTSinger/resolve/d78cd68d00135b1995da03f25fccb3a221efd8c1/Chinese/ZH-Tenor-1/Glissando/%E7%BB%99%E7%94%B5%E5%BD%B1%E4%BA%BA%E7%9A%84%E6%83%85%E4%B9%A6/Glissando_Group/0000.TextGrid"
+    },
+    {
+      "path": "Chinese/ZH-Tenor-1/Glissando/给电影人的情书/Glissando_Group/0000.json",
+      "size": 24343,
+      "git_blob_sha1": "3004946c76cbaffdc6b343e05a261a109730d482",
+      "content_sha256": "ef9a4524a417b38f5671de3d2578b183194bf1d72e775af91da7701bdaae710e",
+      "source_url": "https://huggingface.co/datasets/AaronZ345/GTSinger/resolve/d78cd68d00135b1995da03f25fccb3a221efd8c1/Chinese/ZH-Tenor-1/Glissando/%E7%BB%99%E7%94%B5%E5%BD%B1%E4%BA%BA%E7%9A%84%E6%83%85%E4%B9%A6/Glissando_Group/0000.json"
+    },
+    {
+      "path": "Chinese/ZH-Tenor-1/Glissando/给电影人的情书/Glissando_Group/0000.musicxml",
+      "size": 11395,
+      "git_blob_sha1": "f7094b4f31f6ab6b220cd8eb082614f00cecaf03",
+      "content_sha256": "3b1df48a06ddcd361869c9b1e02ac9063ed356c165ea691f0ab79b62fb0c8cfc",
+      "source_url": "https://huggingface.co/datasets/AaronZ345/GTSinger/resolve/d78cd68d00135b1995da03f25fccb3a221efd8c1/Chinese/ZH-Tenor-1/Glissando/%E7%BB%99%E7%94%B5%E5%BD%B1%E4%BA%BA%E7%9A%84%E6%83%85%E4%B9%A6/Glissando_Group/0000.musicxml"
+    },
+    {
+      "path": "Chinese/ZH-Tenor-1/Glissando/给电影人的情书/Glissando_Group/0000.wav",
+      "size": 1375964,
+      "sha256": "90cd769e546a039105ac68dd830412a9497c1660f38ccfa280655fba220d8b02",
+      "content_sha256": "90cd769e546a039105ac68dd830412a9497c1660f38ccfa280655fba220d8b02",
+      "source_url": "https://huggingface.co/datasets/AaronZ345/GTSinger/resolve/d78cd68d00135b1995da03f25fccb3a221efd8c1/Chinese/ZH-Tenor-1/Glissando/%E7%BB%99%E7%94%B5%E5%BD%B1%E4%BA%BA%E7%9A%84%E6%83%85%E4%B9%A6/Glissando_Group/0000.wav"
+    },
+    {
+      "path": "English/EN-Alto-1/Glissando/my love/Control_Group/0000.json",
+      "size": 21112,
+      "git_blob_sha1": "e22e5d8ba76de4e828f15ddc52a7ee8c6cbb5896",
+      "content_sha256": "b08e0055dc2e7174792b44cdcbd3f88d0614188d6ce7d0869f70b072303e397d",
+      "source_url": "https://huggingface.co/datasets/AaronZ345/GTSinger/resolve/d78cd68d00135b1995da03f25fccb3a221efd8c1/English/EN-Alto-1/Glissando/my%20love/Control_Group/0000.json"
+    },
+    {
+      "path": "English/EN-Alto-1/Glissando/my love/Control_Group/0000.musicxml",
+      "size": 11030,
+      "git_blob_sha1": "e10e2e95c7cc80675a4f1f089776bcca85f408d6",
+      "content_sha256": "2f01014ed8dc2f7ff357218cf619499b3b283fe3c7e1667283f6cc559195be04",
+      "source_url": "https://huggingface.co/datasets/AaronZ345/GTSinger/resolve/d78cd68d00135b1995da03f25fccb3a221efd8c1/English/EN-Alto-1/Glissando/my%20love/Control_Group/0000.musicxml"
+    },
+    {
+      "path": "English/EN-Alto-1/Glissando/my love/Control_Group/0000.wav",
+      "size": 1335068,
+      "sha256": "556cc0f8bab110c1434e9cde77643f933b00ba631e3aad348d0cf6c2d88b7399",
+      "content_sha256": "556cc0f8bab110c1434e9cde77643f933b00ba631e3aad348d0cf6c2d88b7399",
+      "source_url": "https://huggingface.co/datasets/AaronZ345/GTSinger/resolve/d78cd68d00135b1995da03f25fccb3a221efd8c1/English/EN-Alto-1/Glissando/my%20love/Control_Group/0000.wav"
+    },
+    {
+      "path": "English/EN-Alto-1/Glissando/my love/Control_Group/0000_TextGrid",
+      "size": 24996,
+      "git_blob_sha1": "98fc1533622fc00449e08eaf6af706c22e3581d7",
+      "content_sha256": "112f0a7224a8bf7d8db29e0929e48b511d932debef50cd58e150c2bec9c12154",
+      "source_url": "https://huggingface.co/datasets/AaronZ345/GTSinger/resolve/d78cd68d00135b1995da03f25fccb3a221efd8c1/English/EN-Alto-1/Glissando/my%20love/Control_Group/0000_TextGrid"
+    },
+    {
+      "path": "English/EN-Alto-1/Glissando/my love/Glissando_Group/0000.json",
+      "size": 20133,
+      "git_blob_sha1": "38003c541da2ae335bc6c0b56cd5ff286405dce3",
+      "content_sha256": "585653aea21ae9f335af4eebd3f98fa740c4d44754ff809272782ffc1d8a7f4f",
+      "source_url": "https://huggingface.co/datasets/AaronZ345/GTSinger/resolve/d78cd68d00135b1995da03f25fccb3a221efd8c1/English/EN-Alto-1/Glissando/my%20love/Glissando_Group/0000.json"
+    },
+    {
+      "path": "English/EN-Alto-1/Glissando/my love/Glissando_Group/0000.musicxml",
+      "size": 12248,
+      "git_blob_sha1": "b373c30be81042b30f369468e8aeaadba8da1752",
+      "content_sha256": "927b25237ed5fc1fe4fc6eec87bad732cc9eb6aa133d1969713321109c47aa7a",
+      "source_url": "https://huggingface.co/datasets/AaronZ345/GTSinger/resolve/d78cd68d00135b1995da03f25fccb3a221efd8c1/English/EN-Alto-1/Glissando/my%20love/Glissando_Group/0000.musicxml"
+    },
+    {
+      "path": "English/EN-Alto-1/Glissando/my love/Glissando_Group/0000.wav",
+      "size": 1230092,
+      "sha256": "5190e61a80b8489714165b9eda4f121152cc2844adb8fbae0bd20437caa03948",
+      "content_sha256": "5190e61a80b8489714165b9eda4f121152cc2844adb8fbae0bd20437caa03948",
+      "source_url": "https://huggingface.co/datasets/AaronZ345/GTSinger/resolve/d78cd68d00135b1995da03f25fccb3a221efd8c1/English/EN-Alto-1/Glissando/my%20love/Glissando_Group/0000.wav"
+    },
+    {
+      "path": "English/EN-Alto-1/Glissando/my love/Glissando_Group/0000_TextGrid",
+      "size": 24090,
+      "git_blob_sha1": "7a6e2d24b65e74ead1c12c653141ff244f3ef686",
+      "content_sha256": "290148c67923df219f65c84d5afae87e11f59d889b980154dd8d2a2cf19a5d6c",
+      "source_url": "https://huggingface.co/datasets/AaronZ345/GTSinger/resolve/d78cd68d00135b1995da03f25fccb3a221efd8c1/English/EN-Alto-1/Glissando/my%20love/Glissando_Group/0000_TextGrid"
+    },
+    {
+      "path": "English/EN-Alto-2/Glissando/My Love/Control_Group/0000.TextGrid",
+      "size": 20517,
+      "git_blob_sha1": "836211499ccaab7d9dc5e426d78cc8ac138c1b55",
+      "content_sha256": "c93464dda2ee60a318db3eaf85897fd0548986121f0b42b71a01d2b5e22e2334",
+      "source_url": "https://huggingface.co/datasets/AaronZ345/GTSinger/resolve/d78cd68d00135b1995da03f25fccb3a221efd8c1/English/EN-Alto-2/Glissando/My%20Love/Control_Group/0000.TextGrid"
+    },
+    {
+      "path": "English/EN-Alto-2/Glissando/My Love/Control_Group/0000.json",
+      "size": 17586,
+      "git_blob_sha1": "69fb25895a664a8cfaac28e62a5559eeec4ab078",
+      "content_sha256": "d12deeb57502ea347e47144fed51f4de2272cdfc8bd7f29f99371771cd70a5e2",
+      "source_url": "https://huggingface.co/datasets/AaronZ345/GTSinger/resolve/d78cd68d00135b1995da03f25fccb3a221efd8c1/English/EN-Alto-2/Glissando/My%20Love/Control_Group/0000.json"
+    },
+    {
+      "path": "English/EN-Alto-2/Glissando/My Love/Control_Group/0000.musicxml",
+      "size": 8429,
+      "git_blob_sha1": "0d80286e8d76a73c81300371cb2bbfc8f4674cb9",
+      "content_sha256": "7ff6296d44264897a612703b512f9498e81e5fbeea64b0e6d3d3dcf9783477c8",
+      "source_url": "https://huggingface.co/datasets/AaronZ345/GTSinger/resolve/d78cd68d00135b1995da03f25fccb3a221efd8c1/English/EN-Alto-2/Glissando/My%20Love/Control_Group/0000.musicxml"
+    },
+    {
+      "path": "English/EN-Alto-2/Glissando/My Love/Control_Group/0000.wav",
+      "size": 1224476,
+      "sha256": "7bc32c1f69784af0ed943e8aceeaaade86fffdde362bae2e1fe364936c7b0f20",
+      "content_sha256": "7bc32c1f69784af0ed943e8aceeaaade86fffdde362bae2e1fe364936c7b0f20",
+      "source_url": "https://huggingface.co/datasets/AaronZ345/GTSinger/resolve/d78cd68d00135b1995da03f25fccb3a221efd8c1/English/EN-Alto-2/Glissando/My%20Love/Control_Group/0000.wav"
+    },
+    {
+      "path": "English/EN-Alto-2/Glissando/My Love/Glissando_Group/0000.TextGrid",
+      "size": 19567,
+      "git_blob_sha1": "1c616e41347b5ca2d883f0426e9314e8208ddfd0",
+      "content_sha256": "627586ae5bd55af61104cda623474f510e784b0e5a578f7b4745d18060ec000d",
+      "source_url": "https://huggingface.co/datasets/AaronZ345/GTSinger/resolve/d78cd68d00135b1995da03f25fccb3a221efd8c1/English/EN-Alto-2/Glissando/My%20Love/Glissando_Group/0000.TextGrid"
+    },
+    {
+      "path": "English/EN-Alto-2/Glissando/My Love/Glissando_Group/0000.json",
+      "size": 17341,
+      "git_blob_sha1": "c789bf3afdb67799050683643e0be41a12544659",
+      "content_sha256": "e768d0a10b5165ec160108635595f616eb68b4407e9e50bd1e1659a2a1c899b7",
+      "source_url": "https://huggingface.co/datasets/AaronZ345/GTSinger/resolve/d78cd68d00135b1995da03f25fccb3a221efd8c1/English/EN-Alto-2/Glissando/My%20Love/Glissando_Group/0000.json"
+    },
+    {
+      "path": "English/EN-Alto-2/Glissando/My Love/Glissando_Group/0000.musicxml",
+      "size": 8865,
+      "git_blob_sha1": "fc07a19dfa5ddb8a1b7f7d84e080d1f62a72ef34",
+      "content_sha256": "4b544b275ed8405ed4067ffceee2c767de196a644090302c4f5246cc8a729cfb",
+      "source_url": "https://huggingface.co/datasets/AaronZ345/GTSinger/resolve/d78cd68d00135b1995da03f25fccb3a221efd8c1/English/EN-Alto-2/Glissando/My%20Love/Glissando_Group/0000.musicxml"
+    },
+    {
+      "path": "English/EN-Alto-2/Glissando/My Love/Glissando_Group/0000.wav",
+      "size": 1117916,
+      "sha256": "791578619b7b3e3229822cd5420fb20142909959a6d790101d531b4e217152fb",
+      "content_sha256": "791578619b7b3e3229822cd5420fb20142909959a6d790101d531b4e217152fb",
+      "source_url": "https://huggingface.co/datasets/AaronZ345/GTSinger/resolve/d78cd68d00135b1995da03f25fccb3a221efd8c1/English/EN-Alto-2/Glissando/My%20Love/Glissando_Group/0000.wav"
+    },
+    {
+      "path": "English/EN-Alto-1/Glissando/rolling in the deep/Control_Group/0000.json",
+      "size": 25813,
+      "git_blob_sha1": "59525c7fc71e9007110841e61dbf56b8f7e3ed67",
+      "content_sha256": "9bdee2220220b7c8e0496aca35a2984703d0651fe9ced795742533fdf9d84e8f",
+      "source_url": "https://huggingface.co/datasets/AaronZ345/GTSinger/resolve/d78cd68d00135b1995da03f25fccb3a221efd8c1/English/EN-Alto-1/Glissando/rolling%20in%20the%20deep/Control_Group/0000.json"
+    },
+    {
+      "path": "English/EN-Alto-1/Glissando/rolling in the deep/Control_Group/0000.musicxml",
+      "size": 14206,
+      "git_blob_sha1": "1fba8d0265bbc5fdea92c2979f877b0ee582884b",
+      "content_sha256": "69433f3d9a3cdadd980ab05947fd34e544c6952ab3ca1884033c198d8868f311",
+      "source_url": "https://huggingface.co/datasets/AaronZ345/GTSinger/resolve/d78cd68d00135b1995da03f25fccb3a221efd8c1/English/EN-Alto-1/Glissando/rolling%20in%20the%20deep/Control_Group/0000.musicxml"
+    },
+    {
+      "path": "English/EN-Alto-1/Glissando/rolling in the deep/Control_Group/0000.wav",
+      "size": 1445228,
+      "sha256": "022992c90e0fb83ff06a31abcd9f60688afb05302c304d22865508545da0cf3f",
+      "content_sha256": "022992c90e0fb83ff06a31abcd9f60688afb05302c304d22865508545da0cf3f",
+      "source_url": "https://huggingface.co/datasets/AaronZ345/GTSinger/resolve/d78cd68d00135b1995da03f25fccb3a221efd8c1/English/EN-Alto-1/Glissando/rolling%20in%20the%20deep/Control_Group/0000.wav"
+    },
+    {
+      "path": "English/EN-Alto-1/Glissando/rolling in the deep/Control_Group/0000_TextGrid",
+      "size": 32637,
+      "git_blob_sha1": "7943c0e32d366dc1a4087d3941b52e743ddc7a83",
+      "content_sha256": "18369b0b788d70f3d5097f4f514873eb5d6fb3468aeacb6b78b6964f12b0fdd9",
+      "source_url": "https://huggingface.co/datasets/AaronZ345/GTSinger/resolve/d78cd68d00135b1995da03f25fccb3a221efd8c1/English/EN-Alto-1/Glissando/rolling%20in%20the%20deep/Control_Group/0000_TextGrid"
+    },
+    {
+      "path": "English/EN-Alto-1/Glissando/rolling in the deep/Glissando_Group/0000.json",
+      "size": 25951,
+      "git_blob_sha1": "da8b3cde676c325f2a60fdabec9f011356cbbfe2",
+      "content_sha256": "7c1d28bb05e807dd23560bf02a5e28971a2546084871feec4bd54d20e77efc52",
+      "source_url": "https://huggingface.co/datasets/AaronZ345/GTSinger/resolve/d78cd68d00135b1995da03f25fccb3a221efd8c1/English/EN-Alto-1/Glissando/rolling%20in%20the%20deep/Glissando_Group/0000.json"
+    },
+    {
+      "path": "English/EN-Alto-1/Glissando/rolling in the deep/Glissando_Group/0000.musicxml",
+      "size": 11553,
+      "git_blob_sha1": "8859b63ed28948db39a4a95e10244af0b5c96876",
+      "content_sha256": "ad78a799d60479dea2fb2c1fc54b11f0933e2e2c5430b53c86c9e56978c5874b",
+      "source_url": "https://huggingface.co/datasets/AaronZ345/GTSinger/resolve/d78cd68d00135b1995da03f25fccb3a221efd8c1/English/EN-Alto-1/Glissando/rolling%20in%20the%20deep/Glissando_Group/0000.musicxml"
+    },
+    {
+      "path": "English/EN-Alto-1/Glissando/rolling in the deep/Glissando_Group/0000.wav",
+      "size": 1451852,
+      "sha256": "2432b975d551561e08e8be3bd9e13e9db38a7291ca3de14dfbfd972fbc0fd62c",
+      "content_sha256": "2432b975d551561e08e8be3bd9e13e9db38a7291ca3de14dfbfd972fbc0fd62c",
+      "source_url": "https://huggingface.co/datasets/AaronZ345/GTSinger/resolve/d78cd68d00135b1995da03f25fccb3a221efd8c1/English/EN-Alto-1/Glissando/rolling%20in%20the%20deep/Glissando_Group/0000.wav"
+    },
+    {
+      "path": "English/EN-Alto-1/Glissando/rolling in the deep/Glissando_Group/0000_TextGrid",
+      "size": 32563,
+      "git_blob_sha1": "dca88a83d883f125761ad6419117899706782f00",
+      "content_sha256": "32e1af851531065749794fc109e0924bd185f355fbfc770e860de5e07eb458f7",
+      "source_url": "https://huggingface.co/datasets/AaronZ345/GTSinger/resolve/d78cd68d00135b1995da03f25fccb3a221efd8c1/English/EN-Alto-1/Glissando/rolling%20in%20the%20deep/Glissando_Group/0000_TextGrid"
+    },
+    {
+      "path": "English/EN-Tenor-1/Glissando/Rolling in the Deep/Control_Group/0000.TextGrid",
+      "size": 29998,
+      "git_blob_sha1": "bf47a2d8581fc5045121130858e41f6f24844fdc",
+      "content_sha256": "c841a7c205f559a221e55b64a5b42330a0c888c87711477165deadd9ea9df9c0",
+      "source_url": "https://huggingface.co/datasets/AaronZ345/GTSinger/resolve/d78cd68d00135b1995da03f25fccb3a221efd8c1/English/EN-Tenor-1/Glissando/Rolling%20in%20the%20Deep/Control_Group/0000.TextGrid"
+    },
+    {
+      "path": "English/EN-Tenor-1/Glissando/Rolling in the Deep/Control_Group/0000.json",
+      "size": 23403,
+      "git_blob_sha1": "517cb60d0be4cede6801e99373fd4f146dec6758",
+      "content_sha256": "6403b1b0d1bfc98d6f346acbf6f3ec1aad55fd1e3e87fe2790c1b19214895e4b",
+      "source_url": "https://huggingface.co/datasets/AaronZ345/GTSinger/resolve/d78cd68d00135b1995da03f25fccb3a221efd8c1/English/EN-Tenor-1/Glissando/Rolling%20in%20the%20Deep/Control_Group/0000.json"
+    },
+    {
+      "path": "English/EN-Tenor-1/Glissando/Rolling in the Deep/Control_Group/0000.musicxml",
+      "size": 11551,
+      "git_blob_sha1": "b39893563b55259c90601d505179bcc285db7745",
+      "content_sha256": "67764af29f2ecf03e7c54776d586d2e506dc89bc638c49cf73d6076223ad0dd7",
+      "source_url": "https://huggingface.co/datasets/AaronZ345/GTSinger/resolve/d78cd68d00135b1995da03f25fccb3a221efd8c1/English/EN-Tenor-1/Glissando/Rolling%20in%20the%20Deep/Control_Group/0000.musicxml"
+    },
+    {
+      "path": "English/EN-Tenor-1/Glissando/Rolling in the Deep/Control_Group/0000.wav",
+      "size": 1640780,
+      "sha256": "94e3e911a23c260f5294383bfc865b775d3177723b84b581d7603b9818ca5d3b",
+      "content_sha256": "94e3e911a23c260f5294383bfc865b775d3177723b84b581d7603b9818ca5d3b",
+      "source_url": "https://huggingface.co/datasets/AaronZ345/GTSinger/resolve/d78cd68d00135b1995da03f25fccb3a221efd8c1/English/EN-Tenor-1/Glissando/Rolling%20in%20the%20Deep/Control_Group/0000.wav"
+    },
+    {
+      "path": "English/EN-Tenor-1/Glissando/Rolling in the Deep/Glissando_Group/0000.TextGrid",
+      "size": 29462,
+      "git_blob_sha1": "787f1dc8eb202d3d747977a93b3d4adac82d8465",
+      "content_sha256": "f820052025dd2de57e2d1dd11e139c9120a51d1ab23a288314fb2c59c2405a93",
+      "source_url": "https://huggingface.co/datasets/AaronZ345/GTSinger/resolve/d78cd68d00135b1995da03f25fccb3a221efd8c1/English/EN-Tenor-1/Glissando/Rolling%20in%20the%20Deep/Glissando_Group/0000.TextGrid"
+    },
+    {
+      "path": "English/EN-Tenor-1/Glissando/Rolling in the Deep/Glissando_Group/0000.json",
+      "size": 22619,
+      "git_blob_sha1": "f33a26a2a40869e2ddaf78aa5246ca1f45dcf7d8",
+      "content_sha256": "59486144673d4f65b353fd4bede3a6977b9d01ef38bda23f2ac4a030d5bc764f",
+      "source_url": "https://huggingface.co/datasets/AaronZ345/GTSinger/resolve/d78cd68d00135b1995da03f25fccb3a221efd8c1/English/EN-Tenor-1/Glissando/Rolling%20in%20the%20Deep/Glissando_Group/0000.json"
+    },
+    {
+      "path": "English/EN-Tenor-1/Glissando/Rolling in the Deep/Glissando_Group/0000.musicxml",
+      "size": 9314,
+      "git_blob_sha1": "70c188a4a95c98efa685ea1ad9414969ba86d3c2",
+      "content_sha256": "6565a0c0313548649087aab51a1cbbba99cea29ec57e303560f54092d11c1237",
+      "source_url": "https://huggingface.co/datasets/AaronZ345/GTSinger/resolve/d78cd68d00135b1995da03f25fccb3a221efd8c1/English/EN-Tenor-1/Glissando/Rolling%20in%20the%20Deep/Glissando_Group/0000.musicxml"
+    },
+    {
+      "path": "English/EN-Tenor-1/Glissando/Rolling in the Deep/Glissando_Group/0000.wav",
+      "size": 1577420,
+      "sha256": "dca45b5c869af4c7886fc91b643cf447de113b9c96879a7754115e94dc9d2cc2",
+      "content_sha256": "dca45b5c869af4c7886fc91b643cf447de113b9c96879a7754115e94dc9d2cc2",
+      "source_url": "https://huggingface.co/datasets/AaronZ345/GTSinger/resolve/d78cd68d00135b1995da03f25fccb3a221efd8c1/English/EN-Tenor-1/Glissando/Rolling%20in%20the%20Deep/Glissando_Group/0000.wav"
+    },
+    {
+      "path": "English/EN-Alto-2/Glissando/Someone Like You/Control_Group/0000.TextGrid",
+      "size": 7814,
+      "git_blob_sha1": "b68eaf65d31744712692c7c0a65d7e12eb0508f7",
+      "content_sha256": "08af3992011692c4e570307abab64d960e8a126426a6451d4d1babdc276b8056",
+      "source_url": "https://huggingface.co/datasets/AaronZ345/GTSinger/resolve/d78cd68d00135b1995da03f25fccb3a221efd8c1/English/EN-Alto-2/Glissando/Someone%20Like%20You/Control_Group/0000.TextGrid"
+    },
+    {
+      "path": "English/EN-Alto-2/Glissando/Someone Like You/Control_Group/0000.json",
+      "size": 7645,
+      "git_blob_sha1": "c98c4a86053f7fbb584369859f2057c6e157dd62",
+      "content_sha256": "849a77e03a93977fb7d1912260fa3e152cc1ab7175ae332335a4a7bca15fd523",
+      "source_url": "https://huggingface.co/datasets/AaronZ345/GTSinger/resolve/d78cd68d00135b1995da03f25fccb3a221efd8c1/English/EN-Alto-2/Glissando/Someone%20Like%20You/Control_Group/0000.json"
+    },
+    {
+      "path": "English/EN-Alto-2/Glissando/Someone Like You/Control_Group/0000.musicxml",
+      "size": 6007,
+      "git_blob_sha1": "0dde6907765616bfb572deeca7301dbddd3dfcaf",
+      "content_sha256": "430cb4d622103b666be7486e9ec017a31c847280592e74fe97fe3bd819e38b4e",
+      "source_url": "https://huggingface.co/datasets/AaronZ345/GTSinger/resolve/d78cd68d00135b1995da03f25fccb3a221efd8c1/English/EN-Alto-2/Glissando/Someone%20Like%20You/Control_Group/0000.musicxml"
+    },
+    {
+      "path": "English/EN-Alto-2/Glissando/Someone Like You/Control_Group/0000.wav",
+      "size": 1126268,
+      "sha256": "ad6c8d0959c1388116f73293b948d6cc5be727de93122a6987e4a104b992abd8",
+      "content_sha256": "ad6c8d0959c1388116f73293b948d6cc5be727de93122a6987e4a104b992abd8",
+      "source_url": "https://huggingface.co/datasets/AaronZ345/GTSinger/resolve/d78cd68d00135b1995da03f25fccb3a221efd8c1/English/EN-Alto-2/Glissando/Someone%20Like%20You/Control_Group/0000.wav"
+    },
+    {
+      "path": "English/EN-Alto-2/Glissando/Someone Like You/Glissando_Group/0000.TextGrid",
+      "size": 7666,
+      "git_blob_sha1": "77d98e5efdce0d48dd53f248c124fe8bf30300ff",
+      "content_sha256": "c6b8022c4d679c29184ae5db6ea2c48d03a71498a31eabbfa177f30143b0deba",
+      "source_url": "https://huggingface.co/datasets/AaronZ345/GTSinger/resolve/d78cd68d00135b1995da03f25fccb3a221efd8c1/English/EN-Alto-2/Glissando/Someone%20Like%20You/Glissando_Group/0000.TextGrid"
+    },
+    {
+      "path": "English/EN-Alto-2/Glissando/Someone Like You/Glissando_Group/0000.json",
+      "size": 7686,
+      "git_blob_sha1": "f14a6340b4a1cdbbbaedee27845ce496bfbd4de4",
+      "content_sha256": "5d35d823b8d09851a5e74132dbfa8d0c19ebf3ae41fa428c63af8d905447e338",
+      "source_url": "https://huggingface.co/datasets/AaronZ345/GTSinger/resolve/d78cd68d00135b1995da03f25fccb3a221efd8c1/English/EN-Alto-2/Glissando/Someone%20Like%20You/Glissando_Group/0000.json"
+    },
+    {
+      "path": "English/EN-Alto-2/Glissando/Someone Like You/Glissando_Group/0000.musicxml",
+      "size": 6257,
+      "git_blob_sha1": "dfda60dfad1c4db34832d73bfa3f69d265c650c9",
+      "content_sha256": "2ca22e85ee2a819eef378cb369f3460b17865cc59a9b6aa7006efc38b20057c6",
+      "source_url": "https://huggingface.co/datasets/AaronZ345/GTSinger/resolve/d78cd68d00135b1995da03f25fccb3a221efd8c1/English/EN-Alto-2/Glissando/Someone%20Like%20You/Glissando_Group/0000.musicxml"
+    },
+    {
+      "path": "English/EN-Alto-2/Glissando/Someone Like You/Glissando_Group/0000.wav",
+      "size": 1011068,
+      "sha256": "471317b8cbb263cb47cd1e70613bb77340dcafaafcba4d4c19b7047a9687af57",
+      "content_sha256": "471317b8cbb263cb47cd1e70613bb77340dcafaafcba4d4c19b7047a9687af57",
+      "source_url": "https://huggingface.co/datasets/AaronZ345/GTSinger/resolve/d78cd68d00135b1995da03f25fccb3a221efd8c1/English/EN-Alto-2/Glissando/Someone%20Like%20You/Glissando_Group/0000.wav"
+    },
+    {
+      "path": "English/EN-Tenor-1/Glissando/Someone Like You/Control_Group/0000.TextGrid",
+      "size": 14098,
+      "git_blob_sha1": "b72d95fa6077b5a05d3bd407ef77120599c6c5ae",
+      "content_sha256": "cb4068d9fbdb6cad2bdcca42d346d16506e13681ba1d2e71b6713c3d5ec534e6",
+      "source_url": "https://huggingface.co/datasets/AaronZ345/GTSinger/resolve/d78cd68d00135b1995da03f25fccb3a221efd8c1/English/EN-Tenor-1/Glissando/Someone%20Like%20You/Control_Group/0000.TextGrid"
+    },
+    {
+      "path": "English/EN-Tenor-1/Glissando/Someone Like You/Control_Group/0000.json",
+      "size": 11771,
+      "git_blob_sha1": "ea3e2694d81f97f32e170960643adb4912651f68",
+      "content_sha256": "132734a18aa1ecd99cbca8ff71ef81d19872196ff3aa60e64eb17285a0e6b4a2",
+      "source_url": "https://huggingface.co/datasets/AaronZ345/GTSinger/resolve/d78cd68d00135b1995da03f25fccb3a221efd8c1/English/EN-Tenor-1/Glissando/Someone%20Like%20You/Control_Group/0000.json"
+    },
+    {
+      "path": "English/EN-Tenor-1/Glissando/Someone Like You/Control_Group/0000.musicxml",
+      "size": 6595,
+      "git_blob_sha1": "d06644ae3591ce7d68883c3d0cc3c80218f6cb12",
+      "content_sha256": "b586eddeae1c2dbac617ac4b62ec4eb6e466808981ec33402d23f156d127bc52",
+      "source_url": "https://huggingface.co/datasets/AaronZ345/GTSinger/resolve/d78cd68d00135b1995da03f25fccb3a221efd8c1/English/EN-Tenor-1/Glissando/Someone%20Like%20You/Control_Group/0000.musicxml"
+    },
+    {
+      "path": "English/EN-Tenor-1/Glissando/Someone Like You/Control_Group/0000.wav",
+      "size": 1119068,
+      "sha256": "e5da7d9fc2b2c7b2351af73731264fa2c2f9fdbafc5ee5bdaf06c68f53959335",
+      "content_sha256": "e5da7d9fc2b2c7b2351af73731264fa2c2f9fdbafc5ee5bdaf06c68f53959335",
+      "source_url": "https://huggingface.co/datasets/AaronZ345/GTSinger/resolve/d78cd68d00135b1995da03f25fccb3a221efd8c1/English/EN-Tenor-1/Glissando/Someone%20Like%20You/Control_Group/0000.wav"
+    },
+    {
+      "path": "English/EN-Tenor-1/Glissando/Someone Like You/Glissando_Group/0000.TextGrid",
+      "size": 13580,
+      "git_blob_sha1": "af8f77622b33800481c0d1a58121c931f8024aca",
+      "content_sha256": "f8ae6bb2ea05a159fac2fc9a2f81994478a666f5266e3be47a35fd973693790f",
+      "source_url": "https://huggingface.co/datasets/AaronZ345/GTSinger/resolve/d78cd68d00135b1995da03f25fccb3a221efd8c1/English/EN-Tenor-1/Glissando/Someone%20Like%20You/Glissando_Group/0000.TextGrid"
+    },
+    {
+      "path": "English/EN-Tenor-1/Glissando/Someone Like You/Glissando_Group/0000.json",
+      "size": 11074,
+      "git_blob_sha1": "620450c7be5a9f1f8df29297845939d40962140e",
+      "content_sha256": "c6b23cf9771e66dd19169e40108fa15347369407250fe49f6319729a325abbac",
+      "source_url": "https://huggingface.co/datasets/AaronZ345/GTSinger/resolve/d78cd68d00135b1995da03f25fccb3a221efd8c1/English/EN-Tenor-1/Glissando/Someone%20Like%20You/Glissando_Group/0000.json"
+    },
+    {
+      "path": "English/EN-Tenor-1/Glissando/Someone Like You/Glissando_Group/0000.musicxml",
+      "size": 8390,
+      "git_blob_sha1": "ed69946fdf6dea2e742aa9df8ab56e5f20501d86",
+      "content_sha256": "22ff5bf69d9e33ab130543571caf6ff05bcf34d9d2584a23b881350438469c0b",
+      "source_url": "https://huggingface.co/datasets/AaronZ345/GTSinger/resolve/d78cd68d00135b1995da03f25fccb3a221efd8c1/English/EN-Tenor-1/Glissando/Someone%20Like%20You/Glissando_Group/0000.musicxml"
+    },
+    {
+      "path": "English/EN-Tenor-1/Glissando/Someone Like You/Glissando_Group/0000.wav",
+      "size": 1150892,
+      "sha256": "f57f34872ab7c5190cccfe4bf1c9bc0c1267aa4b000dde20f80104cc79e05264",
+      "content_sha256": "f57f34872ab7c5190cccfe4bf1c9bc0c1267aa4b000dde20f80104cc79e05264",
+      "source_url": "https://huggingface.co/datasets/AaronZ345/GTSinger/resolve/d78cd68d00135b1995da03f25fccb3a221efd8c1/English/EN-Tenor-1/Glissando/Someone%20Like%20You/Glissando_Group/0000.wav"
+    }
+  ],
+  "selection": "representative-v1",
+  "invalid_segment_policy": "exclude",
+  "requested_segment_count": 20,
+  "usable_segment_count": 18,
+  "excluded_segment_count": 2,
+  "excluded_segments": [
+    {
+      "segment_id": "Chinese/ZH-Tenor-1/Breathy/慢慢喜欢你/Control_Group/0000",
+      "song_id": "chinese/慢慢喜欢你",
+      "reason": "/home/xcy/auto-lrc/data/local/gtsinger-representative/Chinese/ZH-Tenor-1/Breathy/慢慢喜欢你/Control_Group/0000.json[12]: interval [6.77, 7.34] must satisfy 0 <= start < end <= 7.339979166666667",
+      "exception_type": "ValueError"
+    },
+    {
+      "segment_id": "Chinese/ZH-Tenor-1/Glissando/给电影人的情书/Control_Group/0000",
+      "song_id": "chinese/给电影人的情书",
+      "reason": "/home/xcy/auto-lrc/data/local/gtsinger-representative/Chinese/ZH-Tenor-1/Glissando/给电影人的情书/Control_Group/0000.json[24]: interval [9.3, 9.662] must satisfy 0 <= start < end <= 9.661979166666667",
+      "exception_type": "ValueError"
+    }
+  ],
+  "segment_count": 18,
+  "song_count": 6,
+  "song_identity_review_status": "pending",
+  "singer_counts": {
+    "ZH-Alto-1": 4,
+    "ZH-Tenor-1": 2,
+    "EN-Alto-1": 4,
+    "EN-Alto-2": 4,
+    "EN-Tenor-1": 4
+  },
+  "technique_counts": {
+    "Breathy": 5,
+    "Glissando": 13
+  },
+  "group_counts": {
+    "Control_Group": 8,
+    "Breathy_Group": 3,
+    "Glissando_Group": 7
+  },
+  "language_counts": {
+    "Chinese": 6,
+    "English": 12
+  },
+  "unit_kind_counts": {
+    "lyric": 231,
+    "breath": 33,
+    "silence": 11
+  },
+  "validation_issue_count": 2,
+  "validation_issue_counts": {
+    "invalid_segment_excluded": 2
+  },
+  "validation_issues": [
+    {
+      "code": "invalid_segment_excluded",
+      "path": "Chinese/ZH-Tenor-1/Breathy/慢慢喜欢你/Control_Group/0000",
+      "message": "/home/xcy/auto-lrc/data/local/gtsinger-representative/Chinese/ZH-Tenor-1/Breathy/慢慢喜欢你/Control_Group/0000.json[12]: interval [6.77, 7.34] must satisfy 0 <= start < end <= 7.339979166666667",
+      "segment_id": "Chinese/ZH-Tenor-1/Breathy/慢慢喜欢你/Control_Group/0000"
+    },
+    {
+      "code": "invalid_segment_excluded",
+      "path": "Chinese/ZH-Tenor-1/Glissando/给电影人的情书/Control_Group/0000",
+      "message": "/home/xcy/auto-lrc/data/local/gtsinger-representative/Chinese/ZH-Tenor-1/Glissando/给电影人的情书/Control_Group/0000.json[24]: interval [9.3, 9.662] must satisfy 0 <= start < end <= 9.661979166666667",
+      "segment_id": "Chinese/ZH-Tenor-1/Glissando/给电影人的情书/Control_Group/0000"
+    }
+  ],
+  "review_boundary_count": 231,
+  "independent_reviewed_boundaries": 0,
+  "review_status": "pending",
+  "split_status": "unassigned",
+  "split_reason": "Song identities require independent review before any train/validation/test assignment.",
+  "accuracy": {
+    "status": "unavailable",
+    "reason": "No independent human boundary labels.",
+    "mae_ms": null,
+    "p90_ms": null,
+    "coverage_5ms": null,
+    "coverage_10ms": null,
+    "coverage_20ms": null,
+    "coverage_50ms": null
+  },
+  "boundary_semantics": "Source annotation candidates are not independent human ground truth.",
+  "review_protocol": "Blind review: use audio and manual-review files first. Inspect annotation candidates and normalized segments only after independent labels are recorded."
+}

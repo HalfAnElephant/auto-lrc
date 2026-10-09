@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "repository": "AaronZ345/GTSinger",
+  "revision": "d78cd68d00135b1995da03f25fccb3a221efd8c1",
+  "metadata_source": "https://huggingface.co/api/datasets/AaronZ345/GTSinger/tree/d78cd68d00135b1995da03f25fccb3a221efd8c1",
+  "metadata_verified_on": "2026-10-09",
+  "license": {
+    "identifier": "CC-BY-NC-SA-4.0",
+    "path": "dataset_license.md",
+    "url": "https://huggingface.co/datasets/AaronZ345/GTSinger/blob/d78cd68d00135b1995da03f25fccb3a221efd8c1/dataset_license.md",
+    "additional_terms": "Read the complete source license, including its additional agreement and citation terms."
+  },
+  "purpose": "Two explicit annotation inspection samples; not a train/validation/test corpus or independent accuracy labels.",
+  "samples": [
+    {"relative_stem": "Chinese/ZH-Alto-1/Breathy/不再见/Control_Group/0000", "song_id": "Chinese/不再见", "split": "unassigned"},
+    {"relative_stem": "English/EN-Alto-1/Glissando/my love/Control_Group/0000", "song_id": "English/my love", "split": "unassigned"}
+  ],
+  "files": [
+    {"path": "dataset_license.md", "size": 1463, "git_blob_sha1": "c5dced3ca87433d76c157bb871d4fd5c247d1ed4"},
+    {"path": "Chinese/ZH-Alto-1/Breathy/不再见/Control_Group/0000.TextGrid", "size": 12539, "git_blob_sha1": "e67ea0781992247f18c4e0f767c2a4f4919dbb72"},
+    {"path": "Chinese/ZH-Alto-1/Breathy/不再见/Control_Group/0000.json", "size": 12140, "git_blob_sha1": "274bfaf6274388c4badf0392b7c8bc4d01d860ad"},
+    {"path": "Chinese/ZH-Alto-1/Breathy/不再见/Control_Group/0000.musicxml", "size": 7237, "git_blob_sha1": "21ff203df6fc6dedc38520c69bfe3c6fdff5c4ba"},
+    {"path": "Chinese/ZH-Alto-1/Breathy/不再见/Control_Group/0000.wav", "size": 1152044, "sha256": "7449f2142d5403d414caaf82cdb11b2898a64c857cfff464e559d4dfdc289093"},
+    {"path": "English/EN-Alto-1/Glissando/my love/Control_Group/0000.json", "size": 21112, "git_blob_sha1": "e22e5d8ba76de4e828f15ddc52a7ee8c6cbb5896"},
+    {"path": "English/EN-Alto-1/Glissando/my love/Control_Group/0000.musicxml", "size": 11030, "git_blob_sha1": "e10e2e95c7cc80675a4f1f089776bcca85f408d6"},
+    {"path": "English/EN-Alto-1/Glissando/my love/Control_Group/0000.wav", "size": 1335068, "sha256": "556cc0f8bab110c1434e9cde77643f933b00ba631e3aad348d0cf6c2d88b7399"},
+    {"path": "English/EN-Alto-1/Glissando/my love/Control_Group/0000_TextGrid", "size": 24996, "git_blob_sha1": "98fc1533622fc00449e08eaf6af706c22e3581d7"}
+  ]
+}

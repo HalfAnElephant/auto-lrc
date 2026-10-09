@@ -1,0 +1,164 @@
+{
+  "accuracy": {
+    "coverage_10ms": null,
+    "coverage_20ms": null,
+    "coverage_50ms": null,
+    "coverage_5ms": null,
+    "mae_ms": null,
+    "p90_ms": null,
+    "reason": "No independent human boundary labels.",
+    "status": "unavailable"
+  },
+  "all_labels_pending": true,
+  "all_source_wavs_48000hz": 20,
+  "code_sha256": {
+    "data/gtsinger-representative.json": "39d277f3d61bcec5442dba7208bfac2097c34932a5d234a8e586e25aaae20a7e",
+    "requirements-data.txt": "35c2c792a9603a202891194db9cfb0de5fcfaaceb04a40f976b2c64061d0d5a2",
+    "scripts/fetch_gtsinger_samples.py": "663cd2f1a3fda89cbf9d1284a7f354a3372815e111a8d5ea7316535043ee8ec6",
+    "scripts/prepare_gtsinger.py": "09384f6171649b03b7b159fb92066e2071df07a7f6686b772b5ba469e949ac5e",
+    "t2l/datasets/.___init__.py": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491",
+    "t2l/datasets/._annotations.py": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491",
+    "t2l/datasets/._classification.py": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491",
+    "t2l/datasets/._gtsinger.py": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491",
+    "t2l/datasets/._schema.py": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491",
+    "t2l/datasets/._splits.py": "74bcee6903178eef1d218b43e6aed1ecc78840259e5d8017bbd3b7164cf20491",
+    "t2l/datasets/__init__.py": "22e6047f213c2771d14f84a53e3b717ce3e004047a2dc58bbdd6e5c0e3332450",
+    "t2l/datasets/annotations.py": "fef4b47a5cbbee6fae767760d36ece856ebee4174dbbab667b54fb54fc7df5f1",
+    "t2l/datasets/classification.py": "9344886584ebccb30eb3ab8dd5c7bddb384360efd093fb6d409e5f0026567ae0",
+    "t2l/datasets/gtsinger.py": "16982a008e1f5ec6776e27e44a903d1d857e0c563a59376b57720d851a64582d",
+    "t2l/datasets/schema.py": "a8ae5e10b56d486fb5c61564f49530fd70a55b468b866546b9bf154c61327f01",
+    "t2l/datasets/splits.py": "f1d91a9341b19748f580c87f7fbcde3367afbafdf9255afd8e798c5dfdc1fd95"
+  },
+  "excluded_segments": 2,
+  "existing_result_cli_exit": 1,
+  "existing_result_unchanged": true,
+  "human_truth_values_empty": true,
+  "language_counts": {
+    "Chinese": 6,
+    "English": 12
+  },
+  "linux_exclusive_publish_success": true,
+  "linux_existing_empty_directory_errno": 17,
+  "pending_review_boundaries": 231,
+  "platform": "linux",
+  "requested_segments": 20,
+  "result_files": {
+    "REVIEW.md": "ecaaa6a0528ba6a42cf086a5f6ef8390674085ebe63cbca7ec8533fe1aa1c472",
+    "annotation-candidates.json": "ab4115c725cb21ff8fe4cb910f54c3cb7d9f949a0456a18ac1e2a03050467bcc",
+    "excluded-segments.json": "a7f7605e0ce5c924ab4bbe0519c2e09ebcc3bd1736c48f5711247b62a7b4bdf4",
+    "manual-review.csv": "100635ab111fb518b5d9bcb3080e27b380391c9817bf796ba23d8004b846c9b7",
+    "manual-review.json": "8248351b4f0a7ed2fbd8d62b52632be6198833f04c9baa642b85775679f34aa5",
+    "quality-summary.json": "951541e1791a98e96f1e39693ce3a167a2266bf5af0ff65e3863d5d3cf5b2609",
+    "segments.jsonl": "79520a035bcaa00eca332ad9007500d5d6bf176ac3dd6e5eb6dbc513216b1506",
+    "source-manifest.json": "39d277f3d61bcec5442dba7208bfac2097c34932a5d234a8e586e25aaae20a7e"
+  },
+  "review_forms_blind": true,
+  "source_offsets_unknown": true,
+  "source_wavs": [
+    {
+      "num_samples": 384000,
+      "relative_stem": "Chinese/ZH-Alto-1/Breathy/不再见/Control_Group/0000",
+      "sample_rate": 48000
+    },
+    {
+      "num_samples": 375840,
+      "relative_stem": "Chinese/ZH-Alto-1/Breathy/不再见/Breathy_Group/0000",
+      "sample_rate": 48000
+    },
+    {
+      "num_samples": 379344,
+      "relative_stem": "Chinese/ZH-Alto-1/Breathy/慢慢喜欢你/Control_Group/0000",
+      "sample_rate": 48000
+    },
+    {
+      "num_samples": 390000,
+      "relative_stem": "Chinese/ZH-Alto-1/Breathy/慢慢喜欢你/Breathy_Group/0000",
+      "sample_rate": 48000
+    },
+    {
+      "num_samples": 352319,
+      "relative_stem": "Chinese/ZH-Tenor-1/Breathy/慢慢喜欢你/Control_Group/0000",
+      "sample_rate": 48000
+    },
+    {
+      "num_samples": 355200,
+      "relative_stem": "Chinese/ZH-Tenor-1/Breathy/慢慢喜欢你/Breathy_Group/0000",
+      "sample_rate": 48000
+    },
+    {
+      "num_samples": 463775,
+      "relative_stem": "Chinese/ZH-Tenor-1/Glissando/给电影人的情书/Control_Group/0000",
+      "sample_rate": 48000
+    },
+    {
+      "num_samples": 458640,
+      "relative_stem": "Chinese/ZH-Tenor-1/Glissando/给电影人的情书/Glissando_Group/0000",
+      "sample_rate": 48000
+    },
+    {
+      "num_samples": 445008,
+      "relative_stem": "English/EN-Alto-1/Glissando/my love/Control_Group/0000",
+      "sample_rate": 48000
+    },
+    {
+      "num_samples": 410016,
+      "relative_stem": "English/EN-Alto-1/Glissando/my love/Glissando_Group/0000",
+      "sample_rate": 48000
+    },
+    {
+      "num_samples": 408144,
+      "relative_stem": "English/EN-Alto-2/Glissando/My Love/Control_Group/0000",
+      "sample_rate": 48000
+    },
+    {
+      "num_samples": 372624,
+      "relative_stem": "English/EN-Alto-2/Glissando/My Love/Glissando_Group/0000",
+      "sample_rate": 48000
+    },
+    {
+      "num_samples": 481728,
+      "relative_stem": "English/EN-Alto-1/Glissando/rolling in the deep/Control_Group/0000",
+      "sample_rate": 48000
+    },
+    {
+      "num_samples": 483936,
+      "relative_stem": "English/EN-Alto-1/Glissando/rolling in the deep/Glissando_Group/0000",
+      "sample_rate": 48000
+    },
+    {
+      "num_samples": 546912,
+      "relative_stem": "English/EN-Tenor-1/Glissando/Rolling in the Deep/Control_Group/0000",
+      "sample_rate": 48000
+    },
+    {
+      "num_samples": 525792,
+      "relative_stem": "English/EN-Tenor-1/Glissando/Rolling in the Deep/Glissando_Group/0000",
+      "sample_rate": 48000
+    },
+    {
+      "num_samples": 375408,
+      "relative_stem": "English/EN-Alto-2/Glissando/Someone Like You/Control_Group/0000",
+      "sample_rate": 48000
+    },
+    {
+      "num_samples": 337008,
+      "relative_stem": "English/EN-Alto-2/Glissando/Someone Like You/Glissando_Group/0000",
+      "sample_rate": 48000
+    },
+    {
+      "num_samples": 373008,
+      "relative_stem": "English/EN-Tenor-1/Glissando/Someone Like You/Control_Group/0000",
+      "sample_rate": 48000
+    },
+    {
+      "num_samples": 383616,
+      "relative_stem": "English/EN-Tenor-1/Glissando/Someone Like You/Glissando_Group/0000",
+      "sample_rate": 48000
+    }
+  ],
+  "split_status": "unassigned",
+  "usable_segments": 18,
+  "validation_issue_counts": {
+    "invalid_segment_excluded": 2
+  }
+}

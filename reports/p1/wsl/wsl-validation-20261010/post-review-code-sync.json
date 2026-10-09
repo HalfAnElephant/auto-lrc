@@ -1,0 +1,83 @@
+{
+  "checked_at_utc": "2026-10-09T16:48:13.087544+00:00",
+  "compile_results": {
+    "scripts/prepare_gtsinger.py": {
+      "method": "py_compile.compile(doraise=True)",
+      "status": "passed"
+    },
+    "t2l/datasets/annotations.py": {
+      "method": "py_compile.compile(doraise=True)",
+      "status": "passed"
+    },
+    "t2l/datasets/splits.py": {
+      "method": "py_compile.compile(doraise=True)",
+      "status": "passed"
+    }
+  },
+  "dependencies_unchanged": true,
+  "dependency_install_performed": false,
+  "dependency_snapshot_after": {
+    "packages": 87,
+    "sha256": "d75add16a21fed19afd2c8382c0e32766c530e46d3a59ac05fcc5f901025290c"
+  },
+  "dependency_snapshot_before": {
+    "packages": 87,
+    "sha256": "d75add16a21fed19afd2c8382c0e32766c530e46d3a59ac05fcc5f901025290c"
+  },
+  "expected_local_sha256": {
+    "scripts/prepare_gtsinger.py": "33702d51ca6c19b1030ac4f88fe4a2cbb7644aa64a54a962b5afea05d868fa53",
+    "t2l/datasets/annotations.py": "f742034399fc4034b32cf2a70591396d867a26a03d5d3e04ca6d3130f44d0a4c",
+    "t2l/datasets/splits.py": "8a7597e4f2fa12de28622164dfbb064a89cd2f032f5283ddbf5630112a628a3d"
+  },
+  "interpreter": "/home/xcy/auto-lrc/.venv-cuda/bin/python",
+  "local_remote_sha256_equal": true,
+  "platform": "linux",
+  "prior_integration_inputs": {
+    "global_tests_rerun": false,
+    "mac_focused_checks": {
+      "annotations": 21,
+      "provenance": "Parent-reported successful checks; not rerun in this task",
+      "splits": 25,
+      "tools": 39
+    },
+    "model_or_gpu_validation_rerun": false,
+    "note": "Prior integration results remain historical and were not rerun. The reader, schema, classification, fetch script, source manifest and dependency specification match the prior integration inputs. Only preparation error handling, annotation audit output and split summary contracts were synchronized.",
+    "prepare_rerun": false,
+    "report_path": "/home/xcy/auto-lrc/reports/p1/wsl-validation-20261010/integration-checks-final.json",
+    "report_preserved_unchanged": true,
+    "report_sha256_before_and_after": "6db09a223742d121e3d73e7738240adee12f7a2f632a4a3865510774d03fbadd",
+    "unchanged_input_sha256": {
+      "data/gtsinger-representative.json": "39d277f3d61bcec5442dba7208bfac2097c34932a5d234a8e586e25aaae20a7e",
+      "requirements-data.txt": "35c2c792a9603a202891194db9cfb0de5fcfaaceb04a40f976b2c64061d0d5a2",
+      "scripts/fetch_gtsinger_samples.py": "663cd2f1a3fda89cbf9d1284a7f354a3372815e111a8d5ea7316535043ee8ec6",
+      "t2l/datasets/__init__.py": "22e6047f213c2771d14f84a53e3b717ce3e004047a2dc58bbdd6e5c0e3332450",
+      "t2l/datasets/classification.py": "9344886584ebccb30eb3ab8dd5c7bddb384360efd093fb6d409e5f0026567ae0",
+      "t2l/datasets/gtsinger.py": "16982a008e1f5ec6776e27e44a903d1d857e0c563a59376b57720d851a64582d",
+      "t2l/datasets/schema.py": "a8ae5e10b56d486fb5c61564f49530fd70a55b468b866546b9bf154c61327f01"
+    },
+    "unchanged_inputs_match_prior_report": true
+  },
+  "project_root": "/home/xcy/auto-lrc",
+  "python": "3.10.16",
+  "remote_sha256_before_sync": {
+    "scripts/prepare_gtsinger.py": "09384f6171649b03b7b159fb92066e2071df07a7f6686b772b5ba469e949ac5e",
+    "t2l/datasets/annotations.py": "fef4b47a5cbbee6fae767760d36ece856ebee4174dbbab667b54fb54fc7df5f1",
+    "t2l/datasets/splits.py": "f1d91a9341b19748f580c87f7fbcde3367afbafdf9255afd8e798c5dfdc1fd95"
+  },
+  "source_sha256": {
+    "scripts/prepare_gtsinger.py": "33702d51ca6c19b1030ac4f88fe4a2cbb7644aa64a54a962b5afea05d868fa53",
+    "t2l/datasets/annotations.py": "f742034399fc4034b32cf2a70591396d867a26a03d5d3e04ca6d3130f44d0a4c",
+    "t2l/datasets/splits.py": "8a7597e4f2fa12de28622164dfbb064a89cd2f032f5283ddbf5630112a628a3d"
+  },
+  "synchronized_files": [
+    "scripts/prepare_gtsinger.py",
+    "t2l/datasets/annotations.py",
+    "t2l/datasets/splits.py"
+  ],
+  "transfer_excludes_appledouble": true,
+  "transfer_members": [
+    "scripts/prepare_gtsinger.py",
+    "t2l/datasets/annotations.py",
+    "t2l/datasets/splits.py"
+  ]
+}

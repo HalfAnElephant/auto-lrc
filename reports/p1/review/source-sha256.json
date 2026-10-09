@@ -1,0 +1,14 @@
+{
+  "t2l/datasets/__init__.py": "22e6047f213c2771d14f84a53e3b717ce3e004047a2dc58bbdd6e5c0e3332450",
+  "t2l/datasets/gtsinger.py": "ec13948593f8bcdb4756a0d6fd772fc4c23f83234d23e4e8efc6ec9edacb8515",
+  "t2l/datasets/splits.py": "eaf786e6f1471542d8611aa3352b80dea7528158021288fda3d1f529009b1078",
+  "t2l/datasets/schema.py": "07be44456aa14b52549886347c4e755b8fa00a37d60b583ad02eda63318e4028",
+  "scripts/split_gtsinger.py": "6e46144fe48bc270de93e217725c651c28c7320c691f8dfdfd578515d1b5be9f",
+  "scripts/fetch_gtsinger_samples.py": "bd3439f48808e901ebe6e04ae1ef5f60e95417b9e4c90c73df28a13fa22d3f9d",
+  "scripts/prepare_gtsinger.py": "fcc75e1320f89064b34f1c7d30f16d34c4d8319bf535e402472884c4e31a2afd",
+  "tests/test_gtsinger_tools.py": "7622a1ae03fb27cfb2f39dec82848f28660b4c7d6b6c35fbf24fb53ea63dc66d",
+  "tests/test_gtsinger.py": "c662fa2046446da5c5c51b34f1fba6526726acbbbfa58306a18a5f1a8bbdb4f6",
+  "tests/test_gtsinger_splits.py": "d9380ec457c7861813572959effe442e7e29381af3cde6a5f29049d52572d694",
+  "data/gtsinger-samples.json": "a1f19e0ded4241a279afec4ab8d299afbb18f5d7d4bb8f433913f3533b5cc60a",
+  "requirements-data.txt": "297395b638052ae4750504612e4bc0e33de8ccb77a7441e5b137e3377b951976"
+}

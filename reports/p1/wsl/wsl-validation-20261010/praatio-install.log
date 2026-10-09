@@ -1,0 +1,5 @@
+Using Python 3.10.16 environment at: .venv-cuda
+Resolved 2 packages in 1.02s
+Prepared 1 package in 814ms
+Installed 1 package in 3ms
+ + praatio==6.2.2

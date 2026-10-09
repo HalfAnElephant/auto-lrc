@@ -1,0 +1,19 @@
+{
+  "out_dir": "reports/p1/representative-wsl-20261010",
+  "segment_count": 18,
+  "requested_segment_count": 20,
+  "usable_segment_count": 18,
+  "excluded_segment_count": 2,
+  "validation_issue_count": 2,
+  "review_status": "pending",
+  "accuracy": {
+    "status": "unavailable",
+    "reason": "No independent human boundary labels.",
+    "mae_ms": null,
+    "p90_ms": null,
+    "coverage_5ms": null,
+    "coverage_10ms": null,
+    "coverage_20ms": null,
+    "coverage_50ms": null
+  }
+}
