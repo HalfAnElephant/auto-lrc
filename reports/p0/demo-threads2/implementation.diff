@@ -1,0 +1,244 @@
+diff --git a/main.py b/main.py
+index 0da1822..cf9f489 100644
+--- a/main.py
++++ b/main.py
+@@ -1,6 +1,8 @@
+ #!/usr/bin/env python
+ import argparse
++import json
+ import os
++from pathlib import Path
+ import re
+ 
+ 
+@@ -27,11 +29,33 @@ def build_parser():
+         help='demucs模型idx, 默认：-1', default=-1)
+     parser.add_argument('-o', '--out_dir', type=str, default='demofile',
+                         help='标准LRC输出目录，默认：demofile')
++    parser.add_argument('--aligner', choices=('mtl', 'mtl_bdr'), default='mtl',
++                        help='粗对齐模型，默认：mtl；mtl_bdr增加行边界检测')
++    parser.add_argument('--json-output', metavar='PATH',
++                        help='保存原始帧、浮点秒和未校准路径分数的JSON文件')
++    parser.add_argument('--enhanced-lrc-output', metavar='PATH',
++                        help='另外保存当前逐字/逐句LRC输出')
+     return parser
+ 
+ 
++def _check_output_paths(parser, input_paths, output_paths):
++    seen = [Path(path).resolve() for path in input_paths]
++    for output_path in output_paths:
++        path = Path(output_path).resolve()
++        for other in seen:
++            if path == other or (path.exists() and other.exists() and path.samefile(other)):
++                parser.error('输出路径与输入或其他输出冲突: {}'.format(output_path))
++        seen.append(path)
++
++
+ def cli():
+-    args = build_parser().parse_args()
++    parser = build_parser()
++    args = parser.parse_args()
++    base_name = os.path.splitext(os.path.basename(args.music_file))[0]
++    out_path = os.path.join(args.out_dir, base_name + '.lrc')
++    output_paths = [out_path]
++    output_paths.extend(path for path in (args.json_output, args.enhanced_lrc_output) if path)
++    _check_output_paths(parser, [args.lrc_file, args.music_file], output_paths)
+ 
+     import ext.t2lutils as t2lutils
+     from t2l.t2l import process
+@@ -40,26 +64,36 @@ def cli():
+     encoding = t2lutils.__get_file_encoding(args.lrc_file)
+     with open(args.lrc_file, 'r', encoding=encoding) as fp:
+         txt_lines = fp.readlines()
+-    lrc = process(
++    result = process(
+         txt_lines,
+         args.music_file,
++        mtl_model='MTL_BDR' if args.aligner == 'mtl_bdr' else 'MTL',
+         demucs_model=args.model,
+         demucs_idx=args.idx,
+         format=args.format,
+         line_only=(args.line_only == 1),
+         vocalize=(args.vocalize == 1),
++        return_details=bool(args.json_output),
+     )
++    lrc = result['lrc'] if args.json_output else result
+     print(lrc)
+ 
+     # 转为标准LRC并保存到输出目录
+     standard_lrc = to_standard_lrc(lrc)
+     os.makedirs(args.out_dir, exist_ok=True)
+-    base_name = os.path.splitext(os.path.basename(args.music_file))[0]
+-    out_path = os.path.join(args.out_dir, base_name + '.lrc')
+     with open(out_path, 'w', encoding='utf-8') as f:
+         f.write(standard_lrc)
+     print(f'\n标准LRC已保存至: {out_path}')
+ 
++    if args.enhanced_lrc_output:
++        Path(args.enhanced_lrc_output).parent.mkdir(parents=True, exist_ok=True)
++        Path(args.enhanced_lrc_output).write_text(lrc, encoding='utf-8')
++    if args.json_output:
++        Path(args.json_output).parent.mkdir(parents=True, exist_ok=True)
++        with open(args.json_output, 'w', encoding='utf-8') as f:
++            json.dump(result, f, ensure_ascii=False, indent=2, allow_nan=False)
++            f.write('\n')
++
+ 
+ if __name__ == '__main__':
+     cli()
+diff --git a/t2l/mtl/wrapper.py b/t2l/mtl/wrapper.py
+index 4b2604d..e547271 100644
+--- a/t2l/mtl/wrapper.py
++++ b/t2l/mtl/wrapper.py
+@@ -1,3 +1,4 @@
++import math
+ import warnings
+ import librosa
+ import numpy as np
+@@ -11,6 +12,11 @@ from .model import train_audio_transforms, AcousticModel, BoundaryDetection
+ 
+ np.random.seed(7)
+ 
++SAMPLE_RATE = 22050
++HOP_LENGTH = 256
++FRAME_STRIDE = 3
++FRAME_RESOLUTION_SECONDS = HOP_LENGTH / SAMPLE_RATE * FRAME_STRIDE
++
+ 
+ def preprocess_from_file(audio_file, lyrics_file, word_file=None):
+     y, sr = preprocess_audio(audio_file)
+@@ -21,7 +27,9 @@ def preprocess_from_file(audio_file, lyrics_file, word_file=None):
+     return y, words, lyrics_p, idx_word_p, idx_line_p
+ 
+ 
+-def align(audio, words, lyrics_p, idx_word_p, idx_line_p, method="Baseline", cuda=True, verbose=True):
++def align(audio, words, lyrics_p, idx_word_p, idx_line_p, method="Baseline", cuda=True, verbose=True,
++          return_details=False):
++    """Align on the legacy frame grid; opt-in details do not calibrate onset time."""
+ 
+     # start timer
+     t = time()
+@@ -53,6 +61,7 @@ def align(audio, words, lyrics_p, idx_word_p, idx_line_p, method="Baseline", cud
+         # reshape input, prepare mel
+         x = utils.move_data_to_device(waveform, device)
+         x = train_audio_transforms.to(device)(x)
++        mel_frames = x.shape[-1]
+         x = nn.utils.rnn.pad_sequence(x, batch_first=True).unsqueeze(1)
+ 
+         # predict
+@@ -88,6 +97,36 @@ def align(audio, words, lyrics_p, idx_word_p, idx_line_p, method="Baseline", cud
+     t = time() - t
+     verbose and print("Alignment Score:\t{}\tTime:\t{}".format(score, t))
+ 
++    if return_details:
++        if not math.isfinite(float(score)):
++            raise utils.AlignmentValueError(
++                "Alignment path score is not finite; cannot export diagnostics."
++            )
++        details = {
++            "sample_rate": SAMPLE_RATE,
++            "hop_length": HOP_LENGTH,
++            "frame_stride": FRAME_STRIDE,
++            "frame_resolution_seconds": FRAME_RESOLUTION_SECONDS,
++            "mel_frames": int(mel_frames),
++            "output_frames": int(song_pred.shape[0]),
++            "input_samples": int(waveform.shape[-1]),
++            "method": model_type + ("_BDR" if bdr_flag else ""),
++            "model_type": model_type,
++            "bdr": bool(bdr_flag),
++            "device": str(device),
++            "score": float(score),
++            "score_kind": ("whole_path_log_score_with_bdr_uncalibrated" if bdr_flag
++                           else "whole_path_log_score_uncalibrated"),
++            "legacy_frame_origin_seconds": 0.0,
++            "physical_origin_seconds": None,
++            "physical_origin_calibrated": False,
++            "word_frames": [[int(start), int(end)] for start, end in word_align],
++            "phonemes": list(lyrics_p),
++            "word_phoneme_indices": np.asarray(idx_word_p).tolist(),
++            "line_phoneme_indices": np.asarray(idx_line_p).tolist(),
++        }
++        return word_align, words, details
++
+     return word_align, words
+ 
+ 
+diff --git a/t2l/t2l.py b/t2l/t2l.py
+index d93a750..dbbbc90 100644
+--- a/t2l/t2l.py
++++ b/t2l/t2l.py
+@@ -8,7 +8,7 @@ import torch
+ import torchaudio as ta
+ from demucs import pretrained as demucs_pretrained
+ from demucs.apply import apply_model as demucs_apply_model
+-from .mtl.wrapper import align
++from .mtl.wrapper import align, FRAME_RESOLUTION_SECONDS
+ import warnings
+ import librosa
+ 
+@@ -23,10 +23,11 @@ def phonetize(text):
+ def process(txt_lines, audio_file, mtl_model='MTL',
+             demucs_model='mdx_extra', demucs_idx=-1,
+             line_only=False, out_file=None, verbose=True,
+-            vocalize=True, format='lrc'):
++            vocalize=True, format='lrc', return_details=False):
+     """
+     :mtl_model: tuple of pre loaded model, or one of string: "Baseline", "MTL", "Baseline_BDR", "MTL_BDR"
+-    :return: lrc resutl. TxtValueError if txt_lines invalid, AudioValueError if audio error
++    :return: LRC string, or a JSON-serializable result when return_details=True.
++        TxtValueError if txt_lines invalid, AudioValueError if audio error.
+     """
+     if format != 'lrc':
+         raise ValueError(
+@@ -90,9 +91,11 @@ def process(txt_lines, audio_file, mtl_model='MTL',
+     # raw_lines = [" ".join(line) for line in phonetics]
+     # raw_words = " ".join(raw_lines).split()
+     lyrics_p, _, idx_word_p, idx_line_p = mtl_utils.gen_phone_gt_opt(phonetics)
+-    word_align, words = align(
++    alignment_result = align(
+         vocals, None, lyrics_p, idx_word_p, idx_line_p,
+-        method=mtl_model, cuda=True, verbose=verbose)
++        method=mtl_model, cuda=True, verbose=verbose,
++        return_details=return_details)
++    word_align, words = alignment_result[:2]
+     lrc_content = gen_lrc(word_align, lines, line_only=line_only)
+     if len(pre_lines_unprocessed) > 0:
+         lrc_content = pre_lines_unprocessed + '\n' + lrc_content
+@@ -105,6 +108,28 @@ def process(txt_lines, audio_file, mtl_model='MTL',
+             f.write(lrc_content)
+         # write_csv(lrc_out, word_align, words)
+ 
++    if return_details:
++        units = []
++        for line_index, line in enumerate(lines):
++            for text in line:
++                word_index = len(units)
++                start, end = (word_align[word_index] if word_index < len(word_align)
++                              else (None, None))
++                phone_start, phone_end = idx_word_p[word_index]
++                units.append({
++                    'text': text,
++                    'line_index': line_index,
++                    'word_index': word_index,
++                    'phonemes': list(lyrics_p[phone_start:phone_end]),
++                    'start_frame': int(start) if start is not None else None,
++                    'end_frame': int(end) if end is not None else None,
++                    'start_seconds': (float(start) * FRAME_RESOLUTION_SECONDS
++                                      if start is not None else None),
++                    'end_seconds': (float(end) * FRAME_RESOLUTION_SECONDS
++                                    if end is not None else None),
++                })
++        return {'lrc': lrc_content, 'units': units, 'alignment': alignment_result[2]}
++
+     return lrc_content
+ 
+ 
+@@ -230,7 +255,7 @@ def gen_lrc(word_align, lines, line_only=False):
+         xx = int(1000 * (s - int(s)))
+         return '{:02d}:{:02d}.{:03d}'.format(mm, ss, xx)
+     result = ''
+-    idx, resolution = 0, 256 / 22050 * 3  # @see write_csv
++    idx, resolution = 0, FRAME_RESOLUTION_SECONDS  # @see write_csv
+     for line in lines:
+         # 边界保护：对齐结果不够时，停止进一步处理，避免越界
+         if idx >= len(word_align):

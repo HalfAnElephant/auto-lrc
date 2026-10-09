@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-09",
+  "timezone": "Asia/Shanghai",
+  "project_directory": "/home/xcy/auto-lrc",
+  "virtual_environment": "/home/xcy/auto-lrc/.venv-cuda",
+  "status": "passed",
+  "python": "3.10.16",
+  "torch": "2.7.1+cu128",
+  "torchaudio": "2.7.1+cu128",
+  "cuda_available": true,
+  "gpu": "NVIDIA GeForce RTX 5060",
+  "compiled_architectures": ["sm_75", "sm_80", "sm_86", "sm_90", "sm_100", "sm_120", "compute_120"],
+  "g2p_hello": ["HH", "AH0", "L", "OW1"],
+  "lid_hello_world": "__label__en",
+  "runtime_imports": ["t2l.phonetic", "t2l.t2l.process", "demucs", "diffq", "fasttext", "g2p_en"],
+  "nltk_resources": [
+    "/home/xcy/nltk_data/taggers/averaged_perceptron_tagger",
+    "/home/xcy/nltk_data/corpora/cmudict"
+  ],
+  "uv_pip_check": {
+    "status": "passed",
+    "packages_checked": 86,
+    "message": "All installed packages are compatible"
+  },
+  "model_inference": "separate acceptance owned by main agent"
+}

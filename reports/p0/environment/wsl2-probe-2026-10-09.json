@@ -1,0 +1,53 @@
+{
+  "date": "2026-10-09",
+  "timezone": "Asia/Shanghai",
+  "transport": {
+    "host": "127.0.0.1",
+    "port": 12345,
+    "windows_user": "Haer",
+    "windows_whoami": "haer\\haer",
+    "ssh_banner": "SSH-2.0-OpenSSH_for_Windows_9.5",
+    "authentication": "existing SSH public key, BatchMode=yes",
+    "authentication_result": "passed"
+  },
+  "wsl": {
+    "distribution_name": "archlinux",
+    "version": 2,
+    "os": "Arch Linux",
+    "kernel": "6.6.87.2-microsoft-standard-WSL2",
+    "architecture": "x86_64",
+    "user": "xcy",
+    "home": "/home/xcy",
+    "initial_working_directory": "/mnt/c/Users/Haer",
+    "memory_visible_human": "15 GiB",
+    "swap_human": "4 GiB",
+    "linux_filesystem": "/dev/sdd",
+    "linux_filesystem_available_human": "950 GiB"
+  },
+  "gpu": {
+    "name": "NVIDIA GeForce RTX 5060",
+    "driver_version": "617.42",
+    "memory_total_mib": 8151,
+    "compute_capability": "12.0",
+    "nvidia_smi": "/usr/lib/wsl/lib/nvidia-smi"
+  },
+  "existing_tools": {
+    "python": "3.14.4",
+    "uv": "0.11.6",
+    "git": "2.53.0",
+    "gcc": "/usr/sbin/gcc",
+    "g++": "/usr/sbin/g++",
+    "ffmpeg": null,
+    "ffprobe": null,
+    "make": null,
+    "pkg-config": null
+  },
+  "planned_project_directory": "/home/xcy/auto-lrc",
+  "project_directory_existed_at_probe": false,
+  "pytorch_cuda_probe": "not_run",
+  "project_gpu_inference": "not_run",
+  "observed_nonfatal_startup_messages": [
+    "Failed to start the systemd user session for xcy",
+    "fish source references missing /home/xcy/.cargo/env.fish"
+  ]
+}

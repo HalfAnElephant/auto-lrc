@@ -8,7 +8,7 @@ import torch
 import torchaudio as ta
 from demucs import pretrained as demucs_pretrained
 from demucs.apply import apply_model as demucs_apply_model
-from .mtl.wrapper import align
+from .mtl.wrapper import align, FRAME_RESOLUTION_SECONDS
 import warnings
 import librosa
 
@@ -23,10 +23,12 @@ def phonetize(text):
 def process(txt_lines, audio_file, mtl_model='MTL',
             demucs_model='mdx_extra', demucs_idx=-1,
             line_only=False, out_file=None, verbose=True,
-            vocalize=True, format='lrc'):
+            vocalize=True, format='lrc', return_details=False):
     """
     :mtl_model: tuple of pre loaded model, or one of string: "Baseline", "MTL", "Baseline_BDR", "MTL_BDR"
-    :return: lrc resutl. TxtValueError if txt_lines invalid, AudioValueError if audio error
+    :return: LRC string, or a JSON-serializable result when return_details=True.
+        TxtValueError if txt_lines invalid, AudioValueError if audio error.
+        AlignmentValueError if diagnostic details would contain a non-finite score.
     """
     if format != 'lrc':
         raise ValueError(
@@ -90,9 +92,11 @@ def process(txt_lines, audio_file, mtl_model='MTL',
     # raw_lines = [" ".join(line) for line in phonetics]
     # raw_words = " ".join(raw_lines).split()
     lyrics_p, _, idx_word_p, idx_line_p = mtl_utils.gen_phone_gt_opt(phonetics)
-    word_align, words = align(
+    alignment_result = align(
         vocals, None, lyrics_p, idx_word_p, idx_line_p,
-        method=mtl_model, cuda=True, verbose=verbose)
+        method=mtl_model, cuda=True, verbose=verbose,
+        return_details=return_details)
+    word_align, words = alignment_result[:2]
     lrc_content = gen_lrc(word_align, lines, line_only=line_only)
     if len(pre_lines_unprocessed) > 0:
         lrc_content = pre_lines_unprocessed + '\n' + lrc_content
@@ -104,6 +108,28 @@ def process(txt_lines, audio_file, mtl_model='MTL',
         with open(out_file, 'w', encoding='utf-8') as f:
             f.write(lrc_content)
         # write_csv(lrc_out, word_align, words)
+
+    if return_details:
+        units = []
+        for line_index, line in enumerate(lines):
+            for text in line:
+                word_index = len(units)
+                start, end = (word_align[word_index] if word_index < len(word_align)
+                              else (None, None))
+                phone_start, phone_end = idx_word_p[word_index]
+                units.append({
+                    'text': text,
+                    'line_index': line_index,
+                    'word_index': word_index,
+                    'phonemes': list(lyrics_p[phone_start:phone_end]),
+                    'start_frame': int(start) if start is not None else None,
+                    'end_frame': int(end) if end is not None else None,
+                    'start_seconds': (float(start) * FRAME_RESOLUTION_SECONDS
+                                      if start is not None else None),
+                    'end_seconds': (float(end) * FRAME_RESOLUTION_SECONDS
+                                    if end is not None else None),
+                })
+        return {'lrc': lrc_content, 'units': units, 'alignment': alignment_result[2]}
 
     return lrc_content
 
@@ -230,7 +256,7 @@ def gen_lrc(word_align, lines, line_only=False):
         xx = int(1000 * (s - int(s)))
         return '{:02d}:{:02d}.{:03d}'.format(mm, ss, xx)
     result = ''
-    idx, resolution = 0, 256 / 22050 * 3  # @see write_csv
+    idx, resolution = 0, FRAME_RESOLUTION_SECONDS  # @see write_csv
     for line in lines:
         # 边界保护：对齐结果不够时，停止进一步处理，避免越界
         if idx >= len(word_align):

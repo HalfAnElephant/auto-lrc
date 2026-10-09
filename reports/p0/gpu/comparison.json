@@ -1,0 +1,32 @@
+{
+  "scope": "Cross-platform output comparison, not accuracy",
+  "accuracy_metrics": {
+    "available": false
+  },
+  "comparisons": [
+    {
+      "method": "mtl",
+      "cpu": "Mac arm64 torch2.1.2 legacy-r1",
+      "gpu": "WSL2 RTX5060 torch2.7.1 cu128",
+      "unit_count": 482,
+      "changed_start_frames": 1,
+      "max_absolute_start_delta_frames": 1,
+      "max_absolute_start_delta_seconds": 0.034829931972789115,
+      "cpu_score": -11098.0625,
+      "gpu_score": -11097.1044921875,
+      "runtime_source_matches_current": true
+    },
+    {
+      "method": "mtl_bdr",
+      "cpu": "Mac arm64 torch2.1.2 legacy-r1",
+      "gpu": "WSL2 RTX5060 torch2.7.1 cu128",
+      "unit_count": 482,
+      "changed_start_frames": 79,
+      "max_absolute_start_delta_frames": 649,
+      "max_absolute_start_delta_seconds": 22.604625850340135,
+      "cpu_score": -11196.181801110975,
+      "gpu_score": -11195.930804822498,
+      "runtime_source_matches_current": true
+    }
+  ]
+}

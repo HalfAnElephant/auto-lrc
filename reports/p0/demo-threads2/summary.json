@@ -1,0 +1,141 @@
+{
+  "runs": [
+    {
+      "run": "mtl-legacy-r1",
+      "variant": "mtl",
+      "lstm_layout": "legacy",
+      "repeat": 1,
+      "model_load_seconds": 0.03929108299780637,
+      "status": "completed",
+      "runtime_seconds": 10.801739083020948,
+      "unit_count": 482,
+      "raw_alignment_score": -11098.0625
+    },
+    {
+      "run": "mtl-legacy-r2",
+      "variant": "mtl",
+      "lstm_layout": "legacy",
+      "repeat": 2,
+      "model_load_seconds": 0.046125999942887574,
+      "status": "completed",
+      "runtime_seconds": 7.014988499984611,
+      "unit_count": 482,
+      "raw_alignment_score": -11098.0625
+    },
+    {
+      "run": "mtl-batch-first-r1",
+      "variant": "mtl",
+      "lstm_layout": "batch-first",
+      "repeat": 1,
+      "model_load_seconds": 0.028671332984231412,
+      "status": "completed",
+      "runtime_seconds": 8.981132375018205,
+      "unit_count": 482,
+      "raw_alignment_score": -11174.775390625
+    },
+    {
+      "run": "mtl-batch-first-r2",
+      "variant": "mtl",
+      "lstm_layout": "batch-first",
+      "repeat": 2,
+      "model_load_seconds": 0.04650999995646998,
+      "status": "completed",
+      "runtime_seconds": 7.512356791994534,
+      "unit_count": 482,
+      "raw_alignment_score": -11174.775390625
+    },
+    {
+      "run": "mtl_bdr-legacy-r1",
+      "variant": "mtl_bdr",
+      "lstm_layout": "legacy",
+      "repeat": 1,
+      "model_load_seconds": 0.04280345799634233,
+      "status": "completed",
+      "runtime_seconds": 75.09403054096038,
+      "unit_count": 482,
+      "raw_alignment_score": -11196.181801110975
+    },
+    {
+      "run": "mtl_bdr-legacy-r2",
+      "variant": "mtl_bdr",
+      "lstm_layout": "legacy",
+      "repeat": 2,
+      "model_load_seconds": 0.0311820000060834,
+      "status": "completed",
+      "runtime_seconds": 76.3271361249499,
+      "unit_count": 482,
+      "raw_alignment_score": -11196.181801110975
+    },
+    {
+      "run": "mtl_bdr-batch-first-r1",
+      "variant": "mtl_bdr",
+      "lstm_layout": "batch-first",
+      "repeat": 1,
+      "model_load_seconds": 0.06891183299012482,
+      "status": "completed",
+      "runtime_seconds": 86.19463312497828,
+      "unit_count": 482,
+      "raw_alignment_score": -11290.255047954935
+    },
+    {
+      "run": "mtl_bdr-batch-first-r2",
+      "variant": "mtl_bdr",
+      "lstm_layout": "batch-first",
+      "repeat": 2,
+      "model_load_seconds": 0.0873350000474602,
+      "status": "completed",
+      "runtime_seconds": 80.82198599999538,
+      "unit_count": 482,
+      "raw_alignment_score": -11290.255047954935
+    }
+  ],
+  "repeatability": [
+    {
+      "variant": "mtl",
+      "lstm_layout": "legacy",
+      "repeats": 2,
+      "identical_predictions_and_score": true,
+      "fingerprints": [
+        "1b0175478d2d2dd96e171ccba43fc33a0350733b43e4320887c4af39f6e0e2b2",
+        "1b0175478d2d2dd96e171ccba43fc33a0350733b43e4320887c4af39f6e0e2b2"
+      ]
+    },
+    {
+      "variant": "mtl",
+      "lstm_layout": "batch-first",
+      "repeats": 2,
+      "identical_predictions_and_score": true,
+      "fingerprints": [
+        "1e8a9b65e86ee11f448e7c8b380d7ea8e5511599e2d7500775b88bf027100ffb",
+        "1e8a9b65e86ee11f448e7c8b380d7ea8e5511599e2d7500775b88bf027100ffb"
+      ]
+    },
+    {
+      "variant": "mtl_bdr",
+      "lstm_layout": "legacy",
+      "repeats": 2,
+      "identical_predictions_and_score": true,
+      "fingerprints": [
+        "27aa75ef3ba0ed378f7a40e8dfb194e391ff4f96cbe1590360ab6d5a6c9eb589",
+        "27aa75ef3ba0ed378f7a40e8dfb194e391ff4f96cbe1590360ab6d5a6c9eb589"
+      ]
+    },
+    {
+      "variant": "mtl_bdr",
+      "lstm_layout": "batch-first",
+      "repeats": 2,
+      "identical_predictions_and_score": true,
+      "fingerprints": [
+        "047bc1fa83d5dafeff8aa20706a2ecedcd735cf8d8ed40e145de2b0e347b12b7",
+        "047bc1fa83d5dafeff8aa20706a2ecedcd735cf8d8ed40e145de2b0e347b12b7"
+      ]
+    }
+  ],
+  "accuracy_metrics": {
+    "available": false,
+    "reason": "No independently reviewed reference boundaries were supplied.",
+    "mae_seconds": null,
+    "p90_seconds": null,
+    "coverage": null
+  }
+}

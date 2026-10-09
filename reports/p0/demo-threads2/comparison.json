@@ -1,0 +1,215 @@
+{
+  "comparison_definition": "Exact JSON value equality for each paired repeat; no rounding or tolerance.",
+  "shift_definition": "batch-first minus legacy start_frame, multiplied by frame_resolution_seconds; absolute-shift summaries are prediction differences, not reference-boundary errors.",
+  "percentile_definition": "Linear interpolation between ordered values at (n - 1) * fraction.",
+  "original_config": {
+    "seed": 7,
+    "repeats": 2,
+    "threads": 2,
+    "interop_threads": 1,
+    "deterministic_algorithms": true,
+    "vocalize": false,
+    "device": "cpu"
+  },
+  "current_config": {
+    "variants": [
+      "mtl",
+      "mtl_bdr"
+    ],
+    "lstm_layouts": [
+      "legacy",
+      "batch-first"
+    ],
+    "repeats": 2,
+    "seed": 7,
+    "torch_threads": 2,
+    "torch_interop_threads": 1,
+    "acoustic_device": "cpu",
+    "vocalize": false,
+    "demucs_model": "mdx_extra",
+    "demucs_idx": -1,
+    "lyrics_encoding": "utf-8",
+    "deterministic_algorithms": true
+  },
+  "legacy_parity": [
+    {
+      "variant": "mtl",
+      "repeat": 1,
+      "equal": {
+        "word_frames": true,
+        "score": true,
+        "phonemes": true,
+        "word_phoneme_indices": true,
+        "output_frames": true,
+        "enhanced_lrc": true
+      },
+      "all_equal": true
+    },
+    {
+      "variant": "mtl",
+      "repeat": 2,
+      "equal": {
+        "word_frames": true,
+        "score": true,
+        "phonemes": true,
+        "word_phoneme_indices": true,
+        "output_frames": true,
+        "enhanced_lrc": true
+      },
+      "all_equal": true
+    },
+    {
+      "variant": "mtl_bdr",
+      "repeat": 1,
+      "equal": {
+        "word_frames": true,
+        "score": true,
+        "phonemes": true,
+        "word_phoneme_indices": true,
+        "output_frames": true,
+        "enhanced_lrc": true
+      },
+      "all_equal": true
+    },
+    {
+      "variant": "mtl_bdr",
+      "repeat": 2,
+      "equal": {
+        "word_frames": true,
+        "score": true,
+        "phonemes": true,
+        "word_phoneme_indices": true,
+        "output_frames": true,
+        "enhanced_lrc": true
+      },
+      "all_equal": true
+    }
+  ],
+  "layout_ablation": [
+    {
+      "variant": "mtl",
+      "unit_count": 482,
+      "changed_start_count": 235,
+      "changed_end_count": 235,
+      "enhanced_lrc_identical": false,
+      "legacy_score": -11098.0625,
+      "batch_first_score": -11174.775390625,
+      "mean_absolute_start_shift_seconds": 1.4859084878764783,
+      "median_absolute_start_shift_seconds": 0.0,
+      "p90_absolute_start_shift_seconds": 5.315047619047624,
+      "maximum_absolute_start_shift_seconds": 16.091428571428573,
+      "minimum_signed_start_shift_frames": -462,
+      "maximum_signed_start_shift_frames": 364,
+      "state_dict_shapes_unchanged": true,
+      "all_observed_tensor_shapes_unchanged": true
+    },
+    {
+      "variant": "mtl_bdr",
+      "unit_count": 482,
+      "changed_start_count": 274,
+      "changed_end_count": 275,
+      "enhanced_lrc_identical": false,
+      "legacy_score": -11196.181801110975,
+      "batch_first_score": -11290.255047954935,
+      "mean_absolute_start_shift_seconds": 1.7573940779631354,
+      "median_absolute_start_shift_seconds": 0.4179591836734694,
+      "p90_absolute_start_shift_seconds": 5.475265306122458,
+      "maximum_absolute_start_shift_seconds": 16.091428571428573,
+      "minimum_signed_start_shift_frames": -462,
+      "maximum_signed_start_shift_frames": 77,
+      "state_dict_shapes_unchanged": true,
+      "all_observed_tensor_shapes_unchanged": true
+    }
+  ],
+  "original_repeatability": [
+    {
+      "method": "MTL",
+      "repeats": 2,
+      "identical_predictions_and_score": true,
+      "fingerprints": [
+        "9cfa0d91dec93b2b0bd0a00752f9802131c0a94245397afeba6363e57a2cc878",
+        "9cfa0d91dec93b2b0bd0a00752f9802131c0a94245397afeba6363e57a2cc878"
+      ]
+    },
+    {
+      "method": "MTL_BDR",
+      "repeats": 2,
+      "identical_predictions_and_score": true,
+      "fingerprints": [
+        "8e827bd8fe7277a1c56dc48e9d34e91fc9f2950ed88531b6c61f375344b78daf",
+        "8e827bd8fe7277a1c56dc48e9d34e91fc9f2950ed88531b6c61f375344b78daf"
+      ]
+    }
+  ],
+  "current_repeatability": [
+    {
+      "variant": "mtl",
+      "lstm_layout": "legacy",
+      "repeats": 2,
+      "identical_predictions_and_score": true,
+      "fingerprints": [
+        "1b0175478d2d2dd96e171ccba43fc33a0350733b43e4320887c4af39f6e0e2b2",
+        "1b0175478d2d2dd96e171ccba43fc33a0350733b43e4320887c4af39f6e0e2b2"
+      ]
+    },
+    {
+      "variant": "mtl",
+      "lstm_layout": "batch-first",
+      "repeats": 2,
+      "identical_predictions_and_score": true,
+      "fingerprints": [
+        "1e8a9b65e86ee11f448e7c8b380d7ea8e5511599e2d7500775b88bf027100ffb",
+        "1e8a9b65e86ee11f448e7c8b380d7ea8e5511599e2d7500775b88bf027100ffb"
+      ]
+    },
+    {
+      "variant": "mtl_bdr",
+      "lstm_layout": "legacy",
+      "repeats": 2,
+      "identical_predictions_and_score": true,
+      "fingerprints": [
+        "27aa75ef3ba0ed378f7a40e8dfb194e391ff4f96cbe1590360ab6d5a6c9eb589",
+        "27aa75ef3ba0ed378f7a40e8dfb194e391ff4f96cbe1590360ab6d5a6c9eb589"
+      ]
+    },
+    {
+      "variant": "mtl_bdr",
+      "lstm_layout": "batch-first",
+      "repeats": 2,
+      "identical_predictions_and_score": true,
+      "fingerprints": [
+        "047bc1fa83d5dafeff8aa20706a2ecedcd735cf8d8ed40e145de2b0e347b12b7",
+        "047bc1fa83d5dafeff8aa20706a2ecedcd735cf8d8ed40e145de2b0e347b12b7"
+      ]
+    }
+  ],
+  "accuracy_metrics": {
+    "available": false,
+    "reason": "No independently reviewed reference boundaries were supplied.",
+    "mae_seconds": null,
+    "p90_seconds": null,
+    "coverage": null
+  },
+  "input_and_model_parity": [
+    {
+      "file": "original_txt.txt",
+      "identical_sha256": true
+    },
+    {
+      "file": "original_track.mp3",
+      "identical_sha256": true
+    },
+    {
+      "file": "checkpoint_MTL",
+      "identical_sha256": true
+    },
+    {
+      "file": "lid.176.ftz",
+      "identical_sha256": true
+    },
+    {
+      "file": "checkpoint_BDR",
+      "identical_sha256": true
+    }
+  ]
+}

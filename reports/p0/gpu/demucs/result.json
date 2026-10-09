@@ -1,0 +1,288 @@
+{
+  "stage": "demucs",
+  "status": "completed",
+  "observed_forwards": [
+    {
+      "model": "demucs_member_0",
+      "input_shape": [
+        1,
+        2,
+        276039
+      ],
+      "input_device": "cuda:0",
+      "output_shape": [
+        1,
+        4,
+        2,
+        276039
+      ],
+      "output_device": "cuda:0",
+      "output_finite": true
+    },
+    {
+      "model": "demucs_member_1",
+      "input_shape": [
+        1,
+        2,
+        281707
+      ],
+      "input_device": "cuda:0",
+      "output_shape": [
+        1,
+        4,
+        2,
+        281707
+      ],
+      "output_device": "cuda:0",
+      "output_finite": true
+    },
+    {
+      "model": "demucs_member_2",
+      "input_shape": [
+        1,
+        2,
+        273713
+      ],
+      "input_device": "cuda:0",
+      "output_shape": [
+        1,
+        4,
+        2,
+        273713
+      ],
+      "output_device": "cuda:0",
+      "output_finite": true
+    },
+    {
+      "model": "demucs_member_3",
+      "input_shape": [
+        1,
+        2,
+        265321
+      ],
+      "input_device": "cuda:0",
+      "output_shape": [
+        1,
+        4,
+        2,
+        265321
+      ],
+      "output_device": "cuda:0",
+      "output_finite": true
+    }
+  ],
+  "started_at": "2026-10-09T15:30:35.784775+00:00",
+  "command": [
+    "scripts/verify_gpu_runtime.py",
+    "--stage",
+    "demucs",
+    "-o",
+    "reports/p0/gpu/demucs"
+  ],
+  "python": "3.10.16 (main, Mar 17 2025, 21:01:46) [Clang 20.1.0 ]",
+  "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.43",
+  "packages": {
+    "PyYAML": "6.0.3",
+    "filelock": "4.0.12",
+    "pooch": "1.9.0",
+    "charset-normalizer": "3.5.2",
+    "llvmlite": "0.41.1",
+    "setuptools": "69.0.3",
+    "nvidia-nvjitlink-cu12": "12.8.61",
+    "nltk": "3.8.1",
+    "jaconv": "0.5.0",
+    "regex": "2026.9.29",
+    "tqdm": "4.70.1",
+    "joblib": "1.6.0",
+    "Cython": "3.0.8",
+    "torchaudio": "2.7.1+cu128",
+    "treetable": "0.2.6",
+    "idna": "3.20",
+    "torch": "2.7.1+cu128",
+    "audioread": "3.0.1",
+    "dora_search": "0.1.13",
+    "lazy-loader": "0.6",
+    "nvidia-cufile-cu12": "1.13.0.11",
+    "cyrtranslit": "1.1.1",
+    "diffq": "0.2.4",
+    "packaging": "26.3",
+    "mpmath": "1.3.0",
+    "msgpack": "1.2.3",
+    "wheel": "0.48.0",
+    "fasttext": "0.9.2",
+    "MarkupSafe": "3.0.4",
+    "nvidia-nvtx-cu12": "12.8.55",
+    "threadpoolctl": "3.7.0",
+    "certifi": "2026.7.22",
+    "more-itertools": "11.1.0",
+    "scipy": "1.15.3",
+    "click": "8.5.0",
+    "soxr": "1.1.0",
+    "inflect": "7.5.0",
+    "Deprecated": "1.3.1",
+    "pypinyin": "0.50.0",
+    "nvidia-cuda-nvrtc-cu12": "12.8.61",
+    "nvidia-cuda-cupti-cu12": "12.8.57",
+    "einops": "0.8.2",
+    "nvidia-cusparse-cu12": "12.5.7.53",
+    "chardet": "5.2.0",
+    "platformdirs": "4.12.4",
+    "decorator": "5.3.1",
+    "typing_extensions": "4.16.0",
+    "numpy": "1.26.3",
+    "julius": "0.2.7",
+    "pybind11": "2.11.1",
+    "nvidia-cudnn-cu12": "9.7.1.26",
+    "Jinja2": "3.1.6",
+    "requests": "2.34.2",
+    "nvidia-cublas-cu12": "12.8.3.14",
+    "librosa": "0.10.1",
+    "urllib3": "2.8.0",
+    "pycparser": "3.11",
+    "triton": "3.3.1",
+    "kroman": "1.1",
+    "g2p-en": "2.1.0",
+    "nvidia-cuda-runtime-cu12": "12.8.57",
+    "pip": "26.2.1",
+    "nvidia-cufft-cu12": "11.3.3.41",
+    "submitit": "1.5.4",
+    "numba": "0.58.1",
+    "Distance": "0.1.3",
+    "wrapt": "2.5.0",
+    "scikit-learn": "1.7.2",
+    "nvidia-curand-cu12": "10.3.9.55",
+    "pykakasi": "2.2.1",
+    "opencc-python-reimplemented": "0.1.7",
+    "omegaconf": "2.4.0",
+    "nvidia-cusparselt-cu12": "0.6.3",
+    "openunmix": "1.3.0",
+    "retrying": "1.4.2",
+    "lameenc": "1.8.4",
+    "soundfile": "0.12.1",
+    "cffi": "2.1.1",
+    "demucs": "4.0.1",
+    "nvidia-nccl-cu12": "2.26.2",
+    "cloudpickle": "3.1.2",
+    "fsspec": "2026.9.0",
+    "nvidia-cusolver-cu12": "11.7.2.55",
+    "typeguard": "4.6.0",
+    "sympy": "1.14.0",
+    "networkx": "3.4.2"
+  },
+  "audio": {
+    "path": "/home/xcy/auto-lrc/demofile/original_track.mp3",
+    "bytes": 13041303,
+    "sha256": "e5d68541c999bec2a6ff7f4eeba0ad893c56895e8509855abb5ca9e292c980b8"
+  },
+  "script": {
+    "path": "/home/xcy/auto-lrc/scripts/verify_gpu_runtime.py",
+    "bytes": 12171,
+    "sha256": "a61f5cafa258c73f492b4c8ace10bd21c09b0d6fe5261574175a9d8021974e2e"
+  },
+  "seed": 7,
+  "accuracy_metrics": {
+    "available": false,
+    "reason": "No independently reviewed reference boundaries were supplied."
+  },
+  "runtime_sources": [
+    {
+      "path": "/home/xcy/auto-lrc/main.py",
+      "bytes": 4202,
+      "sha256": "b63fee1ebce65ce1a33a5283be77b659bfe4dec233c68b905d33a81d4f5b1aa2"
+    },
+    {
+      "path": "/home/xcy/auto-lrc/t2l/t2l.py",
+      "bytes": 10445,
+      "sha256": "596df5ce04cfd4051ef9d5c5805590badcb3af962b5f984e2db508bad8d162c5"
+    },
+    {
+      "path": "/home/xcy/auto-lrc/t2l/phonetic.py",
+      "bytes": 7505,
+      "sha256": "27fdd6815b19adad0e9f0192f53a91c19474aa6f8b8d941a4752999ebb77c605"
+    },
+    {
+      "path": "/home/xcy/auto-lrc/t2l/mtl/wrapper.py",
+      "bytes": 8228,
+      "sha256": "6822418274029f4e7a61276944358214656efa4da90bb2b24c6d6d66ea0633e1"
+    },
+    {
+      "path": "/home/xcy/auto-lrc/t2l/mtl/model.py",
+      "bytes": 8104,
+      "sha256": "a1eab52c310fecff16fd6e200468af57379e5c95fbdb9342e654ff935cc8b8d2"
+    },
+    {
+      "path": "/home/xcy/auto-lrc/t2l/mtl/utils.py",
+      "bytes": 21476,
+      "sha256": "d40d0b337d2d4ad73970d4de1f1788d070daf9761dbcc92b1551af35158d5546"
+    },
+    {
+      "path": "/home/xcy/auto-lrc/lid.176.ftz",
+      "bytes": 938013,
+      "sha256": "8f3472cfe8738a7b6099e8e999c3cbfae0dcd15696aac7d7738a8039db603e83"
+    }
+  ],
+  "cuda": {
+    "torch": "2.7.1+cu128",
+    "runtime": "12.8",
+    "cudnn": 90701,
+    "gpu": "NVIDIA GeForce RTX 5060",
+    "capability": [
+      12,
+      0
+    ],
+    "total_memory_bytes": 8518041600
+  },
+  "config": {
+    "torch_threads": 2,
+    "interop_threads": 1,
+    "deterministic_algorithms": false
+  },
+  "clip": {
+    "source": "/home/xcy/auto-lrc/demofile/original_track.mp3",
+    "start_seconds": 30.0,
+    "duration_seconds": 6,
+    "input_sample_rate": 44100,
+    "input_shape": [
+      2,
+      264600
+    ]
+  },
+  "model_load_seconds": 384.83143543799997,
+  "ensemble": {
+    "name": "mdx_extra",
+    "index": -1,
+    "members": 4,
+    "sources": [
+      "drums",
+      "bass",
+      "other",
+      "vocals"
+    ],
+    "sample_rate": 44100,
+    "parameter_devices": [
+      "cuda:0"
+    ]
+  },
+  "separation_seconds": 7.9496725980000065,
+  "vocals": {
+    "shape": [
+      2,
+      132300
+    ],
+    "sample_rate": 22050,
+    "device": "cuda:0",
+    "finite": true
+  },
+  "checks": {
+    "ensemble_all_members_ran": true,
+    "finite_outputs": true,
+    "gpu_model_forwards": true,
+    "six_second_vocals_shape": true
+  },
+  "scope": "Only a 6-second real-audio clip and default mdx_extra ensemble; this is not the full Demucs-plus-alignment pipeline.",
+  "total_seconds": 395.30787931000003,
+  "peak_memory": {
+    "allocated_bytes": 1683907584,
+    "reserved_bytes": 1916796928
+  }
+}

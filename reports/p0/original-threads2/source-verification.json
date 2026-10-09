@@ -1,0 +1,268 @@
+[
+  {
+    "source_path": ".claude/settings.local.json",
+    "resolved_path": "/private/tmp/auto-lrc-p0-original-2c475cc/.claude/settings.local.json",
+    "sha256": "20dc5e64bf366f8f01ddf0fa7eb16d51b16014743843ae1c48c9bdabda5be1d3",
+    "matches_git_source": true
+  },
+  {
+    "source_path": ".gitattributes",
+    "resolved_path": "/private/tmp/auto-lrc-p0-original-2c475cc/.gitattributes",
+    "sha256": "8432542b701b2c3c39d73654acb0ec29f57394ce344b54e1c8c8dcd2d41875e7",
+    "matches_git_source": true
+  },
+  {
+    "source_path": ".gitignore",
+    "resolved_path": "/private/tmp/auto-lrc-p0-original-2c475cc/.gitignore",
+    "sha256": "4ed80dac0ee0defbea7428ef8d1097f89c7b1ec4b0e7fac90c26d473ea21f420",
+    "matches_git_source": true
+  },
+  {
+    "source_path": "CLAUDE.md",
+    "resolved_path": "/private/tmp/auto-lrc-p0-original-2c475cc/CLAUDE.md",
+    "sha256": "3542febd0e55a31bc4ef3bbee2d52009af257eb7a78122fffd8ab0aabd2eb103",
+    "matches_git_source": true
+  },
+  {
+    "source_path": "LICENSE",
+    "resolved_path": "/private/tmp/auto-lrc-p0-original-2c475cc/LICENSE",
+    "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+    "matches_git_source": true
+  },
+  {
+    "source_path": "Pipfile",
+    "resolved_path": "/private/tmp/auto-lrc-p0-original-2c475cc/Pipfile",
+    "sha256": "f4481a4046e18783d2565702d1d5970022dd4641eb515fdaf34494370e9cb58d",
+    "matches_git_source": true
+  },
+  {
+    "source_path": "Pipfile.lock",
+    "resolved_path": "/private/tmp/auto-lrc-p0-original-2c475cc/Pipfile.lock",
+    "sha256": "2090c84e1d4967a2d18a757c92c11bfe151f011b260fa8523c4acff5f373af02",
+    "matches_git_source": true
+  },
+  {
+    "source_path": "README.md",
+    "resolved_path": "/private/tmp/auto-lrc-p0-original-2c475cc/README.md",
+    "sha256": "3a10677af9dd099c6ef480e9da36d95f918923efaa4480ea20f08bf1afec8827",
+    "matches_git_source": true
+  },
+  {
+    "source_path": "README_zh.md",
+    "resolved_path": "/private/tmp/auto-lrc-p0-original-2c475cc/README_zh.md",
+    "sha256": "02f48777e66f7c5455622f016d104552f04e43af30a56c77f9503ebf8c358fbe",
+    "matches_git_source": true
+  },
+  {
+    "source_path": "checkpoints/checkpoint_BDR",
+    "resolved_path": "/Users/xcy/Program/auto-lrc/checkpoints/checkpoint_BDR",
+    "sha256": "a3955b290311bec16f04253eac328147d444f275f263315490ec5faf1a668fc9",
+    "matches_git_source": null,
+    "git_lfs_oid": "a3955b290311bec16f04253eac328147d444f275f263315490ec5faf1a668fc9",
+    "lfs_payload_matches_oid": true
+  },
+  {
+    "source_path": "checkpoints/checkpoint_Baseline",
+    "resolved_path": "/Users/xcy/Program/auto-lrc/checkpoints/checkpoint_Baseline",
+    "sha256": "b420ea97032691b3f51e271c0b688a85e168d7b7ee89baf6725f601ccd07bb45",
+    "matches_git_source": null,
+    "git_lfs_oid": "b420ea97032691b3f51e271c0b688a85e168d7b7ee89baf6725f601ccd07bb45",
+    "lfs_payload_matches_oid": true
+  },
+  {
+    "source_path": "checkpoints/checkpoint_MTL",
+    "resolved_path": "/Users/xcy/Program/auto-lrc/checkpoints/checkpoint_MTL",
+    "sha256": "826559e7e810bf8f90223d8fd5c66525c01ad4dd9cdc19d019f39f784e7ed3c1",
+    "matches_git_source": null,
+    "git_lfs_oid": "826559e7e810bf8f90223d8fd5c66525c01ad4dd9cdc19d019f39f784e7ed3c1",
+    "lfs_payload_matches_oid": true
+  },
+  {
+    "source_path": "demofile/original_track.mp3",
+    "resolved_path": "/private/tmp/auto-lrc-p0-original-2c475cc/demofile/original_track.mp3",
+    "sha256": "e5d68541c999bec2a6ff7f4eeba0ad893c56895e8509855abb5ca9e292c980b8",
+    "matches_git_source": true
+  },
+  {
+    "source_path": "demofile/original_txt.txt",
+    "resolved_path": "/private/tmp/auto-lrc-p0-original-2c475cc/demofile/original_txt.txt",
+    "sha256": "f15162581177f5f5383cb4921c71c929ecdc93281c19468357fcb57ed0f1361c",
+    "matches_git_source": true
+  },
+  {
+    "source_path": "ext/__init__.py",
+    "resolved_path": "/private/tmp/auto-lrc-p0-original-2c475cc/ext/__init__.py",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "matches_git_source": true
+  },
+  {
+    "source_path": "ext/lrc2json.py",
+    "resolved_path": "/private/tmp/auto-lrc-p0-original-2c475cc/ext/lrc2json.py",
+    "sha256": "4949bbef6026d27fc36e1127f03290f284c6feb87e3ff2751e69338d8f05b6e3",
+    "matches_git_source": true
+  },
+  {
+    "source_path": "ext/t2lutils.py",
+    "resolved_path": "/private/tmp/auto-lrc-p0-original-2c475cc/ext/t2lutils.py",
+    "sha256": "8e1c929a1fc4271d817c5e4591619dca4de2d8f4dd761f13e6cf467041c23ce4",
+    "matches_git_source": true
+  },
+  {
+    "source_path": "ext/traditional_to_simplified.py",
+    "resolved_path": "/private/tmp/auto-lrc-p0-original-2c475cc/ext/traditional_to_simplified.py",
+    "sha256": "37e01ddbfaf6984a3c1cc89fa8dc9888cde54293df45aff88f7ae02e5430bcfe",
+    "matches_git_source": true
+  },
+  {
+    "source_path": "lid.176.ftz",
+    "resolved_path": "/Users/xcy/Program/auto-lrc/lid.176.ftz",
+    "sha256": "8f3472cfe8738a7b6099e8e999c3cbfae0dcd15696aac7d7738a8039db603e83",
+    "matches_git_source": null,
+    "git_lfs_oid": "8f3472cfe8738a7b6099e8e999c3cbfae0dcd15696aac7d7738a8039db603e83",
+    "lfs_payload_matches_oid": true
+  },
+  {
+    "source_path": "main.py",
+    "resolved_path": "/private/tmp/auto-lrc-p0-original-2c475cc/main.py",
+    "sha256": "fca16fa5c64399b12483ffd0e635775a14adbe03d05edf3536e2b499d06d8610",
+    "matches_git_source": true
+  },
+  {
+    "source_path": "requirements.txt",
+    "resolved_path": "/private/tmp/auto-lrc-p0-original-2c475cc/requirements.txt",
+    "sha256": "5f4aed5271468a20d8d513502de5921106e7a759cf80205225ad47052eb7485e",
+    "matches_git_source": true
+  },
+  {
+    "source_path": "t2l/__init__.py",
+    "resolved_path": "/private/tmp/auto-lrc-p0-original-2c475cc/t2l/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "matches_git_source": true
+  },
+  {
+    "source_path": "t2l/init_model.py",
+    "resolved_path": "/private/tmp/auto-lrc-p0-original-2c475cc/t2l/init_model.py",
+    "sha256": "9b287136b38958ebcc8410a23d8e7b9505973f43e46f4746b77da9d382c2e062",
+    "matches_git_source": true
+  },
+  {
+    "source_path": "t2l/mtl/LICENSE",
+    "resolved_path": "/private/tmp/auto-lrc-p0-original-2c475cc/t2l/mtl/LICENSE",
+    "sha256": "13dc68341a7e580c2becc7a9fefad76fb8d784da0dc77d0938252ba47d04f53b",
+    "matches_git_source": true
+  },
+  {
+    "source_path": "t2l/mtl/README.md",
+    "resolved_path": "/private/tmp/auto-lrc-p0-original-2c475cc/t2l/mtl/README.md",
+    "sha256": "7c985ad8da0ebf542bcb65fbd8875634149a93b37254cce8c3103d60dd59b98b",
+    "matches_git_source": true
+  },
+  {
+    "source_path": "t2l/mtl/__init__.py",
+    "resolved_path": "/private/tmp/auto-lrc-p0-original-2c475cc/t2l/mtl/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "matches_git_source": true
+  },
+  {
+    "source_path": "t2l/mtl/data.py",
+    "resolved_path": "/private/tmp/auto-lrc-p0-original-2c475cc/t2l/mtl/data.py",
+    "sha256": "6c8b01d4a859a80b5389050fa75599824dcef636fc1783b7150ad83c343af3dc",
+    "matches_git_source": true
+  },
+  {
+    "source_path": "t2l/mtl/docs/2202.01646.pdf",
+    "resolved_path": "/private/tmp/auto-lrc-p0-original-2c475cc/t2l/mtl/docs/2202.01646.pdf",
+    "sha256": "324cb1edb42f5cde34979369bc740b4691fa58751424eb2dd89354c64f95d86c",
+    "matches_git_source": true
+  },
+  {
+    "source_path": "t2l/mtl/eval.py",
+    "resolved_path": "/private/tmp/auto-lrc-p0-original-2c475cc/t2l/mtl/eval.py",
+    "sha256": "59506e9401d39942fe2af661e394c4a92dc785eb72eed7a41188703400a73c05",
+    "matches_git_source": true
+  },
+  {
+    "source_path": "t2l/mtl/eval_bdr.py",
+    "resolved_path": "/private/tmp/auto-lrc-p0-original-2c475cc/t2l/mtl/eval_bdr.py",
+    "sha256": "88ae0a988e6815b01b1f17d37787c1f159fa724d4148f2ca2b32c577ea04a420",
+    "matches_git_source": true
+  },
+  {
+    "source_path": "t2l/mtl/example.ipynb",
+    "resolved_path": "/private/tmp/auto-lrc-p0-original-2c475cc/t2l/mtl/example.ipynb",
+    "sha256": "c01d0c26685e977cf4792180d80c95ad524083bd8faf90c5b5c672d1c986a13b",
+    "matches_git_source": true
+  },
+  {
+    "source_path": "t2l/mtl/model.py",
+    "resolved_path": "/private/tmp/auto-lrc-p0-original-2c475cc/t2l/mtl/model.py",
+    "sha256": "a1eab52c310fecff16fd6e200468af57379e5c95fbdb9342e654ff935cc8b8d2",
+    "matches_git_source": true
+  },
+  {
+    "source_path": "t2l/mtl/train.py",
+    "resolved_path": "/private/tmp/auto-lrc-p0-original-2c475cc/t2l/mtl/train.py",
+    "sha256": "347238964254e930cfa7da27b81050b320150552021f610c5ea300553c7d4503",
+    "matches_git_source": true
+  },
+  {
+    "source_path": "t2l/mtl/utils.py",
+    "resolved_path": "/private/tmp/auto-lrc-p0-original-2c475cc/t2l/mtl/utils.py",
+    "sha256": "d40d0b337d2d4ad73970d4de1f1788d070daf9761dbcc92b1551af35158d5546",
+    "matches_git_source": true
+  },
+  {
+    "source_path": "t2l/mtl/wrapper.py",
+    "resolved_path": "/private/tmp/auto-lrc-p0-original-2c475cc/t2l/mtl/wrapper.py",
+    "sha256": "4305db04b815943cf3bb853ffbdeab6b38cf03f3d234fcd3aa11ad9fcbdb433c",
+    "matches_git_source": true
+  },
+  {
+    "source_path": "t2l/phonetic.py",
+    "resolved_path": "/private/tmp/auto-lrc-p0-original-2c475cc/t2l/phonetic.py",
+    "sha256": "27fdd6815b19adad0e9f0192f53a91c19474aa6f8b8d941a4752999ebb77c605",
+    "matches_git_source": true
+  },
+  {
+    "source_path": "t2l/slid.py",
+    "resolved_path": "/private/tmp/auto-lrc-p0-original-2c475cc/t2l/slid.py",
+    "sha256": "4bb74bb455ba6c3d33788f08d66ada969657c2cd9c5c34243eea19373859bbbb",
+    "matches_git_source": true
+  },
+  {
+    "source_path": "t2l/t2l.py",
+    "resolved_path": "/private/tmp/auto-lrc-p0-original-2c475cc/t2l/t2l.py",
+    "sha256": "571ea2a7294e485311ec63061c22ad277016532d8ee7fa69ac874145a9a37515",
+    "matches_git_source": true
+  },
+  {
+    "source_path": "tests/test_alignment.py",
+    "resolved_path": "/private/tmp/auto-lrc-p0-original-2c475cc/tests/test_alignment.py",
+    "sha256": "46ec3789f83cc3d94e83d9496106cc514dcf59870e3aba11cda6088ddb922443",
+    "matches_git_source": true
+  },
+  {
+    "source_path": "tests/test_cli.py",
+    "resolved_path": "/private/tmp/auto-lrc-p0-original-2c475cc/tests/test_cli.py",
+    "sha256": "5eb128045f555d0968c6d4bf42588b89a02c8f978959749f616538f499fafe33",
+    "matches_git_source": true
+  },
+  {
+    "source_path": "tests/test_t2l.py",
+    "resolved_path": "/private/tmp/auto-lrc-p0-original-2c475cc/tests/test_t2l.py",
+    "sha256": "5b4a1d7c8b37611bc3e061311c8504c78bd9bd1961c3d7c87367ffbfedadfc8f",
+    "matches_git_source": true
+  },
+  {
+    "source_path": "tests/test_wrapper.py",
+    "resolved_path": "/private/tmp/auto-lrc-p0-original-2c475cc/tests/test_wrapper.py",
+    "sha256": "480df9403f29e915c046f53953e17a41d51294e159c3f278c487885725c6620c",
+    "matches_git_source": true
+  },
+  {
+    "source_path": "util.py",
+    "resolved_path": "/private/tmp/auto-lrc-p0-original-2c475cc/util.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "matches_git_source": true
+  }
+]

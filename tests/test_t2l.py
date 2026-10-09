@@ -1,3 +1,5 @@
+import json
+
 import numpy as np
 import pytest
 import torch
@@ -134,3 +136,48 @@ def test_process_writes_utf8_output(monkeypatch, tmp_path):
     )
 
     assert output.read_text(encoding="utf-8") == result
+
+
+@pytest.mark.parametrize('word_align', [[[3, 8], [15, 19]], [[3, 8]]])
+def test_process_details_preserve_lrc_and_unrounded_unit_times(monkeypatch, tmp_path, word_align):
+    monkeypatch.setattr(t2l, 'phonetize', lambda line: [(line, 'hello')] if line else [])
+    monkeypatch.setattr(t2l, 'preprocess_audio',
+                        lambda *args, **kwargs: (torch.zeros((1, 22050)), 22050))
+    monkeypatch.setattr(
+        t2l.mtl_utils, 'gen_phone_gt_opt',
+        lambda phonetics: (['AA', 'B', ' ', 'K'], [['AA', 'B'], ['K']],
+                           np.array([[0, 2], [3, 4]]), np.array([[0, 2], [3, 4]])),
+    )
+    details = {'score': -12.5, 'score_kind': 'whole_path_log_score_uncalibrated'}
+
+    def fake_align(*args, **kwargs):
+        assert kwargs['method'] == 'MTL_BDR'
+        result = (word_align, None)
+        return result + (details,) if kwargs.get('return_details') else result
+
+    monkeypatch.setattr(t2l, 'align', fake_align)
+    output = tmp_path / '增强.lrc'
+    arguments = dict(mtl_model='MTL_BDR', vocalize=False, verbose=False)
+    legacy = t2l.process(['你好', 'world'], 'song.mp3', **arguments)
+    result = t2l.process(['你好', 'world'], 'song.mp3', out_file=output,
+                         return_details=True, **arguments)
+
+    assert result['lrc'] == legacy == output.read_text(encoding='utf-8')
+    assert result['alignment'] is details
+    assert len(result['units']) == 2
+    assert result['units'][0] == {
+        'text': '你好', 'line_index': 0, 'word_index': 0, 'phonemes': ['AA', 'B'],
+        'start_frame': 3, 'end_frame': 8,
+        'start_seconds': 3 * (256 / 22050 * 3),
+        'end_seconds': 8 * (256 / 22050 * 3),
+    }
+    assert result['units'][0]['start_seconds'] != 0.104
+    assert result['units'][1]['line_index'] == 1
+    assert result['units'][1]['word_index'] == 1
+    assert result['units'][1]['phonemes'] == ['K']
+    if len(word_align) == 1:
+        assert result['units'][1]['start_frame'] is None
+        assert result['units'][1]['start_seconds'] is None
+        assert result['units'][1]['end_frame'] is None
+        assert result['units'][1]['end_seconds'] is None
+    json.dumps(result, ensure_ascii=False, allow_nan=False)

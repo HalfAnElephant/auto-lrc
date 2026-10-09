@@ -1,0 +1,64 @@
+{
+  "runs": [
+    {
+      "run": "mtl-r1",
+      "method": "MTL",
+      "repeat": 1,
+      "status": "completed",
+      "seconds": 9.534869541996159,
+      "unit_count": 482,
+      "score": -11098.0625
+    },
+    {
+      "run": "mtl-r2",
+      "method": "MTL",
+      "repeat": 2,
+      "status": "completed",
+      "seconds": 6.86682945798384,
+      "unit_count": 482,
+      "score": -11098.0625
+    },
+    {
+      "run": "mtl_bdr-r1",
+      "method": "MTL_BDR",
+      "repeat": 1,
+      "status": "completed",
+      "seconds": 71.51331633300288,
+      "unit_count": 482,
+      "score": -11196.181801110975
+    },
+    {
+      "run": "mtl_bdr-r2",
+      "method": "MTL_BDR",
+      "repeat": 2,
+      "status": "completed",
+      "seconds": 74.8302457499667,
+      "unit_count": 482,
+      "score": -11196.181801110975
+    }
+  ],
+  "repeatability": [
+    {
+      "method": "MTL",
+      "repeats": 2,
+      "identical_predictions_and_score": true,
+      "fingerprints": [
+        "9cfa0d91dec93b2b0bd0a00752f9802131c0a94245397afeba6363e57a2cc878",
+        "9cfa0d91dec93b2b0bd0a00752f9802131c0a94245397afeba6363e57a2cc878"
+      ]
+    },
+    {
+      "method": "MTL_BDR",
+      "repeats": 2,
+      "identical_predictions_and_score": true,
+      "fingerprints": [
+        "8e827bd8fe7277a1c56dc48e9d34e91fc9f2950ed88531b6c61f375344b78daf",
+        "8e827bd8fe7277a1c56dc48e9d34e91fc9f2950ed88531b6c61f375344b78daf"
+      ]
+    }
+  ],
+  "accuracy_metrics": {
+    "available": false,
+    "reason": "No independently reviewed reference boundaries were supplied."
+  }
+}

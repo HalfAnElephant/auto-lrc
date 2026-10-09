@@ -1,0 +1,10 @@
+Warning : `load_model` does not return WordVectorModel or SupervisedModel any more, but a `FastText` object which is very similar.
+mtl-legacy-r1: 482 units, 10.802s
+mtl-legacy-r2: 482 units, 7.015s
+mtl-batch-first-r1: 482 units, 8.981s
+mtl-batch-first-r2: 482 units, 7.512s
+mtl_bdr-legacy-r1: 482 units, 75.094s
+mtl_bdr-legacy-r2: 482 units, 76.327s
+mtl_bdr-batch-first-r1: 482 units, 86.195s
+mtl_bdr-batch-first-r2: 482 units, 80.822s
+Saved reports/p0/demo-threads2/summary.json

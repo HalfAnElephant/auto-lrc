@@ -1,3 +1,4 @@
+import math
 import warnings
 import librosa
 import numpy as np
@@ -11,6 +12,11 @@ from .model import train_audio_transforms, AcousticModel, BoundaryDetection
 
 np.random.seed(7)
 
+SAMPLE_RATE = 22050
+HOP_LENGTH = 256
+FRAME_STRIDE = 3
+FRAME_RESOLUTION_SECONDS = HOP_LENGTH / SAMPLE_RATE * FRAME_STRIDE
+
 
 def preprocess_from_file(audio_file, lyrics_file, word_file=None):
     y, sr = preprocess_audio(audio_file)
@@ -21,7 +27,9 @@ def preprocess_from_file(audio_file, lyrics_file, word_file=None):
     return y, words, lyrics_p, idx_word_p, idx_line_p
 
 
-def align(audio, words, lyrics_p, idx_word_p, idx_line_p, method="Baseline", cuda=True, verbose=True):
+def align(audio, words, lyrics_p, idx_word_p, idx_line_p, method="Baseline", cuda=True, verbose=True,
+          return_details=False):
+    """Align on the legacy frame grid; opt-in details do not calibrate onset time."""
 
     # start timer
     t = time()
@@ -53,6 +61,7 @@ def align(audio, words, lyrics_p, idx_word_p, idx_line_p, method="Baseline", cud
         # reshape input, prepare mel
         x = utils.move_data_to_device(waveform, device)
         x = train_audio_transforms.to(device)(x)
+        mel_frames = x.shape[-1]
         x = nn.utils.rnn.pad_sequence(x, batch_first=True).unsqueeze(1)
 
         # predict
@@ -87,6 +96,36 @@ def align(audio, words, lyrics_p, idx_word_p, idx_line_p, method="Baseline", cud
 
     t = time() - t
     verbose and print("Alignment Score:\t{}\tTime:\t{}".format(score, t))
+
+    if return_details:
+        if not math.isfinite(float(score)):
+            raise utils.AlignmentValueError(
+                "Alignment path score is not finite; cannot export diagnostics."
+            )
+        details = {
+            "sample_rate": SAMPLE_RATE,
+            "hop_length": HOP_LENGTH,
+            "frame_stride": FRAME_STRIDE,
+            "frame_resolution_seconds": FRAME_RESOLUTION_SECONDS,
+            "mel_frames": int(mel_frames),
+            "output_frames": int(song_pred.shape[0]),
+            "input_samples": int(waveform.shape[-1]),
+            "method": model_type + ("_BDR" if bdr_flag else ""),
+            "model_type": model_type,
+            "bdr": bool(bdr_flag),
+            "device": str(device),
+            "score": float(score),
+            "score_kind": ("whole_path_log_score_with_bdr_uncalibrated" if bdr_flag
+                           else "whole_path_log_score_uncalibrated"),
+            "legacy_frame_origin_seconds": 0.0,
+            "physical_origin_seconds": None,
+            "physical_origin_calibrated": False,
+            "word_frames": [[int(start), int(end)] for start, end in word_align],
+            "phonemes": list(lyrics_p),
+            "word_phoneme_indices": np.asarray(idx_word_p).tolist(),
+            "line_phoneme_indices": np.asarray(idx_line_p).tolist(),
+        }
+        return word_align, words, details
 
     return word_align, words
 

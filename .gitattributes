@@ -3,3 +3,5 @@ checkpoints/checkpoint_MTL filter=lfs diff=lfs merge=lfs -text
 checkpoints/checkpoint_BDR filter=lfs diff=lfs merge=lfs -text
 lid.176.ftz filter=lfs diff=lfs merge=lfs -text
 *.ftz filter=lfs diff=lfs merge=lfs -text
+# Archived patch context lines contain required leading spaces.
+reports/p0/demo-threads2/implementation.diff -whitespace

@@ -1,0 +1,40 @@
+{
+  "runs": [
+    {
+      "run": "mtl-r1",
+      "method": "MTL",
+      "repeat": 1,
+      "status": "completed",
+      "seconds": 11.776391167019028,
+      "unit_count": 482,
+      "score": -11098.0625
+    },
+    {
+      "run": "mtl-r2",
+      "method": "MTL",
+      "repeat": 2,
+      "status": "completed",
+      "seconds": 5.517209041980095,
+      "unit_count": 482,
+      "score": -11098.0625
+    }
+  ],
+  "repeatability": [
+    {
+      "method": "MTL",
+      "repeats": 2,
+      "identical_predictions_and_score": true,
+      "fingerprints": [
+        "9cfa0d91dec93b2b0bd0a00752f9802131c0a94245397afeba6363e57a2cc878",
+        "9cfa0d91dec93b2b0bd0a00752f9802131c0a94245397afeba6363e57a2cc878"
+      ]
+    }
+  ],
+  "accuracy_metrics": {
+    "available": false,
+    "reason": "No independently reviewed reference boundaries were supplied."
+  },
+  "status": "interrupted",
+  "actual_torch_threads": 8,
+  "reason": "Requested 2 threads after t2l import, but native macOS backend retained 8. Interrupted during MTL_BDR r1; not a valid requested-configuration result."
+}
