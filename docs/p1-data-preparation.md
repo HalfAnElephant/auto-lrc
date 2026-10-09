@@ -106,6 +106,40 @@ WSL集成的20个原件均48kHz，得到相同18可用/2排除及231空标签；
 
 本阶段操作定义为“首个可辨的演唱音素起点”，包括清辅音噪声、送气或爆破等实际声学线索，不自动等同于元音周期起点。复标者应先记录定义、独立标签与身份；不确定边界填写 `ambiguous` 和原因，不强迫单点真值。至少需要独立复标与分歧裁决，不能将发布标注直接复制为人工标签。
 
+### 分歧裁决与参考导出
+
+两份独立 session 实际保存后，先生成未决裁决表：
+
+```sh
+.venv-baseline/bin/python scripts/adjudicate_gtsinger.py \
+  --form reports/p1/samples-v2/manual-review.json \
+  --review data/local/reviews/xcy-smoke-v2.json \
+  --second-review data/local/reviews/second-smoke-v2.json \
+  --output data/local/reviews/adjudication-pending.json
+```
+
+表中只列两份复标均已完成且超过默认5ms阈值、或任一份为 ambiguous 的边界，保留两人的标签证据，隐藏来源候选。两人均完成且差异在阈值内时，参考保留第一人的原始整数采样点并记录第二人的确认，不求平均。任一复标未完成的边界仍为 pending。
+
+人工听辨原始 WAV 后，将裁决表另存为 `adjudication-completed.json`，只修改 `decisions` 中的人工标签字段：`human_truth_sample`、`human_truth_seconds`、`confidence`、`review_status`、`ambiguous`、`reviewer`、`reviewed_at`、`review_notes`。明确的裁决须为 `reviewed`，填写原始 WAV 范围内的整数采样点、实际裁决者、带时区的 ISO 时间、0–1 置信度及非空理由；秒可为 null，由采样点换算。有歧义则填写 `ambiguous`、原因和身份等字段，两个真值字段均为 null；未裁决保持整行 pending 人工字段为空。不要修改身份、原复标证据或顶层元数据。
+
+```sh
+.venv-baseline/bin/python scripts/adjudicate_gtsinger.py \
+  --form reports/p1/samples-v2/manual-review.json \
+  --review data/local/reviews/xcy-smoke-v2.json \
+  --second-review data/local/reviews/second-smoke-v2.json \
+  --decisions data/local/reviews/adjudication-completed.json \
+  --output data/local/reviews/boundary-reference.json
+.venv-baseline/bin/python scripts/audit_gtsinger_annotations.py \
+  --form reports/p1/samples-v2/manual-review.json \
+  --candidates reports/p1/samples-v2/annotation-candidates.json \
+  --review data/local/reviews/xcy-smoke-v2.json \
+  --second-review data/local/reviews/second-smoke-v2.json \
+  --adjudication data/local/reviews/adjudication-completed.json \
+  --output reports/p1/NEW_ADJUDICATED_AUDIT.json
+```
+
+裁决绑定完整复标快照摘要、盲标表指纹、原始 WAV 摘要/采样率/长度和边界身份。复标修订、音频改变或证据变更后旧裁决被拒绝，应重新生成裁决表并复核。同一 session 路径或硬链接别名不能充当两份复标文件。所有输出排他发布，已有路径拒绝覆盖，原 session 不改写；输出目录须支持 POSIX 硬链接，不支持时保留原件并报错。参考包含所有边界、逐条来源证据、未决和 ambiguous 清单；未决与 ambiguous 不进入来源误差。裁决后的来源审计另保留 `blind_review_comparison`，其中是原两份盲标的分歧诊断；顶层误差对应裁决参考。姓名、裁决文件与导出成功都不能自动证明独立性或隔离测试集，`independent_adjudicated_test_set` 始终为 false。
+
 ## 受控伴奏与 Demucs 对照
 
 `scripts/prepare_gtsinger_mixtures.py` 生成固定96BPM的原创合成器/打击乐伴奏，仅依赖片段长度与固定随机种子，不读取边界时间。独立伴奏采用 CC0-1.0；人声及其混音保留 GTSinger 原条款。它是可复现的工程夹具，尚不覆盖真实配器或与原歌匹配的伴奏。所有派生音频保存在被忽略的 `data/local/`，不纳入提交。
