@@ -3,6 +3,9 @@ checkpoints/checkpoint_MTL filter=lfs diff=lfs merge=lfs -text
 checkpoints/checkpoint_BDR filter=lfs diff=lfs merge=lfs -text
 lid.176.ftz filter=lfs diff=lfs merge=lfs -text
 *.ftz filter=lfs diff=lfs merge=lfs -text
+reports/p4/**/boundary.pt filter=lfs diff=lfs merge=lfs -text
+reports/p4/evaluation-cuda-20261010/result.json filter=lfs diff=lfs merge=lfs -text
+reports/handoff/*.tar.gz filter=lfs diff=lfs merge=lfs -text
 # Archived patch context lines contain required leading spaces.
 reports/p0/demo-threads2/implementation.diff -whitespace
 # Preserve the standard CRLF record separators in archived CSV exports.

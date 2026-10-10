@@ -1,0 +1,39 @@
+{
+  "schema_version": "boundary-training-config-v1",
+  "model": {
+    "schema_version": "boundary-tcn-v1",
+    "hop_seconds": 0.0025,
+    "window_ms": 20.0,
+    "mel_bins": 48,
+    "mel_min_hz": 40.0,
+    "mel_max_hz": 12000.0,
+    "power_floor": 1e-12,
+    "radius_seconds": 0.35,
+    "window_frames": 281,
+    "channels": 128,
+    "dilations": [1, 2, 4, 8, 16, 32],
+    "kernel_size": 3,
+    "embedding_dim": 16,
+    "norm_groups": 8,
+    "dropout": 0.1
+  },
+  "training": {
+    "seed": 7,
+    "epochs": 60,
+    "patience": 10,
+    "batch_size": 32,
+    "gradient_accumulation": 2,
+    "learning_rate": 0.0003,
+    "weight_decay": 0.01,
+    "sigma_seconds": 0.0075,
+    "heatmap_pos_weight": 10.0,
+    "delta_weight": 1.0,
+    "confidence_weight": 0.1,
+    "consistency_weight": 0.05,
+    "gradient_clip": 1.0,
+    "jitter_seconds": 0.075,
+    "feature_gain_min": 0.9,
+    "feature_gain_max": 1.1,
+    "feature_noise_std": 0.005
+  }
+}

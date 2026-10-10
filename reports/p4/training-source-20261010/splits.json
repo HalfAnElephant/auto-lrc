@@ -1,0 +1,862 @@
+{
+  "schema_version": 1,
+  "seed": 7,
+  "requested_ratios": null,
+  "identity_mode": "dataset",
+  "song_identity_source": "dataset_song_id",
+  "song_identity_reviewed": false,
+  "aliases_confirmed": false,
+  "song_identity_reviewed_by": null,
+  "song_counts": {
+    "train": 10,
+    "val": 4,
+    "test": 4
+  },
+  "segment_counts": {
+    "train": 86,
+    "val": 38,
+    "test": 39
+  },
+  "assignments": [
+    {
+      "segment_id": "Chinese/ZH-Alto-1/Breathy/不再见/Breathy_Group/0000",
+      "canonical_song_id": "chinese/不再见",
+      "split": "train"
+    },
+    {
+      "segment_id": "Chinese/ZH-Alto-1/Breathy/不再见/Breathy_Group/0001",
+      "canonical_song_id": "chinese/不再见",
+      "split": "train"
+    },
+    {
+      "segment_id": "Chinese/ZH-Alto-1/Breathy/不再见/Breathy_Group/0002",
+      "canonical_song_id": "chinese/不再见",
+      "split": "train"
+    },
+    {
+      "segment_id": "Chinese/ZH-Alto-1/Breathy/不再见/Breathy_Group/0003",
+      "canonical_song_id": "chinese/不再见",
+      "split": "train"
+    },
+    {
+      "segment_id": "Chinese/ZH-Alto-1/Breathy/不再见/Breathy_Group/0004",
+      "canonical_song_id": "chinese/不再见",
+      "split": "train"
+    },
+    {
+      "segment_id": "Chinese/ZH-Alto-1/Breathy/不再见/Control_Group/0000",
+      "canonical_song_id": "chinese/不再见",
+      "split": "train"
+    },
+    {
+      "segment_id": "Chinese/ZH-Alto-1/Breathy/不再见/Control_Group/0002",
+      "canonical_song_id": "chinese/不再见",
+      "split": "train"
+    },
+    {
+      "segment_id": "Chinese/ZH-Alto-1/Breathy/不再见/Control_Group/0003",
+      "canonical_song_id": "chinese/不再见",
+      "split": "train"
+    },
+    {
+      "segment_id": "Chinese/ZH-Alto-1/Breathy/云烟成雨/Breathy_Group/0000",
+      "canonical_song_id": "chinese/云烟成雨",
+      "split": "val"
+    },
+    {
+      "segment_id": "Chinese/ZH-Alto-1/Breathy/云烟成雨/Breathy_Group/0001",
+      "canonical_song_id": "chinese/云烟成雨",
+      "split": "val"
+    },
+    {
+      "segment_id": "Chinese/ZH-Alto-1/Breathy/云烟成雨/Breathy_Group/0002",
+      "canonical_song_id": "chinese/云烟成雨",
+      "split": "val"
+    },
+    {
+      "segment_id": "Chinese/ZH-Alto-1/Breathy/云烟成雨/Breathy_Group/0003",
+      "canonical_song_id": "chinese/云烟成雨",
+      "split": "val"
+    },
+    {
+      "segment_id": "Chinese/ZH-Alto-1/Breathy/云烟成雨/Breathy_Group/0004",
+      "canonical_song_id": "chinese/云烟成雨",
+      "split": "val"
+    },
+    {
+      "segment_id": "Chinese/ZH-Alto-1/Breathy/云烟成雨/Control_Group/0000",
+      "canonical_song_id": "chinese/云烟成雨",
+      "split": "val"
+    },
+    {
+      "segment_id": "Chinese/ZH-Alto-1/Breathy/云烟成雨/Control_Group/0001",
+      "canonical_song_id": "chinese/云烟成雨",
+      "split": "val"
+    },
+    {
+      "segment_id": "Chinese/ZH-Alto-1/Breathy/云烟成雨/Control_Group/0002",
+      "canonical_song_id": "chinese/云烟成雨",
+      "split": "val"
+    },
+    {
+      "segment_id": "Chinese/ZH-Alto-1/Breathy/云烟成雨/Control_Group/0003",
+      "canonical_song_id": "chinese/云烟成雨",
+      "split": "val"
+    },
+    {
+      "segment_id": "Chinese/ZH-Alto-1/Breathy/云烟成雨/Control_Group/0004",
+      "canonical_song_id": "chinese/云烟成雨",
+      "split": "val"
+    },
+    {
+      "segment_id": "Chinese/ZH-Alto-1/Breathy/匆匆那年/Breathy_Group/0000",
+      "canonical_song_id": "chinese/匆匆那年",
+      "split": "train"
+    },
+    {
+      "segment_id": "Chinese/ZH-Alto-1/Breathy/匆匆那年/Breathy_Group/0001",
+      "canonical_song_id": "chinese/匆匆那年",
+      "split": "train"
+    },
+    {
+      "segment_id": "Chinese/ZH-Alto-1/Breathy/匆匆那年/Breathy_Group/0002",
+      "canonical_song_id": "chinese/匆匆那年",
+      "split": "train"
+    },
+    {
+      "segment_id": "Chinese/ZH-Alto-1/Breathy/匆匆那年/Breathy_Group/0003",
+      "canonical_song_id": "chinese/匆匆那年",
+      "split": "train"
+    },
+    {
+      "segment_id": "Chinese/ZH-Alto-1/Breathy/匆匆那年/Breathy_Group/0004",
+      "canonical_song_id": "chinese/匆匆那年",
+      "split": "train"
+    },
+    {
+      "segment_id": "Chinese/ZH-Alto-1/Breathy/匆匆那年/Control_Group/0000",
+      "canonical_song_id": "chinese/匆匆那年",
+      "split": "train"
+    },
+    {
+      "segment_id": "Chinese/ZH-Alto-1/Breathy/匆匆那年/Control_Group/0001",
+      "canonical_song_id": "chinese/匆匆那年",
+      "split": "train"
+    },
+    {
+      "segment_id": "Chinese/ZH-Alto-1/Breathy/匆匆那年/Control_Group/0002",
+      "canonical_song_id": "chinese/匆匆那年",
+      "split": "train"
+    },
+    {
+      "segment_id": "Chinese/ZH-Alto-1/Breathy/匆匆那年/Control_Group/0003",
+      "canonical_song_id": "chinese/匆匆那年",
+      "split": "train"
+    },
+    {
+      "segment_id": "Chinese/ZH-Alto-1/Breathy/匆匆那年/Control_Group/0004",
+      "canonical_song_id": "chinese/匆匆那年",
+      "split": "train"
+    },
+    {
+      "segment_id": "Chinese/ZH-Alto-1/Breathy/可乐/Breathy_Group/0000",
+      "canonical_song_id": "chinese/可乐",
+      "split": "test"
+    },
+    {
+      "segment_id": "Chinese/ZH-Alto-1/Breathy/可乐/Breathy_Group/0001",
+      "canonical_song_id": "chinese/可乐",
+      "split": "test"
+    },
+    {
+      "segment_id": "Chinese/ZH-Alto-1/Breathy/可乐/Breathy_Group/0002",
+      "canonical_song_id": "chinese/可乐",
+      "split": "test"
+    },
+    {
+      "segment_id": "Chinese/ZH-Alto-1/Breathy/可乐/Breathy_Group/0004",
+      "canonical_song_id": "chinese/可乐",
+      "split": "test"
+    },
+    {
+      "segment_id": "Chinese/ZH-Alto-1/Breathy/可乐/Control_Group/0000",
+      "canonical_song_id": "chinese/可乐",
+      "split": "test"
+    },
+    {
+      "segment_id": "Chinese/ZH-Alto-1/Breathy/可乐/Control_Group/0001",
+      "canonical_song_id": "chinese/可乐",
+      "split": "test"
+    },
+    {
+      "segment_id": "Chinese/ZH-Alto-1/Breathy/可乐/Control_Group/0002",
+      "canonical_song_id": "chinese/可乐",
+      "split": "test"
+    },
+    {
+      "segment_id": "Chinese/ZH-Alto-1/Breathy/可乐/Control_Group/0003",
+      "canonical_song_id": "chinese/可乐",
+      "split": "test"
+    },
+    {
+      "segment_id": "Chinese/ZH-Alto-1/Breathy/可乐/Control_Group/0004",
+      "canonical_song_id": "chinese/可乐",
+      "split": "test"
+    },
+    {
+      "segment_id": "Chinese/ZH-Alto-1/Breathy/失落沙洲/Breathy_Group/0000",
+      "canonical_song_id": "chinese/失落沙洲",
+      "split": "test"
+    },
+    {
+      "segment_id": "Chinese/ZH-Alto-1/Breathy/失落沙洲/Breathy_Group/0001",
+      "canonical_song_id": "chinese/失落沙洲",
+      "split": "test"
+    },
+    {
+      "segment_id": "Chinese/ZH-Alto-1/Breathy/失落沙洲/Breathy_Group/0002",
+      "canonical_song_id": "chinese/失落沙洲",
+      "split": "test"
+    },
+    {
+      "segment_id": "Chinese/ZH-Alto-1/Breathy/失落沙洲/Breathy_Group/0003",
+      "canonical_song_id": "chinese/失落沙洲",
+      "split": "test"
+    },
+    {
+      "segment_id": "Chinese/ZH-Alto-1/Breathy/失落沙洲/Breathy_Group/0004",
+      "canonical_song_id": "chinese/失落沙洲",
+      "split": "test"
+    },
+    {
+      "segment_id": "Chinese/ZH-Alto-1/Breathy/失落沙洲/Control_Group/0000",
+      "canonical_song_id": "chinese/失落沙洲",
+      "split": "test"
+    },
+    {
+      "segment_id": "Chinese/ZH-Alto-1/Breathy/失落沙洲/Control_Group/0001",
+      "canonical_song_id": "chinese/失落沙洲",
+      "split": "test"
+    },
+    {
+      "segment_id": "Chinese/ZH-Alto-1/Breathy/失落沙洲/Control_Group/0002",
+      "canonical_song_id": "chinese/失落沙洲",
+      "split": "test"
+    },
+    {
+      "segment_id": "Chinese/ZH-Alto-1/Breathy/失落沙洲/Control_Group/0003",
+      "canonical_song_id": "chinese/失落沙洲",
+      "split": "test"
+    },
+    {
+      "segment_id": "Chinese/ZH-Alto-1/Breathy/失落沙洲/Control_Group/0004",
+      "canonical_song_id": "chinese/失落沙洲",
+      "split": "test"
+    },
+    {
+      "segment_id": "Chinese/ZH-Alto-1/Breathy/奇妙能力歌/Breathy_Group/0000",
+      "canonical_song_id": "chinese/奇妙能力歌",
+      "split": "train"
+    },
+    {
+      "segment_id": "Chinese/ZH-Alto-1/Breathy/奇妙能力歌/Breathy_Group/0001",
+      "canonical_song_id": "chinese/奇妙能力歌",
+      "split": "train"
+    },
+    {
+      "segment_id": "Chinese/ZH-Alto-1/Breathy/奇妙能力歌/Breathy_Group/0002",
+      "canonical_song_id": "chinese/奇妙能力歌",
+      "split": "train"
+    },
+    {
+      "segment_id": "Chinese/ZH-Alto-1/Breathy/奇妙能力歌/Breathy_Group/0003",
+      "canonical_song_id": "chinese/奇妙能力歌",
+      "split": "train"
+    },
+    {
+      "segment_id": "Chinese/ZH-Alto-1/Breathy/奇妙能力歌/Breathy_Group/0004",
+      "canonical_song_id": "chinese/奇妙能力歌",
+      "split": "train"
+    },
+    {
+      "segment_id": "Chinese/ZH-Alto-1/Breathy/奇妙能力歌/Control_Group/0000",
+      "canonical_song_id": "chinese/奇妙能力歌",
+      "split": "train"
+    },
+    {
+      "segment_id": "Chinese/ZH-Alto-1/Breathy/奇妙能力歌/Control_Group/0001",
+      "canonical_song_id": "chinese/奇妙能力歌",
+      "split": "train"
+    },
+    {
+      "segment_id": "Chinese/ZH-Alto-1/Breathy/奇妙能力歌/Control_Group/0002",
+      "canonical_song_id": "chinese/奇妙能力歌",
+      "split": "train"
+    },
+    {
+      "segment_id": "Chinese/ZH-Alto-1/Breathy/奇妙能力歌/Control_Group/0003",
+      "canonical_song_id": "chinese/奇妙能力歌",
+      "split": "train"
+    },
+    {
+      "segment_id": "Chinese/ZH-Alto-1/Breathy/奇妙能力歌/Control_Group/0004",
+      "canonical_song_id": "chinese/奇妙能力歌",
+      "split": "train"
+    },
+    {
+      "segment_id": "Chinese/ZH-Alto-1/Breathy/慢慢喜欢你/Breathy_Group/0000",
+      "canonical_song_id": "chinese/慢慢喜欢你",
+      "split": "val"
+    },
+    {
+      "segment_id": "Chinese/ZH-Alto-1/Breathy/慢慢喜欢你/Breathy_Group/0001",
+      "canonical_song_id": "chinese/慢慢喜欢你",
+      "split": "val"
+    },
+    {
+      "segment_id": "Chinese/ZH-Alto-1/Breathy/慢慢喜欢你/Breathy_Group/0002",
+      "canonical_song_id": "chinese/慢慢喜欢你",
+      "split": "val"
+    },
+    {
+      "segment_id": "Chinese/ZH-Alto-1/Breathy/慢慢喜欢你/Control_Group/0000",
+      "canonical_song_id": "chinese/慢慢喜欢你",
+      "split": "val"
+    },
+    {
+      "segment_id": "Chinese/ZH-Alto-1/Breathy/慢慢喜欢你/Control_Group/0001",
+      "canonical_song_id": "chinese/慢慢喜欢你",
+      "split": "val"
+    },
+    {
+      "segment_id": "Chinese/ZH-Alto-1/Breathy/慢慢喜欢你/Control_Group/0002",
+      "canonical_song_id": "chinese/慢慢喜欢你",
+      "split": "val"
+    },
+    {
+      "segment_id": "Chinese/ZH-Alto-1/Breathy/成都/Breathy_Group/0000",
+      "canonical_song_id": "chinese/成都",
+      "split": "train"
+    },
+    {
+      "segment_id": "Chinese/ZH-Alto-1/Breathy/成都/Breathy_Group/0001",
+      "canonical_song_id": "chinese/成都",
+      "split": "train"
+    },
+    {
+      "segment_id": "Chinese/ZH-Alto-1/Breathy/成都/Breathy_Group/0002",
+      "canonical_song_id": "chinese/成都",
+      "split": "train"
+    },
+    {
+      "segment_id": "Chinese/ZH-Alto-1/Breathy/成都/Breathy_Group/0004",
+      "canonical_song_id": "chinese/成都",
+      "split": "train"
+    },
+    {
+      "segment_id": "Chinese/ZH-Alto-1/Breathy/成都/Control_Group/0001",
+      "canonical_song_id": "chinese/成都",
+      "split": "train"
+    },
+    {
+      "segment_id": "Chinese/ZH-Alto-1/Breathy/成都/Control_Group/0002",
+      "canonical_song_id": "chinese/成都",
+      "split": "train"
+    },
+    {
+      "segment_id": "Chinese/ZH-Alto-1/Breathy/成都/Control_Group/0004",
+      "canonical_song_id": "chinese/成都",
+      "split": "train"
+    },
+    {
+      "segment_id": "Chinese/ZH-Alto-1/Breathy/我好想你/Breathy_Group/0000",
+      "canonical_song_id": "chinese/我好想你",
+      "split": "train"
+    },
+    {
+      "segment_id": "Chinese/ZH-Alto-1/Breathy/我好想你/Breathy_Group/0001",
+      "canonical_song_id": "chinese/我好想你",
+      "split": "train"
+    },
+    {
+      "segment_id": "Chinese/ZH-Alto-1/Breathy/我好想你/Breathy_Group/0002",
+      "canonical_song_id": "chinese/我好想你",
+      "split": "train"
+    },
+    {
+      "segment_id": "Chinese/ZH-Alto-1/Breathy/我好想你/Breathy_Group/0003",
+      "canonical_song_id": "chinese/我好想你",
+      "split": "train"
+    },
+    {
+      "segment_id": "Chinese/ZH-Alto-1/Breathy/我好想你/Breathy_Group/0004",
+      "canonical_song_id": "chinese/我好想你",
+      "split": "train"
+    },
+    {
+      "segment_id": "Chinese/ZH-Alto-1/Breathy/我好想你/Control_Group/0000",
+      "canonical_song_id": "chinese/我好想你",
+      "split": "train"
+    },
+    {
+      "segment_id": "Chinese/ZH-Alto-1/Breathy/我好想你/Control_Group/0001",
+      "canonical_song_id": "chinese/我好想你",
+      "split": "train"
+    },
+    {
+      "segment_id": "Chinese/ZH-Alto-1/Breathy/我好想你/Control_Group/0002",
+      "canonical_song_id": "chinese/我好想你",
+      "split": "train"
+    },
+    {
+      "segment_id": "Chinese/ZH-Alto-1/Breathy/我好想你/Control_Group/0003",
+      "canonical_song_id": "chinese/我好想你",
+      "split": "train"
+    },
+    {
+      "segment_id": "Chinese/ZH-Alto-1/Breathy/我好想你/Control_Group/0004",
+      "canonical_song_id": "chinese/我好想你",
+      "split": "train"
+    },
+    {
+      "segment_id": "Chinese/ZH-Tenor-1/Breathy/慢慢喜欢你/Breathy_Group/0000",
+      "canonical_song_id": "chinese/慢慢喜欢你",
+      "split": "val"
+    },
+    {
+      "segment_id": "Chinese/ZH-Tenor-1/Breathy/慢慢喜欢你/Breathy_Group/0001",
+      "canonical_song_id": "chinese/慢慢喜欢你",
+      "split": "val"
+    },
+    {
+      "segment_id": "Chinese/ZH-Tenor-1/Breathy/慢慢喜欢你/Control_Group/0001",
+      "canonical_song_id": "chinese/慢慢喜欢你",
+      "split": "val"
+    },
+    {
+      "segment_id": "Chinese/ZH-Tenor-1/Glissando/给电影人的情书/Control_Group/0001",
+      "canonical_song_id": "chinese/给电影人的情书",
+      "split": "train"
+    },
+    {
+      "segment_id": "Chinese/ZH-Tenor-1/Glissando/给电影人的情书/Control_Group/0002",
+      "canonical_song_id": "chinese/给电影人的情书",
+      "split": "train"
+    },
+    {
+      "segment_id": "Chinese/ZH-Tenor-1/Glissando/给电影人的情书/Control_Group/0004",
+      "canonical_song_id": "chinese/给电影人的情书",
+      "split": "train"
+    },
+    {
+      "segment_id": "Chinese/ZH-Tenor-1/Glissando/给电影人的情书/Glissando_Group/0000",
+      "canonical_song_id": "chinese/给电影人的情书",
+      "split": "train"
+    },
+    {
+      "segment_id": "Chinese/ZH-Tenor-1/Glissando/给电影人的情书/Glissando_Group/0001",
+      "canonical_song_id": "chinese/给电影人的情书",
+      "split": "train"
+    },
+    {
+      "segment_id": "Chinese/ZH-Tenor-1/Glissando/给电影人的情书/Glissando_Group/0002",
+      "canonical_song_id": "chinese/给电影人的情书",
+      "split": "train"
+    },
+    {
+      "segment_id": "Chinese/ZH-Tenor-1/Glissando/给电影人的情书/Glissando_Group/0003",
+      "canonical_song_id": "chinese/给电影人的情书",
+      "split": "train"
+    },
+    {
+      "segment_id": "Chinese/ZH-Tenor-1/Glissando/给电影人的情书/Glissando_Group/0004",
+      "canonical_song_id": "chinese/给电影人的情书",
+      "split": "train"
+    },
+    {
+      "segment_id": "English/EN-Alto-1/Glissando/for the first time in forever/Control_Group/0000",
+      "canonical_song_id": "english/for the first time in forever",
+      "split": "val"
+    },
+    {
+      "segment_id": "English/EN-Alto-1/Glissando/for the first time in forever/Control_Group/0001",
+      "canonical_song_id": "english/for the first time in forever",
+      "split": "val"
+    },
+    {
+      "segment_id": "English/EN-Alto-1/Glissando/for the first time in forever/Control_Group/0002",
+      "canonical_song_id": "english/for the first time in forever",
+      "split": "val"
+    },
+    {
+      "segment_id": "English/EN-Alto-1/Glissando/for the first time in forever/Control_Group/0003",
+      "canonical_song_id": "english/for the first time in forever",
+      "split": "val"
+    },
+    {
+      "segment_id": "English/EN-Alto-1/Glissando/for the first time in forever/Control_Group/0004",
+      "canonical_song_id": "english/for the first time in forever",
+      "split": "val"
+    },
+    {
+      "segment_id": "English/EN-Alto-1/Glissando/for the first time in forever/Glissando_Group/0000",
+      "canonical_song_id": "english/for the first time in forever",
+      "split": "val"
+    },
+    {
+      "segment_id": "English/EN-Alto-1/Glissando/for the first time in forever/Glissando_Group/0001",
+      "canonical_song_id": "english/for the first time in forever",
+      "split": "val"
+    },
+    {
+      "segment_id": "English/EN-Alto-1/Glissando/for the first time in forever/Glissando_Group/0002",
+      "canonical_song_id": "english/for the first time in forever",
+      "split": "val"
+    },
+    {
+      "segment_id": "English/EN-Alto-1/Glissando/for the first time in forever/Glissando_Group/0003",
+      "canonical_song_id": "english/for the first time in forever",
+      "split": "val"
+    },
+    {
+      "segment_id": "English/EN-Alto-1/Glissando/god is a girl/Control_Group/0000",
+      "canonical_song_id": "english/god is a girl",
+      "split": "train"
+    },
+    {
+      "segment_id": "English/EN-Alto-1/Glissando/god is a girl/Control_Group/0002",
+      "canonical_song_id": "english/god is a girl",
+      "split": "train"
+    },
+    {
+      "segment_id": "English/EN-Alto-1/Glissando/god is a girl/Glissando_Group/0000",
+      "canonical_song_id": "english/god is a girl",
+      "split": "train"
+    },
+    {
+      "segment_id": "English/EN-Alto-1/Glissando/god is a girl/Glissando_Group/0002",
+      "canonical_song_id": "english/god is a girl",
+      "split": "train"
+    },
+    {
+      "segment_id": "English/EN-Alto-1/Glissando/god is a girl/Glissando_Group/0003",
+      "canonical_song_id": "english/god is a girl",
+      "split": "train"
+    },
+    {
+      "segment_id": "English/EN-Alto-1/Glissando/god is a girl/Glissando_Group/0004",
+      "canonical_song_id": "english/god is a girl",
+      "split": "train"
+    },
+    {
+      "segment_id": "English/EN-Alto-1/Glissando/make it shine/Control_Group/0000",
+      "canonical_song_id": "english/make it shine",
+      "split": "train"
+    },
+    {
+      "segment_id": "English/EN-Alto-1/Glissando/make it shine/Control_Group/0001",
+      "canonical_song_id": "english/make it shine",
+      "split": "train"
+    },
+    {
+      "segment_id": "English/EN-Alto-1/Glissando/make it shine/Control_Group/0002",
+      "canonical_song_id": "english/make it shine",
+      "split": "train"
+    },
+    {
+      "segment_id": "English/EN-Alto-1/Glissando/make it shine/Control_Group/0003",
+      "canonical_song_id": "english/make it shine",
+      "split": "train"
+    },
+    {
+      "segment_id": "English/EN-Alto-1/Glissando/make it shine/Control_Group/0004",
+      "canonical_song_id": "english/make it shine",
+      "split": "train"
+    },
+    {
+      "segment_id": "English/EN-Alto-1/Glissando/make it shine/Glissando_Group/0000",
+      "canonical_song_id": "english/make it shine",
+      "split": "train"
+    },
+    {
+      "segment_id": "English/EN-Alto-1/Glissando/make it shine/Glissando_Group/0002",
+      "canonical_song_id": "english/make it shine",
+      "split": "train"
+    },
+    {
+      "segment_id": "English/EN-Alto-1/Glissando/make it shine/Glissando_Group/0003",
+      "canonical_song_id": "english/make it shine",
+      "split": "train"
+    },
+    {
+      "segment_id": "English/EN-Alto-1/Glissando/make it shine/Glissando_Group/0004",
+      "canonical_song_id": "english/make it shine",
+      "split": "train"
+    },
+    {
+      "segment_id": "English/EN-Alto-1/Glissando/my love/Control_Group/0000",
+      "canonical_song_id": "english/my love",
+      "split": "train"
+    },
+    {
+      "segment_id": "English/EN-Alto-1/Glissando/my love/Control_Group/0001",
+      "canonical_song_id": "english/my love",
+      "split": "train"
+    },
+    {
+      "segment_id": "English/EN-Alto-1/Glissando/my love/Control_Group/0002",
+      "canonical_song_id": "english/my love",
+      "split": "train"
+    },
+    {
+      "segment_id": "English/EN-Alto-1/Glissando/my love/Glissando_Group/0000",
+      "canonical_song_id": "english/my love",
+      "split": "train"
+    },
+    {
+      "segment_id": "English/EN-Alto-1/Glissando/my love/Glissando_Group/0001",
+      "canonical_song_id": "english/my love",
+      "split": "train"
+    },
+    {
+      "segment_id": "English/EN-Alto-1/Glissando/my love/Glissando_Group/0002",
+      "canonical_song_id": "english/my love",
+      "split": "train"
+    },
+    {
+      "segment_id": "English/EN-Alto-1/Glissando/rolling in the deep/Control_Group/0000",
+      "canonical_song_id": "english/rolling in the deep",
+      "split": "test"
+    },
+    {
+      "segment_id": "English/EN-Alto-1/Glissando/rolling in the deep/Control_Group/0001",
+      "canonical_song_id": "english/rolling in the deep",
+      "split": "test"
+    },
+    {
+      "segment_id": "English/EN-Alto-1/Glissando/rolling in the deep/Control_Group/0002",
+      "canonical_song_id": "english/rolling in the deep",
+      "split": "test"
+    },
+    {
+      "segment_id": "English/EN-Alto-1/Glissando/rolling in the deep/Glissando_Group/0000",
+      "canonical_song_id": "english/rolling in the deep",
+      "split": "test"
+    },
+    {
+      "segment_id": "English/EN-Alto-1/Glissando/rolling in the deep/Glissando_Group/0001",
+      "canonical_song_id": "english/rolling in the deep",
+      "split": "test"
+    },
+    {
+      "segment_id": "English/EN-Alto-1/Glissando/rolling in the deep/Glissando_Group/0002",
+      "canonical_song_id": "english/rolling in the deep",
+      "split": "test"
+    },
+    {
+      "segment_id": "English/EN-Alto-1/Glissando/tell me that you love me/Control_Group/0000",
+      "canonical_song_id": "english/tell me that you love me",
+      "split": "train"
+    },
+    {
+      "segment_id": "English/EN-Alto-1/Glissando/tell me that you love me/Control_Group/0001",
+      "canonical_song_id": "english/tell me that you love me",
+      "split": "train"
+    },
+    {
+      "segment_id": "English/EN-Alto-1/Glissando/tell me that you love me/Control_Group/0002",
+      "canonical_song_id": "english/tell me that you love me",
+      "split": "train"
+    },
+    {
+      "segment_id": "English/EN-Alto-1/Glissando/tell me that you love me/Control_Group/0003",
+      "canonical_song_id": "english/tell me that you love me",
+      "split": "train"
+    },
+    {
+      "segment_id": "English/EN-Alto-1/Glissando/tell me that you love me/Glissando_Group/0000",
+      "canonical_song_id": "english/tell me that you love me",
+      "split": "train"
+    },
+    {
+      "segment_id": "English/EN-Alto-1/Glissando/tell me that you love me/Glissando_Group/0002",
+      "canonical_song_id": "english/tell me that you love me",
+      "split": "train"
+    },
+    {
+      "segment_id": "English/EN-Alto-1/Glissando/tell me that you love me/Glissando_Group/0003",
+      "canonical_song_id": "english/tell me that you love me",
+      "split": "train"
+    },
+    {
+      "segment_id": "English/EN-Alto-1/Glissando/tell me that you love me/Glissando_Group/0004",
+      "canonical_song_id": "english/tell me that you love me",
+      "split": "train"
+    },
+    {
+      "segment_id": "English/EN-Alto-1/Glissando/trouble is a friend/Control_Group/0000",
+      "canonical_song_id": "english/trouble is a friend",
+      "split": "val"
+    },
+    {
+      "segment_id": "English/EN-Alto-1/Glissando/trouble is a friend/Control_Group/0001",
+      "canonical_song_id": "english/trouble is a friend",
+      "split": "val"
+    },
+    {
+      "segment_id": "English/EN-Alto-1/Glissando/trouble is a friend/Control_Group/0002",
+      "canonical_song_id": "english/trouble is a friend",
+      "split": "val"
+    },
+    {
+      "segment_id": "English/EN-Alto-1/Glissando/trouble is a friend/Control_Group/0003",
+      "canonical_song_id": "english/trouble is a friend",
+      "split": "val"
+    },
+    {
+      "segment_id": "English/EN-Alto-1/Glissando/trouble is a friend/Control_Group/0004",
+      "canonical_song_id": "english/trouble is a friend",
+      "split": "val"
+    },
+    {
+      "segment_id": "English/EN-Alto-1/Glissando/trouble is a friend/Glissando_Group/0000",
+      "canonical_song_id": "english/trouble is a friend",
+      "split": "val"
+    },
+    {
+      "segment_id": "English/EN-Alto-1/Glissando/trouble is a friend/Glissando_Group/0001",
+      "canonical_song_id": "english/trouble is a friend",
+      "split": "val"
+    },
+    {
+      "segment_id": "English/EN-Alto-1/Glissando/trouble is a friend/Glissando_Group/0002",
+      "canonical_song_id": "english/trouble is a friend",
+      "split": "val"
+    },
+    {
+      "segment_id": "English/EN-Alto-1/Glissando/trouble is a friend/Glissando_Group/0003",
+      "canonical_song_id": "english/trouble is a friend",
+      "split": "val"
+    },
+    {
+      "segment_id": "English/EN-Alto-1/Glissando/trouble is a friend/Glissando_Group/0004",
+      "canonical_song_id": "english/trouble is a friend",
+      "split": "val"
+    },
+    {
+      "segment_id": "English/EN-Alto-2/Glissando/My Love/Control_Group/0000",
+      "canonical_song_id": "english/my love",
+      "split": "train"
+    },
+    {
+      "segment_id": "English/EN-Alto-2/Glissando/My Love/Control_Group/0001",
+      "canonical_song_id": "english/my love",
+      "split": "train"
+    },
+    {
+      "segment_id": "English/EN-Alto-2/Glissando/My Love/Glissando_Group/0000",
+      "canonical_song_id": "english/my love",
+      "split": "train"
+    },
+    {
+      "segment_id": "English/EN-Alto-2/Glissando/My Love/Glissando_Group/0001",
+      "canonical_song_id": "english/my love",
+      "split": "train"
+    },
+    {
+      "segment_id": "English/EN-Alto-2/Glissando/Someone Like You/Control_Group/0000",
+      "canonical_song_id": "english/someone like you",
+      "split": "test"
+    },
+    {
+      "segment_id": "English/EN-Alto-2/Glissando/Someone Like You/Control_Group/0001",
+      "canonical_song_id": "english/someone like you",
+      "split": "test"
+    },
+    {
+      "segment_id": "English/EN-Alto-2/Glissando/Someone Like You/Control_Group/0002",
+      "canonical_song_id": "english/someone like you",
+      "split": "test"
+    },
+    {
+      "segment_id": "English/EN-Alto-2/Glissando/Someone Like You/Glissando_Group/0000",
+      "canonical_song_id": "english/someone like you",
+      "split": "test"
+    },
+    {
+      "segment_id": "English/EN-Alto-2/Glissando/Someone Like You/Glissando_Group/0001",
+      "canonical_song_id": "english/someone like you",
+      "split": "test"
+    },
+    {
+      "segment_id": "English/EN-Alto-2/Glissando/Someone Like You/Glissando_Group/0002",
+      "canonical_song_id": "english/someone like you",
+      "split": "test"
+    },
+    {
+      "segment_id": "English/EN-Tenor-1/Glissando/Rolling in the Deep/Control_Group/0000",
+      "canonical_song_id": "english/rolling in the deep",
+      "split": "test"
+    },
+    {
+      "segment_id": "English/EN-Tenor-1/Glissando/Rolling in the Deep/Control_Group/0001",
+      "canonical_song_id": "english/rolling in the deep",
+      "split": "test"
+    },
+    {
+      "segment_id": "English/EN-Tenor-1/Glissando/Rolling in the Deep/Glissando_Group/0000",
+      "canonical_song_id": "english/rolling in the deep",
+      "split": "test"
+    },
+    {
+      "segment_id": "English/EN-Tenor-1/Glissando/Rolling in the Deep/Glissando_Group/0001",
+      "canonical_song_id": "english/rolling in the deep",
+      "split": "test"
+    },
+    {
+      "segment_id": "English/EN-Tenor-1/Glissando/Someone Like You/Control_Group/0000",
+      "canonical_song_id": "english/someone like you",
+      "split": "test"
+    },
+    {
+      "segment_id": "English/EN-Tenor-1/Glissando/Someone Like You/Control_Group/0001",
+      "canonical_song_id": "english/someone like you",
+      "split": "test"
+    },
+    {
+      "segment_id": "English/EN-Tenor-1/Glissando/Someone Like You/Glissando_Group/0000",
+      "canonical_song_id": "english/someone like you",
+      "split": "test"
+    },
+    {
+      "segment_id": "English/EN-Tenor-1/Glissando/Someone Like You/Glissando_Group/0001",
+      "canonical_song_id": "english/someone like you",
+      "split": "test"
+    }
+  ],
+  "boundary_annotations_reviewed": false,
+  "singer_independent": true,
+  "held_out_singers": [
+    "EN-Tenor-1"
+  ],
+  "singer_independent_test_segment_ids": [
+    "English/EN-Tenor-1/Glissando/Rolling in the Deep/Control_Group/0000",
+    "English/EN-Tenor-1/Glissando/Rolling in the Deep/Control_Group/0001",
+    "English/EN-Tenor-1/Glissando/Rolling in the Deep/Glissando_Group/0000",
+    "English/EN-Tenor-1/Glissando/Rolling in the Deep/Glissando_Group/0001",
+    "English/EN-Tenor-1/Glissando/Someone Like You/Control_Group/0000",
+    "English/EN-Tenor-1/Glissando/Someone Like You/Control_Group/0001",
+    "English/EN-Tenor-1/Glissando/Someone Like You/Glissando_Group/0000",
+    "English/EN-Tenor-1/Glissando/Someone Like You/Glissando_Group/0001"
+  ],
+  "limitations": [
+    "canonical_song_id contains the dataset song_id, not a human-confirmed canonical identity.",
+    "Song identities and aliases have not been verified by a human.",
+    "Unrecognized aliases or unrecorded source relations may still cross splits.",
+    "Only explicitly held-out singers are excluded from train and validation; other singers may recur.",
+    "Songs shared with held-out singers are reserved entirely for test, so requested ratios may be unattainable.",
+    "This split does not make annotation boundaries accurate."
+  ],
+  "assignment_method": "frozen_existing_plus_explicit_incremental_song_overrides",
+  "frozen_plan_manifest_schema": "gtsinger-training-expansion-v1"
+}

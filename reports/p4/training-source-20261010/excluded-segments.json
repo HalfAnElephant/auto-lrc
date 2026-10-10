@@ -1,0 +1,104 @@
+[
+  {
+    "segment_id": "Chinese/ZH-Alto-1/Breathy/不再见/Control_Group/0001",
+    "song_id": "chinese/不再见",
+    "exception_type": "ValueError",
+    "reason": "/home/xcy/auto-lrc/data/local/gtsinger-training-p4/Chinese/ZH-Alto-1/Breathy/不再见/Control_Group/0001.json[11]: interval [6.49, 7.59] must satisfy 0 <= start < end <= 7.589979166666667"
+  },
+  {
+    "segment_id": "Chinese/ZH-Alto-1/Breathy/不再见/Control_Group/0004",
+    "song_id": "chinese/不再见",
+    "exception_type": "ValueError",
+    "reason": "/home/xcy/auto-lrc/data/local/gtsinger-training-p4/Chinese/ZH-Alto-1/Breathy/不再见/Control_Group/0004.json[10]: interval [6.73, 8.04] must satisfy 0 <= start < end <= 8.039979166666667"
+  },
+  {
+    "segment_id": "Chinese/ZH-Alto-1/Breathy/可乐/Breathy_Group/0003",
+    "song_id": "chinese/可乐",
+    "exception_type": "ValueError",
+    "reason": "/home/xcy/auto-lrc/data/local/gtsinger-training-p4/Chinese/ZH-Alto-1/Breathy/可乐/Breathy_Group/0003.json[15]: interval [7.06, 7.96] must satisfy 0 <= start < end <= 7.959979166666667"
+  },
+  {
+    "segment_id": "Chinese/ZH-Alto-1/Breathy/成都/Breathy_Group/0003",
+    "song_id": "chinese/成都",
+    "exception_type": "ValueError",
+    "reason": "/home/xcy/auto-lrc/data/local/gtsinger-training-p4/Chinese/ZH-Alto-1/Breathy/成都/Breathy_Group/0003.json[13]: interval [7.54, 8.56] must satisfy 0 <= start < end <= 8.559979166666666"
+  },
+  {
+    "segment_id": "Chinese/ZH-Alto-1/Breathy/成都/Control_Group/0000",
+    "song_id": "chinese/成都",
+    "exception_type": "ValueError",
+    "reason": "/home/xcy/auto-lrc/data/local/gtsinger-training-p4/Chinese/ZH-Alto-1/Breathy/成都/Control_Group/0000.json[13]: interval [7.55, 8.86] must satisfy 0 <= start < end <= 8.859979166666667"
+  },
+  {
+    "segment_id": "Chinese/ZH-Alto-1/Breathy/成都/Control_Group/0003",
+    "song_id": "chinese/成都",
+    "exception_type": "ValueError",
+    "reason": "/home/xcy/auto-lrc/data/local/gtsinger-training-p4/Chinese/ZH-Alto-1/Breathy/成都/Control_Group/0003.json[14]: interval [7.9, 9.03] must satisfy 0 <= start < end <= 9.029979166666667"
+  },
+  {
+    "segment_id": "Chinese/ZH-Tenor-1/Breathy/慢慢喜欢你/Control_Group/0000",
+    "song_id": "chinese/慢慢喜欢你",
+    "exception_type": "ValueError",
+    "reason": "/home/xcy/auto-lrc/data/local/gtsinger-training-p4/Chinese/ZH-Tenor-1/Breathy/慢慢喜欢你/Control_Group/0000.json[12]: interval [6.77, 7.34] must satisfy 0 <= start < end <= 7.339979166666667"
+  },
+  {
+    "segment_id": "Chinese/ZH-Tenor-1/Glissando/给电影人的情书/Control_Group/0000",
+    "song_id": "chinese/给电影人的情书",
+    "exception_type": "ValueError",
+    "reason": "/home/xcy/auto-lrc/data/local/gtsinger-training-p4/Chinese/ZH-Tenor-1/Glissando/给电影人的情书/Control_Group/0000.json[24]: interval [9.3, 9.662] must satisfy 0 <= start < end <= 9.661979166666667"
+  },
+  {
+    "segment_id": "Chinese/ZH-Tenor-1/Glissando/给电影人的情书/Control_Group/0003",
+    "song_id": "chinese/给电影人的情书",
+    "exception_type": "ValueError",
+    "reason": "/home/xcy/auto-lrc/data/local/gtsinger-training-p4/Chinese/ZH-Tenor-1/Glissando/给电影人的情书/Control_Group/0003.json[22]: interval [8.04, 9.319] must satisfy 0 <= start < end <= 9.318979166666667"
+  },
+  {
+    "segment_id": "English/EN-Alto-1/Glissando/for the first time in forever/Glissando_Group/0004",
+    "song_id": "english/for the first time in forever",
+    "exception_type": "ValueError",
+    "reason": "/home/xcy/auto-lrc/data/local/gtsinger-training-p4/English/EN-Alto-1/Glissando/for the first time in forever/Glissando_Group/0004.json[7]: interval [4.624, 4.874] must satisfy 0 <= start < end <= 4.8739791666666665"
+  },
+  {
+    "segment_id": "English/EN-Alto-1/Glissando/god is a girl/Control_Group/0001",
+    "song_id": "english/god is a girl",
+    "exception_type": "ValueError",
+    "reason": "/home/xcy/auto-lrc/data/local/gtsinger-training-p4/English/EN-Alto-1/Glissando/god is a girl/Control_Group/0001.json[28]: interval [17.678, 17.94] must satisfy 0 <= start < end <= 17.939875"
+  },
+  {
+    "segment_id": "English/EN-Alto-1/Glissando/god is a girl/Control_Group/0003",
+    "song_id": "english/god is a girl",
+    "exception_type": "ValueError",
+    "reason": "/home/xcy/auto-lrc/data/local/gtsinger-training-p4/English/EN-Alto-1/Glissando/god is a girl/Control_Group/0003.json[21]: interval [8.086, 8.426] must satisfy 0 <= start < end <= 8.425979166666666"
+  },
+  {
+    "segment_id": "English/EN-Alto-1/Glissando/god is a girl/Control_Group/0004",
+    "song_id": "english/god is a girl",
+    "exception_type": "ValueError",
+    "reason": "/home/xcy/auto-lrc/data/local/gtsinger-training-p4/English/EN-Alto-1/Glissando/god is a girl/Control_Group/0004.json[27]: interval [10.487, 11.05] must satisfy 0 <= start < end <= 11.049520833333334"
+  },
+  {
+    "segment_id": "English/EN-Alto-1/Glissando/god is a girl/Glissando_Group/0001",
+    "song_id": "english/god is a girl",
+    "exception_type": "ValueError",
+    "reason": "/home/xcy/auto-lrc/data/local/gtsinger-training-p4/English/EN-Alto-1/Glissando/god is a girl/Glissando_Group/0001.json[27]: interval [17.7, 18.092] must satisfy 0 <= start < end <= 18.091541666666668"
+  },
+  {
+    "segment_id": "English/EN-Alto-1/Glissando/make it shine/Glissando_Group/0001",
+    "song_id": "english/make it shine",
+    "exception_type": "ValueError",
+    "reason": "/home/xcy/auto-lrc/data/local/gtsinger-training-p4/English/EN-Alto-1/Glissando/make it shine/Glissando_Group/0001.json[25]: interval [10.323, 10.893] must satisfy 0 <= start < end <= 10.892979166666667"
+  },
+  {
+    "segment_id": "English/EN-Alto-1/Glissando/tell me that you love me/Control_Group/0004",
+    "song_id": "english/tell me that you love me",
+    "exception_type": "ValueError",
+    "reason": "/home/xcy/auto-lrc/data/local/gtsinger-training-p4/English/EN-Alto-1/Glissando/tell me that you love me/Control_Group/0004.json[16]: interval [7.452, 8.233] must satisfy 0 <= start < end <= 8.232708333333333"
+  },
+  {
+    "segment_id": "English/EN-Alto-1/Glissando/tell me that you love me/Glissando_Group/0001",
+    "song_id": "english/tell me that you love me",
+    "exception_type": "ValueError",
+    "reason": "/home/xcy/auto-lrc/data/local/gtsinger-training-p4/English/EN-Alto-1/Glissando/tell me that you love me/Glissando_Group/0001.json[19]: interval [9.171, 9.602] must satisfy 0 <= start < end <= 9.601979166666666"
+  }
+]

@@ -4,6 +4,16 @@
 
 [中文文档](README_zh.md)
 
+## Research training handoff
+
+Training is paused at the user's request as of 2026-10-10. The latest state,
+results, environment and data recovery commands, and remaining work are in
+[the training handoff](docs/TRAINING_HANDOFF.md). P4 training completed with
+the best checkpoint at epoch 26; P4 final acceptance and P5/P6 remain open.
+The checkpoint contains model weights, not an optimizer resume state.
+Run `git lfs pull` after cloning to retrieve archived weights and large reports.
+Do not automatically start training or overwrite existing experiment outputs.
+
 ## Overview
 
 `track-lrc-align` takes a lyrics text file and an audio file, then generates a synced LRC file. It uses a CNN-RNN acoustic model with DTW (Dynamic Time Warping) alignment to map phonemes to audio frames. Built-in vocal separation via [Demucs](https://github.com/adefossez/demucs) improves alignment accuracy by isolating the singing voice.

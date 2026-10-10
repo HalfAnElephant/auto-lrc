@@ -1,0 +1,25 @@
+{
+  "song_counts": {
+    "train": 10,
+    "val": 4,
+    "test": 4
+  },
+  "split_language_song_counts": {
+    "train": {
+      "chinese": 6,
+      "english": 4
+    },
+    "val": {
+      "chinese": 2,
+      "english": 2
+    },
+    "test": {
+      "english": 2,
+      "chinese": 2
+    }
+  },
+  "segment_count": 180,
+  "declared_total_bytes": 246784466,
+  "metadata_request_count": 49,
+  "downloaded_audio_bytes": 0
+}
