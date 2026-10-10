@@ -117,6 +117,13 @@ def test_explicit_english_preserves_text_and_normalizes_pronunciation_without_la
     fast = SimpleNamespace(load_model=lambda _: SimpleNamespace(predict=lambda *args, **kwargs:
                             pytest.fail('explicit language invoked fastText')))
     monkeypatch.setitem(sys.modules, 'fasttext', fast)
+    def unused_language(*args, **kwargs):
+        pytest.fail('English pronunciation invoked a non-English language dependency')
+    monkeypatch.setitem(sys.modules, 'pypinyin', SimpleNamespace(lazy_pinyin=unused_language))
+    monkeypatch.setitem(sys.modules, 'pykakasi',
+                        SimpleNamespace(kakasi=lambda: SimpleNamespace(convert=unused_language)))
+    monkeypatch.setitem(sys.modules, 'kroman', SimpleNamespace(parse=unused_language))
+    monkeypatch.setitem(sys.modules, 'cyrtranslit', SimpleNamespace(to_latin=unused_language))
     spec = importlib.util.spec_from_file_location('fixture_explicit_phonetic',
                                                  Path(pipeline.__file__).with_name('phonetic.py'))
     module = importlib.util.module_from_spec(spec)
