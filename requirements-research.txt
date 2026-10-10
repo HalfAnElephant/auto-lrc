@@ -1,0 +1,2 @@
+# Optional visualization dependency; inference requirements stay unchanged.
+matplotlib==3.8.4
