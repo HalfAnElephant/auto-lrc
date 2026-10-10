@@ -1,0 +1,57 @@
+{
+  "scope": "P1 source-annotation development acceptance",
+  "user_change": "Skip human annotation and use published dataset labels. Skip all readonly reviews for this research.",
+  "status": "passed",
+  "annotation_reference": "units[].boundary.candidate_sample/candidate_seconds; textgrid:first_phone",
+  "independent_human_accuracy": false,
+  "source_identity_aliases_verified": false,
+  "seed": 7,
+  "segment_count": 18,
+  "boundary_count": 231,
+  "song_counts": {
+    "train": 3,
+    "val": 1,
+    "test": 2
+  },
+  "segment_counts": {
+    "train": 7,
+    "val": 3,
+    "test": 8
+  },
+  "boundary_counts": {
+    "train": 96,
+    "val": 37,
+    "test": 98
+  },
+  "languages_by_split": {
+    "train": {
+      "Chinese": 3,
+      "English": 4
+    },
+    "val": {
+      "Chinese": 3
+    },
+    "test": {
+      "English": 8
+    }
+  },
+  "held_out_singer": "EN-Tenor-1",
+  "singer_independent_test_segment_count": 4,
+  "source_song_overlap": false,
+  "wav_digest_overlap": false,
+  "input_order_invariant": true,
+  "sample_rates": [
+    48000
+  ],
+  "validation": "41 split tests passed; real source split checked; unchanged previous data/runtime results reused",
+  "input_files": {
+    "reports/p1/representative-v2/segments.jsonl": "4b2cfad5009a1aa8707d971221766b188af1b8c3ef1b86972eefde816c6cc4f5",
+    "reports/p1/source-mode-20261010/splits.json": "f37c6f801e7a624b5f942bfce735674b705492d186f18b0106e0ec2bb182b589"
+  },
+  "limitations": [
+    "Only 18 usable representative clips; initial development split, not a full training corpus.",
+    "No independent human boundary verification or source alias confirmation.",
+    "Test contains English only; Chinese test coverage requires later corpus expansion before final evaluation.",
+    "Do not adjust models or parameters using test labels."
+  ]
+}

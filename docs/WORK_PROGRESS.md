@@ -1,12 +1,14 @@
 # 工作进度与恢复入口
 
-恢复执行：2026-10-09；更新至2026-10-10。**P0 运行与复现验收完成；P1 代表性数据、来源分类、隔离划分、盲标工具及受控混音对照已实现，人工复核和整体验收未完成。没有独立人工真值，不得宣称达到 5ms，也不得跳过 P1 验收进入 P2–P6。**
+恢复执行：2026-10-09；更新至2026-10-10。**P0 运行与复现验收完成。用户最新要求“先跳过人工阶段，完全采用训练数据”：P1 改用 GTSinger 发布标注和来源歌曲身份，来源模式开发子集已验收，可进入 P2。未经过人工核实的指标只表示相对数据集标注的误差；正式训练/最终评测前仍需扩充目前仅18段的子集。**
 
 ## 用户目标与约束
 
-完整实施规格保存在 [progress/high-precision-spec.md](progress/high-precision-spec.md)。按 P0 → P1 → P2 → P3 → P4 → P5 → P6 顺序执行，每阶段验收后才推进；保留原 API、检查点、默认 CLI/LRC 行为。Mac 用于开发和基础验证；RTX 5060 / Arch Linux WSL2 用于后续 GPU 实验。用户补充账号 `Haer` 后，现有 SSH 密钥已登录 Windows。WSL2 发行版 `archlinux`、Linux用户 `xcy`；实机 RTX 5060 / 8151MiB显存 / compute capability12.0 / 驱动617.42，WSL可用内存约15GiB。
+完整实施规格及最新变更保存在 [progress/high-precision-spec.md](progress/high-precision-spec.md)。按 P0 → P1 → P2 → P3 → P4 → P5 → P6 顺序执行，每阶段按更新后的要求验收；保留原 API、检查点、默认 CLI/LRC 行为。采用数据集标签不等于将训练数据用于测试或伪造人工真值；仍固定独立 train/val/test，调参仅使用 train/val。Mac 用于开发和基础验证；RTX 5060 / Arch Linux WSL2 用于后续 GPU 实验。用户补充账号 `Haer` 后，现有 SSH 密钥已登录 Windows。WSL2 发行版 `archlinux`、Linux用户 `xcy`；实机 RTX 5060 / 8151MiB显存 / compute capability12.0 / 驱动617.42，WSL可用内存约15GiB。
 
 当前验证渠道选定为本地，不重复安排等价云端 CI。新增基础 CPU CI 和手动 CUDA 集成工作流，运行范围及 runner 配置见 [ci.md](ci.md)；本次未推送或触发云端任务，不把工作流存在视为 CI 通过。
+
+用户另要求“本次研究跳过所有只读审查”。后续不安排 DeepSeek 或其他独立只读审查；保留实现、测试及真实数据验证。来源模式这次仅做过 worker 配置干跑，未启动外部审查，不能记为审查通过。
 
 ## 已落盘的代码
 
@@ -44,6 +46,8 @@ P1 定点测试共138项通过（读取/分类53、获取/整理39、歌曲/歌�
 
 ## 当前验证状态
 
+- P1 来源模式：41项划分定点测试通过，18段真实划分及来源歌曲/WAV摘要隔离、歌手保留和输入顺序不变检查通过；train/val/test为7/3/8段、96/37/98个来源边界。EN-Tenor-1四段为严格歌手独立测试子集，其涉及的两首歌整体留test。报告及固定划分在 `reports/p1/source-mode-20261010/`。当前val仅中文、test仅英文，不能用这个小子集代表最终多语言评测；扩充时仍须将已有歌曲固定留在原集合。没有改写原始标注或人工字段。
+
 - `git diff --check`：通过（保存进度时）。
 - Python 3.10.16 虚拟环境 `.venv-baseline`：已创建。
 - 直接安装旧 requirements 失败于 fasttext 隔离构建缺少 pybind11；已改为先装构建依赖，再 `--no-build-isolation` 安装原 requirements。
@@ -65,11 +69,11 @@ P1 定点测试共138项通过（读取/分类53、获取/整理39、歌曲/歌�
 4. 源码、3检查点、lid和demo已同步至 `/home/xcy/auto-lrc`；Windows中转文件为 `C:/Users/Haer/auto-lrc-p0-runtime-20261009.tar.gz`（本任务创建，可在验收后清理）。
 5. `scripts/verify_gpu_runtime.py` 的三个阶段均已运行成功；完整默认CLI另外验收。所有结果已从WSL同步回 `reports/p0/gpu/`，包括原始诊断/分离片段/日志；不重跑相同输入。
 6. SSH：`ssh -p 12345 -o BatchMode=yes -o StrictHostKeyChecking=yes Haer@127.0.0.1 'wsl.exe -d archlinux -- sh -s'`，stdin提供Linux脚本，必须先 `cd /home/xcy/auto-lrc`。使用现有密钥，无需再次询问密码。
-7. 先读 [p1-data-preparation.md](p1-data-preparation.md) 和 `reports/p1/samples-v2/REVIEW.md`。当前本地盲标服务地址 `http://127.0.0.1:8765`；恢复命令见文档，session 为 `data/local/reviews/xcy-smoke-v2.json`。受控混音实验后再次核实 revision=0、已复标0/25。第二复核者须使用独立 session；候选时间另存，应复标完成后再查看。不能把原标注复制为人工真值。
-8. 核实6个歌名候选、同曲别名/技巧组/配对语音/派生混音身份，提供有实际复核者的歌曲身份映射，再生成固定 train/val/test 及可行的歌手独立子集。先完成25个 smoke 边界的独立复标、第二复核，再按数据文档使用 `adjudicate_gtsinger.py` 生成人工裁决表/参考，审计时传 `--adjudication`，保留原盲标诊断；扩充正式隔离测试集。禁止跳过P1验收进入P2–P6，不重跑相关输入未变的成功检查。
+7. 先读 [p1-data-preparation.md](p1-data-preparation.md)。用户已跳过人工阶段，旧盲标/裁决工具仅保留作将来可选复核，不再等待人工记录，也不把来源标签写入 `human_truth_*`。旧报告的 pending/unassigned 是执行时的历史状态，不改写旧证据。
+8. 使用显式来源模式固定 train/val/test 及歌手独立子集，标签直接引用 `segments.jsonl` 的 `units[].boundary.candidate_sample/candidate_seconds`（`textgrid:first_phone`）；人工置信度和复核状态仍为空/pending。完成来源模式验收后进入P2，保持独立划分及来源指标解释。不重跑相关输入未变的成功检查。
 9. 受控混音与两段GPU对照已完成，无需重跑；恢复路径和完整命令在数据文档。WSL原始混音位于 `data/local/mixtures/representative-v1-20261010/`，分离音频位于 `data/local/mixtures/native-vocals-20261010/`。现有报告与音频目录均不可覆盖。合成夹具不代表真实配器覆盖或人工起点真值。
 10. 基础 CI 的安装/测试成功结果见 `reports/ci-20261010/lfs-pointer/`，初次展开模型的结果保留在上层目录；相关输入未变时复用，不重建环境或重跑。可选 GPU runner 的外部配置见 [ci.md](ci.md)，本次没有注册 runner 或触发远程任务。
 
 ## 尚未完成
 
-P1歌曲身份人工复核、实际固定划分、独立边界复标/人工分歧裁决、来源标注误差和整体验收仍未完成。裁决工具已实现，不能替代实际人工复核。合法原创合成伴奏的受控实验已完成，真实匹配伴奏覆盖及逐音素分离延迟校准仍待验证。原整歌偏移未知，来源分类不代表声学真值。P2 粗对齐增强、P3 DSP 精修、P4 轻量网络训练、P5 全局优化、P6 精度评测/失败可视化，以及 precision/refiner/device/confidence 等后续 CLI 均未实现。没有轻量边界模型、没有训练结果或5ms成功证据。
+人工歌曲身份确认、独立复标/裁决及 TextGrid 相对人工边界的误差依用户要求暂缓，不再作为本轮研发门槛；来源模式开发子集已验收。合法原创合成伴奏的受控实验已完成，真实匹配伴奏覆盖及逐音素分离延迟校准仍待验证。原整歌偏移未知，来源分类不代表声学真值。P2 粗对齐增强、P3 DSP 精修、P4 轻量网络训练、P5 全局优化、P6 精度评测/失败可视化，以及 precision/refiner/device/confidence 等后续 CLI 均未实现。没有轻量边界模型、没有训练结果或5ms成功证据。

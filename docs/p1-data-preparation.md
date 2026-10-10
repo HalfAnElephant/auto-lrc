@@ -1,6 +1,23 @@
 # P1 数据准备与人工复核
 
-2026-10-10：代表性子集、来源分类、歌曲/歌手隔离划分工具、本地盲标工具和受控混音对照已实现；**P1 整体未验收**。歌曲身份及独立人工边界仍待复核，没有精度结论，不进入 P2–P6。
+2026-10-10：用户最新要求“先跳过人工阶段，完全采用训练数据”。本轮改用发布的 TextGrid 首音素起点作为训练和评测参考，按来源歌曲身份隔离 train/val/test。人工复标与身份确认不再阻塞研发；旧的盲标及裁决流程保留为可选功能。来源模式开发子集已验收，后续数值仅称“相对数据集标注的误差”，不代表独立人工验证精度。
+
+## 当前采用的来源标注模式
+
+固定划分在 [source-mode-20261010/splits.json](../reports/p1/source-mode-20261010/splits.json)，来源仍为 `representative-v2/segments.jsonl`。训练和评测读取 `units[].boundary.candidate_sample/candidate_seconds`，来源为 `textgrid:first_phone`，不能复制到 `human_truth_*` 或将 pending 改写为 reviewed。当前执行命令如下，输出已存在，恢复时直接读取而不覆盖：
+
+```sh
+.venv-baseline/bin/python scripts/split_gtsinger.py \
+  --segments reports/p1/representative-v2/segments.jsonl \
+  --identity-mode dataset --held-out-singer EN-Tenor-1 --seed 7 \
+  --output reports/p1/source-mode-20261010/splits.json
+```
+
+`--identity-mode dataset` 与旧 `--song-review PATH` 必选且只能选其一。来源模式明确输出 `song_identity_reviewed=false`、`aliases_confirmed=false`、`song_identity_reviewed_by=null`，复用同音频/父子关系冲突拒绝和整首歌曲隔离约束。未声明的别名或录音关系仍可能未被识别，不宣称已由人工核实。
+
+18段划分为 train/val/test 7/3/8段，分别96/37/98个来源边界，歌曲数3/1/2。EN-Tenor-1的4段严格歌手独立，其涉及歌曲的其他歌手版本也留在test。来源歌曲和WAV摘要均无跨集合；输入顺序不影响结果。41项定点测试及真实划分检查通过，见 [acceptance.json](../reports/p1/source-mode-20261010/acceptance.json)。目前val仅中文、test仅英文，正式训练/最终评测前需扩充各集合，已有歌曲保持原归属。这个开发子集不构成完整多语言精度结论。
+
+按最新用户要求，本次研究跳过所有独立只读审查，保留功能测试和真实数据验证。下文人工流程及旧结果仅作为可选能力和历史记录。
 
 ## 数据来源与实际范围
 
@@ -177,7 +194,7 @@ RTX5060 / torch2.7.1+cu128 单次实验共12.900秒，峰值已分配显存约1.
 
 ## 按歌曲分组与后续边界
 
-默认 `song_id` 是语言/歌曲标题的规范化键，无法自动识别别名、译名或同曲不同语言。划分前须提供人工核实的 `song_review.json`：
+默认 `song_id` 是语言/歌曲标题的规范化键，无法自动识别别名、译名或同曲不同语言。当前来源模式直接使用这些键，不填写虚构的复核者。若未来切换到人工核实模式，再提供 `song_review.json`：
 
 ```json
 {"reviewed_by": "实际核实者", "song_ids": {
@@ -190,4 +207,4 @@ RTX5060 / torch2.7.1+cu128 单次实验共12.900秒，峰值已分配显存约1.
 
 可重复指定 `--held-out-singer EN-Tenor-1`：该歌手演唱的所有歌曲整体留在 test，即使同曲也有其他歌手版本。输出 `singer_independent_test_segment_ids` 指明严格歌手独立的测试子集；其他 test 歌手可能出现在 train/val，不将全 test 冒称歌手独立。若保留歌曲后无法形成非空 train/val，明确失败。目前未提供人工歌曲身份映射，故未生成实际划分。
 
-P1 验收仍需要：人工确认歌名别名与共同录音/技巧组身份，生成固定划分，完成首轮独立盲标及第二复核/分歧裁决，再评估 TextGrid 的实际误差。受控合成伴奏已有实机对照；真实匹配伴奏覆盖和逐音素延迟校准仍未完成。当前18段仅为代表性检查子集，不能支持训练收益或5ms精度结论。
+当前 P1 采用来源标注验收；人工歌曲确认、独立复标和 TextGrid 相对人工误差依用户要求暂缓。来源模式仍需通过固定划分与防泄漏检查。受控合成伴奏已有实机对照；真实匹配伴奏覆盖和逐音素延迟校准仍未完成。当前18段仅为代表性检查子集，后续训练收益必须在固定测试集上实测，不能据此宣称5ms真实精度。

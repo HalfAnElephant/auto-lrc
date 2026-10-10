@@ -1,4 +1,4 @@
-"""Deterministic song-group splits, gated on an explicit identity review."""
+"""Deterministic song-group splits with explicit reviewed or dataset identities."""
 import hashlib
 import json
 import math
@@ -6,12 +6,15 @@ import re
 from collections import Counter
 
 
-def assign_song_splits(segments, song_review, *, seed=7,
-                       ratios=None, held_out_singers=None):
-    """Assign complete songs after a human supplies canonical song identities.
+def assign_song_splits(segments, song_review=None, *, seed=7,
+                       ratios=None, held_out_singers=None, identity_mode="reviewed"):
+    """Assign complete songs using a human review or explicit dataset identities.
 
-    ``song_review`` has ``reviewed_by`` and ``song_ids`` (inferred -> canonical).
-    Audio annotations remain unreviewed; this review only establishes identity.
+    The default mode requires ``song_review`` with ``reviewed_by`` and
+    ``song_ids`` (inferred -> canonical), preserving the reviewed-mode contract.
+    ``identity_mode="dataset"`` uses each existing dataset ``song_id`` without
+    claiming human review or resolving aliases; it must not receive a review.
+    Audio annotations remain unreviewed in either mode.
     Each segment must carry its source WAV SHA-256 in ``sources.wav.sha256``.
     This function never derives whole-recording offsets or accuracy labels.
     """
@@ -23,13 +26,19 @@ def assign_song_splits(segments, song_review, *, seed=7,
         raise ValueError("train/val/test ratios must be finite, nonnegative and sum to 1")
     if not isinstance(seed, int) or isinstance(seed, bool):
         raise ValueError("seed must be an integer")
-    if (not isinstance(song_review, dict) or
-            not isinstance(song_review.get("reviewed_by"), str) or
-            not song_review["reviewed_by"].strip()):
-        raise ValueError("A song identity review with reviewed_by is required")
-    song_ids = song_review.get("song_ids")
-    if not isinstance(song_ids, dict):
-        raise ValueError("song_review.song_ids must map inferred IDs to reviewed canonical IDs")
+    if identity_mode not in ("reviewed", "dataset"):
+        raise ValueError("identity_mode must be reviewed or dataset")
+    reviewed = identity_mode == "reviewed"
+    if reviewed:
+        if (not isinstance(song_review, dict) or
+                not isinstance(song_review.get("reviewed_by"), str) or
+                not song_review["reviewed_by"].strip()):
+            raise ValueError("A song identity review with reviewed_by is required")
+        song_ids = song_review.get("song_ids")
+        if not isinstance(song_ids, dict):
+            raise ValueError("song_review.song_ids must map inferred IDs to reviewed canonical IDs")
+    elif song_review is not None:
+        raise ValueError("dataset identity mode cannot also receive song_review")
     segments = list(segments)
     if not segments:
         raise ValueError("Cannot split an empty dataset")
@@ -41,12 +50,15 @@ def assign_song_splits(segments, song_review, *, seed=7,
         segment_id, inferred = segment.get("segment_id"), segment.get("song_id")
         if not isinstance(segment_id, str) or not segment_id or segment_id in records:
             raise ValueError("Missing or duplicate segment_id: {!r}".format(segment_id))
-        if not isinstance(inferred, str) or not inferred:
+        if not isinstance(inferred, str) or not inferred.strip():
             raise ValueError("Missing song_id for {!r}".format(segment_id))
-        canonical = song_ids.get(inferred)
-        if not isinstance(canonical, str) or not canonical.strip():
-            raise ValueError("Unreviewed song identity: {!r}".format(inferred))
-        canonical = canonical.strip()
+        if reviewed:
+            canonical = song_ids.get(inferred)
+            if not isinstance(canonical, str) or not canonical.strip():
+                raise ValueError("Unreviewed song identity: {!r}".format(inferred))
+            canonical = canonical.strip()
+        else:
+            canonical = inferred
         sources = segment.get("sources")
         wav_source = sources.get("wav") if isinstance(sources, dict) else None
         digest = wav_source.get("sha256") if isinstance(wav_source, dict) else None
@@ -55,7 +67,7 @@ def assign_song_splits(segments, song_review, *, seed=7,
                              "a 64-character hexadecimal WAV SHA-256 is required".format(segment_id))
         audio_key = digest.lower()
         if audio_key in audio_identities and audio_identities[audio_key] != canonical:
-            raise ValueError("The same audio has conflicting reviewed song identities")
+            raise ValueError("The same audio has conflicting {} song identities".format(identity_mode))
         audio_identities[audio_key] = canonical
         records[segment_id] = segment
         canonical_groups[segment_id] = canonical
@@ -89,8 +101,8 @@ def assign_song_splits(segments, song_review, *, seed=7,
         raise ValueError("Singer holdout requires singer identities on every segment")
     active = [key for key in ("train", "val", "test") if ratios[key] > 0]
     if len(groups) < len(active):
-        raise ValueError("Need at least {} reviewed songs for {} nonempty splits; got {}".format(
-            len(active), len(active), len(groups)))
+        raise ValueError("Need at least {} {} songs for {} nonempty splits; got {}".format(
+            len(active), identity_mode, len(active), len(groups)))
     # Reserve one song per active split, then approach requested ratios. This
     # guarantees useful nonempty partitions without splitting a song to fit.
     minimum_counts = {key: max(int(key in active), len(reserved_test) if key == "test" else 0)
@@ -114,7 +126,11 @@ def assign_song_splits(segments, song_review, *, seed=7,
     rows = [{"segment_id": key, "canonical_song_id": canonical_groups[key],
              "split": assignments[canonical_groups[key]]} for key in sorted(records)]
     return {"schema_version": 1, "seed": seed, "requested_ratios": dict(ratios),
-            "song_identity_reviewed_by": song_review["reviewed_by"],
+            "identity_mode": identity_mode,
+            "song_identity_source": "human_song_review" if reviewed else "dataset_song_id",
+            "song_identity_reviewed": reviewed,
+            "aliases_confirmed": reviewed,
+            "song_identity_reviewed_by": song_review["reviewed_by"] if reviewed else None,
             "song_counts": counts,
             "segment_counts": dict(Counter(row["split"] for row in rows)),
             "assignments": rows, "boundary_annotations_reviewed": False,
@@ -122,7 +138,10 @@ def assign_song_splits(segments, song_review, *, seed=7,
             "held_out_singers": held_out_singers,
             "singer_independent_test_segment_ids": sorted(key for key, segment in records.items()
                                                          if segment.get("singer") in held_out_singers),
-            "limitations": ["Song identities rely on the supplied human review.",
+            "limitations": (["Song identities rely on the supplied human review."] if reviewed else [
+                            "canonical_song_id contains the dataset song_id, not a human-confirmed canonical identity.",
+                            "Song identities and aliases have not been verified by a human.",
+                            "Unrecognized aliases or unrecorded source relations may still cross splits."]) + [
                             "Only explicitly held-out singers are excluded from train and validation; other singers may recur.",
                             "Songs shared with held-out singers are reserved entirely for test, so requested ratios may be unattainable.",
                             "This split does not make annotation boundaries accurate."]}
