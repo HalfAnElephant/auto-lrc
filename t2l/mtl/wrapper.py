@@ -27,10 +27,30 @@ def preprocess_from_file(audio_file, lyrics_file, word_file=None):
     return y, words, lyrics_p, idx_word_p, idx_line_p
 
 
+def _alignment_options(options):
+    if options is None:
+        return {"mode": "legacy"}
+    if not isinstance(options, dict):
+        raise ValueError("alignment_options must be a mapping")
+    allowed = {"mode", "fallback_to_legacy", "word_windows", "onset_windows", "silence_intervals"}
+    if set(options) - allowed:
+        raise ValueError("Unknown alignment options: " + str(sorted(set(options) - allowed)))
+    result = dict(options)
+    result.setdefault("mode", "constrained")
+    if result["mode"] not in ("legacy", "constrained"):
+        raise ValueError("Alignment mode must be legacy or constrained")
+    if result["mode"] == "legacy" and set(result) != {"mode"}:
+        raise ValueError("Legacy mode does not apply alignment constraints")
+    if not isinstance(result.get("fallback_to_legacy", True), bool):
+        raise ValueError("fallback_to_legacy must be a boolean")
+    return result
+
+
 def align(audio, words, lyrics_p, idx_word_p, idx_line_p, method="Baseline", cuda=True, verbose=True,
-          return_details=False):
+          return_details=False, alignment_options=None):
     """Align on the legacy frame grid; opt-in details do not calibrate onset time."""
 
+    options = _alignment_options(alignment_options)
     # start timer
     t = time()
 
@@ -84,15 +104,46 @@ def align(audio, words, lyrics_p, idx_word_p, idx_line_p, method="Baseline", cud
             bdr_outputs = bdr_model(x).reshape(-1)
             bdr_outputs = torch.log(bdr_outputs) * alpha
 
-    if bdr_flag:
-        line_start = idx_line_p[:, 0]
-        verbose and print("Aligning...It might take a few minutes..., FIXME optimize perf.")
-        word_align, score = utils.alignment_bdr(
-            song_pred.detach().cpu().numpy(), lyrics_p, idx_word_p,
-            bdr_outputs.detach().cpu().numpy(), line_start)
-    else:
-        verbose and print("Aligning...It might take a few minutes...")
-        word_align, score = utils.alignment(song_pred, lyrics_p, idx_word_p)
+    constrained_result, fallback = None, []
+    if options["mode"] == "constrained":
+        from t2l.alignment.constrained_dp import constrained_alignment, NoAlignmentPathError
+        silence = np.zeros(song_pred.shape[0], dtype=bool)
+        intervals = options.get("silence_intervals", [])
+        if not isinstance(intervals, (list, tuple)):
+            raise ValueError("silence_intervals must contain [start_seconds, end_seconds] pairs")
+        nominal_times = np.arange(song_pred.shape[0]) * FRAME_RESOLUTION_SECONDS
+        duration = waveform.shape[-1] / SAMPLE_RATE
+        for interval in intervals:
+            if (not isinstance(interval, (list, tuple)) or len(interval) != 2 or
+                    any(isinstance(v, bool) or not isinstance(v, (float, int)) or
+                        not math.isfinite(v) for v in interval) or
+                    not 0 <= interval[0] < interval[1] <= duration):
+                raise ValueError("Silence intervals must be finite, ordered and inside decoded audio")
+            silence |= (nominal_times >= interval[0]) & (nominal_times < interval[1])
+        try:
+            constrained_result = constrained_alignment(
+                song_pred.detach().cpu().numpy(), utils.phone2seq(lyrics_p), idx_word_p,
+                word_windows=options.get("word_windows"),
+                onset_windows=options.get("onset_windows"), silence_mask=silence,
+                pause_phone_ids=(utils.phone2int[' '],),
+                boundary_log_scores=bdr_outputs.detach().cpu().numpy() if bdr_flag else None,
+                line_start_phones=np.asarray(idx_line_p)[:, 0] if bdr_flag else ())
+        except NoAlignmentPathError as error:
+            if not options.get("fallback_to_legacy", True):
+                raise
+            fallback.append("Constrained path unavailable; legacy path returned without satisfying constraints: " + str(error))
+        if constrained_result is not None:
+            word_align, score = constrained_result["word_frames"], constrained_result["score"]
+    if constrained_result is None:
+        if bdr_flag:
+            line_start = idx_line_p[:, 0]
+            verbose and print("Aligning...It might take a few minutes..., FIXME optimize perf.")
+            word_align, score = utils.alignment_bdr(
+                song_pred.detach().cpu().numpy(), lyrics_p, idx_word_p,
+                bdr_outputs.detach().cpu().numpy(), line_start)
+        else:
+            verbose and print("Aligning...It might take a few minutes...")
+            word_align, score = utils.alignment(song_pred, lyrics_p, idx_word_p)
 
     t = time() - t
     verbose and print("Alignment Score:\t{}\tTime:\t{}".format(score, t))
@@ -125,6 +176,19 @@ def align(audio, words, lyrics_p, idx_word_p, idx_line_p, method="Baseline", cud
             "word_phoneme_indices": np.asarray(idx_word_p).tolist(),
             "line_phoneme_indices": np.asarray(idx_line_p).tolist(),
         }
+        if alignment_options is not None:
+            details["constraints"] = dict(options,
+                executed_mode="constrained" if constrained_result is not None else "legacy",
+                satisfied=constrained_result is not None if options["mode"] == "constrained" else None,
+                silence_frame_mapping="nominal_legacy_grid; physical origin uncalibrated")
+            details["fallback"] = fallback
+            details["frame_interval_convention"] = ("half_open_phone_occupancy" if constrained_result is not None
+                                                     else "legacy_next_word_or_terminal_frame")
+        if constrained_result is not None:
+            details["score_kind"] = ("ctc_path_log_score_with_entry_bdr_uncalibrated" if bdr_flag
+                                     else "ctc_path_log_score_uncalibrated")
+            details["constrained_dp"] = {key: value for key, value in constrained_result.items()
+                                         if key not in ("state_path", "word_frames", "score")}
         return word_align, words, details
 
     return word_align, words

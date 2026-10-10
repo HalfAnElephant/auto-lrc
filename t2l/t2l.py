@@ -15,15 +15,16 @@ import librosa
 logger = logging.getLogger("t2l")
 
 
-def phonetize(text):
+def phonetize(text, language=None):
     from .phonetic import phonetize as convert
-    return convert(text)
+    return convert(text) if language is None else convert(text, language=language)
 
 
 def process(txt_lines, audio_file, mtl_model='MTL',
             demucs_model='mdx_extra', demucs_idx=-1,
             line_only=False, out_file=None, verbose=True,
-            vocalize=True, format='lrc', return_details=False):
+            vocalize=True, format='lrc', return_details=False,
+            language=None, alignment_options=None, include_audio_metadata=False):
     """
     :mtl_model: tuple of pre loaded model, or one of string: "Baseline", "MTL", "Baseline_BDR", "MTL_BDR"
     :return: LRC string, or a JSON-serializable result when return_details=True.
@@ -34,6 +35,8 @@ def process(txt_lines, audio_file, mtl_model='MTL',
         raise ValueError(
             "Unsupported format {!r}; only 'lrc' is implemented.".format(format)
         )
+    if language not in (None, 'auto', 'zh', 'en', 'ja', 'ko', 'ru'):
+        raise ValueError('Unsupported explicit language: {!r}'.format(language))
 
     # filter lyric words and phonetize. FIXME: 如何处理数字
     phonetics, lines, pre_lines_unprocessed = [], [], ''  # [[读音],..], [[文字],..]
@@ -44,7 +47,8 @@ def process(txt_lines, audio_file, mtl_model='MTL',
                       line)  # 去除 [ar/au/al/ti:...]
         phonetic, words = [], []
         # 转读音
-        line_py, pre_wd = phonetize(line), ''
+        line_py = phonetize(line) if language is None else phonetize(line, language=language)
+        pre_wd = ''
         for wd, ph in line_py:  # [(w, p), ..]
             if len(pre_wd) > 0:
                 wd, pre_wd = pre_wd + wd, ''
@@ -80,7 +84,20 @@ def process(txt_lines, audio_file, mtl_model='MTL',
     if len(lines) == 0:
         raise TxtValueError('Invalid lrc file, no valid content.')
 
-    if vocalize:
+    original_audio = None
+    if include_audio_metadata:
+        original, original_rate = preprocess_audio(audio_file)
+        original_audio = {'sample_rate': int(original_rate),
+                          'num_samples': int(original.shape[-1]),
+                          'channels': int(original.shape[0]),
+                          'timeline': 'decoded_original_audio; container_offset_not_corrected'}
+        if vocalize:
+            vocals, _ = __vocalize(original, original_rate, 22050,
+                                   demucs_model, demucs_idx, verbose)
+        else:
+            vocals = (julius.resample_frac(original, original_rate, 22050)
+                      if original_rate != 22050 else original)
+    elif vocalize:
         vocals, _ = separate_vocals(
             audio_file, demucs_model=demucs_model,
             demucs_idx=demucs_idx, verbose=verbose)
@@ -95,7 +112,8 @@ def process(txt_lines, audio_file, mtl_model='MTL',
     alignment_result = align(
         vocals, None, lyrics_p, idx_word_p, idx_line_p,
         method=mtl_model, cuda=True, verbose=verbose,
-        return_details=return_details)
+        return_details=return_details,
+        **({'alignment_options': alignment_options} if alignment_options is not None else {}))
     word_align, words = alignment_result[:2]
     lrc_content = gen_lrc(word_align, lines, line_only=line_only)
     if len(pre_lines_unprocessed) > 0:
@@ -129,7 +147,10 @@ def process(txt_lines, audio_file, mtl_model='MTL',
                     'end_seconds': (float(end) * FRAME_RESOLUTION_SECONDS
                                     if end is not None else None),
                 })
-        return {'lrc': lrc_content, 'units': units, 'alignment': alignment_result[2]}
+        result = {'lrc': lrc_content, 'units': units, 'alignment': alignment_result[2]}
+        if original_audio is not None:
+            result['original_audio'] = original_audio
+        return result
 
     return lrc_content
 

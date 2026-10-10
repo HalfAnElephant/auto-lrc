@@ -13,7 +13,7 @@ kks = pykakasi.kakasi()
 fasttext_model = fasttext.load_model('lid.176.ftz')
 
 
-def phonetize(ch):
+def phonetize(ch, language=None):
     """
     暂时只识别：zh,ja,ko,en
     :return: 返回数组[(word, phone), ...], 且转换后的phone只包含a-z'~字串
@@ -21,16 +21,19 @@ def phonetize(ch):
     ['igeoseun', 'je', 'geosi', 'anieyo.imyeongssiui', 'geosieyo.'];
     若无法识别语言，返回[]
     """
+    if language not in (None, 'auto', 'zh', 'en', 'ja', 'ko', 'ru'):
+        raise ValueError('Unsupported explicit language: {!r}'.format(language))
     ch = q2bs(ch)  # 全角转半角
 
     # 先识别语言，再分别转读音
-    if ch.isascii():  # 纯ascii或空str，直接返回
+    if ch.isascii() and language in (None, 'auto'):  # 保留默认旧行为
         return [(ch, ch)]
 
     # help(cld2.detect)
     # reliable, _, details = cld2.detect(ch, isPlainText=True, returnVectors=False,
     #                                    hintLanguageHTTPHeaders='zh,ja,ko,en,ru')
-    lang_result = detect_language(ch)
+    lang_result = (detect_language(ch) if language in (None, 'auto')
+                   else '__label__' + language)
 
     # 暂时只取1种语言
     ret = []
@@ -42,7 +45,7 @@ def phonetize(ch):
         ret, phs, idx = [], ch.split(), 0
         for ii, ph in enumerate(phs):
             idx1  = ch.find(phs[ii + 1], idx+len(ph)) if ii < len(phs) - 1 else None
-            ret.append((ch[idx:idx1], ph))
+            ret.append((ch[idx:idx1], ph.lower() if language == 'en' else ph))
             idx = idx1
     elif lang_result == '__label__ja':
         # おはようごぎ.い!ます. thank you 123! ohayougogi. かな漢字交じり文.: 'ohayougogi.', 'i!', 'masu.', ' thank you 123!', 'kana', 'kanji', 'majiri', 'bun.'
